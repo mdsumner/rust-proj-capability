@@ -1,0 +1,21 @@
+# GitHub Pages (classic Jekyll build, served from the root of main).
+# See PUBLISHING.md for the rendering facts this relies on.
+title: PROJ ports and rewrites, from Rust
+description: A capability map of the Rust PROJ landscape, judged against PROJ 9.9.0
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+relative_links:
+  enabled: true
+  collections: false
+titles_from_headings:
+  strip_title: false
+exclude:
+  - harness/src
+  - harness/Cargo.lock
+  - harness/Cargo.toml
+  - "*.sh"
