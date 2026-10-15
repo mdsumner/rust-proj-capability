@@ -1,0 +1,6 @@
+proj_create: crs not found: EPSG:99999
+proj_create: Error 1027 (Invalid value for an argument): Unknown projection
+proj_create: Error 1027 (Invalid value for an argument): merc: Invalid value for lat_ts: |lat_ts| should be <= 90\xb0
+proj_create: crs not found: EPSG:99999
+proj_create: Error 1027 (Invalid value for an argument): Unknown projection
+proj_create: Error 1027 (Invalid value for an argument): merc: Invalid value for lat_ts: |lat_ts| should be <= 90\xb0

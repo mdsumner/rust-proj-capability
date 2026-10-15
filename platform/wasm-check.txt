@@ -1,0 +1,13 @@
+FAIL proj4rs-default :: proj4rs = "=0.2.1" :: warning: proj4rs-geodesic@0.1.1: Compiler family detection failed due to error: ToolNotFound: failed to find tool "clang": No such file or directory (os error 2) error: failed to run custom build command for `proj4rs-geodesic v0.1.1` 
+OK   proj4rs-nodefault :: proj4rs = { version = "=0.2.1", default-features = false }
+OK   proj4wkt :: proj4wkt = "=0.1.1"
+OK   crs-definitions :: crs-definitions = "=0.6.0"
+FAIL geodesy-default :: geodesy = "=0.15.0" :: error: to use `uuid` on `wasm32-unknown-unknown`, specify a source of randomness using one of the `js`, `rng-getrandom`, or `rng-rand` features error: could not compile `uuid` (lib) due to 1 previous error 
+OK   geodesy-js :: geodesy = { version = "=0.15.0", default-features = false, features = ["js"] }
+OK   miniproj :: miniproj = "=0.10.4"
+OK   proj-core-default :: proj-core = "=0.11.0"
+OK   proj-core-nodefault :: proj-core = { version = "=0.11.0", default-features = false }
+OK   proj-wkt :: proj-wkt = "=0.11.0"
+OK   wbprojection-default :: wbprojection = "=0.3.3"
+OK   wbprojection-nodefault :: wbprojection = { version = "=0.3.3", default-features = false }
+FAIL proj-georust :: proj = { version = "=0.31.0", default-features = false } :: warning: link-cplusplus@1.0.12: Compiler family detection failed due to error: ToolNotFound: failed to find tool "clang++": No such file or directory (os error 2) error: failed to run custom build command for `link-cplusplus v1.0.12` 

@@ -1,0 +1,1426 @@
+{
+ "about": "Fixture definitions for the Rust PROJ capability map. Each fixture is a (src, dst, point) triple. 'point' is in src CRS units, visualisation (east, north) axis order; when 'point_lonlat' is given instead, the oracle derives 'point' from lon/lat on the src geodetic CRS. 'form' says which input syntax dst (or src) is written in. oracle/oracle.py adds reference coordinates and exports and writes fixtures/crs.json.",
+ "fixtures": [
+  {
+   "id": "seed-4326",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:4326",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "I6"
+   ],
+   "note": "authority axis order is lat/lon; oracle normalised to lon/lat"
+  },
+  {
+   "id": "seed-3857",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:3857",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "I2"
+   ],
+   "note": "PROJ export carries +nadgrids=@null +wktext"
+  },
+  {
+   "id": "seed-32755",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:32755",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ]
+  },
+  {
+   "id": "seed-3031",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:3031",
+   "form": "authority",
+   "point": [
+    70.0,
+    -72.0
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ]
+  },
+  {
+   "id": "seed-28355",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:28355",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "E2"
+   ],
+   "note": "GDA94; datum step to WGS84"
+  },
+  {
+   "id": "seed-7855",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:7855",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "E2"
+   ],
+   "note": "GDA2020; datum step to WGS84"
+  },
+  {
+   "id": "seed-9354",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:9354",
+   "form": "authority",
+   "point": [
+    70.0,
+    -72.0
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ],
+   "note": "WGS 84 / IBCSO Polar Stereographic"
+  },
+  {
+   "id": "seed-8857",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:8857",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ],
+   "note": "Equal Earth Greenwich"
+  },
+  {
+   "id": "seed-esri-54042",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "ESRI:54042",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ],
+   "note": "World Winkel Tripel NGS"
+  },
+  {
+   "id": "seed-esri-54052",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "ESRI:54052",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ],
+   "note": "World Goode Homolosine Land"
+  },
+  {
+   "id": "seed-esri-102020",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "ESRI:102020",
+   "form": "authority",
+   "point": [
+    70.0,
+    -72.0
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ],
+   "note": "South Pole Lambert Azimuthal Equal Area"
+  },
+  {
+   "id": "seed-tpers",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "+proj=tpers +lat_0=-42 +lon_0=147 +h=3000000 +tilt=20 +azi=30 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    150.0,
+    -40.0
+   ],
+   "layers": [
+    "I2",
+    "E1"
+   ]
+  },
+  {
+   "id": "seed-ob_tran-moll",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "+proj=ob_tran +o_proj=moll +o_lon_p=0 +o_lat_p=45 +lon_0=147 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I2",
+    "E1"
+   ]
+  },
+  {
+   "id": "seed-wintri",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "+proj=wintri +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I2",
+    "E1"
+   ]
+  },
+  {
+   "id": "seed-igh",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "+proj=igh +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I2",
+    "E1"
+   ]
+  },
+  {
+   "id": "seed-7415",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:7415",
+   "form": "authority",
+   "point": [
+    5.0,
+    52.0
+   ],
+   "layers": [
+    "I1",
+    "I5",
+    "E2"
+   ],
+   "note": "Amersfoort / RD New + NAP height (compound); ports get the horizontal member"
+  },
+  {
+   "id": "seed-2056",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:2056",
+   "form": "authority",
+   "point": [
+    7.44,
+    46.95
+   ],
+   "layers": [
+    "I1",
+    "E2"
+   ],
+   "note": "CH1903+ / LV95; precedent: bare proj string 164 m off, bound exact"
+  },
+  {
+   "id": "seed-2154",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:2154",
+   "form": "authority",
+   "point": [
+    2.35,
+    48.85
+   ],
+   "layers": [
+    "I1",
+    "E1"
+   ],
+   "note": "RGF93 v1 / Lambert-93"
+  },
+  {
+   "id": "seed-bad-code",
+   "group": "seed",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:99999",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "E8"
+   ],
+   "note": "non-existent code; every candidate should refuse"
+  },
+  {
+   "id": "pair-4283-7844",
+   "group": "pair",
+   "src": "EPSG:4283",
+   "dst": "EPSG:7844",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E2",
+    "E3",
+    "E4"
+   ],
+   "note": "GDA94 to GDA2020; best op is a grid (conformal), not installed; precedent: 1.5 m via hub"
+  },
+  {
+   "id": "pair-4283-7855",
+   "group": "pair",
+   "src": "EPSG:4283",
+   "dst": "EPSG:7855",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E2",
+    "E4"
+   ]
+  },
+  {
+   "id": "pair-28355-7855",
+   "group": "pair",
+   "src": "EPSG:28355",
+   "dst": "EPSG:7855",
+   "form": "authority",
+   "point_lonlat": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E2",
+    "E4"
+   ]
+  },
+  {
+   "id": "pair-4326-3031",
+   "group": "pair",
+   "src": "EPSG:4326",
+   "dst": "EPSG:3031",
+   "form": "authority",
+   "point": [
+    70.0,
+    -72.0
+   ],
+   "layers": [
+    "I6",
+    "E1"
+   ],
+   "note": "src authority order lat/lon; point given lon/lat (normalised)"
+  },
+  {
+   "id": "pair-nad27-nad83",
+   "group": "pair",
+   "src": "EPSG:4267",
+   "dst": "EPSG:4269",
+   "form": "authority",
+   "point": [
+    -100.0,
+    40.0
+   ],
+   "layers": [
+    "E3",
+    "E4"
+   ],
+   "note": "only grid operations exist (conus, NADCON5); none installed"
+  },
+  {
+   "id": "pair-ed50-wgs84",
+   "group": "pair",
+   "src": "EPSG:4230",
+   "dst": "EPSG:4326",
+   "form": "authority",
+   "point": [
+    -3.7,
+    40.4
+   ],
+   "layers": [
+    "E2",
+    "E4"
+   ],
+   "note": "ED50 has many regional Helmert candidates; Madrid"
+  },
+  {
+   "id": "pair-itrf2014-gda2020-epoch",
+   "group": "pair",
+   "src": "EPSG:7912",
+   "dst": "EPSG:7843",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0,
+    0.0,
+    2025.0
+   ],
+   "layers": [
+    "E2",
+    "E5"
+   ],
+   "note": "time-dependent 15-parameter Helmert, epoch 2025.0"
+  },
+  {
+   "id": "pair-4979-egm2008",
+   "group": "pair",
+   "src": "EPSG:4979",
+   "dst": "EPSG:9518",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0,
+    100.0
+   ],
+   "layers": [
+    "I5",
+    "E3",
+    "E5"
+   ],
+   "note": "WGS 84 + EGM2008 height; geoid grid not installed"
+  },
+  {
+   "id": "pair-4979-4978",
+   "group": "pair",
+   "src": "EPSG:4979",
+   "dst": "EPSG:4978",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0,
+    100.0
+   ],
+   "layers": [
+    "E5"
+   ],
+   "note": "geographic 3D to geocentric"
+  },
+  {
+   "id": "pair-2056-21781",
+   "group": "pair",
+   "src": "EPSG:2056",
+   "dst": "EPSG:21781",
+   "form": "authority",
+   "point_lonlat": [
+    7.44,
+    46.95
+   ],
+   "layers": [
+    "E3",
+    "E4"
+   ],
+   "note": "LV95 to LV03; best op is a grid (CHENyx06), not installed"
+  },
+  {
+   "id": "pair-mars-iau",
+   "group": "pair",
+   "src": "IAU_2015:49900",
+   "dst": "IAU_2015:49910",
+   "form": "authority",
+   "point": [
+    137.4,
+    -4.6
+   ],
+   "layers": [
+    "I1"
+   ],
+   "note": "Mars sphere ocentric to equirectangular"
+  },
+  {
+   "id": "form-2056-proj-bare",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:2056:PROJ",
+   "form": "proj",
+   "point": [
+    7.44,
+    46.95
+   ],
+   "compare_to": "seed-2056",
+   "layers": [
+    "I2",
+    "E2"
+   ],
+   "note": "bare export drops the datum relationship; precedent 164 m"
+  },
+  {
+   "id": "form-2056-proj-bound",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:2056:PROJ-BOUND",
+   "form": "proj",
+   "point": [
+    7.44,
+    46.95
+   ],
+   "compare_to": "seed-2056",
+   "layers": [
+    "I2",
+    "E2"
+   ],
+   "note": "bound export carries +towgs84; precedent exact"
+  },
+  {
+   "id": "form-2056-wkt1-esri",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:2056:WKT1_ESRI",
+   "form": "wkt1-esri",
+   "point": [
+    7.44,
+    46.95
+   ],
+   "compare_to": "seed-2056",
+   "layers": [
+    "I3",
+    "E2"
+   ]
+  },
+  {
+   "id": "form-27700-epsg",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:27700",
+   "form": "authority",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I1",
+    "E2"
+   ],
+   "note": "OSGB36 / British National Grid; best op is a grid (OSTN15), not installed"
+  },
+  {
+   "id": "form-27700-proj-bare",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:PROJ",
+   "form": "proj",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I2",
+    "E2"
+   ],
+   "note": "PROJ export without bound: no datum relationship",
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-27700-proj-bound",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:PROJ-BOUND",
+   "form": "proj",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I2",
+    "E2"
+   ],
+   "note": "bound export: PROJ finds no single Helmert for OSGB36 (several candidates, best is a grid), so no +towgs84 is added",
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-27700-wkt1-gdal",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:WKT1_GDAL",
+   "form": "wkt1-gdal",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I3"
+   ],
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-27700-wkt1-gdal-bound",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:WKT1_GDAL-BOUND",
+   "form": "wkt1-gdal",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I3",
+    "E2"
+   ],
+   "note": "WKT1 with TOWGS84",
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-27700-wkt1-esri",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:WKT1_ESRI",
+   "form": "wkt1-esri",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I3"
+   ],
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-27700-wkt2-2015",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:WKT2_2015",
+   "form": "wkt2",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I3"
+   ],
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-27700-wkt2-2019",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:WKT2_2019",
+   "form": "wkt2",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I3"
+   ],
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-27700-projjson",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:27700:PROJJSON",
+   "form": "projjson",
+   "point": [
+    -1.5,
+    52.5
+   ],
+   "layers": [
+    "I4"
+   ],
+   "compare_to": "form-27700-epsg"
+  },
+  {
+   "id": "form-2264-ftus",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:2264",
+   "form": "authority",
+   "point": [
+    -79.0,
+    35.5
+   ],
+   "layers": [
+    "I1",
+    "I6"
+   ],
+   "note": "NAD83 / North Carolina (ftUS); output in US survey feet"
+  },
+  {
+   "id": "form-2264-proj-bound",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:2264:PROJ-BOUND",
+   "form": "proj",
+   "point": [
+    -79.0,
+    35.5
+   ],
+   "layers": [
+    "I2",
+    "I6"
+   ],
+   "note": "+units=us-ft",
+   "compare_to": "form-2264-ftus"
+  },
+  {
+   "id": "form-3857-proj-export",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:3857:PROJ",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "compare_to": "seed-3857",
+   "layers": [
+    "I2"
+   ],
+   "note": "PROJ's own export: +a=+b sphere, +nadgrids=@null +wktext"
+  },
+  {
+   "id": "form-4326-wkt2-2019",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "@export:EPSG:4326:WKT2_2019",
+   "form": "wkt2",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "compare_to": "seed-4326",
+   "layers": [
+    "I3",
+    "I6"
+   ],
+   "note": "WGS 84 as WKT2:2019 with a datum ENSEMBLE and lat/lon axis order"
+  },
+  {
+   "id": "form-3785-deprecated",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:3785",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1"
+   ],
+   "note": "deprecated Popular Visualisation CRS",
+   "compare_to": "seed-3857"
+  },
+  {
+   "id": "form-crs84-from-4326",
+   "group": "form",
+   "src": "EPSG:4326",
+   "dst": "OGC:CRS84",
+   "form": "authority",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I1",
+    "I6"
+   ],
+   "note": "pure axis-order operation"
+  },
+  {
+   "id": "form-unknown-param",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "+proj=merc +datum=WGS84 +foo=bar +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I2",
+    "E8"
+   ],
+   "note": "unknown parameter +foo"
+  },
+  {
+   "id": "form-unknown-method",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "+proj=nosuchproj +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I2",
+    "E8"
+   ],
+   "note": "unsupported method"
+  },
+  {
+   "id": "form-invalid-param",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "+proj=merc +lat_ts=95 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "I2",
+    "E8"
+   ],
+   "note": "invalid parameter value"
+  },
+  {
+   "id": "form-grads",
+   "group": "form",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:4807",
+   "form": "authority",
+   "point": [
+    2.35,
+    48.85
+   ],
+   "layers": [
+    "I6",
+    "E2"
+   ],
+   "note": "NTF (Paris), geographic in grads with Paris meridian"
+  },
+  {
+   "id": "method-tmerc-far",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=tmerc +lat_0=0 +lon_0=147 +k=0.9996 +x_0=500000 +y_0=10000000 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    165.0,
+    -42.0
+   ],
+   "layers": [
+    "E1",
+    "E6"
+   ],
+   "note": "18 degrees from the central meridian; algorithm choice shows"
+  },
+  {
+   "id": "method-geos",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=geos +h=35785831 +lon_0=140.7 +sweep=y +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-omerc-2pt",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=omerc +lat_1=-40 +lon_1=140 +lat_2=-44 +lon_2=150 +k=1 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-omerc-alpha",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=omerc +lat_0=-42 +lonc=147 +alpha=30 +gamma=30 +k=1 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    148.0,
+    -41.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-krovak",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=krovak +lat_0=49.5 +lon_0=24.8333333333333 +alpha=30.2881397527778 +k=0.9999 +x_0=0 +y_0=0 +ellps=bessel +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    15.0,
+    50.0
+   ],
+   "layers": [
+    "E1"
+   ],
+   "note": "no datum shift on purpose (ballpark in PROJ)"
+  },
+  {
+   "id": "method-nzmg",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=nzmg +lat_0=-41 +lon_0=173 +x_0=2510000 +y_0=6023150 +ellps=intl +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    174.8,
+    -41.3
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-eck4",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=eck4 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-natearth",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=natearth +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-hammer",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=hammer +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-qsc",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=qsc +lat_0=0 +lon_0=0 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    10.0,
+    10.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-healpix",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=healpix +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-rhealpix",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=rhealpix +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-isea",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=isea +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-eqearth",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=eqearth +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-moll",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=moll +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-robin",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=robin +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-sinu",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=sinu +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-laea",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=laea +lat_0=-42 +lon_0=147 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    150.0,
+    -40.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-aeqd",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=aeqd +lat_0=-42 +lon_0=147 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    150.0,
+    -40.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-ortho",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=ortho +lat_0=-42 +lon_0=147 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    150.0,
+    -40.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-stere",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=stere +lat_0=-90 +lat_ts=-71 +lon_0=0 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    70.0,
+    -72.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-sterea",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=sterea +lat_0=52.1561605555556 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    5.0,
+    52.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-lcc",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=lcc +lat_0=-32 +lon_0=135 +lat_1=-18 +lat_2=-36 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-aea",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=aea +lat_0=0 +lon_0=132 +lat_1=-18 +lat_2=-36 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-somerc",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=somerc +lat_0=46.9524055555556 +lon_0=7.43958333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    7.44,
+    46.95
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-cass",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=cass +lat_0=-42 +lon_0=147 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    148.0,
+    -41.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-poly",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=poly +lat_0=0 +lon_0=147 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    148.0,
+    -41.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-cea",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=cea +lat_ts=30 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-eqc",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=eqc +lat_ts=-42 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-eqdc",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=eqdc +lat_1=-18 +lat_2=-36 +lon_0=132 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-merc",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "+proj=merc +lat_ts=-42 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    147.0,
+    -42.0
+   ],
+   "layers": [
+    "E1"
+   ]
+  },
+  {
+   "id": "method-ups-32761",
+   "group": "method",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:32761",
+   "form": "authority",
+   "point": [
+    70.0,
+    -85.0
+   ],
+   "layers": [
+    "E1",
+    "E6"
+   ],
+   "note": "UPS South: Polar Stereographic variant A, south pole"
+  },
+  {
+   "id": "edge-3031-pole",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:3031",
+   "form": "authority",
+   "point": [
+    0.0,
+    -89.9999
+   ],
+   "layers": [
+    "E6"
+   ],
+   "note": "near pole"
+  },
+  {
+   "id": "edge-3857-85",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:3857",
+   "form": "authority",
+   "point": [
+    180.0,
+    85.0
+   ],
+   "layers": [
+    "E6"
+   ],
+   "note": "seam and high latitude"
+  },
+  {
+   "id": "edge-8857-seam-e",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:8857",
+   "form": "authority",
+   "point": [
+    180.0,
+    -42.0
+   ],
+   "layers": [
+    "E6"
+   ],
+   "note": "on the seam, east"
+  },
+  {
+   "id": "edge-8857-seam-w",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:8857",
+   "form": "authority",
+   "point": [
+    -180.0,
+    -42.0
+   ],
+   "layers": [
+    "E6"
+   ],
+   "note": "on the seam, west"
+  },
+  {
+   "id": "edge-32755-far",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:32755",
+   "form": "authority",
+   "point": [
+    175.0,
+    -42.0
+   ],
+   "layers": [
+    "E6"
+   ],
+   "note": "28 degrees east of the UTM central meridian"
+  },
+  {
+   "id": "edge-ortho-back",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "+proj=ortho +lat_0=-42 +lon_0=147 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    -33.0,
+    42.0
+   ],
+   "layers": [
+    "E6",
+    "E8"
+   ],
+   "note": "antipode: not visible, should fail"
+  },
+  {
+   "id": "edge-tpers-back",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "+proj=tpers +lat_0=-42 +lon_0=147 +h=3000000 +tilt=20 +azi=30 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    -33.0,
+    42.0
+   ],
+   "layers": [
+    "E6",
+    "E8"
+   ],
+   "note": "antipode: not visible, should fail"
+  },
+  {
+   "id": "edge-laea-antipode",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "+proj=laea +lat_0=-90 +lon_0=0 +datum=WGS84 +units=m +no_defs",
+   "form": "proj",
+   "point": [
+    0.0,
+    89.9999
+   ],
+   "layers": [
+    "E6"
+   ],
+   "note": "near the antipode of the centre"
+  },
+  {
+   "id": "edge-merc-pole",
+   "group": "edge",
+   "src": "OGC:CRS84",
+   "dst": "EPSG:3857",
+   "form": "authority",
+   "point": [
+    0.0,
+    90.0
+   ],
+   "layers": [
+    "E8"
+   ],
+   "note": "pole in Mercator: infinite"
+  }
+ ]
+}

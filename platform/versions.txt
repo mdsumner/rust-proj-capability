@@ -1,0 +1,10 @@
+proj 0.31.0 2025-08-29 MIT OR Apache-2.0 1.85
+proj-sys 0.27.0 2025-08-29 MIT OR Apache-2.0 1.85
+proj4rs 0.2.1 2026-10-09 MIT OR Apache-2.0 None
+proj4wkt 0.1.1 2025-09-19 MIT OR Apache-2.0 1.66
+crs-definitions 0.6.0 2026-09-16 CC0-1.0 None
+geodesy 0.15.0 2026-03-03 MIT OR Apache-2.0 1.87
+miniproj 0.10.4 2026-01-07 non-standard None
+proj-core 0.11.0 2026-08-11 MIT OR Apache-2.0 1.85
+proj-wkt 0.11.0 2026-08-11 MIT OR Apache-2.0 1.85
+wbprojection 0.3.3 2026-08-04 MIT OR Apache-2.0 None

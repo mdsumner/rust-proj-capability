@@ -1,0 +1,6 @@
+    Finished `release` profile [optimized] target(s) in 0.69s
+--- probe proj::Proj
+error[E0277]: `*mut PJconsts` cannot be sent between threads safely
+    |              ^^^^^^^^^^ `*mut PJconsts` cannot be sent between threads safely
+error[E0277]: `*mut pj_ctx` cannot be sent between threads safely
+    |              ^^^^^^^^^^ `*mut pj_ctx` cannot be sent between threads safely

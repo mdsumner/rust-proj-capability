@@ -1,0 +1,15 @@
+none 554816 bytes, clean build 5s
+c-proj 581688 bytes, clean build 5s
+c-proj4rs 816328 bytes, clean build 6s
+c-crsdefs 6255704 bytes, clean build 5s
+c-geodesy 1142568 bytes, clean build 6s
+c-miniproj 1326904 bytes, clean build 13s
+c-projcore 2742984 bytes, clean build 7s
+c-wbprojection 2811496 bytes, clean build 16s
+/usr/local/lib/libproj.so.25.9.9.0 4861920
+/work/.proj-nogrids/proj.db 10551296
+819M	/usr/local/share/proj
+	libsqlite3.so.0 => /lib/x86_64-linux-gnu/libsqlite3.so.0 (0x000073b3e47ff000)
+	libtiff.so.6 => /lib/x86_64-linux-gnu/libtiff.so.6 (0x000073b3e4772000)
+	libcurl.so.4 => /lib/x86_64-linux-gnu/libcurl.so.4 (0x000073b3e46b1000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x000073b3e4433000)
