@@ -1,0 +1,96 @@
+# Nightly: PROJ master as the reference, the projections suite through every
+# engine (proj4rs main followed, released engines pinned), the PROJ change
+# watch, and the regenerated pages committed back to main. The CRS suite is
+# not rerun here: it is pinned to the PROJ 9.9.0 study (regenerate.sh).
+name: benchmark
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+    inputs:
+      proj_ref:
+        description: "PROJ git ref for the reference (branch, tag or sha)"
+        default: master
+      proj4rs_ref:
+        description: "proj4rs git ref for proj4rs-wasm"
+        default: main
+      commit:
+        description: "commit regenerated results to the branch"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: benchmark
+  cancel-in-progress: false
+
+jobs:
+  projections:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PROJ_REF: ${{ inputs.proj_ref || 'master' }}
+      PROJ4RS_REF: ${{ inputs.proj4rs_ref || 'main' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: wasm-pack
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: engines/rust-projections
+
+      - name: Build PROJ and pyproj from ${{ env.PROJ_REF }}
+        run: |
+          sudo apt-get update -q && sudo apt-get install -yq sqlite3 libsqlite3-dev
+          oracle/build-proj.sh "$PROJ_REF"
+          echo "LD_LIBRARY_PATH=$PWD/oracle/.proj/install/lib" >> "$GITHUB_ENV"
+          echo "PROJ_DATA=$PWD/oracle/.proj/install/share/proj" >> "$GITHUB_ENV"
+          echo "PROJ_GIT_SHA=$(cat oracle/.proj/REV)" >> "$GITHUB_ENV"
+
+      - name: PROJ reference
+        run: oracle/.proj/venv/bin/python oracle/projections.py
+
+      - name: Follow proj4rs main
+        run: |
+          cargo update --manifest-path engines/rust-projections/Cargo.toml -p proj4rs-main
+          engines/js/build-proj4rs-wasm.sh "$PROJ4RS_REF"
+
+      - name: Engines and pages
+        run: ./run-projections.sh
+
+      - name: PROJ change watch
+        run: |
+          tracker/checkout.sh
+          python3 tracker/watch.py --proj tracker/.cache/PROJ --proj4rs tracker/.cache/proj4rs --since "180 days ago"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: engine-output
+          path: results/projections/engines-*.jsonl
+
+      - name: Commit regenerated results
+        if: github.event_name == 'schedule' || inputs.commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898499+github-actions[bot]@users.noreply.github.com"
+          git add suites/projections/reference.json results/projections results/tracker engines/rust-projections/Cargo.lock
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -q -m "Nightly benchmark: PROJ ${PROJ_GIT_SHA:0:8}, proj4rs $(cut -d' ' -f1 engines/js/proj4rs-pkg/REV)"
+            git push
+          fi
