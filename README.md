@@ -25,8 +25,8 @@ projections and two probes of recent PROJ changes):
 
 - **proj4rs main matches PROJ to the millimetre on 36 of the 40 setups it
   supports**, natively and as wasm. Its latest release on crates.io (0.2.1)
-  supports 29 of them: ortho, gnom, omerc, tpers, cass, eqdc, robin, eqearth,
-  poly and sinu are on main only.
+  supports 29 of them: ortho, gnom, omerc, tpers, nsper, cass, eqdc, robin,
+  eqearth, poly and sinu are on main only.
 - **The watch found a PROJ fix that proj4rs has not followed.** PROJ
   [ca23885d](https://github.com/OSGeo/PROJ/commit/ca23885da621269333eb00c5010e2ff2ac3423f0)
   (2026-02) made spherical tmerc stable at lat = lat_0 and decides the

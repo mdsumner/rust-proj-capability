@@ -2,9 +2,19 @@
 # engine (proj4rs main followed, released engines pinned), the PROJ change
 # watch, and the regenerated pages committed back to main. The CRS suite is
 # not rerun here: it is pinned to the PROJ 9.9.0 study (regenerate.sh).
+# On a pull request the same run checks the pipeline and commits nothing.
 name: benchmark
 
 on:
+  pull_request:
+    paths:
+      - .github/workflows/benchmark.yml
+      - oracle/**
+      - engines/**
+      - report/projections.py
+      - tracker/**
+      - suites/projections/projections.json
+      - run-projections.sh
   schedule:
     - cron: "17 3 * * *"
   workflow_dispatch:
