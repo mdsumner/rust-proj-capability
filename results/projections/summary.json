@@ -1,0 +1,6894 @@
+{
+ "environment": {
+  "schema_version": 1,
+  "generated": "2026-10-21T21:31:30+00:00",
+  "proj_version": "9.10.0",
+  "proj_git_sha": "5fa31c29f0a806568ed7bc76c1a557604db4a804",
+  "pyproj_version": "3.8.0",
+  "defaults": {
+   "lon": [
+    -180,
+    180
+   ],
+   "lat": [
+    -90,
+    90
+   ],
+   "step": 30
+  }
+ },
+ "engines": [
+  "proj4rs",
+  "proj4rs-main",
+  "proj4rs-wasm",
+  "proj-core",
+  "wbprojection",
+  "geodesy",
+  "proj4js",
+  "math.gl"
+ ],
+ "proj_check": {
+  "merc": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -140,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "webmerc": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -140,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "tmerc": {
+   "max_deg": 2.670767062187191e-14,
+   "at": [
+    177,
+    -20
+   ],
+   "inverse_failed": 0
+  },
+  "etmerc": {
+   "max_deg": 2.670767062187191e-14,
+   "at": [
+    177,
+    -20
+   ],
+   "inverse_failed": 0
+  },
+  "utm": {
+   "max_deg": 2.8492711402216615e-14,
+   "at": [
+    132,
+    -10
+   ],
+   "inverse_failed": 0
+  },
+  "lcc": {
+   "max_deg": 2.1316282072803006e-14,
+   "at": [
+    -80,
+    50
+   ],
+   "inverse_failed": 0
+  },
+  "aea": {
+   "max_deg": 7.105427357601002e-14,
+   "at": [
+    -80,
+    70
+   ],
+   "inverse_failed": 0
+  },
+  "leac": {
+   "max_deg": 9.237055564881302e-14,
+   "at": [
+    -20,
+    -50
+   ],
+   "inverse_failed": 0
+  },
+  "stere-polar": {
+   "max_deg": 1.1290524071227992e-11,
+   "at": [
+    -170,
+    -50
+   ],
+   "inverse_failed": 0
+  },
+  "stere-oblique": {
+   "max_deg": 4.341905800801771e-12,
+   "at": [
+    187,
+    -55
+   ],
+   "inverse_failed": 0
+  },
+  "ups": {
+   "max_deg": 1.1297629498585593e-11,
+   "at": [
+    -140,
+    50
+   ],
+   "inverse_failed": 0
+  },
+  "sterea": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -10,
+    65
+   ],
+   "inverse_failed": 0
+  },
+  "somerc": {
+   "max_deg": 4.263256414560601e-14,
+   "at": [
+    -10,
+    45
+   ],
+   "inverse_failed": 0
+  },
+  "laea": {
+   "max_deg": 5.705727144080351e-14,
+   "at": [
+    -30,
+    80
+   ],
+   "inverse_failed": 0
+  },
+  "laea-polar": {
+   "max_deg": 1.4210854715202004e-14,
+   "at": [
+    -180,
+    -80
+   ],
+   "inverse_failed": 0
+  },
+  "moll": {
+   "max_deg": 5.684341886080802e-14,
+   "at": [
+    -120,
+    0
+   ],
+   "inverse_failed": 8
+  },
+  "wag4": {
+   "max_deg": 8.537736420066722e-07,
+   "at": [
+    -180,
+    -90
+   ],
+   "inverse_failed": 10
+  },
+  "wag5": {
+   "max_deg": 2.9296427510542326e-14,
+   "at": [
+    -120,
+    -60
+   ],
+   "inverse_failed": 14
+  },
+  "geos": {
+   "max_deg": 3.6940459865687664e-11,
+   "at": [
+    155,
+    -81
+   ],
+   "inverse_failed": 0
+  },
+  "eqc": {
+   "max_deg": 5.684341886080802e-14,
+   "at": [
+    -120,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "aeqd": {
+   "max_deg": 7.944109290391275e-14,
+   "at": [
+    -60,
+    60
+   ],
+   "inverse_failed": 0
+  },
+  "aeqd-polar": {
+   "max_deg": 1.7763568394002505e-14,
+   "at": [
+    -180,
+    15
+   ],
+   "inverse_failed": 0
+  },
+  "krovak": {
+   "max_deg": 2.408602248559942e-13,
+   "at": [
+    7,
+    56
+   ],
+   "inverse_failed": 0
+  },
+  "mill": {
+   "max_deg": 2.1316282072803006e-14,
+   "at": [
+    -180,
+    60
+   ],
+   "inverse_failed": 0
+  },
+  "cea": {
+   "max_deg": 5.684341886080802e-14,
+   "at": [
+    -120,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "poly": {
+   "max_deg": 3.081306261044608e-13,
+   "at": [
+    -40,
+    80
+   ],
+   "inverse_failed": 0
+  },
+  "ortho": {
+   "max_deg": 5.317689681893302e-13,
+   "at": [
+    30,
+    -30
+   ],
+   "inverse_failed": 11
+  },
+  "gnom": {
+   "max_deg": 2.1316282072803006e-14,
+   "at": [
+    -180,
+    -60
+   ],
+   "inverse_failed": 0
+  },
+  "sinu": {
+   "max_deg": 2.486899575160351e-14,
+   "at": [
+    -180,
+    -30
+   ],
+   "inverse_failed": 0
+  },
+  "omerc": {
+   "max_deg": 2.6201263381153694e-14,
+   "at": [
+    95,
+    4
+   ],
+   "inverse_failed": 0
+  },
+  "tpers": {
+   "max_deg": 1.2081734045541614e-12,
+   "at": [
+    90,
+    -30
+   ],
+   "inverse_failed": 0
+  },
+  "nsper": {
+   "max_deg": 7.140866117879974e-14,
+   "at": [
+    -30,
+    60
+   ],
+   "inverse_failed": 0
+  },
+  "cass": {
+   "max_deg": 2.8547542328592226e-11,
+   "at": [
+    132,
+    -35
+   ],
+   "inverse_failed": 0
+  },
+  "eqdc": {
+   "max_deg": 2.1772292573103244e-14,
+   "at": [
+    -150,
+    40
+   ],
+   "inverse_failed": 0
+  },
+  "robin": {
+   "max_deg": 4.935587579328813e-14,
+   "at": [
+    -120,
+    -30
+   ],
+   "inverse_failed": 4
+  },
+  "eqearth": {
+   "max_deg": 6.583761162914925e-06,
+   "at": [
+    -180,
+    -90
+   ],
+   "inverse_failed": 0
+  },
+  "tmerc-sphere": {
+   "max_deg": 2.1316282072803006e-14,
+   "at": [
+    177,
+    -60
+   ],
+   "inverse_failed": 0
+  },
+  "aeqd-far": {
+   "max_deg": 1.2079226507921706e-13,
+   "at": [
+    312,
+    45
+   ],
+   "inverse_failed": 0
+  },
+  "wintri": {
+   "max_deg": 2.6822400070865448e-14,
+   "at": [
+    -60,
+    -30
+   ],
+   "inverse_failed": 0
+  },
+  "aitoff": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -180,
+    -30
+   ],
+   "inverse_failed": 0
+  },
+  "hammer": {
+   "max_deg": 4.935587579328813e-14,
+   "at": [
+    -120,
+    -30
+   ],
+   "inverse_failed": 36
+  },
+  "natearth": {
+   "max_deg": 1.4210854715202004e-14,
+   "at": [
+    -180,
+    -90
+   ],
+   "inverse_failed": 0
+  },
+  "natearth2": {
+   "max_deg": 2.3021584638627246e-12,
+   "at": [
+    -180,
+    -90
+   ],
+   "inverse_failed": 0
+  },
+  "eck4": {
+   "max_deg": 1.3145040611561853e-13,
+   "at": [
+    -180,
+    -30
+   ],
+   "inverse_failed": 0
+  },
+  "eck6": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -180,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "gall": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -180,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "vandg": {
+   "max_deg": 4.227729277772596e-13,
+   "at": [
+    -30,
+    -30
+   ],
+   "inverse_failed": 0
+  },
+  "bonne": {
+   "max_deg": 6.355287432313019e-14,
+   "at": [
+    -30,
+    -60
+   ],
+   "inverse_failed": 0
+  },
+  "qsc": {
+   "max_deg": 6.998034366600412e-14,
+   "at": [
+    45,
+    -45
+   ],
+   "inverse_failed": 0
+  },
+  "healpix": {
+   "max_deg": 2.1316282072803006e-14,
+   "at": [
+    -180,
+    -60
+   ],
+   "inverse_failed": 0
+  },
+  "igh": {
+   "max_deg": 4.935587579328813e-14,
+   "at": [
+    -120,
+    -30
+   ],
+   "inverse_failed": 15
+  },
+  "times": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -150,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "eqc-sphere": {
+   "max_deg": 2.842170943040401e-14,
+   "at": [
+    -180,
+    0
+   ],
+   "inverse_failed": 0
+  },
+  "merc-sphere": {
+   "max_deg": 7.105427357601002e-15,
+   "at": [
+    -180,
+    -60
+   ],
+   "inverse_failed": 0
+  }
+ },
+ "results": [
+  {
+   "projection": "merc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    -180,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.3429257705865894e-12,
+   "inv_worst_at": [
+    -180,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    -180,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.3429257705865894e-12,
+   "inv_worst_at": [
+    -180,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    -180,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.3429257705865894e-12,
+   "inv_worst_at": [
+    -180,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 5.268356063861754e-09,
+   "fwd_worst_at": [
+    120,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.1776437161565096e-14,
+   "inv_worst_at": [
+    -140,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.8601965199239209e-13,
+   "inv_worst_at": [
+    -180,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    -80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.321685888750201e-12,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -140,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -180,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -180,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -180,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: webmerc"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 5.587935447692871e-09,
+   "fwd_worst_at": [
+    -180,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.046992952561771e-14,
+   "inv_worst_at": [
+    -180,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 5.587935447692871e-09,
+   "fwd_worst_at": [
+    -180,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=webmerc +ellps=WGS84"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: webmerc"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    127,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_worst_at": [
+    177,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    127,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_worst_at": [
+    177,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.4725502860585132e-09,
+   "fwd_worst_at": [
+    127,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6942929397709078e-14,
+   "inv_worst_at": [
+    177,
+    -20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    117,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    127,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 949.3631329773925,
+   "fwd_worst_at": [
+    177,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.05171850247816229,
+   "inv_worst_at": [
+    177,
+    -50
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    137,
+    -80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.003810020367853e-14,
+   "inv_worst_at": [
+    167,
+    -70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    127,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6942929397709078e-14,
+   "inv_worst_at": [
+    177,
+    -20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.3969838619232178e-09,
+   "fwd_worst_at": [
+    157,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6942929397709078e-14,
+   "inv_worst_at": [
+    177,
+    -20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    127,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_worst_at": [
+    177,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    127,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_worst_at": [
+    177,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.4725502860585132e-09,
+   "fwd_worst_at": [
+    127,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6942929397709078e-14,
+   "inv_worst_at": [
+    177,
+    -20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: etmerc"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=etmerc is not supported by wbprojection"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'etmerc' not found: etmerc ellps=WGS84 lon_0=147"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    127,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6942929397709078e-14,
+   "inv_worst_at": [
+    177,
+    -20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 1.3969838619232178e-09,
+   "fwd_worst_at": [
+    157,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6942929397709078e-14,
+   "inv_worst_at": [
+    177,
+    -20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.0477378964424133e-09,
+   "fwd_worst_at": [
+    142,
+    -25
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.8046230657308168e-14,
+   "inv_worst_at": [
+    132,
+    -10
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.0477378964424133e-09,
+   "fwd_worst_at": [
+    142,
+    -25
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.8046230657308168e-14,
+   "inv_worst_at": [
+    132,
+    -10
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.9893058914033534e-09,
+   "fwd_worst_at": [
+    162,
+    -35
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.8046230657308168e-14,
+   "inv_worst_at": [
+    132,
+    -10
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    132,
+    -5
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.2961132475068304e-14,
+   "inv_worst_at": [
+    147,
+    -5
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 6.9370707012712955,
+   "fwd_worst_at": [
+    162,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.00028593427930923135,
+   "inv_worst_at": [
+    162,
+    -55
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "utm",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.958120942115784e-09,
+   "fwd_worst_at": [
+    132,
+    -5
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.342456924692705e-14,
+   "inv_worst_at": [
+    147,
+    -5
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.958120942115784e-09,
+   "fwd_worst_at": [
+    132,
+    -10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    132,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 4.423782229423523e-09,
+   "fwd_worst_at": [
+    132,
+    -10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    132,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 3.166839133187999e-09,
+   "fwd_worst_at": [
+    -70,
+    20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1304734925943194e-11,
+   "inv_worst_at": [
+    -140,
+    50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 3.166839133187999e-09,
+   "fwd_worst_at": [
+    -70,
+    20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1304734925943194e-11,
+   "inv_worst_at": [
+    -140,
+    50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 3.166839133187999e-09,
+   "fwd_worst_at": [
+    -70,
+    20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1304734925943194e-11,
+   "inv_worst_at": [
+    -140,
+    50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "operation selection failed: no compatible registry operation found for source EPSG:0 target EPSG:0"
+  },
+  {
+   "projection": "lcc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 4.179618105063271e-09,
+   "fwd_worst_at": [
+    -140,
+    20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.8474111129762605e-13,
+   "inv_worst_at": [
+    -60,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 9.056483553152868e-09,
+   "fwd_worst_at": [
+    -140,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.545262049114822e-14,
+   "inv_worst_at": [
+    -140,
+    20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 3.3579312967732447e-09,
+   "fwd_worst_at": [
+    -140,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1297629498585593e-11,
+   "inv_worst_at": [
+    -140,
+    50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 3.3579312967732447e-09,
+   "fwd_worst_at": [
+    -140,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1297629498585593e-11,
+   "inv_worst_at": [
+    -140,
+    50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aea",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 2.9865479558889717e-09,
+   "fwd_worst_at": [
+    -50,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.766860640491654e-14,
+   "inv_worst_at": [
+    -50,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aea",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 2.9451005721170265e-09,
+   "fwd_worst_at": [
+    -140,
+    60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -80,
+    50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aea",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 2.9451005721170265e-09,
+   "fwd_worst_at": [
+    -140,
+    60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -140,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aea",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "operation selection failed: no compatible registry operation found for source EPSG:0 target EPSG:0"
+  },
+  {
+   "projection": "aea",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 9.365647008395432e-09,
+   "fwd_worst_at": [
+    -100,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 8.903074960742908e-14,
+   "inv_worst_at": [
+    -140,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aea",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'aea' not found: aea ellps=GRS80 lat_0=23 lon_0=-96 lat_1=29.5 lat_2=45.5"
+  },
+  {
+   "projection": "aea",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 70,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 70,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "aea",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 3.964962988609076e-09,
+   "fwd_worst_at": [
+    -90,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.684341886080802e-14,
+   "inv_worst_at": [
+    -140,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "leac",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 143,
+   "fwd_max_m": 6.24750175746099e-09,
+   "fwd_worst_at": [
+    -40,
+    40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1368683772161603e-13,
+   "inv_worst_at": [
+    -40,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "leac",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 143,
+   "fwd_max_m": 3.026798367500305e-09,
+   "fwd_worst_at": [
+    -40,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.0658141036401503e-13,
+   "inv_worst_at": [
+    10,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "leac",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 143,
+   "fwd_max_m": 3.026798367500305e-09,
+   "fwd_worst_at": [
+    -40,
+    -20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.0658141036401503e-13,
+   "inv_worst_at": [
+    10,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "leac",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: leac"
+  },
+  {
+   "projection": "leac",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=leac is not supported by wbprojection"
+  },
+  {
+   "projection": "leac",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'leac' not found: leac ellps=WGS84 lat_1=-20 lon_0=20"
+  },
+  {
+   "projection": "leac",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=leac +ellps=WGS84 +lat_1=-20 +lon_0=20"
+  },
+  {
+   "projection": "leac",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: leac"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 1.3170890159654386e-09,
+   "fwd_worst_at": [
+    -130,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -180,
+    -70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 1.3170890159654386e-09,
+   "fwd_worst_at": [
+    -130,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -180,
+    -70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 1.3170890159654386e-09,
+   "fwd_worst_at": [
+    -130,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.290239773086988e-14,
+   "inv_worst_at": [
+    -120,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 3.3579312967732447e-09,
+   "fwd_worst_at": [
+    70,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1290538851791873e-11,
+   "inv_worst_at": [
+    70,
+    -50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 3.390065342784169e-09,
+   "fwd_worst_at": [
+    -150,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1254996934439987e-11,
+   "inv_worst_at": [
+    -170,
+    -50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'stere' not found: stere ellps=WGS84 lat_0=-90 lat_ts=-71"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 9.599853366654507e-10,
+   "fwd_worst_at": [
+    -160,
+    -70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.17722925731033e-14,
+   "inv_worst_at": [
+    -120,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 9.599853366654507e-10,
+   "fwd_worst_at": [
+    -160,
+    -70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.17722925731033e-14,
+   "inv_worst_at": [
+    -120,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 72,
+   "fwd_max_m": 6.667254987767131e-09,
+   "fwd_worst_at": [
+    187,
+    -15
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    167,
+    -25
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 72,
+   "fwd_max_m": 6.667254987767131e-09,
+   "fwd_worst_at": [
+    187,
+    -15
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    167,
+    -25
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 72,
+   "fwd_max_m": 6.667254987767131e-09,
+   "fwd_worst_at": [
+    187,
+    -15
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.721426216927845e-14,
+   "inv_worst_at": [
+    187,
+    -65
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: only polar stereographic PROJ strings are supported"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 72,
+   "fwd_max_m": 9123.865461695925,
+   "fwd_worst_at": [
+    187,
+    -5
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0669512631884653,
+   "inv_worst_at": [
+    107,
+    -5
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'stere' not found: stere ellps=WGS84 lat_0=-42 lon_0=147"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 72,
+   "fwd_max_m": 6.780130685568338e-09,
+   "fwd_worst_at": [
+    187,
+    -15
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.092368355609559e-14,
+   "inv_worst_at": [
+    187,
+    -5
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-oblique",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 72,
+   "fwd_max_m": 6.780130685568338e-09,
+   "fwd_worst_at": [
+    187,
+    -15
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.1291391322997224e-14,
+   "inv_worst_at": [
+    187,
+    -5
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "ups",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 185,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    120,
+    70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 9.720797132947316e-15,
+   "inv_worst_at": [
+    150,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "ups",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 185,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    120,
+    70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 9.720797132947316e-15,
+   "inv_worst_at": [
+    150,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "ups",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 185,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    120,
+    70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.421085471520258e-14,
+   "inv_worst_at": [
+    120,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "ups",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: ups"
+  },
+  {
+   "projection": "ups",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 185,
+   "fwd_max_m": 2856229.1310891407,
+   "fwd_worst_at": [
+    -50,
+    50
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 55.529998932470015,
+   "inv_worst_at": [
+    -50,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "ups",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'ups' not found: ups ellps=WGS84"
+  },
+  {
+   "projection": "ups",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=ups +ellps=WGS84"
+  },
+  {
+   "projection": "ups",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: ups"
+  },
+  {
+   "projection": "sterea",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 42,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    0,
+    65
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "sterea",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 42,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    0,
+    65
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "sterea",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 42,
+   "fwd_max_m": 3.4924596548080444e-10,
+   "fwd_worst_at": [
+    -10,
+    50
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -10,
+    65
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "sterea",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "operation selection failed: no compatible registry operation found for source EPSG:0 target EPSG:0"
+  },
+  {
+   "projection": "sterea",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 42,
+   "fwd_max_m": 4191.894246546212,
+   "fwd_worst_at": [
+    -10,
+    65
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.03682712238757348,
+   "inv_worst_at": [
+    -10,
+    65
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "sterea",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'sterea' not found: sterea ellps=bessel lat_0=52.15616055555555 lon_0=5.38763888888889 k_0=0.9999079 x_0=155000 y_0=463000"
+  },
+  {
+   "projection": "sterea",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 42,
+   "fwd_max_m": 3.839941346661803e-09,
+   "fwd_worst_at": [
+    -10,
+    45
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -10,
+    65
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "sterea",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 42,
+   "fwd_max_m": 3.839941346661803e-09,
+   "fwd_worst_at": [
+    -10,
+    45
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -10,
+    65
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "somerc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -10,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "somerc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -10,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "somerc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 4.448223201218713e-09,
+   "fwd_worst_at": [
+    0,
+    35
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1316282072803006e-14,
+   "inv_worst_at": [
+    -10,
+    35
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "somerc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: somerc"
+  },
+  {
+   "projection": "somerc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 2844383.232103564,
+   "fwd_worst_at": [
+    25,
+    35
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 25.006190498179595,
+   "inv_worst_at": [
+    25,
+    35
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "somerc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 3.4080075957589893e-09,
+   "fwd_worst_at": [
+    15,
+    40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.05166748786850661,
+   "inv_worst_at": [
+    0,
+    55
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "somerc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 4.21674230049244e-09,
+   "fwd_worst_at": [
+    15,
+    55
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.7937438201443001e-09,
+   "inv_worst_at": [
+    -5,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "somerc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 4.21674230049244e-09,
+   "fwd_worst_at": [
+    15,
+    55
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.7937509255716577e-09,
+   "inv_worst_at": [
+    -5,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "laea",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 9.374144551901796e-09,
+   "fwd_worst_at": [
+    -60,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4180486118700768e-08,
+   "inv_worst_at": [
+    -60,
+    20
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "laea",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -40,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "laea",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.291728651852862e-14,
+   "inv_worst_at": [
+    60,
+    80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "laea",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "operation selection failed: no compatible registry operation found for source EPSG:0 target EPSG:0"
+  },
+  {
+   "projection": "laea",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 15431.178688632324,
+   "fwd_worst_at": [
+    10,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.14844593359235958,
+   "inv_worst_at": [
+    10,
+    10
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "laea",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 8.385136306923398e-09,
+   "fwd_worst_at": [
+    0,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 8.526512829121202e-14,
+   "inv_worst_at": [
+    -30,
+    80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "laea",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 135,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 135,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "laea",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 2.4375044420924783e-08,
+   "fwd_worst_at": [
+    -60,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.9594232014769708e-08,
+   "inv_worst_at": [
+    -60,
+    20
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.19008329510688782,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.183381925784488e-08,
+   "inv_worst_at": [
+    -170,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -110,
+    -50
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.4613922385709617e-14,
+   "inv_worst_at": [
+    -120,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.19008329510688785,
+   "fwd_worst_at": [
+    -60,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1833833468725193e-08,
+   "inv_worst_at": [
+    160,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 8326.626129682596,
+   "fwd_worst_at": [
+    -50,
+    -50
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.07960988265523383,
+   "inv_worst_at": [
+    -110,
+    -50
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 17410424.99097681,
+   "fwd_worst_at": [
+    -180,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 166.55613580856598,
+   "inv_worst_at": [
+    -180,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 259,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 259,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "laea-polar",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 8.187233923243937e-09,
+   "fwd_worst_at": [
+    -150,
+    -80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1906152508345258e-08,
+   "inv_worst_at": [
+    -130,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "moll",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 112.53365218290911,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.552713678800501e-15,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "off",
+   "known": "differences only at the poles, where PROJ's own Newton iteration stops early (PROJ x = -112 m at lon -180 lat -90, proj4rs 0)."
+  },
+  {
+   "projection": "moll",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 112.53365218290911,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.552713678800501e-15,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "off",
+   "known": "differences only at the poles, where PROJ's own Newton iteration stops early (PROJ x = -112 m at lon -180 lat -90, proj4rs 0)."
+  },
+  {
+   "projection": "moll",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 112.53365218290911,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "off",
+   "known": "differences only at the poles, where PROJ's own Newton iteration stops early (PROJ x = -112 m at lon -180 lat -90, proj4rs 0)."
+  },
+  {
+   "projection": "moll",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "moll",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 112.53365218290911,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.684341886080802e-14,
+   "inv_worst_at": [
+    -150,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "moll",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'moll' not found: moll R=6371000"
+  },
+  {
+   "projection": "moll",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 112.53365218387536,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.7868728718895e-10,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "moll",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 112.53365218401255,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.7868728718895e-10,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "wag4",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.235164753674779e-22,
+   "inv_worst_at": [
+    -150,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "wag4",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.235164753674779e-22,
+   "inv_worst_at": [
+    -150,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "wag4",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 8.537736420066722e-07,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "wag4",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "wag4",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 8740207.947672721,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.922784477141924e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "wag4",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'wag4' not found: wag4 R=6371000"
+  },
+  {
+   "projection": "wag4",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=wag4 +R=6371000"
+  },
+  {
+   "projection": "wag4",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: wag4"
+  },
+  {
+   "projection": "wag5",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6822400070865448e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "wag5",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6822400070865448e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "wag5",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "wag5",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "wag5",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 8328967.34970023,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -150,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "wag5",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'wag5' not found: wag5 R=6371000"
+  },
+  {
+   "projection": "wag5",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=wag5 +R=6371000"
+  },
+  {
+   "projection": "wag5",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: wag5"
+  },
+  {
+   "projection": "geos",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 156,
+   "fwd_max_m": 1.9199706733309015e-09,
+   "fwd_worst_at": [
+    200,
+    69
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.8071791024192912e-14,
+   "inv_worst_at": [
+    170,
+    9
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "geos",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 156,
+   "fwd_max_m": 1.9199706733309015e-09,
+   "fwd_worst_at": [
+    200,
+    69
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.8071791024192912e-14,
+   "inv_worst_at": [
+    170,
+    9
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "geos",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 156,
+   "fwd_max_m": 2.3283064365386963e-09,
+   "fwd_worst_at": [
+    185,
+    -36
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.8071791024192912e-14,
+   "inv_worst_at": [
+    170,
+    9
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "geos",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: geos"
+  },
+  {
+   "projection": "geos",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 156,
+   "fwd_max_m": 4458638.443957183,
+   "fwd_worst_at": [
+    65,
+    -51
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 49,
+   "inv_max_deg": 31.58083979463349,
+   "inv_worst_at": [
+    140,
+    -6
+   ],
+   "inv_missing": 106,
+   "verdict": "off"
+  },
+  {
+   "projection": "geos",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'geos' not found: geos h=35785831 lon_0=140.7 ellps=WGS84"
+  },
+  {
+   "projection": "geos",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 156,
+   "fwd_max_m": 2.796391991308032e-09,
+   "fwd_worst_at": [
+    155,
+    -66
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.2831404307939826e-13,
+   "inv_worst_at": [
+    155,
+    54
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "geos",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 156,
+   "fwd_max_m": 2.796391991308032e-09,
+   "fwd_worst_at": [
+    155,
+    -66
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.215551793438731e-13,
+   "inv_worst_at": [
+    155,
+    54
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 29003.94523879182,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.23772339239822726,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off",
+   "known": "PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a."
+  },
+  {
+   "projection": "eqc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 29003.94523879182,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.23772339239822726,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off",
+   "known": "PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a."
+  },
+  {
+   "projection": "eqc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 29003.94523879182,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.23772339239822726,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off",
+   "known": "PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a."
+  },
+  {
+   "projection": "eqc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 29003.94523879182,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.23772339239824528,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "eqc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 29003.94523879182,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.23772339239823176,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "eqc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'eqc' not found: eqc ellps=WGS84 lat_ts=30"
+  },
+  {
+   "projection": "eqc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 20020725.179939814,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.23772339239822726,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "eqc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 29003.94523879182,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.23772339239824528,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.552713678800501e-14,
+   "inv_worst_at": [
+    -30,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.552713678800501e-14,
+   "inv_worst_at": [
+    -30,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 4.190951585769653e-09,
+   "fwd_worst_at": [
+    60,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 9.871175158657627e-14,
+   "inv_worst_at": [
+    -60,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: aeqd"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 125739.30118805602,
+   "fwd_worst_at": [
+    -60,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.4389554317514056,
+   "inv_worst_at": [
+    150,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'aeqd' not found: aeqd ellps=WGS84 lat_0=-42 lon_0=147"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.00021507565464456833,
+   "fwd_worst_at": [
+    -60,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.963857400822802e-10,
+   "inv_worst_at": [
+    0,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.00021507565464456833,
+   "fwd_worst_at": [
+    -60,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.963857400822802e-10,
+   "inv_worst_at": [
+    0,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 175,
+   "fwd_max_m": 3.915994958373564e-06,
+   "fwd_worst_at": [
+    -165,
+    75
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.5072389437118545e-11,
+   "inv_worst_at": [
+    -180,
+    75
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 175,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.2434497875801753e-14,
+   "inv_worst_at": [
+    -150,
+    15
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 175,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.7453263166110793e-14,
+   "inv_worst_at": [
+    -120,
+    15
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: aeqd"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 175,
+   "fwd_max_m": 16788.442081900357,
+   "fwd_worst_at": [
+    -150,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.15081314118725603,
+   "inv_worst_at": [
+    -105,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'aeqd' not found: aeqd ellps=WGS84 lat_0=90"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 175,
+   "fwd_max_m": 0.0006968411255438559,
+   "fwd_worst_at": [
+    -165,
+    75
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 6.243070060922732e-09,
+   "inv_worst_at": [
+    -120,
+    75
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-polar",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 175,
+   "fwd_max_m": 3.839941346661803e-09,
+   "fwd_worst_at": [
+    -165,
+    15
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.869523011090831e-14,
+   "inv_worst_at": [
+    -120,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "krovak",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    5,
+    44
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "krovak",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    5,
+    44
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "krovak",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.673872594986149e-08,
+   "fwd_worst_at": [
+    13,
+    54
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    11,
+    44
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "krovak",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: krovak"
+  },
+  {
+   "projection": "krovak",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1998022.0429333562,
+   "fwd_worst_at": [
+    29,
+    44
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 17.863795471458413,
+   "inv_worst_at": [
+    29,
+    44
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "krovak",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'krovak' not found: krovak ellps=bessel"
+  },
+  {
+   "projection": "krovak",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.8401723927978466e-08,
+   "fwd_worst_at": [
+    9,
+    54
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.263256414560601e-12,
+   "inv_worst_at": [
+    21,
+    44
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "krovak",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.9393548763318732e-08,
+   "fwd_worst_at": [
+    7,
+    56
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.263256414560601e-12,
+   "inv_worst_at": [
+    21,
+    44
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "mill",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -120,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "mill",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -120,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "mill",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -180,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "mill",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "mill",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 2.08250058582033e-09,
+   "fwd_worst_at": [
+    -150,
+    60
+   ],
+   "fwd_missing": 26,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -150,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "mill",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'mill' not found: mill R=6371000"
+  },
+  {
+   "projection": "mill",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 91,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 91,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "mill",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "cea",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.122274160385132e-09,
+   "fwd_worst_at": [
+    -180,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.6999198209077804e-06,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "cea",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.684341886080802e-14,
+   "inv_worst_at": [
+    -150,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "cea",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.552713678800501e-15,
+   "inv_worst_at": [
+    -180,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "cea",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: cea"
+  },
+  {
+   "projection": "cea",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.268356063861754e-09,
+   "fwd_worst_at": [
+    -150,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 359.9999974423935,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "cea",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'cea' not found: cea ellps=WGS84 lat_ts=30"
+  },
+  {
+   "projection": "cea",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 91,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 91,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "cea",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 4.16500117164066e-09,
+   "fwd_worst_at": [
+    -150,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.256115871121665e-14,
+   "inv_worst_at": [
+    -180,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "poly",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "poly",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.0537634251126906e-13,
+   "inv_worst_at": [
+    -40,
+    80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "poly",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -60,
+    40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.9950214632611824e-13,
+   "inv_worst_at": [
+    -100,
+    80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "poly",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: poly"
+  },
+  {
+   "projection": "poly",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 25118.74743838634,
+   "fwd_worst_at": [
+    -100,
+    50
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.22541777573188448,
+   "inv_worst_at": [
+    -100,
+    50
+   ],
+   "inv_missing": 8,
+   "verdict": "off"
+  },
+  {
+   "projection": "poly",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'poly' not found: poly ellps=WGS84 lon_0=-96"
+  },
+  {
+   "projection": "poly",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 108,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 108,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "poly",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 0.0009558135643601488,
+   "fwd_worst_at": [
+    -120,
+    70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 8.565094937138611e-09,
+   "inv_worst_at": [
+    -100,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "ortho",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found",
+   "known": "proj4rs ellipsoidal inverse returns NaN for the south pole with lat_0=-42."
+  },
+  {
+   "projection": "ortho",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -30,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "ortho",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    -150,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.4493120283101467e-13,
+   "inv_worst_at": [
+    90,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "ortho",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: ortho"
+  },
+  {
+   "projection": "ortho",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 33694.39890867783,
+   "fwd_worst_at": [
+    90,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.720219513259893,
+   "inv_worst_at": [
+    90,
+    30
+   ],
+   "inv_missing": 1,
+   "verdict": "off"
+  },
+  {
+   "projection": "ortho",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'ortho' not found: ortho ellps=WGS84 lat_0=-42 lon_0=147"
+  },
+  {
+   "projection": "ortho",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 33694.39890867979,
+   "fwd_worst_at": [
+    90,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.720219513259893,
+   "inv_worst_at": [
+    90,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "ortho",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 33694.39890867979,
+   "fwd_worst_at": [
+    90,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.720219513259893,
+   "inv_worst_at": [
+    90,
+    30
+   ],
+   "inv_missing": 1,
+   "verdict": "off"
+  },
+  {
+   "projection": "gnom",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "gnom",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -150,
+    -70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "gnom",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.486899575160351e-14,
+   "inv_worst_at": [
+    -120,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "gnom",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "gnom",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 5.015325552909173e-09,
+   "fwd_worst_at": [
+    -150,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.5618982671915017e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "gnom",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'gnom' not found: gnom R=6371000 lat_0=-90"
+  },
+  {
+   "projection": "gnom",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 259,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 259,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "gnom",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 3.754281321679498e-09,
+   "fwd_worst_at": [
+    -20,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.5043481918121438e-14,
+   "inv_worst_at": [
+    -140,
+    -80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "sinu",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "sinu",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "sinu",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "sinu",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: sinu"
+  },
+  {
+   "projection": "sinu",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 35597.849589847145,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.4446646941724722,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "sinu",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'sinu' not found: sinu ellps=WGS84"
+  },
+  {
+   "projection": "sinu",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.3006073358315215e-06,
+   "fwd_worst_at": [
+    -150,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 91,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "sinu",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.3006073358315215e-06,
+   "fwd_worst_at": [
+    -150,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 8.578887253022632e-11,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "omerc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "omerc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 4.679838019013819e-09,
+   "fwd_worst_at": [
+    99,
+    -2
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.564726209186574e-11,
+   "inv_worst_at": [
+    95,
+    -2
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "omerc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 4.679838019013819e-09,
+   "fwd_worst_at": [
+    99,
+    -2
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.564726209186574e-11,
+   "inv_worst_at": [
+    95,
+    -2
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "omerc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: failed to parse CRS string: unsupported PROJ ellipsoid: EVRST69"
+  },
+  {
+   "projection": "omerc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 2111050.4965811297,
+   "fwd_worst_at": [
+    111,
+    -2
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 18.94153099559778,
+   "inv_worst_at": [
+    111,
+    -2
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "omerc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 448332.39323217625,
+   "fwd_worst_at": [
+    111,
+    10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.001076337654263,
+   "inv_worst_at": [
+    103,
+    2
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "omerc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 63,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 63,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "omerc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 4.679838019013819e-09,
+   "fwd_worst_at": [
+    99,
+    -2
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.564726209186574e-11,
+   "inv_worst_at": [
+    95,
+    -2
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tpers",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "tpers",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202007e-14,
+   "inv_worst_at": [
+    -150,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tpers",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202007e-14,
+   "inv_worst_at": [
+    -150,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tpers",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "tpers",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=tpers is not supported by wbprojection"
+  },
+  {
+   "projection": "tpers",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'tpers' not found: tpers R=6370997 lat_0=-42 lon_0=147 h=3000000 tilt=30 azi=45"
+  },
+  {
+   "projection": "tpers",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.082765476712078e-10,
+   "fwd_worst_at": [
+    -150,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 79,
+   "inv_max_deg": 2.3675578236103274e-13,
+   "inv_worst_at": [
+    90,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tpers",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.082765476712078e-10,
+   "fwd_worst_at": [
+    -150,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.3675578236103274e-13,
+   "inv_worst_at": [
+    90,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "nsper",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "nsper",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.5618982671915024e-14,
+   "inv_worst_at": [
+    -150,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "nsper",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202016e-14,
+   "inv_worst_at": [
+    -150,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "nsper",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: nsper"
+  },
+  {
+   "projection": "nsper",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=nsper is not supported by wbprojection"
+  },
+  {
+   "projection": "nsper",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'nsper' not found: nsper ellps=WGS84 lat_0=40 lon_0=-100 h=3000000"
+  },
+  {
+   "projection": "nsper",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=nsper +ellps=WGS84 +lat_0=40 +lon_0=-100 +h=3000000"
+  },
+  {
+   "projection": "nsper",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: nsper"
+  },
+  {
+   "projection": "cass",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "cass",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.2902397730870118e-14,
+   "inv_worst_at": [
+    157,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "cass",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 2.3283064365386963e-10,
+   "fwd_worst_at": [
+    132,
+    -55
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.2902397730870118e-14,
+   "inv_worst_at": [
+    157,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "cass",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.0005787485279142857,
+   "fwd_worst_at": [
+    132,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0005411823649693495,
+   "inv_worst_at": [
+    162,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "cass",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.0005787499248998336,
+   "fwd_worst_at": [
+    132,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0005411823649814968,
+   "inv_worst_at": [
+    162,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "cass",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'cass' not found: cass ellps=WGS84 lat_0=-42 lon_0=147"
+  },
+  {
+   "projection": "cass",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 63,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 63,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "cass",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 2.8279610002160665e-06,
+   "fwd_worst_at": [
+    132,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.846014467563732e-11,
+   "inv_worst_at": [
+    162,
+    -35
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -40,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 9.720797132947292e-15,
+   "inv_worst_at": [
+    -120,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: eqdc"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=eqdc is not supported by wbprojection"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'eqdc' not found: eqdc ellps=GRS80 lat_0=40 lon_0=-96 lat_1=20 lat_2=60"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 108,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 108,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 4.493738319862526e-06,
+   "fwd_worst_at": [
+    -100,
+    70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.0266530635729143e-11,
+   "inv_worst_at": [
+    -100,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "robin",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found",
+   "known": "proj4rs inverse returns NaN at the map edge, lon +-180 lat +-60."
+  },
+  {
+   "projection": "robin",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 4,
+   "verdict": "gaps",
+   "known": "proj4rs inverse returns NaN at the map edge, lon +-180 lat +-60."
+  },
+  {
+   "projection": "robin",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "robin",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "robin",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1303525.6492900497,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 16.25134181587435,
+   "inv_worst_at": [
+    -150,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "robin",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'robin' not found: robin R=6371000"
+  },
+  {
+   "projection": "robin",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.6982242388288011,
+   "fwd_worst_at": [
+    -180,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.211688316205299e-06,
+   "inv_worst_at": [
+    -180,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "robin",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.461392238570962e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found",
+   "known": "inverse 6.6e-6 deg at the poles only; elsewhere within 1.5e-14 deg."
+  },
+  {
+   "projection": "eqearth",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.486899575160351e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: eqearth"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.268356063861754e-09,
+   "fwd_worst_at": [
+    -150,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.779643347774254e-08,
+   "inv_worst_at": [
+    -180,
+    90
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'eqearth' not found: eqearth ellps=WGS84"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.3560261371136677e-08,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 6.583761162914925e-06,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.268356063861754e-09,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1906138297719526e-08,
+   "inv_worst_at": [
+    -180,
+    -30
+   ],
+   "inv_missing": 26,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.09493529796600342,
+   "fwd_worst_at": [
+    117,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 80.00000000000003,
+   "inv_worst_at": [
+    157,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.09493529796600342,
+   "fwd_worst_at": [
+    117,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 80.00000000000003,
+   "inv_worst_at": [
+    157,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 0.09493529796600342,
+   "fwd_worst_at": [
+    117,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 80.00000000000003,
+   "inv_worst_at": [
+    157,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 911.0947917089798,
+   "fwd_worst_at": [
+    177,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.05166260778300294,
+   "inv_worst_at": [
+    177,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 19260.627419148703,
+   "fwd_worst_at": [
+    117,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.16776089146851528,
+   "inv_worst_at": [
+    147,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Incorrect elliptical usage. Try using the +approx option in the proj string, or PROJECTION[\"Fast_Transverse_Mercator\"] in the WKT."
+  },
+  {
+   "projection": "tmerc-sphere",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Spherical transverse Mercator requires +approx"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 325,
+   "fwd_max_m": 6.71586259354649e-08,
+   "fwd_worst_at": [
+    312,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.974538666725427e-14,
+   "inv_worst_at": [
+    267,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 325,
+   "fwd_max_m": 6.71586259354649e-08,
+   "fwd_worst_at": [
+    312,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.974538666725427e-14,
+   "inv_worst_at": [
+    267,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 325,
+   "fwd_max_m": 6.71586259354649e-08,
+   "fwd_worst_at": [
+    312,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.684341886080802e-14,
+   "inv_worst_at": [
+    267,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: aeqd"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 325,
+   "fwd_max_m": 204245.8159433738,
+   "fwd_worst_at": [
+    -18,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.4390817951471888,
+   "inv_worst_at": [
+    147,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'aeqd' not found: aeqd ellps=WGS84 lat_0=-42 lon_0=147"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 325,
+   "fwd_max_m": 0.00031411098492648514,
+   "fwd_worst_at": [
+    312,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.910971131372262e-10,
+   "inv_worst_at": [
+    297,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-far",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 325,
+   "fwd_max_m": 0.00031411098492648514,
+   "fwd_worst_at": [
+    312,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.910971131372262e-10,
+   "inv_worst_at": [
+    297,
+    30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "wintri",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "wintri",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "wintri",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "wintri",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "wintri",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.754281321679498e-09,
+   "fwd_worst_at": [
+    -150,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.7351373317421986e-12,
+   "inv_worst_at": [
+    -120,
+    -30
+   ],
+   "inv_missing": 18,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "wintri",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'wintri' not found: wintri R=6371000"
+  },
+  {
+   "projection": "wintri",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=wintri +R=6371000"
+  },
+  {
+   "projection": "wintri",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: wintri"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.9199706733309015e-09,
+   "fwd_worst_at": [
+    -60,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.2864046332788e-12,
+   "inv_worst_at": [
+    90,
+    -60
+   ],
+   "inv_missing": 9,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'aitoff' not found: aitoff R=6371000"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=aitoff +R=6371000"
+  },
+  {
+   "projection": "aitoff",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: aitoff"
+  },
+  {
+   "projection": "hammer",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "hammer",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "hammer",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "hammer",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "hammer",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.587935447692871e-09,
+   "fwd_worst_at": [
+    -120,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.973799150320702e-14,
+   "inv_worst_at": [
+    -120,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "hammer",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'hammer' not found: hammer R=6371000"
+  },
+  {
+   "projection": "hammer",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=hammer +R=6371000"
+  },
+  {
+   "projection": "hammer",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: hammer"
+  },
+  {
+   "projection": "natearth",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "natearth",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "natearth",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "natearth",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "natearth",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 4.16500117164066e-09,
+   "fwd_worst_at": [
+    -150,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1368683772161603e-13,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 13,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "natearth",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'natearth' not found: natearth R=6371000"
+  },
+  {
+   "projection": "natearth",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=natearth +R=6371000"
+  },
+  {
+   "projection": "natearth",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: natearth"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -150,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -150,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'natearth2' not found: natearth2 R=6371000"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=natearth2 +R=6371000"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: natearth2"
+  },
+  {
+   "projection": "eck4",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "eck4",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "eck4",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "eck4",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "eck4",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.7077774573948466e-08,
+   "fwd_worst_at": [
+    -180,
+    -30
+   ],
+   "fwd_missing": 26,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.9737991503207076e-14,
+   "inv_worst_at": [
+    -120,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "eck4",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'eck4' not found: eck4 R=6371000"
+  },
+  {
+   "projection": "eck4",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=eck4 +R=6371000"
+  },
+  {
+   "projection": "eck4",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: eck4"
+  },
+  {
+   "projection": "eck6",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "eck6",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "eck6",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "eck6",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "eck6",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.935587579328813e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eck6",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'eck6' not found: eck6 R=6371000"
+  },
+  {
+   "projection": "eck6",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 91,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 91,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "eck6",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 2.08250058582033e-09,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 180.0,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "gall",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "gall",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "gall",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "gall",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "gall",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 2600949.8585452707,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 26,
+   "fwd_extra": 0,
+   "inv_max_deg": 19.47122063449069,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "gall",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'gall' not found: gall R=6371000"
+  },
+  {
+   "projection": "gall",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=gall +R=6371000"
+  },
+  {
+   "projection": "gall",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: gall"
+  },
+  {
+   "projection": "vandg",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "vandg",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "vandg",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "vandg",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "vandg",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 4.889443516731262e-08,
+   "fwd_worst_at": [
+    -30,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.2563329382777443e-12,
+   "inv_worst_at": [
+    150,
+    30
+   ],
+   "inv_missing": 6,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "vandg",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'vandg' not found: vandg R=6371000"
+  },
+  {
+   "projection": "vandg",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 91,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 91,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "vandg",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 4.986056138381578e-08,
+   "fwd_worst_at": [
+    -30,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 8.940696574200047e-07,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "bonne",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "bonne",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "bonne",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "bonne",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: bonne"
+  },
+  {
+   "projection": "bonne",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 73734.97094673189,
+   "fwd_worst_at": [
+    -180,
+    -30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.019525780703805,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "bonne",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'bonne' not found: bonne ellps=WGS84 lat_1=45"
+  },
+  {
+   "projection": "bonne",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 6.0195161241368155e-06,
+   "fwd_worst_at": [
+    -180,
+    60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.0502306311567939e-10,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "bonne",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 6.0195161241368155e-06,
+   "fwd_worst_at": [
+    -180,
+    60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.0502306311567939e-10,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "qsc",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "qsc",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "qsc",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "qsc",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "failed to parse CRS string: unsupported PROJ projection: qsc"
+  },
+  {
+   "projection": "qsc",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=qsc is not supported by wbprojection"
+  },
+  {
+   "projection": "qsc",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'qsc' not found: qsc ellps=WGS84 lat_0=0 lon_0=0"
+  },
+  {
+   "projection": "qsc",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 49,
+   "fwd_max_m": 3.1841711804325607e-06,
+   "fwd_worst_at": [
+    -45,
+    -45
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.301164979222764e-11,
+   "inv_worst_at": [
+    -45,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "qsc",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 49,
+   "fwd_max_m": 3.1841711804325607e-06,
+   "fwd_worst_at": [
+    -45,
+    -45
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.301164979222764e-11,
+   "inv_worst_at": [
+    -45,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "healpix",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "healpix",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "healpix",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "healpix",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "healpix",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=healpix is not supported by wbprojection"
+  },
+  {
+   "projection": "healpix",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'healpix' not found: healpix R=6371000"
+  },
+  {
+   "projection": "healpix",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=healpix +R=6371000"
+  },
+  {
+   "projection": "healpix",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: healpix"
+  },
+  {
+   "projection": "igh",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "igh",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "igh",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "igh",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "igh",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "unsupported projection: PROJ +proj=igh is not supported by wbprojection"
+  },
+  {
+   "projection": "igh",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'igh' not found: igh R=6371000"
+  },
+  {
+   "projection": "igh",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=igh +R=6371000"
+  },
+  {
+   "projection": "igh",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: igh"
+  },
+  {
+   "projection": "times",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "times",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "times",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection not found"
+  },
+  {
+   "projection": "times",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "times",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -150,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.461392238570962e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "times",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'times' not found: times R=6371000"
+  },
+  {
+   "projection": "times",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Could not get projection name from: +proj=times +R=6371000"
+  },
+  {
+   "projection": "times",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Projection plugin is not registered: times"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -150,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "Operator 'eqc' not found: eqc R=6371000 lat_ts=30"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 20015086.79602057,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 180.0,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "proj4rs",
+   "engine_version": "0.2.1",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -120,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "proj4rs-main",
+   "engine_version": "git main",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -120,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "proj4rs-wasm",
+   "engine_version": "git 9996719 2026-10-21",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "proj-core",
+   "engine_version": "0.12.0",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "wbprojection",
+   "engine_version": "0.3.3",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 28373.41187483118,
+   "fwd_worst_at": [
+    -180,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.201416181558983,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "geodesy",
+   "engine_version": "0.15.0",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 35590.82934644512,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.2165886458207418,
+   "inv_worst_at": [
+    -180,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 5.587935447692871e-09,
+   "fwd_worst_at": [
+    -180,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -180,
+    -80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.552713678800501e-15,
+   "inv_worst_at": [
+    -180,
+    -20
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  }
+ ]
+}

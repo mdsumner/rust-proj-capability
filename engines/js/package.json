@@ -1,0 +1,13 @@
+{
+  "name": "projections-engines-js",
+  "private": true,
+  "type": "module",
+  "description": "JavaScript and wasm engines for the projections suite",
+  "scripts": {
+    "run": "node run.mjs ../../suites/projections/reference.json"
+  },
+  "dependencies": {
+    "@math.gl/projection": "5.0.0-alpha.18",
+    "proj4": "2.22.0"
+  }
+}

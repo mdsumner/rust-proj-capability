@@ -1,0 +1,1652 @@
+{
+ "environment": {
+  "generated": "2026-10-21T21:17:56+00:00",
+  "proj_head": "5fa31c29f0a806568ed7bc76c1a557604db4a804",
+  "proj_date": "2026-10-19",
+  "proj4rs_head": "9996719400b33c3d340993f42f7a5079b1729cac",
+  "proj4rs_date": "2026-10-21",
+  "since": "365 days ago"
+ },
+ "projections": [
+  {
+   "name": "adams_hemi",
+   "desc": "Adams Hemisphere in a Square",
+   "file": "adams.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "86e071baab05ec9b26edbca5874cc76c004c4df0",
+     "date": "2026-05-02",
+     "subject": "Fix cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "adams_ws1",
+   "desc": "Adams World in a Square I",
+   "file": "adams.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "86e071baab05ec9b26edbca5874cc76c004c4df0",
+     "date": "2026-05-02",
+     "subject": "Fix cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "adams_ws2",
+   "desc": "Adams World in a Square II",
+   "file": "adams.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "86e071baab05ec9b26edbca5874cc76c004c4df0",
+     "date": "2026-05-02",
+     "subject": "Fix cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "aea",
+   "desc": "Albers Equal Area",
+   "file": "aea.cpp",
+   "proj4rs": true,
+   "suite": [
+    "aea"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "aeqd",
+   "desc": "Azimuthal Equidistant",
+   "file": "aeqd.cpp",
+   "proj4rs": true,
+   "suite": [
+    "aeqd",
+    "aeqd-polar",
+    "aeqd-far"
+   ],
+   "proj_commits": [
+    {
+     "sha": "af3e08bf2b6801fcf12ac4b904a95cbf4a7c4b13",
+     "date": "2026-07-15",
+     "subject": "Similar numerical tightening for aeqd as for aitoff, suggested by Charles Karney"
+    }
+   ]
+  },
+  {
+   "name": "airocean",
+   "desc": "Airocean",
+   "file": "airocean.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "airy",
+   "desc": "Airy",
+   "file": "airy.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "aitoff",
+   "desc": "Aitoff",
+   "file": "aitoff.cpp",
+   "proj4rs": false,
+   "suite": [
+    "aitoff"
+   ],
+   "proj_commits": [
+    {
+     "sha": "5d871512e33b300478abe352a8496f3184ac15ef",
+     "date": "2026-07-03",
+     "subject": "switch back to hypot for forward"
+    },
+    {
+     "sha": "52e114e714992059be5d247639601a175e50e303",
+     "date": "2026-07-03",
+     "subject": "Addressing review feedback from Charles Karney"
+    },
+    {
+     "sha": "aaa58914ea052b7fd8a5e1c0e89f42007b737613",
+     "date": "2026-07-01",
+     "subject": "Closed-form Aitoff implementation, docs, and sources"
+    }
+   ]
+  },
+  {
+   "name": "alsk",
+   "desc": "Modified Stereographic of Alaska",
+   "file": "mod_ster.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "apian",
+   "desc": "Apian Globular I",
+   "file": "bacon.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "august",
+   "desc": "August Epicycloidal",
+   "file": "august.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "bacon",
+   "desc": "Bacon Globular",
+   "file": "bacon.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "bertin1953",
+   "desc": "Bertin 1953",
+   "file": "bertin1953.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "bipc",
+   "desc": "Bipolar conic of western hemisphere",
+   "file": "bipc.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "boggs",
+   "desc": "Boggs Eumorphic",
+   "file": "boggs.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "bonne",
+   "desc": "Bonne (Werner lat_1=90)",
+   "file": "bonne.cpp",
+   "proj4rs": false,
+   "suite": [
+    "bonne"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "calcofi",
+   "desc": "Cal Coop Ocean Fish Invest Lines/Stations",
+   "file": "calcofi.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "cass",
+   "desc": "Cassini",
+   "file": "cass.cpp",
+   "proj4rs": true,
+   "suite": [
+    "cass"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "cc",
+   "desc": "Central Cylindrical",
+   "file": "cc.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "ccon",
+   "desc": "Central Conic",
+   "file": "ccon.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "cea",
+   "desc": "Equal Area Cylindrical",
+   "file": "cea.cpp",
+   "proj4rs": true,
+   "suite": [
+    "cea"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "chamb",
+   "desc": "Chamberlin Trimetric",
+   "file": "chamb.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "col_urban",
+   "desc": "Colombia Urban",
+   "file": "col_urban.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "collg",
+   "desc": "Collignon",
+   "file": "collg.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "comill",
+   "desc": "Compact Miller",
+   "file": "comill.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "crast",
+   "desc": "Craster Parabolic (Putnins P4)",
+   "file": "crast.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "denoy",
+   "desc": "Denoyer Semi-Elliptical",
+   "file": "denoy.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "dsea",
+   "desc": "Dodecahedral Snyder Equal Area",
+   "file": "polyhedral.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "60c0898ad711222cc9ce702249c4cce26d9e4c9a",
+     "date": "2026-08-18",
+     "subject": "fix cppcheck redundant complain"
+    },
+    {
+     "sha": "ba6e027f23fe4bcba70ac6fd20b52a9598ff0918",
+     "date": "2026-08-18",
+     "subject": "Add IVEA projection: DSEA projection onto icosahedron net (#4817)"
+    },
+    {
+     "sha": "9598b318959e2201ef45270dd4d8c61906c61dc9",
+     "date": "2026-08-13",
+     "subject": "Snyder polyhedral equal area projections"
+    }
+   ]
+  },
+  {
+   "name": "eck1",
+   "desc": "Eckert I",
+   "file": "eck1.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "eck2",
+   "desc": "Eckert II",
+   "file": "eck2.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "eck3",
+   "desc": "Eckert III",
+   "file": "eck3.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "eck4",
+   "desc": "Eckert IV",
+   "file": "eck4.cpp",
+   "proj4rs": false,
+   "suite": [
+    "eck4"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "eck5",
+   "desc": "Eckert V",
+   "file": "eck5.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "eck6",
+   "desc": "Eckert VI",
+   "file": "gn_sinu.cpp",
+   "proj4rs": false,
+   "suite": [
+    "eck6"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "eqc",
+   "desc": "Equidistant Cylindrical (Plate Carree)",
+   "file": "eqc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "eqc",
+    "eqc-sphere"
+   ],
+   "proj_commits": [
+    {
+     "sha": "6a529ad433d87742ba7163e94fa2fdf043432db1",
+     "date": "2026-01-16",
+     "subject": "Add support for  Equidistant Cylindrical ellipsoidal method (EPSG:1028) (#4656)"
+    }
+   ]
+  },
+  {
+   "name": "eqdc",
+   "desc": "Equidistant Conic",
+   "file": "eqdc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "eqdc"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "eqearth",
+   "desc": "Equal Earth",
+   "file": "eqearth.cpp",
+   "proj4rs": true,
+   "suite": [
+    "eqearth"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "etmerc",
+   "desc": "Extended Transverse Mercator",
+   "file": "tmerc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "etmerc"
+   ],
+   "proj_commits": [
+    {
+     "sha": "ca23885da621269333eb00c5010e2ff2ac3423f0",
+     "date": "2026-02-19",
+     "subject": "tmerc spherical: fix numeric instability at lat=lat_0"
+    }
+   ]
+  },
+  {
+   "name": "euler",
+   "desc": "Euler",
+   "file": "sconics.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "fahey",
+   "desc": "Fahey",
+   "file": "fahey.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "fouc",
+   "desc": "Foucaut",
+   "file": "sts.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "fouc_s",
+   "desc": "Foucaut Sinusoidal",
+   "file": "fouc_s.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "gall",
+   "desc": "Gall (Gall Stereographic)",
+   "file": "gall.cpp",
+   "proj4rs": false,
+   "suite": [
+    "gall"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "geos",
+   "desc": "Geostationary Satellite View",
+   "file": "geos.cpp",
+   "proj4rs": true,
+   "suite": [
+    "geos"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "gins8",
+   "desc": "Ginsburg VIII (TsNIIGAiK)",
+   "file": "gins8.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "gn_sinu",
+   "desc": "General Sinusoidal Series",
+   "file": "gn_sinu.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "gnom",
+   "desc": "Gnomonic",
+   "file": "gnom.cpp",
+   "proj4rs": true,
+   "suite": [
+    "gnom"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "goode",
+   "desc": "Goode Homolosine",
+   "file": "goode.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "gs48",
+   "desc": "Modified Stereographic of 48 U.S.",
+   "file": "mod_ster.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "gs50",
+   "desc": "Modified Stereographic of 50 U.S.",
+   "file": "mod_ster.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "gstmerc",
+   "desc": "Gauss-Schreiber Transverse Mercator (aka Gauss-Laborde Reunion)",
+   "file": "gstmerc.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "guyou",
+   "desc": "Guyou",
+   "file": "adams.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "86e071baab05ec9b26edbca5874cc76c004c4df0",
+     "date": "2026-05-02",
+     "subject": "Fix cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "hammer",
+   "desc": "Hammer & Eckert-Greifendorff",
+   "file": "hammer.cpp",
+   "proj4rs": false,
+   "suite": [
+    "hammer"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "hatano",
+   "desc": "Hatano Asymmetrical Equal Area",
+   "file": "hatano.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "healpix",
+   "desc": "HEALPix",
+   "file": "healpix.cpp",
+   "proj4rs": false,
+   "suite": [
+    "healpix"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "hourglass",
+   "desc": "Hourglass",
+   "file": "hourglass.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "56dfc1983ee6f85c63d394fba0639ed688cf8381",
+     "date": "2025-05-04",
+     "subject": "Add hourglass projection"
+    }
+   ]
+  },
+  {
+   "name": "igh",
+   "desc": "Interrupted Goode Homolosine",
+   "file": "igh.cpp",
+   "proj4rs": false,
+   "suite": [
+    "igh"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "igh_o",
+   "desc": "Interrupted Goode Homolosine Oceanic View",
+   "file": "igh_o.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "imoll",
+   "desc": "Interrupted Mollweide",
+   "file": "imoll.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "imoll_o",
+   "desc": "Interrupted Mollweide Oceanic View",
+   "file": "imoll_o.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "imw_p",
+   "desc": "International Map of the World Polyconic",
+   "file": "imw_p.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "interrupted",
+   "desc": "Interrupted",
+   "file": "interrupted.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "3ea8770dcda2b9a11ac8a40098c86de694fdc26b",
+     "date": "2026-08-31",
+     "subject": "Use NS_PROJ"
+    },
+    {
+     "sha": "25532412ca63ba310f62652aa8c76f05d614f3af",
+     "date": "2025-05-18",
+     "subject": "Add interrupted projection allows the creation of gores using tmerc, sinu, cass and poly"
+    }
+   ]
+  },
+  {
+   "name": "isea",
+   "desc": "Icosahedral Snyder Equal Area",
+   "file": "polyhedral.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "60c0898ad711222cc9ce702249c4cce26d9e4c9a",
+     "date": "2026-08-18",
+     "subject": "fix cppcheck redundant complain"
+    },
+    {
+     "sha": "ba6e027f23fe4bcba70ac6fd20b52a9598ff0918",
+     "date": "2026-08-18",
+     "subject": "Add IVEA projection: DSEA projection onto icosahedron net (#4817)"
+    },
+    {
+     "sha": "9598b318959e2201ef45270dd4d8c61906c61dc9",
+     "date": "2026-08-13",
+     "subject": "Snyder polyhedral equal area projections"
+    }
+   ]
+  },
+  {
+   "name": "ivea",
+   "desc": "Icosahedral Vertex Equal Area",
+   "file": "polyhedral.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "60c0898ad711222cc9ce702249c4cce26d9e4c9a",
+     "date": "2026-08-18",
+     "subject": "fix cppcheck redundant complain"
+    },
+    {
+     "sha": "ba6e027f23fe4bcba70ac6fd20b52a9598ff0918",
+     "date": "2026-08-18",
+     "subject": "Add IVEA projection: DSEA projection onto icosahedron net (#4817)"
+    },
+    {
+     "sha": "9598b318959e2201ef45270dd4d8c61906c61dc9",
+     "date": "2026-08-13",
+     "subject": "Snyder polyhedral equal area projections"
+    }
+   ]
+  },
+  {
+   "name": "kav5",
+   "desc": "Kavrayskiy V",
+   "file": "sts.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "kav7",
+   "desc": "Kavrayskiy VII",
+   "file": "eck3.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "krovak",
+   "desc": "Krovak",
+   "file": "krovak.cpp",
+   "proj4rs": true,
+   "suite": [
+    "krovak"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "labrd",
+   "desc": "Laborde",
+   "file": "labrd.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "laea",
+   "desc": "Lambert Azimuthal Equal Area",
+   "file": "laea.cpp",
+   "proj4rs": true,
+   "suite": [
+    "laea",
+    "laea-polar"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "lagrng",
+   "desc": "Lagrange",
+   "file": "lagrng.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "larr",
+   "desc": "Larrivee",
+   "file": "larr.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "lask",
+   "desc": "Laskowski",
+   "file": "lask.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "latlon",
+   "desc": "Lat/long (Geodetic alias)",
+   "file": "latlong.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "latlong",
+   "desc": "Lat/long (Geodetic alias)",
+   "file": "latlong.cpp",
+   "proj4rs": true,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "lcc",
+   "desc": "Lambert Conformal Conic",
+   "file": "lcc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "lcc"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "lcca",
+   "desc": "Lambert Conformal Conic Alternative",
+   "file": "lcca.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "leac",
+   "desc": "Lambert Equal Area Conic",
+   "file": "aea.cpp",
+   "proj4rs": true,
+   "suite": [
+    "leac"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "lee_os",
+   "desc": "Lee Oblated Stereographic",
+   "file": "mod_ster.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "longlat",
+   "desc": "Lat/long (Geodetic alias)",
+   "file": "latlong.cpp",
+   "proj4rs": true,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "lonlat",
+   "desc": "Lat/long (Geodetic)",
+   "file": "latlong.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "loxim",
+   "desc": "Loximuthal",
+   "file": "loxim.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "lsat",
+   "desc": "Space oblique for LANDSAT",
+   "file": "som.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "7821d1bc9b8d65ac23a35a9479beeb67bd438ef0",
+     "date": "2026-06-21",
+     "subject": "som: avoid cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "mbt_fps",
+   "desc": "McBryde-Thomas Flat-Pole Sine (No. 2)",
+   "file": "mbt_fps.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "mbt_s",
+   "desc": "McBryde-Thomas Flat-Polar Sine (No. 1)",
+   "file": "sts.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "mbtfpp",
+   "desc": "McBride-Thomas Flat-Polar Parabolic",
+   "file": "mbtfpp.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "mbtfpq",
+   "desc": "McBryde-Thomas Flat-Polar Quartic",
+   "file": "mbtfpq.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "mbtfps",
+   "desc": "McBryde-Thomas Flat-Polar Sinusoidal",
+   "file": "gn_sinu.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "merc",
+   "desc": "Mercator",
+   "file": "merc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "merc",
+    "merc-sphere"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "mil_os",
+   "desc": "Miller Oblated Stereographic",
+   "file": "mod_ster.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "mill",
+   "desc": "Miller Cylindrical",
+   "file": "mill.cpp",
+   "proj4rs": true,
+   "suite": [
+    "mill"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "misrsom",
+   "desc": "Space oblique for MISR",
+   "file": "som.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "7821d1bc9b8d65ac23a35a9479beeb67bd438ef0",
+     "date": "2026-06-21",
+     "subject": "som: avoid cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "mod_krovak",
+   "desc": "Modified Krovak",
+   "file": "krovak.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "moll",
+   "desc": "Mollweide",
+   "file": "moll.cpp",
+   "proj4rs": true,
+   "suite": [
+    "moll"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "murd1",
+   "desc": "Murdoch I",
+   "file": "sconics.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "murd2",
+   "desc": "Murdoch II",
+   "file": "sconics.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "murd3",
+   "desc": "Murdoch III",
+   "file": "sconics.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "natearth",
+   "desc": "Natural Earth",
+   "file": "natearth.cpp",
+   "proj4rs": false,
+   "suite": [
+    "natearth"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "natearth2",
+   "desc": "Natural Earth 2",
+   "file": "natearth2.cpp",
+   "proj4rs": false,
+   "suite": [
+    "natearth2"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "nell",
+   "desc": "Nell",
+   "file": "nell.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "nell_h",
+   "desc": "Nell-Hammer",
+   "file": "nell_h.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "nicol",
+   "desc": "Nicolosi Globular",
+   "file": "nicol.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "nsper",
+   "desc": "Near-sided perspective",
+   "file": "nsper.cpp",
+   "proj4rs": true,
+   "suite": [
+    "nsper"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "nzmg",
+   "desc": "New Zealand Map Grid",
+   "file": "nzmg.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "ob_tran",
+   "desc": "General Oblique Transformation",
+   "file": "ob_tran.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "f4fde531648a963bc53edda75361182e7be6be49",
+     "date": "2026-04-04",
+     "subject": "ob_tran.cpp: setup(): fix quadratic performance issue in the number of projection parameters"
+    }
+   ]
+  },
+  {
+   "name": "ocea",
+   "desc": "Oblique Cylindrical Equal Area",
+   "file": "ocea.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "oea",
+   "desc": "Oblated Equal Area",
+   "file": "oea.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "omerc",
+   "desc": "Oblique Mercator",
+   "file": "omerc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "omerc"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "ortel",
+   "desc": "Ortelius Oval",
+   "file": "bacon.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "ortho",
+   "desc": "Orthographic",
+   "file": "ortho.cpp",
+   "proj4rs": true,
+   "suite": [
+    "ortho"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "patterson",
+   "desc": "Patterson Cylindrical",
+   "file": "patterson.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "pconic",
+   "desc": "Perspective Conic",
+   "file": "sconics.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "peirce_q",
+   "desc": "Peirce Quincuncial",
+   "file": "adams.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "86e071baab05ec9b26edbca5874cc76c004c4df0",
+     "date": "2026-05-02",
+     "subject": "Fix cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "poly",
+   "desc": "Polyconic (American)",
+   "file": "poly.cpp",
+   "proj4rs": true,
+   "suite": [
+    "poly"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "putp1",
+   "desc": "Putnins P1",
+   "file": "eck3.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp2",
+   "desc": "Putnins P2",
+   "file": "putp2.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp3",
+   "desc": "Putnins P3",
+   "file": "putp3.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp3p",
+   "desc": "Putnins P3'",
+   "file": "putp3.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp4p",
+   "desc": "Putnins P4'",
+   "file": "putp4p.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp5",
+   "desc": "Putnins P5",
+   "file": "putp5.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp5p",
+   "desc": "Putnins P5'",
+   "file": "putp5.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp6",
+   "desc": "Putnins P6",
+   "file": "putp6.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "putp6p",
+   "desc": "Putnins P6'",
+   "file": "putp6.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "qsc",
+   "desc": "Quadrilateralized Spherical Cube",
+   "file": "qsc.cpp",
+   "proj4rs": false,
+   "suite": [
+    "qsc"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "qua_aut",
+   "desc": "Quartic Authalic",
+   "file": "sts.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "rhealpix",
+   "desc": "rHEALPix",
+   "file": "healpix.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "robin",
+   "desc": "Robinson",
+   "file": "robin.cpp",
+   "proj4rs": true,
+   "suite": [
+    "robin"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "rouss",
+   "desc": "Roussilhe Stereographic",
+   "file": "rouss.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "rpoly",
+   "desc": "Rectangular Polyconic",
+   "file": "rpoly.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "s2",
+   "desc": "S2",
+   "file": "s2.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "sch",
+   "desc": "Spherical Cross-track Height",
+   "file": "sch.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "sinu",
+   "desc": "Sinusoidal (Sanson-Flamsteed)",
+   "file": "gn_sinu.cpp",
+   "proj4rs": true,
+   "suite": [
+    "sinu"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "som",
+   "desc": "Space Oblique Mercator",
+   "file": "som.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "7821d1bc9b8d65ac23a35a9479beeb67bd438ef0",
+     "date": "2026-06-21",
+     "subject": "som: avoid cppcheck warning"
+    }
+   ]
+  },
+  {
+   "name": "somerc",
+   "desc": "Swiss. Obl. Mercator",
+   "file": "somerc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "somerc"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "spilhaus",
+   "desc": "Spilhaus",
+   "file": "spilhaus.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "stere",
+   "desc": "Stereographic",
+   "file": "stere.cpp",
+   "proj4rs": true,
+   "suite": [
+    "stere-polar",
+    "stere-oblique"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "sterea",
+   "desc": "Oblique Stereographic Alternative",
+   "file": "sterea.cpp",
+   "proj4rs": true,
+   "suite": [
+    "sterea"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "tcc",
+   "desc": "Transverse Central Cylindrical",
+   "file": "tcc.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "tcea",
+   "desc": "Transverse Cylindrical Equal Area",
+   "file": "tcea.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "times",
+   "desc": "Times",
+   "file": "times.cpp",
+   "proj4rs": false,
+   "suite": [
+    "times"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "tissot",
+   "desc": "Tissot",
+   "file": "sconics.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "tmerc",
+   "desc": "Transverse Mercator",
+   "file": "tmerc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "tmerc",
+    "tmerc-sphere"
+   ],
+   "proj_commits": [
+    {
+     "sha": "ca23885da621269333eb00c5010e2ff2ac3423f0",
+     "date": "2026-02-19",
+     "subject": "tmerc spherical: fix numeric instability at lat=lat_0"
+    }
+   ]
+  },
+  {
+   "name": "tmerczoned",
+   "desc": "Transverse Mercator Zoned Grid System",
+   "file": "tmerczoned.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "797ba8c7e86274e6bee62b317e9b3c3b9cbb0ba3",
+     "date": "2026-08-10",
+     "subject": "Adds implementation of Transverse Mercator Zoned Grid System (supporting EPSG:32600 and EPSG:32700)"
+    }
+   ]
+  },
+  {
+   "name": "tobmerc",
+   "desc": "Tobler-Mercator",
+   "file": "tobmerc.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "tpeqd",
+   "desc": "Two Point Equidistant",
+   "file": "tpeqd.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "tpers",
+   "desc": "Tilted perspective",
+   "file": "nsper.cpp",
+   "proj4rs": true,
+   "suite": [
+    "tpers"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "tsea",
+   "desc": "Tetrahedral Snyder Equal Area",
+   "file": "polyhedral.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": [
+    {
+     "sha": "60c0898ad711222cc9ce702249c4cce26d9e4c9a",
+     "date": "2026-08-18",
+     "subject": "fix cppcheck redundant complain"
+    },
+    {
+     "sha": "ba6e027f23fe4bcba70ac6fd20b52a9598ff0918",
+     "date": "2026-08-18",
+     "subject": "Add IVEA projection: DSEA projection onto icosahedron net (#4817)"
+    },
+    {
+     "sha": "9598b318959e2201ef45270dd4d8c61906c61dc9",
+     "date": "2026-08-13",
+     "subject": "Snyder polyhedral equal area projections"
+    }
+   ]
+  },
+  {
+   "name": "ups",
+   "desc": "Universal Polar Stereographic",
+   "file": "stere.cpp",
+   "proj4rs": true,
+   "suite": [
+    "ups"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "urm5",
+   "desc": "Urmaev V",
+   "file": "urm5.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "urmfps",
+   "desc": "Urmaev Flat-Polar Sinusoidal",
+   "file": "urmfps.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "utm",
+   "desc": "Universal Transverse Mercator (UTM)",
+   "file": "tmerc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "utm"
+   ],
+   "proj_commits": [
+    {
+     "sha": "ca23885da621269333eb00c5010e2ff2ac3423f0",
+     "date": "2026-02-19",
+     "subject": "tmerc spherical: fix numeric instability at lat=lat_0"
+    }
+   ]
+  },
+  {
+   "name": "vandg",
+   "desc": "van der Grinten (I)",
+   "file": "vandg.cpp",
+   "proj4rs": false,
+   "suite": [
+    "vandg"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "vandg2",
+   "desc": "van der Grinten II",
+   "file": "vandg2.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "vandg3",
+   "desc": "van der Grinten III",
+   "file": "vandg2.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "vandg4",
+   "desc": "van der Grinten IV",
+   "file": "vandg4.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "vitk1",
+   "desc": "Vitkovsky I",
+   "file": "sconics.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wag1",
+   "desc": "Wagner I (Kavrayskiy VI)",
+   "file": "urmfps.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wag2",
+   "desc": "Wagner II",
+   "file": "wag2.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wag3",
+   "desc": "Wagner III",
+   "file": "wag3.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wag4",
+   "desc": "Wagner IV",
+   "file": "moll.cpp",
+   "proj4rs": true,
+   "suite": [
+    "wag4"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "wag5",
+   "desc": "Wagner V",
+   "file": "moll.cpp",
+   "proj4rs": true,
+   "suite": [
+    "wag5"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "wag6",
+   "desc": "Wagner VI",
+   "file": "eck3.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wag7",
+   "desc": "Wagner VII",
+   "file": "wag7.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "webmerc",
+   "desc": "Web Mercator / Pseudo Mercator",
+   "file": "merc.cpp",
+   "proj4rs": true,
+   "suite": [
+    "webmerc"
+   ],
+   "proj_commits": []
+  },
+  {
+   "name": "weren",
+   "desc": "Werenskiold I",
+   "file": "putp4p.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wink1",
+   "desc": "Winkel I",
+   "file": "wink1.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wink2",
+   "desc": "Winkel II",
+   "file": "wink2.cpp",
+   "proj4rs": false,
+   "suite": [],
+   "proj_commits": []
+  },
+  {
+   "name": "wintri",
+   "desc": "Winkel Tripel",
+   "file": "aitoff.cpp",
+   "proj4rs": false,
+   "suite": [
+    "wintri"
+   ],
+   "proj_commits": [
+    {
+     "sha": "5d871512e33b300478abe352a8496f3184ac15ef",
+     "date": "2026-07-03",
+     "subject": "switch back to hypot for forward"
+    },
+    {
+     "sha": "52e114e714992059be5d247639601a175e50e303",
+     "date": "2026-07-03",
+     "subject": "Addressing review feedback from Charles Karney"
+    },
+    {
+     "sha": "aaa58914ea052b7fd8a5e1c0e89f42007b737613",
+     "date": "2026-07-01",
+     "subject": "Closed-form Aitoff implementation, docs, and sources"
+    }
+   ]
+  }
+ ]
+}
