@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +R=6371000 +no_defs`. Window lon [117, 177], lat [-80, 0], every 10 deg: 63 points, 63 projected by PROJ 9.10.0.
 
-Why this entry: spherical tmerc at and near lat_0 (PROJ ca23885d, 2026-02).
+Why this entry: spherical tmerc with lat_0, and at the equator (PROJ bc0c9f3e, 2020; ca23885d, 2026-02).
 
 PROJ round trip (its inverse of its forward): worst 2.1e-14 deg at [177, -60].
 

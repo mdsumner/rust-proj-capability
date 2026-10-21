@@ -27,12 +27,13 @@ projections and two probes of recent PROJ changes):
   supports**, natively and as wasm. Its latest release on crates.io (0.2.1)
   supports 29 of them: ortho, gnom, omerc, tpers, nsper, cass, eqdc, robin,
   eqearth, poly and sinu are on main only.
-- **The watch found a PROJ fix that proj4rs has not followed.** PROJ
+- **proj4rs had not followed two PROJ fixes to spherical tmerc.** The
+  suite's `tmerc-sphere` entry, added because the watch listed PROJ
   [ca23885d](https://github.com/OSGeo/PROJ/commit/ca23885da621269333eb00c5010e2ff2ac3423f0)
-  (2026-02) made spherical tmerc stable at lat = lat_0 and decides the
-  inverse's hemisphere with `copysign(phi, D)`. proj4rs still has the older
-  test, so with `+R` and a non-zero `lat_0` its inverse returns the wrong sign
-  of latitude for every point north of lat_0
+  (2026-02, forward stability at the equator), showed that with `+R` and a
+  non-zero `lat_0` the proj4rs inverse returns the wrong sign of latitude for
+  every point north of lat_0. PROJ fixed that in 2020
+  ([bc0c9f3e](https://github.com/OSGeo/PROJ/commit/bc0c9f3e96dc4a9829f1f3d1e1307b4dd5dd10de))
   ([tmerc-sphere](results/projections/pages/tmerc-sphere.md)).
 - **math.gl and proj4js agree with each other and differ from PROJ on
   ellipsoidal ortho by 33.7 km** ([ortho](results/projections/pages/ortho.md)).
