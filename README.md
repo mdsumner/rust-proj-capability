@@ -29,7 +29,7 @@ PROJ.
 | [`wbprojection`](https://crates.io/crates/wbprojection) | Whitebox's projection library | EPSG (hand-built list), PROJ strings, WKT1; ignores `+units` and `TOWGS84` in places | 94 kinds, including world maps (robin, wintri, eqearth, natearth, sinu, ortho). Many are spherical approximations | Helmert with the wrong sign convention for position-vector `towgs84`; NTv2 and NADCON loaders | 32 (33 off) |
 
 "Exact" means within 1 mm of PROJ 9.9.0 on the fixture corpus. Most misses
-are honest refusals, not wrong answers; [results/per-fixture.md](results/per-fixture.md) shows which.
+are honest refusals, not wrong answers; [results/crs/per-fixture.md](results/crs/per-fixture.md) shows which.
 
 **What no pure-Rust crate does (yet):**
 - resolve ESRI, IAU or deprecated codes, or any WKT/PROJJSON without an EPSG ID;
@@ -87,22 +87,22 @@ portability in exchange for part of the engine.
   closes it.**
   - The bare PROJ string for EPSG:2056 is 164 m off and the bound string is
     exact
-    ([form-2056-proj-bare](fixtures/catalog/form-2056-proj-bare.md)).
+    ([form-2056-proj-bare](suites/crs/catalog/form-2056-proj-bare.md)).
   - PROJ declines to bind EPSG:27700, ED50 and GDA94, leaving ports 109 m,
     172 m and 1.5 m off.
 - **Operation selection is no longer PROJ-only.** `proj-core` carries an EPSG
   registry and matches PROJ where every hub port is off
-  ([pair-4283-7844](fixtures/catalog/pair-4283-7844.md)). It cannot transform
+  ([pair-4283-7844](suites/crs/catalog/pair-4283-7844.md)). It cannot transform
   custom CRSs.
 - **`proj4rs` executes what it ports to 0.000 mm.** The exception is `eqc`,
   where PROJ 9.9 has moved to the ellipsoid
-  ([method-eqc](fixtures/catalog/method-eqc.md)).
+  ([method-eqc](suites/crs/catalog/method-eqc.md)).
 - **Several rewrites are silently wrong** by hundreds of metres to thousands
   of kilometres. The cases, with fixtures, are in
   [report.md](report.md#findings).
 - **`proj4rs` (default features) and libproj cannot share a native binary.**
   The `geod_*` symbols clash and PROJ's aeqd returns NaN
-  ([harness/README.md](harness/README.md#symbol-clash-why-there-are-two-builds)).
+  ([engines/rust-crs/README.md](engines/rust-crs/README.md#symbol-clash-why-there-are-two-builds)).
 
 ## Read
 
@@ -110,10 +110,10 @@ portability in exchange for part of the engine.
 |---|---|
 | [report.md](report.md) | findings, what each candidate is for, wrapper vs structural, changes from the TypeScript precedent |
 | [capability-matrix.md](capability-matrix.md) | 15 layers by 8 candidates, with evidence |
-| [results/per-fixture.md](results/per-fixture.md) | verdict grid: every fixture by every candidate |
-| [fixtures/FIXTURES.md](fixtures/FIXTURES.md) | fixture catalog: a page per fixture with inputs, PROJ's answer and each candidate's result |
-| [fixtures/README.md](fixtures/README.md) | oracle configuration and data schema |
-| [harness/README.md](harness/README.md) | how candidates are fed and judged |
+| [results/crs/per-fixture.md](results/crs/per-fixture.md) | verdict grid: every fixture by every candidate |
+| [suites/crs/FIXTURES.md](suites/crs/FIXTURES.md) | fixture catalog: a page per fixture with inputs, PROJ's answer and each candidate's result |
+| [suites/crs/README.md](suites/crs/README.md) | oracle configuration and data schema |
+| [engines/rust-crs/README.md](engines/rust-crs/README.md) | how candidates are fed and judged |
 | [platform/README.md](platform/README.md) | wasm32, binary size, thread safety |
 
 ## Candidates

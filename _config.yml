@@ -15,7 +15,9 @@ relative_links:
 titles_from_headings:
   strip_title: false
 exclude:
-  - harness/src
-  - harness/Cargo.lock
-  - harness/Cargo.toml
+  - engines/*/src
+  - engines/*/target
+  - engines/js/node_modules
+  - engines/*/Cargo.lock
+  - engines/*/Cargo.toml
   - "*.sh"

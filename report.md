@@ -7,13 +7,13 @@ proj-data grids. The corpus is 93 fixtures and 11 candidate columns, giving
 
 Where to look:
 - layer-by-layer scores and evidence: [capability-matrix.md](capability-matrix.md)
-- every fixture, with a page each: [fixtures/FIXTURES.md](fixtures/FIXTURES.md)
-- verdict grid, fixtures by candidates: [results/per-fixture.md](results/per-fixture.md)
-- raw output: `results/results.jsonl` ([results/README.md](results/README.md))
+- every fixture, with a page each: [suites/crs/FIXTURES.md](suites/crs/FIXTURES.md)
+- verdict grid, fixtures by candidates: [results/crs/per-fixture.md](results/crs/per-fixture.md)
+- raw output: `results/crs/results.jsonl` ([results/crs/README.md](results/crs/README.md))
 
 ## How it was run
 
-1. **Fixtures.** `fixtures/fixtures-src.json` holds the brief's seed list and
+1. **Fixtures.** `suites/crs/fixtures-src.json` holds the brief's seed list and
    pairs plus its additions:
    - NAD27 to NAD83, ED50 to WGS84;
    - ITRF2014 to GDA2020 at 2025.0;
@@ -25,7 +25,7 @@ Where to look:
    I added 32 method fixtures, 10 edge fixtures (pole, seam, antipode, far
    from the central meridian, Mercator at the pole), unknown, invalid and
    deprecated inputs, grads, Mars, geocentric, and LV95 to LV03.
-2. **Oracle.** `oracle/oracle.py` produces `fixtures/crs.json`. For each
+2. **Oracle.** `oracle/crs.py` produces `suites/crs/crs.json`. For each
    fixture it records:
    - the reference forward and inverse coordinates;
    - the operation used (`get_last_used_operation`) and the candidates
@@ -34,7 +34,7 @@ Where to look:
 
    It refuses to run if the network is enabled or if any grid file is on
    `PROJ_DATA`.
-3. **Harness.** `harness/` is one binary with a cargo feature per candidate,
+3. **Harness.** `engines/rust-crs/` is one binary with a cargo feature per candidate,
    run by `run-harness.sh` with `--network none`. It judges each result by
    distance from the oracle in metres:
    - "exact" means under 1 mm, "close" under 1 m;
@@ -61,7 +61,7 @@ Harness decisions that affect what the numbers mean:
 - The libproj columns and the pure-Rust columns come from separate builds.
   proj4rs's default `aeqd` feature links its own `geodesic.c`. Its exported
   `geod_*` symbols interpose on libproj's, and PROJ's aeqd then silently
-  returns NaN. The evidence is `results/combined-build.jsonl`.
+  returns NaN. The evidence is `results/crs/combined-build.jsonl`.
 
 ## Findings
 
@@ -70,7 +70,7 @@ Harness decisions that affect what the numbers mean:
    - The precedent's number reproduces exactly. The bare PROJ string for
      EPSG:2056 is 163.88 m from the code's result. The bound string is
      0.000 m, for PROJ itself, for proj4rs and for geodesy+bound
-     ([form-2056-proj-bare](fixtures/catalog/form-2056-proj-bare.md), [form-2056-proj-bound](fixtures/catalog/form-2056-proj-bound.md)).
+     ([form-2056-proj-bare](suites/crs/catalog/form-2056-proj-bare.md), [form-2056-proj-bound](suites/crs/catalog/form-2056-proj-bound.md)).
    - However, `proj_crs_create_bound_crs_to_WGS84` adds `+towgs84` only when
      PROJ can pick a single Helmert operation. It declines for:
      - EPSG:27700: several OSGB36 candidates, and the best one is the OSTN15
@@ -119,16 +119,16 @@ Harness decisions that affect what the numbers mean:
 
    | candidate | defect | fixture | size |
    |---|---|---|---|
-   | wbprojection | drops EPSG:28355's false northing | [seed-28355](fixtures/catalog/seed-28355.md) | 10,000 km |
-   | wbprojection | ignores merc `+lat_ts` | [method-merc](fixtures/catalog/method-merc.md) | 4390 km |
-   | wbprojection | ignores `+units` | [form-2264-proj-bound](fixtures/catalog/form-2264-proj-bound.md) | 445 km |
+   | wbprojection | drops EPSG:28355's false northing | [seed-28355](suites/crs/catalog/seed-28355.md) | 10,000 km |
+   | wbprojection | ignores merc `+lat_ts` | [method-merc](suites/crs/catalog/method-merc.md) | 4390 km |
+   | wbprojection | ignores `+units` | [form-2264-proj-bound](suites/crs/catalog/form-2264-proj-bound.md) | 445 km |
    | wbprojection | applies position vector `+towgs84` with the coordinate frame formula | `form-27700-*` | 29 m |
-   | miniproj | south polar stereographic A grossly wrong | [method-ups-32761](fixtures/catalog/method-ups-32761.md) | 287,000 km |
-   | miniproj | outputs metres for US-feet CRSs | [form-2264-ftus](fixtures/catalog/form-2264-ftus.md) | 445 km |
-   | proj-core and wbprojection | wrong longitude from the inverse of southern-hemisphere LCC/AEA (same wrong value in both) | [method-lcc](fixtures/catalog/method-lcc.md), [method-aea](fixtures/catalog/method-aea.md) | |
-   | geodesy | somerc inverse off | [method-somerc](fixtures/catalog/method-somerc.md) | 4.97 km |
-   | geodesy | south polar laea wrong | [seed-esri-102020](fixtures/catalog/seed-esri-102020.md) | 11,125 km |
-   | geodesy | ignores omerc `lat_0`/`gamma` | [method-omerc-alpha](fixtures/catalog/method-omerc-alpha.md) | |
+   | miniproj | south polar stereographic A grossly wrong | [method-ups-32761](suites/crs/catalog/method-ups-32761.md) | 287,000 km |
+   | miniproj | outputs metres for US-feet CRSs | [form-2264-ftus](suites/crs/catalog/form-2264-ftus.md) | 445 km |
+   | proj-core and wbprojection | wrong longitude from the inverse of southern-hemisphere LCC/AEA (same wrong value in both) | [method-lcc](suites/crs/catalog/method-lcc.md), [method-aea](suites/crs/catalog/method-aea.md) | |
+   | geodesy | somerc inverse off | [method-somerc](suites/crs/catalog/method-somerc.md) | 4.97 km |
+   | geodesy | south polar laea wrong | [seed-esri-102020](suites/crs/catalog/seed-esri-102020.md) | 11,125 km |
+   | geodesy | ignores omerc `lat_0`/`gamma` | [method-omerc-alpha](suites/crs/catalog/method-omerc-alpha.md) | |
 
    None of these raises an error.
 5. **Authority lookup is the common gap, as predicted.** Only libproj
@@ -149,7 +149,7 @@ Harness decisions that affect what the numbers mean:
    the compiler), and the crate does not build for wasm32.
 7. **Oracle caveats found along the way.**
    - `+proj=wintri` as a CRS is exported with `lat_1=0`, while the same string
-     as an operation uses the documented 50.467. [seed-wintri](fixtures/catalog/seed-wintri.md) therefore tests
+     as an operation uses the documented 50.467. [seed-wintri](suites/crs/catalog/seed-wintri.md) therefore tests
      PROJ's CRS path, not the method.
    - PROJ returns a finite 242,528,680 m for lat 90 in EPSG:3857 rather than
      an error.
@@ -336,13 +336,13 @@ Searched for "projection crs", "coordinate transformation", "epsg", "proj4",
 
 ```
 NET=bridge WD=/work/harness ./run-in-image.sh cargo fetch   # once, network on
-./run-in-image.sh python3 -I oracle/oracle.py               # oracle, network off
+./run-in-image.sh python3 -I oracle/crs.py               # oracle, network off
 ./run-harness.sh                                            # harness, network off
-python3 report/summarise.py results/results.jsonl --md > results/per-fixture.md
+python3 report/summarise.py results/crs/results.jsonl --md > results/crs/per-fixture.md
 docker run --rm -v $PWD/platform:/p:ro ghcr.io/hypertidy/gdal-r-python-extras:latest bash /p/wasm-check.sh
 ./run-in-image.sh bash /work/platform/size-check.sh
 ```
 
 The `cargo fetch` and wasm checks are the only steps run with the network on.
 The grid-free `PROJ_DATA` (`.proj-nogrids/`) is built by `./make-proj-nogrids.sh`, which copies proj.db,
-proj.ini and the init files out of the image (see `fixtures/README.md`).
+proj.ini and the init files out of the image (see `suites/crs/README.md`).

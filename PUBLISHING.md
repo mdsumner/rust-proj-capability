@@ -11,12 +11,12 @@ nothing below needs the author.
 | [README.md](README.md) | hand-written | landing page: the question, headline findings, navigation |
 | [report.md](report.md) | hand-written | findings, one paragraph per candidate, wrapper-vs-structural, the rwarp `CrsTransform` angle, changes from the TypeScript precedent |
 | [capability-matrix.md](capability-matrix.md) | hand-written | 15 layers by 8 candidates, summary grid and evidence |
-| [results/per-fixture.md](results/per-fixture.md) | generated | verdict grid: 93 fixtures by 11 candidate columns |
-| [fixtures/FIXTURES.md](fixtures/FIXTURES.md) | generated | fixture catalog: one row per fixture |
-| `fixtures/catalog/*.md` (93 pages) | generated | one page per fixture: inputs, what PROJ did, every candidate's result |
-| [fixtures/README.md](fixtures/README.md) | hand-written | oracle configuration and the JSON schema |
-| [results/README.md](results/README.md) | generated | result files and verdict counts |
-| [harness/README.md](harness/README.md) | hand-written | candidates, output fields, the symbol clash |
+| [results/crs/per-fixture.md](results/crs/per-fixture.md) | generated | verdict grid: 93 fixtures by 11 candidate columns |
+| [suites/crs/FIXTURES.md](suites/crs/FIXTURES.md) | generated | fixture catalog: one row per fixture |
+| `suites/crs/catalog/*.md` (93 pages) | generated | one page per fixture: inputs, what PROJ did, every candidate's result |
+| [suites/crs/README.md](suites/crs/README.md) | hand-written | oracle configuration and the JSON schema |
+| [results/crs/README.md](results/crs/README.md) | generated | result files and verdict counts |
+| [engines/rust-crs/README.md](engines/rust-crs/README.md) | hand-written | candidates, output fields, the symbol clash |
 | [platform/README.md](platform/README.md) | hand-written | wasm32, size and thread-safety checks |
 | [docs/brief.md](docs/brief.md) | hand-written | the original brief |
 
@@ -27,12 +27,12 @@ Fixtures / Method (harness, fixtures and platform READMEs) / Brief.
 
 | file | size | what |
 |---|---|---|
-| `fixtures/crs.json` | 0.3 MB | the oracle output (schema in fixtures/README.md) |
-| `fixtures/fixtures-src.json` | small | the fixture list |
-| `results/results.jsonl` | 0.8 MB | one JSON object per fixture and candidate |
-| `results/combined-build.jsonl`, `results/summary.txt`, `results/stderr.txt` | small | evidence and plain-text views |
+| `suites/crs/crs.json` | 0.3 MB | the oracle output (schema in suites/crs/README.md) |
+| `suites/crs/fixtures-src.json` | small | the fixture list |
+| `results/crs/results.jsonl` | 0.8 MB | one JSON object per fixture and candidate |
+| `results/crs/combined-build.jsonl`, `results/crs/summary.txt`, `results/crs/stderr.txt` | small | evidence and plain-text views |
 | `platform/*.txt`, `platform/*.sh` | small | E7 raw output and scripts |
-| `harness/` (Rust), `oracle/oracle.py`, `report/*.py`, `*.sh` | | code |
+| `engines/rust-crs/` (Rust), `oracle/crs.py`, `report/*.py`, `*.sh` | | code |
 
 ## Rendering facts
 
@@ -68,4 +68,4 @@ of that script, are done once.
 
 The hand-written pages quote numbers (verdict counts, distances). After a
 rerun with new library versions, check them against
-[results/README.md](results/README.md) and the fixture pages.
+[results/crs/README.md](results/crs/README.md) and the fixture pages.

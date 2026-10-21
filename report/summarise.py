@@ -1,5 +1,5 @@
-"""Summarise results/results.jsonl: verdict grid (fixtures x candidates) and
-per-candidate counts. Usage: python3 report/summarise.py results/results.jsonl [--md]"""
+"""Summarise results/crs/results.jsonl: verdict grid (fixtures x candidates) and
+per-candidate counts. Usage: python3 report/summarise.py results/crs/results.jsonl [--md]"""
 import json, sys
 from collections import OrderedDict, Counter
 
