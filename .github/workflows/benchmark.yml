@@ -76,7 +76,7 @@ jobs:
 
       - name: Follow proj4rs main
         run: |
-          cargo update --manifest-path engines/rust-projections/Cargo.toml -p proj4rs-main
+          cargo update --manifest-path engines/rust-projections/Cargo.toml -p 'git+https://github.com/3liz/proj4rs?branch=main#proj4rs'
           engines/js/build-proj4rs-wasm.sh "$PROJ4RS_REF"
 
       - name: Engines and pages

@@ -23,7 +23,7 @@ engine and writes what the library returned; judging happens once, in
 ## Following upstream
 
 `proj4rs-main` and `proj4rs-wasm` follow the proj4rs main branch: the nightly
-workflow runs `cargo update -p proj4rs-main` and rebuilds the wasm module, and
+workflow runs `cargo update` on the git package and rebuilds the wasm module, and
 each result records the commit it ran. Released crates and npm packages are
 pinned; bump them deliberately so a change in the grid is a change in the
 engine, not in the harness.

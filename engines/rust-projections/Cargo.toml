@@ -6,7 +6,7 @@ publish = false
 
 # One binary, one module per engine. proj4rs appears twice: the latest
 # crates.io release and the main branch (pinned by Cargo.lock; the nightly
-# workflow runs `cargo update -p proj4rs-main` to follow it).
+# workflow runs `cargo update` on that git package to follow it).
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
