@@ -8,23 +8,50 @@
     <style>
       .site-nav { border-bottom: 1px solid #d0d7de; padding-bottom: 8px; margin-bottom: 24px; }
       .site-nav a { margin-right: 14px; white-space: nowrap; }
+      .site-nav a.here { font-weight: 600; }
+      .sub-nav { font-size: 14px; margin: -16px 0 24px; }
+      .sub-nav a { margin-right: 12px; white-space: nowrap; }
       .markdown-body table { display: block; width: max-content; max-width: 100%; overflow-x: auto; }
     </style>
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
+      {%- assign p = page.path -%}
+      {%- assign section = "" -%}
+      {%- if p contains "results/projections" or p contains "suites/projections" or p == "engines/README.md" -%}
+        {%- assign section = "projections" -%}
+      {%- elsif p == "crs-study.md" or p == "report.md" or p == "capability-matrix.md" or p contains "results/crs" or p contains "suites/crs" or p contains "engines/rust-crs" or p contains "platform/" or p == "docs/brief.md" -%}
+        {%- assign section = "crs" -%}
+      {%- elsif p contains "results/tracker" or p contains "tracker/README" -%}
+        {%- assign section = "watch" -%}
+      {%- elsif p == "docs/approach.md" -%}
+        {%- assign section = "approach" -%}
+      {%- endif %}
       <nav class="site-nav">
-        <a href="{{ "/" | relative_url }}">Home</a>
-        <a href="{{ "/report.html" | relative_url }}">Report</a>
-        <a href="{{ "/capability-matrix.html" | relative_url }}">Matrix</a>
-        <a href="{{ "/results/projections/" | relative_url }}">Projections</a>
-        <a href="{{ "/results/tracker/" | relative_url }}">PROJ watch</a>
-        <a href="{{ "/results/crs/per-fixture.html" | relative_url }}">CRS grid</a>
-        <a href="{{ "/suites/crs/FIXTURES.html" | relative_url }}">CRS fixtures</a>
-        <a href="{{ "/engines/" | relative_url }}">Engines</a>
-        <a href="{{ "/docs/brief.html" | relative_url }}">Brief</a>
+        <a href="{{ "/" | relative_url }}"{% if section == "" %} class="here"{% endif %}>Home</a>
+        <a href="{{ "/docs/approach.html" | relative_url }}"{% if section == "approach" %} class="here"{% endif %}>Approach</a>
+        <a href="{{ "/results/projections/" | relative_url }}"{% if section == "projections" %} class="here"{% endif %}>Projections</a>
+        <a href="{{ "/results/tracker/" | relative_url }}"{% if section == "watch" %} class="here"{% endif %}>PROJ watch</a>
+        <a href="{{ "/crs-study.html" | relative_url }}"{% if section == "crs" %} class="here"{% endif %}>CRS study</a>
         <a href="{{ site.github.repository_url }}">Source</a>
       </nav>
+      {%- if section == "projections" %}
+      <nav class="sub-nav">
+        <a href="{{ "/results/projections/" | relative_url }}">Grid</a>
+        <a href="{{ "/results/projections/proj-check.html" | relative_url }}">PROJ round trip</a>
+        <a href="{{ "/suites/projections/" | relative_url }}">How it is judged</a>
+        <a href="{{ "/engines/" | relative_url }}">Engines</a>
+      </nav>
+      {%- elsif section == "crs" %}
+      <nav class="sub-nav">
+        <a href="{{ "/crs-study.html" | relative_url }}">Overview</a>
+        <a href="{{ "/report.html" | relative_url }}">Report</a>
+        <a href="{{ "/capability-matrix.html" | relative_url }}">Matrix</a>
+        <a href="{{ "/results/crs/per-fixture.html" | relative_url }}">Grid</a>
+        <a href="{{ "/suites/crs/FIXTURES.html" | relative_url }}">Fixtures</a>
+        <a href="{{ "/docs/brief.html" | relative_url }}">Brief</a>
+      </nav>
+      {%- endif %}
       {{ content }}
     </div>
   </body>
