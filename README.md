@@ -1,16 +1,59 @@
-# PROJ ports and rewrites, from Rust: a capability map
+# PROJ ports and rewrites: a benchmark
+
+PROJ is ported and rewritten again and again, in Rust, in JavaScript and as
+WebAssembly. This repository is a shared benchmark for all of them: the same
+inputs, PROJ's own answers, and judging code that belongs to no engine. It
+is meant as a reference the ports can point to when they plan, compare and
+negotiate, whether or not PROJ itself adopts it.
+
+| | question | engines | reference |
+|---|---|---|---|
+| [Projections suite](results/projections/README.md) | does the engine compute the same projection as PROJ, over the whole area where it is used? | proj4rs (release, main, wasm), proj-core, wbprojection, geodesy, proj4js, math.gl | PROJ master, rebuilt nightly |
+| [CRS suite](results/crs/per-fixture.md) | can it resolve a CRS and execute a CRS-to-CRS transformation the way PROJ does? | proj, proj-sys, proj4rs, crs-definitions, geodesy, miniproj, proj-core, wbprojection | PROJ 9.9.0 (the 2026-10-15 study) |
+| [PROJ watch](results/tracker/README.md) | which PROJ projections changed recently, and are they ported or covered? | proj4rs | PROJ master |
+
+A nightly workflow (`.github/workflows/benchmark.yml`) builds PROJ master,
+recomputes the projections reference, follows proj4rs main, reruns every
+engine, and commits the regenerated pages. How to add an engine:
+[engines/README.md](engines/README.md). How to add a projection:
+[suites/projections/README.md](suites/projections/README.md).
+
+## Projections suite: first findings
+
+As of 2026-10-21, 54 setups (the proj4rs gallery's set plus world
+projections and two probes of recent PROJ changes):
+
+- **proj4rs main matches PROJ to the millimetre on 36 of the 40 setups it
+  supports**, natively and as wasm. Its latest release on crates.io (0.2.1)
+  supports 29 of them: ortho, gnom, omerc, tpers, cass, eqdc, robin, eqearth,
+  poly and sinu are on main only.
+- **The watch found a PROJ fix that proj4rs has not followed.** PROJ
+  [ca23885d](https://github.com/OSGeo/PROJ/commit/ca23885da621269333eb00c5010e2ff2ac3423f0)
+  (2026-02) made spherical tmerc stable at lat = lat_0 and decides the
+  inverse's hemisphere with `copysign(phi, D)`. proj4rs still has the older
+  test, so with `+R` and a non-zero `lat_0` its inverse returns the wrong sign
+  of latitude for every point north of lat_0
+  ([tmerc-sphere](results/projections/pages/tmerc-sphere.md)).
+- **math.gl and proj4js agree with each other and differ from PROJ on
+  ellipsoidal ortho by 33.7 km** ([ortho](results/projections/pages/ortho.md)).
+  math.gl 5.0.0-alpha.18 matches PROJ on 29 setups.
+- **PROJ's own round trip is checked too**
+  ([proj-check.md](results/projections/proj-check.md)), so a problem in the
+  reference is reported as PROJ's, not as a port's.
+
+## CRS suite: is there a Rust crate for me?
 
 A coordinate library has to do two separate things:
 
 - **resolve:** turn what you typed into a complete parameter set;
 - **execute:** run those parameters.
 
-PROJ's ports and rewrites fail the two independently. This repository
+PROJ's ports and rewrites fail the two independently. The CRS suite
 measures both for the Rust landscape. The same 93 fixtures are run through 11
 candidate columns and judged against PROJ 9.9.0 itself, with network off and
 no grids installed. The brief is in [docs/brief.md](docs/brief.md).
 
-## TL;DR: is there a Rust crate for me?
+### TL;DR
 
 **Short answer.** Only `proj` (the libproj binding) does everything PROJ
 does, and it brings a C++ build and no wasm. In pure Rust, use `proj-core`
@@ -81,7 +124,7 @@ The short version: if you're used to `sf` or `pyproj`, `proj` gives you the
 same engine but less of the ergonomics. The pure-Rust crates give you
 portability in exchange for part of the engine.
 
-## Headline findings
+### Headline findings
 
 - **The datum step is the expensive gap, and binding to WGS84 only partly
   closes it.**
@@ -115,10 +158,14 @@ portability in exchange for part of the engine.
 | [suites/crs/README.md](suites/crs/README.md) | oracle configuration and data schema |
 | [engines/rust-crs/README.md](engines/rust-crs/README.md) | how candidates are fed and judged |
 | [platform/README.md](platform/README.md) | wasm32, binary size, thread safety |
+| [results/projections/README.md](results/projections/README.md) | projections suite: verdict grid, a page and a map per projection |
+| [suites/projections/README.md](suites/projections/README.md) | how the projections suite is run and judged |
+| [engines/README.md](engines/README.md) | every engine, and how to add one |
+| [results/tracker/README.md](results/tracker/README.md) | PROJ change watch |
 
-## Candidates
+### Candidates
 
-PROJ 9.9.0 (oracle) and the following crates:
+CRS suite: PROJ 9.9.0 (oracle) and the following crates:
 
 | crate | version | added by |
 |---|---|---|
@@ -135,7 +182,17 @@ There are also wrapper columns: `proj4rs+bound`, `geodesy+bound` and
 
 ## Reproduce
 
-Everything runs in `ghcr.io/hypertidy/gdal-r-python-extras`:
+Projections suite, no container needed (python3 with pyproj, cargo, node,
+and wasm-pack for the proj4rs-wasm column):
+
+```
+engines/js/build-proj4rs-wasm.sh       # proj4rs main as a Node wasm module
+ORACLE=1 ./run-projections.sh          # PROJ reference with the installed pyproj, every engine, pages
+oracle/build-proj.sh master            # optional: PROJ and pyproj built from a PROJ ref, as the nightly does
+tracker/checkout.sh && python3 tracker/watch.py --proj tracker/.cache/PROJ --proj4rs tracker/.cache/proj4rs
+```
+
+CRS suite: everything runs in `ghcr.io/hypertidy/gdal-r-python-extras`:
 `./make-proj-nogrids.sh` and a one-time `cargo fetch`, then
 `./regenerate.sh`. Details are in [report.md](report.md#reproducing) and
 [PUBLISHING.md](PUBLISHING.md).
