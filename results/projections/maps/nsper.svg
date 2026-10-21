@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 408" width="1000" height="408" font-family="sans-serif">
+<rect width="1000" height="408" fill="#fff"/>
+<text x="8" y="17" font-size="13" fill="#111">nsper: +proj=nsper +ellps=WGS84 +lat_0=40 +lon_0=-100 +h=3000000</text>
+<rect x="8" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="14" y="45" font-size="11" fill="#333">proj4rs: --</text>
+<text x="128.0" y="122.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="256" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="262" y="45" font-size="11" fill="#333">proj4rs-main: exact</text>
+<path d="M339.2 191.2L329.9 145.2M398.8 198.0L404.0 150.9M299.6 119.5L329.9 145.2M329.1 63.9L351.7 66.7M351.7 66.7L391.9 67.2M391.9 67.2L422.4 65.0M422.4 65.0L429.4 62.0" fill="none" stroke="#6a8caf" stroke-width="0.8"/>
+<circle cx="339.2" cy="191.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="398.8" cy="198.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="299.6" cy="119.5" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="329.9" cy="145.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="404.0" cy="150.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="452.4" cy="128.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="329.1" cy="63.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="351.7" cy="66.7" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="391.9" cy="67.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="422.4" cy="65.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="429.4" cy="62.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<rect x="504" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="510" y="45" font-size="11" fill="#333">proj4rs-wasm: exact</text>
+<path d="M587.2 191.2L577.9 145.2M646.8 198.0L652.0 150.9M547.6 119.5L577.9 145.2M577.1 63.9L599.7 66.7M599.7 66.7L639.9 67.2M639.9 67.2L670.4 65.0M670.4 65.0L677.4 62.0" fill="none" stroke="#6a8caf" stroke-width="0.8"/>
+<circle cx="587.2" cy="191.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="646.8" cy="198.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="547.6" cy="119.5" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="577.9" cy="145.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="652.0" cy="150.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="700.4" cy="128.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="577.1" cy="63.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="599.7" cy="66.7" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="639.9" cy="67.2" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="670.4" cy="65.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="677.4" cy="62.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<rect x="752" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="758" y="45" font-size="11" fill="#333">proj-core: --</text>
+<text x="872.0" y="122.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="8" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="14" y="233" font-size="11" fill="#333">wbprojection: --</text>
+<text x="128.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="256" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="262" y="233" font-size="11" fill="#333">geodesy: --</text>
+<text x="376.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="504" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="510" y="233" font-size="11" fill="#333">proj4js: --</text>
+<text x="624.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="752" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="758" y="233" font-size="11" fill="#333">math.gl: --</text>
+<text x="872.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+</svg>

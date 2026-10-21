@@ -15,9 +15,19 @@ relative_links:
 titles_from_headings:
   strip_title: false
 exclude:
-  - engines/*/src
-  - engines/*/target
+  - engines/rust-crs/src
+  - engines/rust-crs/target
+  - engines/rust-crs/Cargo.lock
+  - engines/rust-crs/Cargo.toml
+  - engines/rust-projections/src
+  - engines/rust-projections/target
+  - engines/rust-projections/Cargo.lock
+  - engines/rust-projections/Cargo.toml
   - engines/js/node_modules
-  - engines/*/Cargo.lock
-  - engines/*/Cargo.toml
+  - engines/js/.cache
+  - engines/js/proj4rs-pkg
+  - engines/js/package.json
+  - engines/js/package-lock.json
+  - tracker/.cache
+  - oracle/.proj
   - "*.sh"

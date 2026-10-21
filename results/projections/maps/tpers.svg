@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 408" width="1000" height="408" font-family="sans-serif">
+<rect width="1000" height="408" fill="#fff"/>
+<text x="8" y="17" font-size="13" fill="#111">tpers: +proj=tpers +R=6370997 +lat_0=-42 +lon_0=147 +h=3000000 +tilt=30 +azi=45</text>
+<rect x="8" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="14" y="45" font-size="11" fill="#333">proj4rs: --</text>
+<text x="128.0" y="122.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="256" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="262" y="45" font-size="11" fill="#333">proj4rs-main: exact</text>
+<path d="M418.7 97.1L424.3 93.0M418.7 97.1L392.7 62.1M382.3 198.0L390.5 160.9M406.8 118.6L418.7 97.1M418.7 97.1L392.7 62.1M368.4 73.3L392.7 62.1M368.4 73.3L356.8 62.0" fill="none" stroke="#6a8caf" stroke-width="0.8"/>
+<circle cx="418.7" cy="97.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="424.3" cy="93.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="382.3" cy="198.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="390.5" cy="160.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="406.8" cy="118.6" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="418.7" cy="97.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="392.7" cy="62.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="327.7" cy="157.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="337.2" cy="112.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="368.4" cy="73.3" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="392.7" cy="62.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="356.8" cy="62.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<rect x="504" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="510" y="45" font-size="11" fill="#333">proj4rs-wasm: exact</text>
+<path d="M666.7 97.1L672.3 93.0M666.7 97.1L640.7 62.1M630.3 198.0L638.5 160.9M654.8 118.6L666.7 97.1M666.7 97.1L640.7 62.1M616.4 73.3L640.7 62.1M616.4 73.3L604.8 62.0" fill="none" stroke="#6a8caf" stroke-width="0.8"/>
+<circle cx="666.7" cy="97.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="672.3" cy="93.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="630.3" cy="198.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="638.5" cy="160.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="654.8" cy="118.6" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="666.7" cy="97.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="640.7" cy="62.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="575.7" cy="157.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="585.2" cy="112.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="616.4" cy="73.3" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="640.7" cy="62.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="604.8" cy="62.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<rect x="752" y="32" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="758" y="45" font-size="11" fill="#333">proj-core: --</text>
+<text x="872.0" y="122.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="8" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="14" y="233" font-size="11" fill="#333">wbprojection: --</text>
+<text x="128.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="256" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="262" y="233" font-size="11" fill="#333">geodesy: --</text>
+<text x="376.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<rect x="504" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="510" y="233" font-size="11" fill="#333">proj4js: exact</text>
+<path d="M677.8 338.4L677.8 338.4M677.8 338.4L677.8 338.4M677.8 338.4L677.8 338.4M677.8 338.4L677.8 338.4M677.8 338.4L672.6 296.0M677.8 338.4L677.8 338.4M677.8 338.4L669.6 309.3M677.8 338.4L677.8 338.4M677.8 338.4L664.8 325.8M677.8 338.4L677.8 338.4M677.8 338.4L657.7 345.8M677.8 338.4L677.8 338.4M677.8 338.4L647.9 368.7M677.8 338.4L677.8 338.4M677.8 338.4L677.8 338.4M677.8 338.4L677.8 338.4M677.8 338.4L638.5 348.9M677.8 338.4L677.8 338.4M677.8 338.4L654.8 306.6M666.7 285.1L672.3 281.0M666.7 285.1L640.7 250.1M672.3 281.0L673.7 286.1M672.3 281.0L653.4 254.4M673.7 286.1L672.6 296.0M673.7 286.1L658.3 264.6M672.6 296.0L669.6 309.3M672.6 296.0L658.6 277.3M669.6 309.3L664.8 325.8M669.6 309.3L655.5 291.6M664.8 325.8L657.7 345.8M664.8 325.8L648.8 307.6M657.7 345.8L647.9 368.7M657.7 345.8L637.7 325.6M647.9 368.7L636.6 388.2M647.9 368.7L620.3 344.6M636.6 388.2L630.3 386.0M630.3 386.0L638.5 348.9M654.8 306.6L666.7 285.1M666.7 285.1L640.7 250.1M640.7 250.1L653.4 254.4M640.7 250.1L625.4 244.1M653.4 254.4L658.3 264.6M653.4 254.4L638.5 248.7M658.3 264.6L658.6 277.3M658.3 264.6L644.8 258.0M658.6 277.3L655.5 291.6M658.6 277.3L646.1 269.1M655.5 291.6L648.8 307.6M655.5 291.6L643.5 281.1M648.8 307.6L637.7 325.6M648.8 307.6L637.0 293.5M637.7 325.6L620.3 344.6M637.7 325.6L626.2 305.5M620.3 344.6L595.9 357.9M620.3 344.6L610.3 314.8M595.9 357.9L575.7 345.9M595.9 357.9L591.1 315.7M585.2 300.0L583.6 271.8M616.4 261.3L640.7 250.1M616.4 261.3L604.8 250.0M640.7 250.1L625.4 244.1M625.4 244.1L638.5 248.7M625.4 244.1L618.4 248.8M638.5 248.7L644.8 258.0M638.5 248.7L628.1 251.2M644.8 258.0L646.1 269.1M644.8 258.0L633.7 257.5M646.1 269.1L643.5 281.1M646.1 269.1L635.3 265.6M643.5 281.1L637.0 293.5M643.5 281.1L633.4 274.3M637.0 293.5L626.2 305.5M637.0 293.5L628.2 282.7M626.2 305.5L610.3 314.8M626.2 305.5L619.9 289.6M610.3 314.8L591.1 315.7M610.3 314.8L609.0 293.0M591.1 315.7L577.8 300.3M591.1 315.7L597.9 290.1M577.8 300.3L583.6 271.8M577.8 300.3L591.6 279.5M583.6 271.8L604.8 250.0M583.6 271.8L594.7 264.5M604.8 250.0L625.4 244.1M604.8 250.0L605.7 252.8M625.4 244.1L618.4 248.8M618.4 248.8L628.1 251.2M618.4 248.8L615.6 256.7M628.1 251.2L633.7 257.5M628.1 251.2L620.7 257.4M633.7 257.5L635.3 265.6M633.7 257.5L624.1 260.4M635.3 265.6L633.4 274.3M635.3 265.6L625.3 264.8M633.4 274.3L628.2 282.7M633.4 274.3L624.3 269.5M628.2 282.7L619.9 289.6M628.2 282.7L621.2 273.9M619.9 289.6L609.0 293.0M619.9 289.6L616.6 276.8M609.0 293.0L597.9 290.1M609.0 293.0L611.2 277.5M597.9 290.1L591.6 279.5M597.9 290.1L606.5 275.3M591.6 279.5L594.7 264.5M591.6 279.5L604.3 270.2M594.7 264.5L605.7 252.8M594.7 264.5L605.6 264.1M605.7 252.8L618.4 248.8M605.7 252.8L610.0 259.0M618.4 248.8L615.6 256.7M615.6 256.7L620.7 257.4M615.6 256.7L615.2 266.1M620.7 257.4L624.1 260.4M620.7 257.4L615.2 266.1M624.1 260.4L625.3 264.8M624.1 260.4L615.2 266.1M625.3 264.8L624.3 269.5M625.3 264.8L615.2 266.1M624.3 269.5L621.2 273.9M624.3 269.5L615.2 266.1M621.2 273.9L616.6 276.8M621.2 273.9L615.2 266.1M616.6 276.8L611.2 277.5M616.6 276.8L615.2 266.1M611.2 277.5L606.5 275.3M611.2 277.5L615.2 266.1M606.5 275.3L604.3 270.2M606.5 275.3L615.2 266.1M604.3 270.2L605.6 264.1M604.3 270.2L615.2 266.1M605.6 264.1L610.0 259.0M605.6 264.1L615.2 266.1M610.0 259.0L615.6 256.7M610.0 259.0L615.2 266.1M615.6 256.7L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1M615.2 266.1L615.2 266.1" fill="none" stroke="#6a8caf" stroke-width="0.8"/>
+<circle cx="666.7" cy="285.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="672.3" cy="281.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="630.3" cy="386.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="638.5" cy="348.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="654.8" cy="306.6" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="666.7" cy="285.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="640.7" cy="250.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="575.7" cy="345.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="585.2" cy="300.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="616.4" cy="261.3" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="640.7" cy="250.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="604.8" cy="250.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<rect x="752" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
+<text x="758" y="233" font-size="11" fill="#333">math.gl: exact</text>
+<path d="M914.7 285.1L920.3 281.0M914.7 285.1L888.7 250.1M878.3 386.0L886.5 348.9M902.8 306.6L914.7 285.1M914.7 285.1L888.7 250.1M864.4 261.3L888.7 250.1M864.4 261.3L852.8 250.0" fill="none" stroke="#6a8caf" stroke-width="0.8"/>
+<circle cx="914.7" cy="285.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="920.3" cy="281.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="878.3" cy="386.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="886.5" cy="348.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="902.8" cy="306.6" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="914.7" cy="285.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="888.7" cy="250.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="823.7" cy="345.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="833.2" cy="300.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="864.4" cy="261.3" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="888.7" cy="250.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="852.8" cy="250.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+</svg>

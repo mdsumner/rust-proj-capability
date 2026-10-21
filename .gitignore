@@ -9,3 +9,11 @@ harness/target/
 .httr-oauth
 .DS_Store
 .quarto
+engines/*/target/
+engines/js/node_modules/
+engines/js/.cache/
+engines/js/proj4rs-pkg/
+tracker/.cache/
+# raw per-point engine output: large, kept as a workflow artifact instead
+results/projections/engines-*.jsonl
+oracle/.proj/
