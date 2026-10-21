@@ -1,7 +1,7 @@
 # GitHub Pages (classic Jekyll build, served from the root of main).
 # See PUBLISHING.md for the rendering facts this relies on.
-title: PROJ ports and rewrites, from Rust
-description: A capability map of the Rust PROJ landscape, judged against PROJ 9.9.0
+title: "PROJ ports and rewrites: a benchmark"
+description: A shared benchmark for PROJ ports and rewrites, judged nightly against PROJ master
 theme: jekyll-theme-primer
 plugins:
   - jekyll-relative-links

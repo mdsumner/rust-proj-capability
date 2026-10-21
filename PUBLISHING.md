@@ -10,7 +10,8 @@ committed to main, so the site follows them without a separate build step.
 
 | page | kind | what it is |
 |---|---|---|
-| [README.md](README.md) | hand-written | landing page: the question, headline findings, navigation |
+| [README.md](README.md) | hand-written | landing page: what this is, where to look, findings so far |
+| [docs/approach.md](docs/approach.md) | hand-written | the three layers (benchmark, drafted ports, spikes), the proj4rs decision, what is where |
 | [results/projections/README.md](results/projections/README.md) | generated nightly | projections suite: verdict grid, projections by engines |
 | `results/projections/pages/*.md` | generated nightly | one page per projection: metrics per engine and a map (`results/projections/maps/*.svg`) |
 | [results/projections/proj-check.md](results/projections/proj-check.md) | generated nightly | PROJ's own round trip per projection |
@@ -18,6 +19,7 @@ committed to main, so the site follows them without a separate build step.
 | [suites/projections/README.md](suites/projections/README.md) | hand-written | how the projections suite is run and judged, and its schema |
 | [engines/README.md](engines/README.md) | hand-written | every engine, and how to add one |
 | [tracker/README.md](tracker/README.md) | hand-written | the PROJ change watch |
+| [crs-study.md](crs-study.md) | hand-written | CRS study landing page: the Rust crate guide and links to its pages |
 | [report.md](report.md) | hand-written | findings, one paragraph per candidate, wrapper-vs-structural, the rwarp `CrsTransform` angle, changes from the TypeScript precedent |
 | [capability-matrix.md](capability-matrix.md) | hand-written | 15 layers by 8 candidates, summary grid and evidence |
 | [results/crs/per-fixture.md](results/crs/per-fixture.md) | generated | verdict grid: 93 fixtures by 11 candidate columns |
@@ -29,8 +31,10 @@ committed to main, so the site follows them without a separate build step.
 | [platform/README.md](platform/README.md) | hand-written | wasm32, size and thread-safety checks |
 | [docs/brief.md](docs/brief.md) | hand-written | the original brief |
 
-The navigation bar (`_layouts/default.html`): Home / Report / Matrix /
-Projections / PROJ watch / CRS grid / CRS fixtures / Engines / Brief.
+The navigation bar (`_layouts/default.html`) has five sections: Home /
+Approach / Projections / PROJ watch / CRS study. Pages in the Projections
+and CRS study sections get a second row of links to that section's pages;
+which section a page belongs to is decided from its path in the layout.
 
 ## Data and code (link to them, do not render as pages)
 
