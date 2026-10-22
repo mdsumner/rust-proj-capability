@@ -5,17 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <style>
-      .site-nav { border-bottom: 1px solid #d0d7de; padding-bottom: 8px; margin-bottom: 24px; }
-      .site-nav a { margin-right: 14px; white-space: nowrap; }
-      .site-nav a.here { font-weight: 600; }
-      .sub-nav { font-size: 14px; margin: -16px 0 24px; }
-      .sub-nav a { margin-right: 12px; white-space: nowrap; }
-      .markdown-body table { display: block; width: max-content; max-width: 100%; overflow-x: auto; }
-    </style>
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
+    <div class="container-lg px-3 my-4 markdown-body">
       {%- assign p = page.path -%}
       {%- assign section = "" -%}
       {%- if p contains "results/projections" or p contains "suites/projections" or p == "engines/README.md" -%}
@@ -27,14 +19,17 @@
       {%- elsif p == "docs/approach.md" -%}
         {%- assign section = "approach" -%}
       {%- endif %}
-      <nav class="site-nav">
+      <header class="site-head">
+        <a class="site-name" href="{{ "/" | relative_url }}">PROJ ports benchmark</a>
+        <nav>
         <a href="{{ "/" | relative_url }}"{% if section == "" %} class="here"{% endif %}>Home</a>
         <a href="{{ "/docs/approach.html" | relative_url }}"{% if section == "approach" %} class="here"{% endif %}>Approach</a>
         <a href="{{ "/results/projections/" | relative_url }}"{% if section == "projections" %} class="here"{% endif %}>Projections</a>
         <a href="{{ "/results/tracker/" | relative_url }}"{% if section == "watch" %} class="here"{% endif %}>PROJ watch</a>
         <a href="{{ "/crs-study.html" | relative_url }}"{% if section == "crs" %} class="here"{% endif %}>CRS study</a>
         <a href="{{ site.github.repository_url }}">Source</a>
-      </nav>
+        </nav>
+      </header>
       {%- if section == "projections" %}
       <nav class="sub-nav">
         <a href="{{ "/results/projections/" | relative_url }}">Grid</a>
@@ -53,6 +48,11 @@
       </nav>
       {%- endif %}
       {{ content }}
+      <footer class="site-foot">
+        Judged against PROJ master, rebuilt nightly. Source and data:
+        <a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a>.
+      </footer>
     </div>
+    <script src="{{ "/assets/verdicts.js" | relative_url }}"></script>
   </body>
 </html>

@@ -8,18 +8,56 @@ can point to when they plan, compare and negotiate, whether or not PROJ
 itself adopts it. [Approach](docs/approach.md) explains the layers and what
 is decided.
 
-## Where to look
+<!-- cards:start -->
+<div class="cards" markdown="1">
 
-| if you want to know | go to |
-|---|---|
-| how well each engine computes each projection, against PROJ master | [Projections](results/projections/README.md): one grid, then a page and a map per projection |
-| which PROJ projections changed recently, and whether proj4rs has them | [PROJ watch](results/tracker/README.md) |
-| which Rust crate can take my CRS and run my transformation | [CRS study](crs-study.md): the 2026-10-15 snapshot against PROJ 9.9.0 |
-| why the work is shaped this way, and what comes next | [Approach](docs/approach.md) |
-| how to add an engine or a projection | [engines/README.md](engines/README.md), [suites/projections/README.md](suites/projections/README.md) |
+<div class="card" markdown="1">
+
+**[Projections](results/projections/README.md)**
+
+8 engines on 54 projection setups, judged against PROJ 9.10.0, with a page and a map for each.
+
+proj4rs main: **36 of 40** exact
+
+</div>
+
+<div class="card" markdown="1">
+
+**[PROJ watch](results/tracker/README.md)**
+
+Recent PROJ commits by projection, and whether proj4rs has each one. 35 of 167 PROJ projections are in proj4rs.
+
+**5** ported projections changed upstream in the last 365 days
+
+</div>
+
+<div class="card" markdown="1">
+
+**[CRS study](crs-study.md)**
+
+Which Rust crate can take a CRS and run the transformation: 93 fixtures, 11 columns, PROJ 9.9.0.
+
+best pure Rust: **proj-core, 33 of 93**
+
+</div>
+
+<div class="card" markdown="1">
+
+**[Approach](docs/approach.md)**
+
+Benchmark first, drafted proj4rs ports second, occasional throwaway spikes third.
+
+proj4rs stays the model
+
+</div>
+
+</div>
+<!-- cards:end -->
 
 Engines in the projections suite: proj4rs (the crates.io release, main, and
-main as wasm), proj-core, wbprojection, geodesy, proj4js and math.gl.
+main as wasm), proj-core, wbprojection, geodesy, proj4js and math.gl. To add
+one, see [engines/README.md](engines/README.md); to add a projection, see
+[suites/projections/README.md](suites/projections/README.md).
 
 ## Findings so far
 

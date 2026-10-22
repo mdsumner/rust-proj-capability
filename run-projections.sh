@@ -17,3 +17,4 @@ engines/rust-projections/target/release/projections-engines suites/projections/r
 (cd engines/js && [ -d node_modules ] || npm ci --silent)
 node engines/js/run.mjs suites/projections/reference.json > "$out/engines-js.jsonl"
 python3 report/projections.py "$out/engines-rust.jsonl" "$out/engines-js.jsonl"
+python3 report/front_page.py

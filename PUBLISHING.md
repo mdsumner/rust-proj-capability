@@ -10,7 +10,7 @@ committed to main, so the site follows them without a separate build step.
 
 | page | kind | what it is |
 |---|---|---|
-| [README.md](README.md) | hand-written | landing page: what this is, where to look, findings so far |
+| [README.md](README.md) | hand-written, except the cards block (`report/front_page.py`, nightly) | landing page: what this is, a card per section, findings so far |
 | [docs/approach.md](docs/approach.md) | hand-written | the three layers (benchmark, drafted ports, spikes), the proj4rs decision, what is where |
 | [results/projections/README.md](results/projections/README.md) | generated nightly | projections suite: verdict grid, projections by engines |
 | `results/projections/pages/*.md` | generated nightly | one page per projection: metrics per engine and a map (`results/projections/maps/*.svg`) |
@@ -35,6 +35,8 @@ The navigation bar (`_layouts/default.html`) has five sections: Home /
 Approach / Projections / PROJ watch / CRS study. Pages in the Projections
 and CRS study sections get a second row of links to that section's pages;
 which section a page belongs to is decided from its path in the layout.
+Styles are in `assets/css/style.scss` (on top of the primer theme), and
+`assets/verdicts.js` tints verdict cells in the grids.
 
 ## Data and code (link to them, do not render as pages)
 
