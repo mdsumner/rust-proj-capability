@@ -1,0 +1,73 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Site styles on top of the primer theme: quiet, readable, nothing animated.
+
+$ink: #1f2328;
+$muted: #59636e;
+$line: #d8dee4;
+$tint: #f6f8fa;
+$link: #0b5cad;
+
+body { color: $ink; }
+.markdown-body {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 1040px;
+  margin: 0 auto;
+  a { color: $link; }
+  h1 { border-bottom: 0; font-weight: 600; margin-top: 8px; }
+  h2 { border-bottom: 1px solid $line; font-weight: 600; margin-top: 36px; }
+  h3 { font-weight: 600; }
+  code, pre { font-size: 85%; }
+}
+
+// Header: name on the left, sections after it
+.site-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 20px;
+  border-bottom: 1px solid $line; padding-bottom: 10px; margin-bottom: 8px;
+  .site-name { font-weight: 600; color: $ink; margin-right: 8px; }
+  nav a { margin-right: 16px; white-space: nowrap; color: $muted; }
+  nav a.here { color: $ink; font-weight: 600; }
+}
+.sub-nav {
+  font-size: 14px; margin-bottom: 20px;
+  a { margin-right: 14px; white-space: nowrap; color: $muted; }
+}
+
+// Tables: compact, scroll sideways on narrow screens instead of the page
+.markdown-body table {
+  display: block; width: max-content; max-width: 100%; overflow-x: auto;
+  font-size: 14px; line-height: 1.4;
+  th { background: $tint; font-weight: 600; text-align: left; }
+  th, td { border-color: $line; padding: 5px 10px; }
+  tr, tr:nth-child(2n) { background: transparent; }
+}
+
+// Verdict cells, tagged by verdicts.js
+.markdown-body td {
+  &.v-exact { background: #e6f4ea; }
+  &.v-close { background: #f1f8e9; }
+  &.v-off { background: #fbeaea; }
+  &.v-gaps { background: #fdf3dc; }
+  &.v-none { color: #8c959f; }
+}
+
+// Front page cards
+.cards {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px; margin: 16px 0 20px;
+}
+.card {
+  border: 1px solid $line; border-radius: 6px; padding: 12px 14px;
+  p { margin: 0 0 6px; font-size: 14px; color: $muted; }
+  p:first-child { font-size: 16px; margin-bottom: 4px; }
+  p:last-child { font-size: 15px; color: $ink; margin: 8px 0 0; }
+}
+
+.site-foot {
+  border-top: 1px solid $line; margin-top: 48px; padding-top: 10px;
+  font-size: 13px; color: $muted;
+}

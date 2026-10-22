@@ -12,6 +12,7 @@ on:
       - oracle/**
       - engines/**
       - report/projections.py
+      - report/front_page.py
       - tracker/**
       - suites/projections/projections.json
       - run-projections.sh
@@ -87,6 +88,9 @@ jobs:
           tracker/checkout.sh
           python3 tracker/watch.py --proj tracker/.cache/PROJ --proj4rs tracker/.cache/proj4rs --since "180 days ago"
 
+      - name: Front page cards
+        run: python3 report/front_page.py
+
       - uses: actions/upload-artifact@v4
         with:
           name: engine-output
@@ -97,7 +101,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898499+github-actions[bot]@users.noreply.github.com"
-          git add suites/projections/reference.json results/projections results/tracker engines/rust-projections/Cargo.lock
+          git add README.md suites/projections/reference.json results/projections results/tracker engines/rust-projections/Cargo.lock
           if git diff --cached --quiet; then
             echo "no changes"
           else
