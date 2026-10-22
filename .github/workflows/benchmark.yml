@@ -13,6 +13,8 @@ on:
       - engines/**
       - report/projections.py
       - report/front_page.py
+      - report/proj_concerns.py
+      - suites/projections/proj-concerns.json
       - tracker/**
       - suites/projections/projections.json
       - run-projections.sh

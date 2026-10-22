@@ -83,9 +83,12 @@ As of 2026-10-21, 54 projection setups:
   ellipsoidal ortho by 33.7 km** ([ortho](results/projections/pages/ortho.md));
   both compute it on a sphere. math.gl 5.0.0-alpha.18 matches PROJ on 29
   setups.
-- **PROJ's own round trip is checked too**
-  ([proj-check.md](results/projections/proj-check.md)), so a problem in the
-  reference is reported as PROJ's, not as a port's.
+- **PROJ itself has a short list of concerns**
+  ([PROJ concerns](results/projections/proj-concerns.md)), from its own
+  round trip and from ports that agree with each other against it. Each has
+  a status from suspected to fixed; none has been sent to PROJ yet. The
+  first confirmed ones: the ellipsoidal ortho inverse fails at a visible
+  pole, and moll's forward x at the poles is 112.5 m instead of 0.
 
 ## How it runs
 
