@@ -15,6 +15,7 @@ committed to main, so the site follows them without a separate build step.
 | [results/projections/README.md](results/projections/README.md) | generated nightly | projections suite: verdict grid, projections by engines |
 | `results/projections/pages/*.md` | generated nightly | one page per projection: metrics per engine and a map (`results/projections/maps/*.svg`) |
 | [results/projections/proj-check.md](results/projections/proj-check.md) | generated nightly | PROJ's own round trip per projection |
+| [results/projections/proj-concerns.md](results/projections/proj-concerns.md) | generated nightly from the hand-kept `suites/projections/proj-concerns.json` | concerns about PROJ itself: triaged entries and untriaged signals |
 | [results/tracker/README.md](results/tracker/README.md) | generated nightly | PROJ change watch |
 | [suites/projections/README.md](suites/projections/README.md) | hand-written | how the projections suite is run and judged, and its schema |
 | [engines/README.md](engines/README.md) | hand-written | every engine, and how to add one |

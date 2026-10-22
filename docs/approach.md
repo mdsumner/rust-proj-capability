@@ -69,6 +69,7 @@ Planned for the benchmark; not yet tracked automatically.
 |---|---|
 | verdict grid, a page and a map per projection | [Projections](../results/projections/README.md) |
 | PROJ's own round trip | [results/projections/proj-check.md](../results/projections/proj-check.md) |
+| concerns about PROJ itself, triaged | [results/projections/proj-concerns.md](../results/projections/proj-concerns.md) |
 | how the projections suite is judged, and how to add a projection | [suites/projections/README.md](../suites/projections/README.md) |
 | PROJ commits by projection, ported or not | [PROJ watch](../results/tracker/README.md) |
 | every engine, and how to add one | [engines/README.md](../engines/README.md) |

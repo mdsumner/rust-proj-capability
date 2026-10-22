@@ -1,0 +1,93 @@
+{
+ "about": "Hand-kept triage of concerns about PROJ itself, read by report/proj_concerns.py. Only a person changes an entry's status. 'signals' lists the automatic signals (roundtrip, consensus) an entry accounts for, per projection id, so they leave the untriaged list. 'proj_links' holds only issues, pull requests or commits in OSGeo/PROJ; an entry without one has not been sent to PROJ.",
+ "statuses": {
+  "suspected": "flagged, not yet looked at closely",
+  "confirmed": "reproduced with a minimal case outside the benchmark",
+  "drafted": "a fix and a test exist; not filed",
+  "reported": "filed with PROJ by a person (link given)",
+  "fixed": "fixed in PROJ (commit given)",
+  "not-a-bug": "looked at; PROJ is right or the difference is by design"
+ },
+ "concerns": [
+  {
+   "id": "ortho-oblique-inverse-k0",
+   "title": "ortho: ellipsoidal oblique inverse fails or lands wrong with k_0 != 1 or alpha != 0",
+   "status": "drafted",
+   "projections": ["ortho"],
+   "signals": {},
+   "found": "2026-10-17",
+   "detail": "`ortho_e_inverse()` unrotates by alpha and divides by k_0, then seeds Newton with `ortho_s_inverse()`, which does both again. With k_0 = 0.9 about 44% of inverses fail; with alpha the seed can converge to the wrong point. A patch and a gie test exist (they move the unrotate and scale out of the spherical inverse into a wrapper). Not in this suite, which uses k_0 = 1 and no alpha.",
+   "proj_links": []
+  },
+  {
+   "id": "ortho-ellipsoidal-pole-inverse",
+   "title": "ortho: ellipsoidal inverse returns inf at and next to a visible pole",
+   "status": "confirmed",
+   "projections": ["ortho"],
+   "signals": {"ortho": ["roundtrip"]},
+   "found": "2026-10-22",
+   "detail": "With `+proj=ortho +ellps=WGS84 +lat_0=-42 +lon_0=147` the south pole is on the visible side. Forward gives (0, -4745251.365); the inverse of that returns (inf, inf), as it does for lat -89.9999999. At lat -89.99 the round trip is fine, and the spherical case (`+R=6371000`) inverts the pole. Cause not yet traced; the oblique branch of `ortho_e_inverse()` near the pole is the first place to look. Separate from the k_0 entry: with k_0 = 1 and no alpha that patch does not change the seed.",
+   "proj_links": []
+  },
+  {
+   "id": "moll-pole-newton",
+   "title": "moll: forward x at the poles is 112.5 m, not 0",
+   "status": "confirmed",
+   "projections": ["moll"],
+   "signals": {"moll": ["consensus"]},
+   "found": "2026-10-21",
+   "detail": "At lon -180 lat -90, PROJ gives x = -112.5 m where the exact answer is 0 (every meridian meets at the pole). proj4rs, wbprojection, proj4js and math.gl all give 0. In `moll_s_forward()` the Newton step for the auxiliary angle divides by 1 + cos(theta), which goes to 0 at the pole, so convergence there is slow; the loop exits on its step-size test with theta still short of pi/2, and cos(theta) is not quite 0.",
+   "proj_links": []
+  },
+  {
+   "id": "eqearth-pole-roundtrip",
+   "title": "eqearth: PROJ's round trip at the poles is 6.6e-6 deg off",
+   "status": "suspected",
+   "projections": ["eqearth"],
+   "signals": {"eqearth": ["roundtrip"]},
+   "found": "2026-10-21",
+   "detail": "Forward then inverse of lat -90 returns lat -89.9999934. Cause not yet traced: the inverse's Newton tolerance is 1e-11, so the loss is elsewhere, perhaps the clamp of y to MAX_Y or the authalic latitude conversion near the pole. Small, but larger than any other round trip in the suite.",
+   "proj_links": []
+  },
+  {
+   "id": "edge-of-world-inverse",
+   "title": "World projections: inverse refuses points exactly on lon +-180 or at a pole",
+   "status": "suspected",
+   "projections": ["moll", "wag4", "wag5", "robin", "hammer", "igh"],
+   "signals": {"moll": ["roundtrip"], "wag4": ["roundtrip"], "wag5": ["roundtrip"], "robin": ["roundtrip"], "hammer": ["roundtrip"], "igh": ["roundtrip"]},
+   "found": "2026-10-22",
+   "detail": "Every inverse failure in these is on the outline of the map: lon +-180, or a pole that the projection draws as a point or a line. One step inside (lon 179.9999999 for wag4) inverts correctly. Most likely deliberate range checks that reject the boundary itself; worth one look to decide whether that is the intent.",
+   "proj_links": []
+  },
+  {
+   "id": "eqc-ellipsoidal",
+   "title": "eqc: PROJ is ellipsoidal since 2026-01, the ports are spherical",
+   "status": "not-a-bug",
+   "projections": ["eqc"],
+   "signals": {"eqc": ["consensus"]},
+   "found": "2026-10-21",
+   "detail": "PROJ added the ellipsoidal Equidistant Cylindrical method (EPSG 1028) in 6a529ad4; the ports still use the spherical formulas, so they agree with each other and differ from PROJ by 29 km. PROJ is right; this is a porting gap.",
+   "proj_links": ["https://github.com/OSGeo/PROJ/commit/6a529ad433d87742ba7163e94fa2fdf043432db1"]
+  },
+  {
+   "id": "ortho-spherical-ports",
+   "title": "ortho: three ports agree with each other and differ from PROJ by 33.7 km",
+   "status": "not-a-bug",
+   "projections": ["ortho"],
+   "signals": {"ortho": ["consensus"]},
+   "found": "2026-10-21",
+   "detail": "wbprojection, proj4js and math.gl compute ortho on a sphere of radius a. PROJ has used ellipsoidal formulas since 7.2. PROJ is right.",
+   "proj_links": []
+  },
+  {
+   "id": "omerc-gamma-crs-route",
+   "title": "omerc: gamma-only definitions become alpha = 0 through pyproj's Proj()/CRS route",
+   "status": "suspected",
+   "projections": ["omerc"],
+   "signals": {},
+   "found": "2026-10-20",
+   "detail": "A `+proj=omerc` string with `+gamma` and no `+alpha` comes back from `pyproj.Proj()` or `CRS()` with `+alpha=0` added, which changes the projection. `Transformer.from_pipeline` keeps the string as given, which is why the benchmark uses it. Not yet narrowed down to pyproj or to PROJ's CRS layer.",
+   "proj_links": []
+  }
+ ]
+}
