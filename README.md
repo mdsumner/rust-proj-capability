@@ -27,7 +27,7 @@ proj4rs main: **36 of 40** exact
 
 Recent PROJ commits by projection, and whether proj4rs has each one. 35 of 167 PROJ projections are in proj4rs.
 
-**5** ported projections changed upstream in the last 365 days
+**1** ported projections changed upstream in the last 180 days
 
 </div>
 

@@ -1,11 +1,11 @@
 {
  "environment": {
-  "generated": "2026-10-21T21:17:56+00:00",
+  "generated": "2026-10-22T03:36:59+00:00",
   "proj_head": "5fa31c29f0a806568ed7bc76c1a557604db4a804",
   "proj_date": "2026-10-19",
   "proj4rs_head": "9996719400b33c3d340993f42f7a5079b1729cac",
   "proj4rs_date": "2026-10-21",
-  "since": "365 days ago"
+  "since": "180 days ago"
  },
  "projections": [
   {
@@ -363,13 +363,7 @@
     "eqc",
     "eqc-sphere"
    ],
-   "proj_commits": [
-    {
-     "sha": "6a529ad433d87742ba7163e94fa2fdf043432db1",
-     "date": "2026-01-16",
-     "subject": "Add support for  Equidistant Cylindrical ellipsoidal method (EPSG:1028) (#4656)"
-    }
-   ]
+   "proj_commits": []
   },
   {
    "name": "eqdc",
@@ -399,13 +393,7 @@
    "suite": [
     "etmerc"
    ],
-   "proj_commits": [
-    {
-     "sha": "ca23885da621269333eb00c5010e2ff2ac3423f0",
-     "date": "2026-02-19",
-     "subject": "tmerc spherical: fix numeric instability at lat=lat_0"
-    }
-   ]
+   "proj_commits": []
   },
   {
    "name": "euler",
@@ -1034,13 +1022,7 @@
    "file": "ob_tran.cpp",
    "proj4rs": false,
    "suite": [],
-   "proj_commits": [
-    {
-     "sha": "f4fde531648a963bc53edda75361182e7be6be49",
-     "date": "2026-04-04",
-     "subject": "ob_tran.cpp: setup(): fix quadratic performance issue in the number of projection parameters"
-    }
-   ]
+   "proj_commits": []
   },
   {
    "name": "ocea",
@@ -1372,13 +1354,7 @@
     "tmerc",
     "tmerc-sphere"
    ],
-   "proj_commits": [
-    {
-     "sha": "ca23885da621269333eb00c5010e2ff2ac3423f0",
-     "date": "2026-02-19",
-     "subject": "tmerc spherical: fix numeric instability at lat=lat_0"
-    }
-   ]
+   "proj_commits": []
   },
   {
    "name": "tmerczoned",
@@ -1478,13 +1454,7 @@
    "suite": [
     "utm"
    ],
-   "proj_commits": [
-    {
-     "sha": "ca23885da621269333eb00c5010e2ff2ac3423f0",
-     "date": "2026-02-19",
-     "subject": "tmerc spherical: fix numeric instability at lat=lat_0"
-    }
-   ]
+   "proj_commits": []
   },
   {
    "name": "vandg",
