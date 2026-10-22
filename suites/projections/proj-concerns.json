@@ -56,7 +56,7 @@
    "projections": ["moll", "wag4", "wag5", "robin", "hammer", "igh"],
    "signals": {"moll": ["roundtrip"], "wag4": ["roundtrip"], "wag5": ["roundtrip"], "robin": ["roundtrip"], "hammer": ["roundtrip"], "igh": ["roundtrip"]},
    "found": "2026-10-22",
-   "detail": "Every inverse failure in these is on the outline of the map: lon +-180, or a pole that the projection draws as a point or a line. One step inside (lon 179.9999999 for wag4) inverts correctly. Most likely deliberate range checks that reject the boundary itself; worth one look to decide whether that is the intent.",
+   "detail": "Every inverse failure in these is on the outline of the map: lon +-180, or a pole that the projection draws as a point or a line. One step inside (lon 179.9999999 for wag4) inverts correctly. Most likely deliberate range checks that reject the boundary itself; still to check whether that is intended.",
    "proj_links": []
   },
   {

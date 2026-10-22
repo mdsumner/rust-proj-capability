@@ -82,7 +82,7 @@ def page(triage, summary):
     claimed = {(pid, kind) for e in triage["concerns"] for pid, kinds in e["signals"].items() for kind in kinds}
     env = summary["environment"]
     out = ["# PROJ concerns\n\n", GENERATED,
-           "Things the benchmark has turned up about PROJ itself, as opposed to the ports. "
+           "Concerns about PROJ itself, as opposed to the ports, found by the benchmark. "
            f"Signals are computed against PROJ {env['proj_version']}"
            + (f" (git {env['proj_git_sha'][:8]})" if env.get("proj_git_sha") else "")
            + " on every run; whether a signal is a real problem is decided by a person and recorded in "

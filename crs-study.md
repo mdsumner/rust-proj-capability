@@ -33,7 +33,7 @@ no grids installed. The brief is in [docs/brief.md](docs/brief.md).
 **Short answer.** Only `proj` (the libproj binding) does everything PROJ
 does, and it brings a C++ build and no wasm. In pure Rust, use `proj-core`
 for EPSG-coded data where datum shifts matter. Use `proj4rs` when you already
-have good PROJ strings. Everything else is niche or needs checking against
+have good PROJ strings. The others cover less, or need checking against
 PROJ.
 
 | crate | what it is | CRS input it accepts | projection families | datums and operations | exact / 93 |
@@ -47,7 +47,7 @@ PROJ.
 | [`wbprojection`](https://crates.io/crates/wbprojection) | Whitebox's projection library | EPSG (hand-built list), PROJ strings, WKT1; ignores `+units` and `TOWGS84` in places | 94 kinds, including world maps (robin, wintri, eqearth, natearth, sinu, ortho). Many are spherical approximations | Helmert with the wrong sign convention for position-vector `towgs84`; NTv2 and NADCON loaders | 32 (33 off) |
 
 "Exact" means within 1 mm of PROJ 9.9.0 on the fixture corpus. Most misses
-are honest refusals, not wrong answers; [results/crs/per-fixture.md](results/crs/per-fixture.md) shows which.
+are refusals, not wrong answers; [results/crs/per-fixture.md](results/crs/per-fixture.md) shows which.
 
 **What no pure-Rust crate does (yet):**
 - resolve ESRI, IAU or deprecated codes, or any WKT/PROJJSON without an EPSG ID;
@@ -96,12 +96,12 @@ difference is in what you get without asking:
 | what Rust offers that they don't | | pure-Rust crates build for wasm32, give one static binary with no `proj.db`, and are `Send + Sync` |
 
 The short version: if you're used to `sf` or `pyproj`, `proj` gives you the
-same engine but less of the ergonomics. The pure-Rust crates give you
+same engine with fewer conveniences. The pure-Rust crates give you
 portability in exchange for part of the engine.
 
 ## Headline findings
 
-- **The datum step is the expensive gap, and binding to WGS84 only partly
+- **The datum step is the largest gap, and binding to WGS84 only partly
   closes it.**
   - The bare PROJ string for EPSG:2056 is 164 m off and the bound string is
     exact
@@ -115,8 +115,8 @@ portability in exchange for part of the engine.
 - **`proj4rs` executes what it ports to 0.000 mm.** The exception is `eqc`,
   where PROJ 9.9 has moved to the ellipsoid
   ([method-eqc](suites/crs/catalog/method-eqc.md)).
-- **Several rewrites are silently wrong** by hundreds of metres to thousands
-  of kilometres. The cases, with fixtures, are in
+- **Several rewrites return wrong results without an error**, off by hundreds
+  of metres to thousands of kilometres. The cases, with fixtures, are in
   [report.md](report.md#findings).
 - **`proj4rs` (default features) and libproj cannot share a native binary.**
   The `geod_*` symbols clash and PROJ's aeqd returns NaN

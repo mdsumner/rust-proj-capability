@@ -8,7 +8,7 @@
 
 An engine adapter only computes. It is handed the same inputs as every other
 engine and writes what the library returned; judging happens once, in
-`report/`, with code that belongs to no engine.
+`report/`, with code shared by every engine.
 
 ## Adding an engine
 

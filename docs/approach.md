@@ -5,14 +5,14 @@ Written 2026-10-21; the [front page](../README.md) has the current numbers.
 
 ## In one paragraph
 
-PROJ is ported again and again (proj4rs, proj4js, math.gl, proj-core,
-wbprojection and more), and every port drifts from PROJ in its own way.
-Rather than merge codebases, this repository gives all of them one shared
-benchmark: the same inputs, PROJ's own answers, and judging code that
-belongs to no engine, rerun every night against PROJ master. Ports can
-point to it when they plan, compare and negotiate, whether or not PROJ
-itself adopts it. Work on proj4rs, the port that mirrors PROJ file by file,
-sits on top of the benchmark in two further layers.
+PROJ has several ports and rewrites (proj4rs, proj4js, math.gl, proj-core,
+wbprojection and others), and each differs from PROJ in different places.
+This repository does not merge them. It runs all of them on the same inputs,
+compares each result with PROJ's using one set of judging code, and repeats
+that every night against PROJ master. The results are available to any of
+the projects, whether or not PROJ uses them. Work on proj4rs, the port that
+follows PROJ file by file, sits on top of the benchmark in two further
+layers.
 
 ## Three layers
 
