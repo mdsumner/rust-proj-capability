@@ -295,7 +295,7 @@ def proj_check_page(refs, checks, env):
     out = ["# PROJ round trip\n\n", GENERATED,
            f"PROJ {env['proj_version']}'s inverse of its own forward result, against the input point, "
            "for every projection in the suite. A large value here is a question for PROJ, not for the ports: "
-           "the ports are judged against PROJ's inverse, so this page keeps that reference honest. "
+           "the ports are judged against PROJ's inverse, so this page checks that reference. "
            "Triage of what it raises: [proj-concerns.md](proj-concerns.md).\n\n"
            "| projection | worst | at lon, lat | inverse failures |\n|---|---|---|---|\n"]
     for ref in sorted(refs, key=lambda r: -checks[r["id"]]["max_deg"]):

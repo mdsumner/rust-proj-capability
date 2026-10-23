@@ -65,7 +65,7 @@ Harness decisions that affect what the numbers mean:
 
 ## Findings
 
-1. **The datum step is still the expensive gap, and binding to WGS84 only
+1. **The datum step is still the largest gap, and binding to WGS84 only
    closes part of it.**
    - The precedent's number reproduces exactly. The bare PROJ string for
      EPSG:2056 is 163.88 m from the code's result. The bound string is
@@ -114,7 +114,7 @@ Harness decisions that affect what the numbers mean:
      result (x=12179061.95 against 12160796.02 on a sphere of radius a).
      proj4rs, proj-core and wbprojection all compute the spherical formula,
      30 km apart.
-4. **The rewrites are uneven, and several are silently wrong.** Observed with
+4. **The rewrites are uneven, and several return wrong results without an error.** Observed with
    the fixture that shows each one:
 
    | candidate | defect | fixture | size |

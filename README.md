@@ -1,12 +1,10 @@
 # PROJ ports and rewrites: a benchmark
 
-PROJ is ported and rewritten again and again, in Rust, in JavaScript and as
-WebAssembly. This repository is a shared benchmark for all of them: the same
-inputs, PROJ's own answers, and judging code that belongs to no engine,
-rerun every night against PROJ master. It is meant as a reference the ports
-can point to when they plan, compare and negotiate, whether or not PROJ
-itself adopts it. [Approach](docs/approach.md) explains the layers and what
-is decided.
+There are several ports and rewrites of PROJ, in Rust, JavaScript and
+WebAssembly. This repository runs them all on the same inputs and compares
+each result with PROJ's, using the same judging code for all of them. It
+reruns every night against PROJ master. [Approach](docs/approach.md) explains how
+the work is organised and what has been decided.
 
 <!-- cards:start -->
 <div class="cards" markdown="1">

@@ -21,7 +21,7 @@ Every engine is then given the same two definitions: the projection string
 and a lon/lat definition on the same earth model (`geographic` below), so no
 datum shift is involved. It computes the forward result for every point, and
 its inverse of PROJ's forward result. The judging code
-(`report/projections.py`) belongs to no engine and compares:
+(`report/projections.py`) is the same for every engine and compares:
 
 - forward: distance from PROJ's result, in projected units (metres for every
   entry here);
