@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | 0 |  | 7.1e-15 deg | [5, 44] |  |  |  |
 | proj4rs-main | git main | exact | 0 |  | 7.1e-15 deg | [5, 44] |  |  |  |
-| proj4rs-wasm | git 9996719 2026-10-21 | exact | <1 nm | [13, 54] | 2.8e-14 deg | [11, 44] |  |  |  |
+| proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [13, 54] | 2.8e-14 deg | [11, 44] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: krovak | | | | | | |
 | wbprojection | 0.3.3 | OFF 1,998 km | 1,998 km | [29, 44] | 18 deg | [29, 44] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'krovak' not found: krovak ellps=bessel | | | | | | |

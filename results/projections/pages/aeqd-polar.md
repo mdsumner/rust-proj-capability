@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | 0.00392 mm | [-165, 75] | 3.5e-11 deg | [-180, 75] |  |  |  |
 | proj4rs-main | git main | exact | 0 |  | 1.2e-14 deg | [-150, 15] |  |  |  |
-| proj4rs-wasm | git 9996719 2026-10-21 | exact | 0 |  | 2.7e-14 deg | [-120, 15] |  |  |  |
+| proj4rs-wasm | git d9a6284 2026-10-22 | exact | 0 |  | 2.7e-14 deg | [-120, 15] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: aeqd | | | | | | |
 | wbprojection | 0.3.3 | OFF 16.79 km | 16.79 km | [-150, 0] | 0.15 deg | [-105, 0] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'aeqd' not found: aeqd ellps=WGS84 lat_0=90 | | | | | | |

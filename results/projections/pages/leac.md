@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | <1 nm | [-40, 40] | 1.1e-13 deg | [-40, -60] |  |  |  |
 | proj4rs-main | git main | exact | <1 nm | [-40, -20] | 1.1e-13 deg | [10, -60] |  |  |  |
-| proj4rs-wasm | git 9996719 2026-10-21 | exact | <1 nm | [-40, -20] | 1.1e-13 deg | [10, -60] |  |  |  |
+| proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [-40, -20] | 1.1e-13 deg | [10, -60] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: leac | | | | | | |
 | wbprojection | 0.3.3 | -- | unsupported projection: PROJ +proj=leac is not supported by wbprojection | | | | | | |
 | geodesy | 0.15.0 | -- | Operator 'leac' not found: leac ellps=WGS84 lat_1=-20 lon_0=20 | | | | | | |

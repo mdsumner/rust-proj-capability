@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | <1 nm | [-130, -40] | 1.4e-14 deg | [-180, -70] |  |  |  |
 | proj4rs-main | git main | exact | <1 nm | [-130, -40] | 1.4e-14 deg | [-180, -70] |  |  |  |
-| proj4rs-wasm | git 9996719 2026-10-21 | exact | <1 nm | [-130, -40] | 2.3e-14 deg | [-120, -40] |  |  |  |
+| proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [-130, -40] | 2.3e-14 deg | [-120, -40] |  |  |  |
 | proj-core | 0.12.0 | exact | <1 nm | [70, -40] | 1.1e-11 deg | [70, -50] |  |  |  |
 | wbprojection | 0.3.3 | exact | <1 nm | [-150, -40] | 1.1e-11 deg | [-170, -50] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'stere' not found: stere ellps=WGS84 lat_0=-90 lat_ts=-71 | | | | | | |

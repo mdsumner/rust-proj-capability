@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- | Projection not found | | | | | | |
 | proj4rs-main | git main | exact | 0 |  | 1.4e-14 deg | [-150, -60] |  |  |  |
-| proj4rs-wasm | git 9996719 2026-10-21 | exact | 0 |  | 1.4e-14 deg | [-150, -60] |  |  |  |
+| proj4rs-wasm | git d9a6284 2026-10-22 | exact | 0 |  | 1.4e-14 deg | [-150, -60] |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | -- | unsupported projection: PROJ +proj=tpers is not supported by wbprojection | | | | | | |
 | geodesy | 0.15.0 | -- | Operator 'tpers' not found: tpers R=6370997 lat_0=-42 lon_0=147 h=3000000 tilt=30 azi=45 | | | | | | |

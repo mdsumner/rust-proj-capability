@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | 0 |  | 2.8e-14 deg | [-120, 0] |  |  |  |
 | proj4rs-main | git main | exact | 0 |  | 2.8e-14 deg | [-120, 0] |  |  |  |
-| proj4rs-wasm | git 9996719 2026-10-21 | exact | <1 nm | [-180, 30] | 1.4e-14 deg | [-180, -60] |  |  |  |
+| proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [-180, 30] | 1.4e-14 deg | [-180, -60] |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | gaps | <1 nm | [-150, 60] | 2.8e-14 deg | [-150, 0] | 26 |  |  |
 | geodesy | 0.15.0 | -- | Operator 'mill' not found: mill R=6371000 | | | | | | |

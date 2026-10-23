@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | <1 nm | [-180, -20] | 1.3e-12 deg | [-180, 60] |  |  |  |
 | proj4rs-main | git main | exact | <1 nm | [-180, -20] | 1.3e-12 deg | [-180, 60] |  |  |  |
-| proj4rs-wasm | git 9996719 2026-10-21 | exact | <1 nm | [-180, -20] | 1.3e-12 deg | [-180, 60] |  |  |  |
+| proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [-180, -20] | 1.3e-12 deg | [-180, 60] |  |  |  |
 | proj-core | 0.12.0 | exact | <1 nm | [120, 80] | 3.2e-14 deg | [-140, -60] |  |  |  |
 | wbprojection | 0.3.3 | exact | <1 nm | [-180, 80] | 1.9e-13 deg | [-180, 40] |  |  |  |
 | geodesy | 0.15.0 | exact | <1 nm | [-180, -80] | 2.8e-14 deg | [-180, 0] |  |  |  |
