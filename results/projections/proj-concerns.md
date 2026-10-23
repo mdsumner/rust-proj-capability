@@ -23,8 +23,8 @@ Concerns about PROJ itself, as opposed to the ports, found by the benchmark. Sig
 | suspected | [eqearth: PROJ's round trip at the poles is 6.6e-6 deg off](#eqearth-pole-roundtrip) | [eqearth](pages/eqearth.md) | 2026-10-21 | not sent to PROJ |
 | suspected | [World projections: inverse refuses points exactly on lon +-180 or at a pole](#edge-of-world-inverse) | [moll](pages/moll.md), [wag4](pages/wag4.md), [wag5](pages/wag5.md), [robin](pages/robin.md), [hammer](pages/hammer.md), [igh](pages/igh.md) | 2026-10-22 | not sent to PROJ |
 | confirmed | [moll: forward x at the poles is 112.5 m, not 0](#moll-pole-newton) | [moll](pages/moll.md) | 2026-10-21 | not sent to PROJ |
-| confirmed | [ortho: ellipsoidal inverse returns inf at and next to a visible pole](#ortho-ellipsoidal-pole-inverse) | [ortho](pages/ortho.md) | 2026-10-22 | not sent to PROJ |
 | drafted | [ortho: ellipsoidal oblique inverse fails or lands wrong with k_0 != 1 or alpha != 0](#ortho-oblique-inverse-k0) | [ortho](pages/ortho.md) | 2026-10-17 | not sent to PROJ |
+| drafted | [ortho: ellipsoidal inverse fails at and next to a visible pole](#ortho-ellipsoidal-pole-inverse) | [ortho](pages/ortho.md) | 2026-10-22 | not sent to PROJ |
 | not-a-bug | [eqc: PROJ is ellipsoidal since 2026-01, the ports are spherical](#eqc-ellipsoidal) | [eqc](pages/eqc.md) | 2026-10-21 | [6a529ad4](https://github.com/OSGeo/PROJ/commit/6a529ad433d87742ba7163e94fa2fdf043432db1) |
 | not-a-bug | [ortho: three ports agree with each other and differ from PROJ by 33.7 km](#ortho-spherical-ports) | [ortho](pages/ortho.md) | 2026-10-21 | nothing to send |
 
@@ -68,19 +68,19 @@ At lon -180 lat -90, PROJ gives x = -112.5 m where the exact answer is 0 (every 
 
 This run: consensus on moll: proj4rs, wbprojection, proj4js agree with each other and differ from PROJ by up to 112.5 m forward, 3.6e-15 deg inverse.
 
-### ortho: ellipsoidal inverse returns inf at and next to a visible pole
-
-<a id="ortho-ellipsoidal-pole-inverse"></a>Status: **confirmed**. Found 2026-10-22. PROJ: not sent to PROJ.
-
-With `+proj=ortho +ellps=WGS84 +lat_0=-42 +lon_0=147` the south pole is on the visible side. Forward gives (0, -4745251.365); the inverse of that returns (inf, inf), as it does for lat -89.9999999. At lat -89.99 the round trip is fine, and the spherical case (`+R=6371000`) inverts the pole. Cause not yet traced; the oblique branch of `ortho_e_inverse()` near the pole is the first place to look. Separate from the k_0 entry: with k_0 = 1 and no alpha that patch does not change the seed.
-
-This run: roundtrip on ortho: 11 inverse failures.
-
 ### ortho: ellipsoidal oblique inverse fails or lands wrong with k_0 != 1 or alpha != 0
 
 <a id="ortho-oblique-inverse-k0"></a>Status: **drafted**. Found 2026-10-17. PROJ: not sent to PROJ.
 
 `ortho_e_inverse()` unrotates by alpha and divides by k_0, then seeds Newton with `ortho_s_inverse()`, which does both again. With k_0 = 0.9 about 44% of inverses fail; with alpha the seed can converge to the wrong point. A patch and a gie test exist (they move the unrotate and scale out of the spherical inverse into a wrapper). Not in this suite, which uses k_0 = 1 and no alpha.
+
+### ortho: ellipsoidal inverse fails at and next to a visible pole
+
+<a id="ortho-ellipsoidal-pole-inverse"></a>Status: **drafted**. Found 2026-10-22. PROJ: not sent to PROJ.
+
+With `+proj=ortho +ellps=WGS84 +lat_0=-42 +lon_0=147` the south pole is on the visible side. Forward gives (0, -4745251.365); the inverse of that fails, as it does for every point within about 1e-5 deg of the pole. The spherical case (`+R=6378137`) inverts them. Cause: the Newton iteration in the oblique branch of `ortho_e_inverse()` stops only when the longitude step is below 1e-12 rad, which near a pole is not reached because longitude is poorly determined there. A one-line fix (weight the longitude step by cos(phi)) and gie tests exist; with it, inverse failures in 20000 random points per definition drop from between 30 and 40 to between 0 and 2, with the worst round trip error unchanged. Separate from the k_0 entry; the two fixes apply together.
+
+This run: roundtrip on ortho: 11 inverse failures.
 
 ### eqc: PROJ is ellipsoidal since 2026-01, the ports are spherical
 

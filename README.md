@@ -84,9 +84,10 @@ As of 2026-10-21, 54 projection setups:
 - **PROJ itself has a short list of concerns**
   ([PROJ concerns](results/projections/proj-concerns.md)), from its own
   round trip and from ports that agree with each other against it. Each has
-  a status from suspected to fixed; none has been sent to PROJ yet. The
-  first confirmed ones: the ellipsoidal ortho inverse fails at a visible
-  pole, and moll's forward x at the poles is 112.5 m instead of 0.
+  a status from suspected to fixed; none has been sent to PROJ yet. Fixes
+  are drafted for two ellipsoidal ortho inverse failures (with k_0 or alpha,
+  and at a visible pole); moll's forward x at the poles, 112.5 m instead of
+  0, is confirmed.
 
 ## How it runs
 

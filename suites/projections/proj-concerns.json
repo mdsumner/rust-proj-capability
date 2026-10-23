@@ -21,12 +21,12 @@
   },
   {
    "id": "ortho-ellipsoidal-pole-inverse",
-   "title": "ortho: ellipsoidal inverse returns inf at and next to a visible pole",
-   "status": "confirmed",
+   "title": "ortho: ellipsoidal inverse fails at and next to a visible pole",
+   "status": "drafted",
    "projections": ["ortho"],
    "signals": {"ortho": ["roundtrip"]},
    "found": "2026-10-22",
-   "detail": "With `+proj=ortho +ellps=WGS84 +lat_0=-42 +lon_0=147` the south pole is on the visible side. Forward gives (0, -4745251.365); the inverse of that returns (inf, inf), as it does for lat -89.9999999. At lat -89.99 the round trip is fine, and the spherical case (`+R=6371000`) inverts the pole. Cause not yet traced; the oblique branch of `ortho_e_inverse()` near the pole is the first place to look. Separate from the k_0 entry: with k_0 = 1 and no alpha that patch does not change the seed.",
+   "detail": "With `+proj=ortho +ellps=WGS84 +lat_0=-42 +lon_0=147` the south pole is on the visible side. Forward gives (0, -4745251.365); the inverse of that fails, as it does for every point within about 1e-5 deg of the pole. The spherical case (`+R=6378137`) inverts them. Cause: the Newton iteration in the oblique branch of `ortho_e_inverse()` stops only when the longitude step is below 1e-12 rad, which near a pole is not reached because longitude is poorly determined there. A one-line fix (weight the longitude step by cos(phi)) and gie tests exist; with it, inverse failures in 20000 random points per definition drop from between 30 and 40 to between 0 and 2, with the worst round trip error unchanged. Separate from the k_0 entry; the two fixes apply together.",
    "proj_links": []
   },
   {
