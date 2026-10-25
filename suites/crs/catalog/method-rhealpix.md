@@ -59,6 +59,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: rhealpix |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: rhealpix |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: PROJ +proj=rhealpix is not supported by wbprojection |  |
+| terrio | -- |  |  |  | dst: coordinate reference system: unsupported projection: PROJ +proj=rhealpix is not supported by wbprojection |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

@@ -59,6 +59,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: robin |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: robin |  |
 | wbprojection | OFF | 679.7 km | 1,032 km | 12658167.330, -3808830.211 |  |  |
+| terrio | exact | 0 mm | <0.001 mm | 12664073.709, -4488495.335 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

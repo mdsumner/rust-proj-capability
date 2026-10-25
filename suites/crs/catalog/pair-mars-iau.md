@@ -61,6 +61,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | src: failed to parse CRS string: unrecognized CRS format: IAU_2015:49900 |  |
 | proj-core+aoi | -- |  |  |  | src: failed to parse CRS string: unrecognized CRS format: IAU_2015:49900 |  |
 | wbprojection | -- |  |  |  | src: IAU_2015 codes not supported |  |
+| terrio | -- |  |  |  | src: coordinate reference system: cannot parse 'IAU_2015:49900' |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

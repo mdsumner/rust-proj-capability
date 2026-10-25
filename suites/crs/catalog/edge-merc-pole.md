@@ -61,6 +61,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | fail |  |  |  | coordinate out of range: latitude 90.0000&#176; exceeds Web Mercator limit of &#177;85.06&#176; | Identity (accuracy Some(OperationAccuracy { meters: 0.0 })) |
 | proj-core+aoi | fail |  |  |  | coordinate out of range: latitude 90.0000&#176; exceeds Web Mercator limit of &#177;85.06&#176; | Identity (accuracy Some(OperationAccuracy { meters: 0.0 })) |
 | wbprojection | fail |  |  |  | coordinate out of bounds: Web Mercator only valid between &#177;85.05&#176; latitude |  |
+| terrio | fail |  |  |  | coordinate reference system: cannot transform (0, 90) |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

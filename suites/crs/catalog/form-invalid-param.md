@@ -36,6 +36,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | refuse |  |  |  | transform: operation selection failed: unable to compile an operation for source EPSG:4326 target EPSG:0 |  |
 | proj-core+aoi | refuse |  |  |  | transform: operation selection failed: unable to compile an operation for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | ANSWER |  |  | 16363965.147, -5132380.528 |  |  |
+| terrio | refuse |  |  |  | dst: coordinate reference system: merc: lat_ts must be less than 90&#176; |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

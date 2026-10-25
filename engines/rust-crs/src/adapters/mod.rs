@@ -20,6 +20,8 @@ mod miniproj_ad;
 mod projcore;
 #[cfg(feature = "c-wbprojection")]
 mod wbprojection_ad;
+#[cfg(feature = "c-terrio")]
+mod terrio_ad;
 
 pub struct Candidate {
     pub name: &'static str,
@@ -48,6 +50,7 @@ cand!(MINIPROJ, "c-miniproj", miniproj_ad::run);
 cand!(PROJCORE, "c-projcore", projcore::run);
 cand!(PROJCORE_AOI, "c-projcore", projcore::run_aoi);
 cand!(WBPROJECTION, "c-wbprojection", wbprojection_ad::run);
+cand!(TERRIO, "c-terrio", terrio_ad::run);
 
 pub static REGISTRY: &[Candidate] = &[
     Candidate { name: "proj", run: PROJ },
@@ -61,4 +64,5 @@ pub static REGISTRY: &[Candidate] = &[
     Candidate { name: "proj-core", run: PROJCORE },
     Candidate { name: "proj-core+aoi", run: PROJCORE_AOI },
     Candidate { name: "wbprojection", run: WBPROJECTION },
+    Candidate { name: "terrio", run: TERRIO },
 ];

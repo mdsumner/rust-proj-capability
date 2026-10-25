@@ -145,6 +145,10 @@ mod send_sync {
     fn wb() {
         ok::<wbprojection::Crs>();
     }
+    #[cfg(feature = "c-terrio")]
+    fn terrio() {
+        ok::<terrio::crs::Transformer>();
+    }
     #[cfg(feature = "c-proj-send-sync-probe")]
     fn proj() {
         ok::<proj::Proj>();
