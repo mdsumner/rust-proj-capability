@@ -20,7 +20,7 @@ mod miniproj_ad;
 mod projcore;
 #[cfg(feature = "c-wbprojection")]
 mod wbprojection_ad;
-#[cfg(feature = "c-terrio")]
+#[cfg(feature = "c-terrio-crs")]
 mod terrio_ad;
 
 pub struct Candidate {
@@ -50,7 +50,12 @@ cand!(MINIPROJ, "c-miniproj", miniproj_ad::run);
 cand!(PROJCORE, "c-projcore", projcore::run);
 cand!(PROJCORE_AOI, "c-projcore", projcore::run_aoi);
 cand!(WBPROJECTION, "c-wbprojection", wbprojection_ad::run);
-cand!(TERRIO, "c-terrio", terrio_ad::run);
+// terrio-crs runs as one column or the other, depending on the build
+#[cfg(all(feature = "c-terrio-crs", not(feature = "c-terrio-crs-fallback")))]
+const TERRIO_CRS: Option<RunFn> = Some(terrio_ad::run as RunFn);
+#[cfg(not(all(feature = "c-terrio-crs", not(feature = "c-terrio-crs-fallback"))))]
+const TERRIO_CRS: Option<RunFn> = None;
+cand!(TERRIO_CRS_FALLBACK, "c-terrio-crs-fallback", terrio_ad::run);
 
 pub static REGISTRY: &[Candidate] = &[
     Candidate { name: "proj", run: PROJ },
@@ -64,5 +69,6 @@ pub static REGISTRY: &[Candidate] = &[
     Candidate { name: "proj-core", run: PROJCORE },
     Candidate { name: "proj-core+aoi", run: PROJCORE_AOI },
     Candidate { name: "wbprojection", run: WBPROJECTION },
-    Candidate { name: "terrio", run: TERRIO },
+    Candidate { name: "terrio-crs", run: TERRIO_CRS },
+    Candidate { name: "terrio-crs+fallback", run: TERRIO_CRS_FALLBACK },
 ];

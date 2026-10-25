@@ -71,4 +71,5 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | fail |  |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | proj-core+aoi | fail |  |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | exact | 0.128 mm | 0.235 mm | 109.2 m | 433938.158584, 289280.164322 |  |  |
-| terrio | exact | 0.00994 mm | 0.00995 mm | 109.2 m | 433938.158584, 289280.164204 |  |  |
+| terrio-crs | exact | 0.00994 mm | 0.00995 mm | 109.2 m | 433938.158584, 289280.164204 |  |  |
+| terrio-crs+fallback | exact | 0.00994 mm | 0.00995 mm | 109.2 m | 433938.158584, 289280.164204 |  |  |

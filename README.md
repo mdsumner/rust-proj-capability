@@ -33,9 +33,9 @@ Recent PROJ commits by projection, and whether proj4rs has each one. 35 of 167 P
 
 **[CRS study](crs-study.md)**
 
-Which Rust crate can take a CRS and run the transformation: 93 fixtures, 12 columns, PROJ 9.9.0.
+Which Rust crate can take a CRS and run the transformation: 93 fixtures, 13 columns, PROJ 9.9.0.
 
-best pure Rust: **terrio, 74 of 93** (proj-core 33 as a standalone crate)
+best pure Rust: **terrio-crs, 71 of 93** (74 with its wbprojection fallback)
 
 </div>
 
@@ -53,7 +53,7 @@ proj4rs stays the model
 <!-- cards:end -->
 
 Engines in the projections suite: proj4rs (the crates.io release, main, and
-main as wasm), proj-core, wbprojection, terrio, geodesy, proj4js and math.gl. To add
+main as wasm), proj-core, wbprojection, terrio-crs (with its fallback), geodesy, proj4js and math.gl. To add
 one, see [engines/README.md](engines/README.md); to add a projection, see
 [suites/projections/README.md](suites/projections/README.md).
 

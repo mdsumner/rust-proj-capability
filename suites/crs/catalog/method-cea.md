@@ -59,7 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: cea |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: cea |  |
 | wbprojection | exact | <0.001 mm | <0.001 mm | 14183483.197, -4900750.206 |  |  |
-| terrio | exact | 0 mm | <0.001 mm | 14183483.197, -4900750.206 |  |  |
+| terrio-crs | exact | 0 mm | 0 mm | 14183483.197, -4900750.206 |  |  |
+| terrio-crs+fallback | exact | 0 mm | 0 mm | 14183483.197, -4900750.206 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

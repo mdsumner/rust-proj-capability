@@ -54,7 +54,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | refuse |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: ortho |  |
 | proj-core+aoi | refuse |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: ortho |  |
 | wbprojection | refuse |  |  |  | coordinate out of bounds: point is on the far side of the globe |  |
-| terrio | refuse |  |  |  | coordinate reference system: cannot transform (-33, 42) |  |
+| terrio-crs | refuse |  |  |  | coordinate reference system: cannot transform (-33, 42) |  |
+| terrio-crs+fallback | refuse |  |  |  | coordinate reference system: cannot transform (-33, 42) |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

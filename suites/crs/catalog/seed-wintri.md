@@ -59,7 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: wintri |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: wintri |  |
 | wbprojection | OFF | 2,973 km |  | 11523355.996, -5302625.886 | inverse projection failed to converge after 60 iterations |  |
-| terrio | exact | 0 mm | 0 mm | 14496526.686, -5302625.886 |  |  |
+| terrio-crs | exact | 0 mm | 0 mm | 14496526.686, -5302625.886 |  |  |
+| terrio-crs+fallback | exact | 0 mm | 0 mm | 14496526.686, -5302625.886 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

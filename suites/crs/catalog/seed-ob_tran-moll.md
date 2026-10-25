@@ -59,7 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: ob_tran |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: ob_tran |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: PROJ +proj=ob_tran is not supported by wbprojection |  |
-| terrio | -- |  |  |  | dst: coordinate reference system: unsupported projection: +proj=ob_tran with +o_proj=moll (only +o_proj=longlat is) |  |
+| terrio-crs | -- |  |  |  | dst: coordinate reference system: unsupported projection: +proj=ob_tran with +o_proj=moll (only +o_proj=longlat is) |  |
+| terrio-crs+fallback | -- |  |  |  | dst: coordinate reference system: unsupported projection: +proj=ob_tran with +o_proj=moll (only +o_proj=longlat is) |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

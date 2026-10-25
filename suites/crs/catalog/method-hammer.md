@@ -59,7 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: hammer |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: hammer |  |
 | wbprojection | exact | <0.001 mm | 0 mm | 11680612.496, -5484488.037 |  |  |
-| terrio | exact | <0.001 mm | 0 mm | 11680612.496, -5484488.037 |  |  |
+| terrio-crs | -- |  |  |  | dst: coordinate reference system: unsupported projection: +proj=hammer; enable the wbprojection-fallback feature |  |
+| terrio-crs+fallback | exact | <0.001 mm | 0 mm | 11680612.496, -5484488.037 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

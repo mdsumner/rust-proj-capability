@@ -70,7 +70,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: krovak |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: krovak |  |
 | wbprojection | exact | 0 mm | 0 mm | -703105.689937, -1058219.601 |  |  |
-| terrio | exact | 0 mm | 0 mm | -703105.689937, -1058219.601 |  |  |
+| terrio-crs | exact | 0 mm | 0 mm | -703105.689937, -1058219.601 |  |  |
+| terrio-crs+fallback | exact | 0 mm | 0 mm | -703105.689937, -1058219.601 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

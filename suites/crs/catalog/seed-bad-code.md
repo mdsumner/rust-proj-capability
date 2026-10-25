@@ -36,4 +36,5 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | refuse |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: EPSG:99999 |  |
 | proj-core+aoi | refuse |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: EPSG:99999 |  |
 | wbprojection | refuse |  |  |  | dst: unsupported projection: EPSG:99999 is not in the built-in registry. See epsg::known_epsg_codes() for supported codes, or construct a ProjectionParams manually. |  |
-| terrio | refuse |  |  |  | dst: coordinate reference system: unknown EPSG code 99999 |  |
+| terrio-crs | refuse |  |  |  | dst: coordinate reference system: unknown EPSG code 99999 |  |
+| terrio-crs+fallback | refuse |  |  |  | dst: coordinate reference system: unknown EPSG code 99999 |  |

@@ -61,7 +61,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | fail |  |  |  | transform: operation selection failed: vertical CRS transformations between different vertical reference frames require a supported vertical operation/grid; no supported operation is available for source ITRF2014 ellipsoidal height target G |  |
 | proj-core+aoi | fail |  |  |  | transform: operation selection failed: vertical CRS transformations between different vertical reference frames require a supported vertical operation/grid; no supported operation is available for source ITRF2014 ellipsoidal height target G |  |
 | wbprojection | -- |  |  |  | src: unsupported projection: EPSG:7912 is not in the built-in registry. See epsg::known_epsg_codes() for supported codes, or construct a ProjectionParams manually. |  |
-| terrio | exact | <0.001 mm | 0 mm | 146.999999, -42.000003, 0.000934 |  |  |
+| terrio-crs | exact | <0.001 mm | <0.001 mm | 146.999999, -42.000003, 0.000934 |  |  |
+| terrio-crs+fallback | exact | <0.001 mm | <0.001 mm | 146.999999, -42.000003, 0.000934 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

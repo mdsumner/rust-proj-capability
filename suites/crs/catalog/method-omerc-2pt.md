@@ -59,7 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: unsupported CRS semantics: PROJ Hotine Oblique Mercator definition uses unsupported PROJ parameter `+lon_1`: parameter is not supported by this PROJ parser |  |
 | proj-core+aoi | -- |  |  |  | dst: unsupported CRS semantics: PROJ Hotine Oblique Mercator definition uses unsupported PROJ parameter `+lon_2`: parameter is not supported by this PROJ parser |  |
 | wbprojection | OFF | 1.965e+04 km | 1.123e+04 km | -14801815.890, -2738206.968 |  |  |
-| terrio | -- |  |  |  | dst: coordinate reference system: omerc: two-point form is not supported |  |
+| terrio-crs | -- |  |  |  | dst: coordinate reference system: omerc: two-point form is not supported |  |
+| terrio-crs+fallback | -- |  |  |  | dst: coordinate reference system: omerc: two-point form is not supported |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

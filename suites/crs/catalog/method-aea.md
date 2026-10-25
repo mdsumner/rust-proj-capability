@@ -59,7 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | exact | <0.001 mm | 3,421 km | 1272213.835, -4666485.801 |  | Identity (accuracy Some(OperationAccuracy { meters: 0.0 })) |
 | proj-core+aoi | exact | <0.001 mm | 3,421 km | 1272213.835, -4666485.801 |  | Identity (accuracy Some(OperationAccuracy { meters: 0.0 })) |
 | wbprojection | exact | <0.001 mm | <0.001 mm | 1272213.835, -4666485.801 |  |  |
-| terrio | exact | <0.001 mm | <0.001 mm | 1272213.835, -4666485.801 |  |  |
+| terrio-crs | exact | <0.001 mm | <0.001 mm | 1272213.835, -4666485.801 |  |  |
+| terrio-crs+fallback | exact | <0.001 mm | <0.001 mm | 1272213.835, -4666485.801 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 
