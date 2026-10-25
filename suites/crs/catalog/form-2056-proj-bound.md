@@ -71,3 +71,4 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: somerc |  |
 | proj-core+aoi | -- |  |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: somerc |  |
 | wbprojection | OFF | 225.2 m | 225.2 m | 225.2 m | 2599879.467, 1199896.076 |  |  |
+| terrio | exact | 0 mm | <0.001 mm | 0 mm | 2600104.109, 1199879.628 |  |  |

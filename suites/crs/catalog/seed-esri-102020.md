@@ -61,6 +61,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: ESRI:102020 |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: ESRI:102020 |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: EPSG:102020 is not in the built-in registry. See epsg::known_epsg_codes() for supported codes, or construct a ProjectionParams manually. |  |
+| terrio | exact | <0.001 mm | <0.001 mm | 1880874.329, 684582.270233 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

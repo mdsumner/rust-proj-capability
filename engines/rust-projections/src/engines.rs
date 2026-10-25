@@ -10,6 +10,7 @@ pub static REGISTRY: &[Engine] = &[
     Engine { name: "proj-core", version: "0.12.0", prepare: projcore::prepare },
     Engine { name: "wbprojection", version: "0.3.3", prepare: wb::prepare },
     Engine { name: "geodesy", version: "0.15.0", prepare: geodesy_ad::prepare },
+    Engine { name: "terrio", version: "0.5.0", prepare: terrio_ad::prepare },
 ];
 
 /// proj4rs works in radians on the geographic side.
@@ -134,6 +135,35 @@ mod geodesy_ad {
         }
         fn inv(&self, x: f64, y: f64) -> Option<[f64; 2]> {
             self.go(Inv, x, y).map(|v| [v[0].to_degrees(), v[1].to_degrees()])
+        }
+    }
+}
+
+/// terrio's CRS engine: its own ports of PROJ's methods, wbprojection as the
+/// fallback. Two transformers, since a Transformer runs one way.
+mod terrio_ad {
+    use super::*;
+    use terrio::crs::{SpatialRef, Transformer};
+
+    struct T {
+        fwd: Transformer,
+        inv: Transformer,
+    }
+
+    pub fn prepare(p: &Projection) -> Result<Box<dyn Prepared>, String> {
+        let geo = SpatialRef::from_proj4(&p.geographic).map_err(|e| format!("geographic: {e}"))?;
+        let prj = SpatialRef::from_proj4(&p.proj).map_err(|e| e.to_string())?;
+        let fwd = Transformer::new(&geo, &prj).map_err(|e| e.to_string())?;
+        let inv = Transformer::new(&prj, &geo).map_err(|e| e.to_string())?;
+        Ok(Box::new(T { fwd, inv }))
+    }
+
+    impl Prepared for T {
+        fn fwd(&self, lon: f64, lat: f64) -> Option<[f64; 2]> {
+            self.fwd.transform(lon, lat).ok().map(|(x, y)| [x, y])
+        }
+        fn inv(&self, x: f64, y: f64) -> Option<[f64; 2]> {
+            self.inv.transform(x, y).ok().map(|(x, y)| [x, y])
         }
     }
 }

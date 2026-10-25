@@ -18,119 +18,119 @@ Each cell compares the candidate with PROJ on that fixture. Fixture ids link to 
 
 ## Seed list (the sidebyside crs/ seeds)
 
-| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [seed-4326](../../suites/crs/catalog/seed-4326.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact |
-| [seed-3857](../../suites/crs/catalog/seed-3857.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact |
-| [seed-32755](../../suites/crs/catalog/seed-32755.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact |
-| [seed-3031](../../suites/crs/catalog/seed-3031.md) | exact | exact | -- | exact | exact | -- | -- | -- | exact | exact | exact |
-| [seed-28355](../../suites/crs/catalog/seed-28355.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | OFF 1e+04 km |
-| [seed-7855](../../suites/crs/catalog/seed-7855.md) | exact | exact | -- | exact | exact | -- | exact | exact | OFF 1.501 m | OFF 1.501 m | exact |
-| [seed-9354](../../suites/crs/catalog/seed-9354.md) | exact | exact | -- | exact | -- | -- | -- | -- | exact | exact | exact |
-| [seed-8857](../../suites/crs/catalog/seed-8857.md) | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact |
-| [seed-esri-54042](../../suites/crs/catalog/seed-esri-54042.md) | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| [seed-esri-54052](../../suites/crs/catalog/seed-esri-54052.md) | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-| [seed-esri-102020](../../suites/crs/catalog/seed-esri-102020.md) | exact | exact | -- | exact | -- | -- | OFF 1.113e+04 km | -- | -- | -- | -- |
-| [seed-tpers](../../suites/crs/catalog/seed-tpers.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [seed-ob_tran-moll](../../suites/crs/catalog/seed-ob_tran-moll.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [seed-wintri](../../suites/crs/catalog/seed-wintri.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 2,973 km |
-| [seed-igh](../../suites/crs/catalog/seed-igh.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [seed-7415](../../suites/crs/catalog/seed-7415.md) | exact | exact | -- | exact | close 4.84 mm | -- | -- | -- | fail | fail | -- |
-| [seed-2056](../../suites/crs/catalog/seed-2056.md) | exact | exact | -- | exact | exact | -- | exact | -- | exact | exact | close 283 mm |
-| [seed-2154](../../suites/crs/catalog/seed-2154.md) | exact | exact | -- | exact | exact | -- | exact | OFF 1.234 km | exact | exact | exact |
-| [seed-bad-code](../../suites/crs/catalog/seed-bad-code.md) | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse |
+| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection | terrio |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [seed-4326](../../suites/crs/catalog/seed-4326.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact | exact |
+| [seed-3857](../../suites/crs/catalog/seed-3857.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact | exact |
+| [seed-32755](../../suites/crs/catalog/seed-32755.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact | exact |
+| [seed-3031](../../suites/crs/catalog/seed-3031.md) | exact | exact | -- | exact | exact | -- | -- | -- | exact | exact | exact | exact |
+| [seed-28355](../../suites/crs/catalog/seed-28355.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | OFF 1e+04 km | exact |
+| [seed-7855](../../suites/crs/catalog/seed-7855.md) | exact | exact | -- | exact | exact | -- | exact | exact | OFF 1.501 m | OFF 1.501 m | exact | exact |
+| [seed-9354](../../suites/crs/catalog/seed-9354.md) | exact | exact | -- | exact | -- | -- | -- | -- | exact | exact | exact | exact |
+| [seed-8857](../../suites/crs/catalog/seed-8857.md) | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact | exact |
+| [seed-esri-54042](../../suites/crs/catalog/seed-esri-54042.md) | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- | exact |
+| [seed-esri-54052](../../suites/crs/catalog/seed-esri-54052.md) | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| [seed-esri-102020](../../suites/crs/catalog/seed-esri-102020.md) | exact | exact | -- | exact | -- | -- | OFF 1.113e+04 km | -- | -- | -- | -- | exact |
+| [seed-tpers](../../suites/crs/catalog/seed-tpers.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- |
+| [seed-ob_tran-moll](../../suites/crs/catalog/seed-ob_tran-moll.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- |
+| [seed-wintri](../../suites/crs/catalog/seed-wintri.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 2,973 km | exact |
+| [seed-igh](../../suites/crs/catalog/seed-igh.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- |
+| [seed-7415](../../suites/crs/catalog/seed-7415.md) | exact | exact | -- | exact | close 4.84 mm | -- | -- | -- | fail | fail | -- | exact |
+| [seed-2056](../../suites/crs/catalog/seed-2056.md) | exact | exact | -- | exact | exact | -- | exact | -- | exact | exact | close 283 mm | exact |
+| [seed-2154](../../suites/crs/catalog/seed-2154.md) | exact | exact | -- | exact | exact | -- | exact | OFF 1.234 km | exact | exact | exact | exact |
+| [seed-bad-code](../../suites/crs/catalog/seed-bad-code.md) | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse |
 
 ## CRS-to-CRS pairs
 
-| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [pair-4283-7844](../../suites/crs/catalog/pair-4283-7844.md) | exact | exact | -- | OFF 1.505 m | OFF 1.505 m | -- | OFF 1.505 m | OFF 1.505 m | exact | exact | OFF 1.505 m |
-| [pair-4283-7855](../../suites/crs/catalog/pair-4283-7855.md) | exact | exact | -- | OFF 1.502 m | OFF 1.502 m | -- | OFF 1.502 m | OFF 1.502 m | exact | exact | OFF 1.502 m |
-| [pair-28355-7855](../../suites/crs/catalog/pair-28355-7855.md) | exact | exact | -- | OFF 1.502 m | OFF 1.502 m | -- | OFF 1.502 m | OFF 1.502 m | exact | exact | OFF 1e+04 km |
-| [pair-4326-3031](../../suites/crs/catalog/pair-4326-3031.md) | exact | exact | -- | exact | exact | -- | -- | -- | exact | exact | exact |
-| [pair-nad27-nad83](../../suites/crs/catalog/pair-nad27-nad83.md) | exact | exact | -- | -- | -- | -- | -- | OFF 35.44 m | fail | fail | OFF 2.353 m |
-| [pair-ed50-wgs84](../../suites/crs/catalog/pair-ed50-wgs84.md) | exact | exact | -- | OFF 171.8 m | OFF 7.453 m | -- | OFF 171.8 m | OFF 171.8 m | OFF 7.824 m | exact | OFF 7.453 m |
-| [pair-itrf2014-gda2020-epoch](../../suites/crs/catalog/pair-itrf2014-gda2020-epoch.md) | close 290 mm | exact | -- | close 290 mm | close 290 mm | -- | close 290 mm | -- | fail | fail | -- |
-| [pair-4979-egm2008](../../suites/crs/catalog/pair-4979-egm2008.md) | exact | exact | -- | exact | -- | -- | exact | -- | fail | fail | -- |
-| [pair-4979-4978](../../suites/crs/catalog/pair-4979-4978.md) | OFF 74.31 m | exact | -- | exact | exact | -- | -- | -- | -- | -- | -- |
-| [pair-2056-21781](../../suites/crs/catalog/pair-2056-21781.md) | exact | exact | -- | exact | exact | -- | OFF 4.965 km | -- | fail | fail | exact |
-| [pair-mars-iau](../../suites/crs/catalog/pair-mars-iau.md) | exact | exact | -- | exact | -- | -- | -- | -- | -- | -- | -- |
+| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection | terrio |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [pair-4283-7844](../../suites/crs/catalog/pair-4283-7844.md) | exact | exact | -- | OFF 1.505 m | OFF 1.505 m | -- | OFF 1.505 m | OFF 1.505 m | exact | exact | OFF 1.505 m | exact |
+| [pair-4283-7855](../../suites/crs/catalog/pair-4283-7855.md) | exact | exact | -- | OFF 1.502 m | OFF 1.502 m | -- | OFF 1.502 m | OFF 1.502 m | exact | exact | OFF 1.502 m | exact |
+| [pair-28355-7855](../../suites/crs/catalog/pair-28355-7855.md) | exact | exact | -- | OFF 1.502 m | OFF 1.502 m | -- | OFF 1.502 m | OFF 1.502 m | exact | exact | OFF 1e+04 km | exact |
+| [pair-4326-3031](../../suites/crs/catalog/pair-4326-3031.md) | exact | exact | -- | exact | exact | -- | -- | -- | exact | exact | exact | exact |
+| [pair-nad27-nad83](../../suites/crs/catalog/pair-nad27-nad83.md) | exact | exact | -- | -- | -- | -- | -- | OFF 35.44 m | fail | fail | OFF 2.353 m | exact |
+| [pair-ed50-wgs84](../../suites/crs/catalog/pair-ed50-wgs84.md) | exact | exact | -- | OFF 171.8 m | OFF 7.453 m | -- | OFF 171.8 m | OFF 171.8 m | OFF 7.824 m | exact | OFF 7.453 m | exact |
+| [pair-itrf2014-gda2020-epoch](../../suites/crs/catalog/pair-itrf2014-gda2020-epoch.md) | close 290 mm | exact | -- | close 290 mm | close 290 mm | -- | close 290 mm | -- | fail | fail | -- | exact |
+| [pair-4979-egm2008](../../suites/crs/catalog/pair-4979-egm2008.md) | exact | exact | -- | exact | -- | -- | exact | -- | fail | fail | -- | exact |
+| [pair-4979-4978](../../suites/crs/catalog/pair-4979-4978.md) | OFF 74.31 m | exact | -- | exact | exact | -- | -- | -- | -- | -- | -- | -- |
+| [pair-2056-21781](../../suites/crs/catalog/pair-2056-21781.md) | exact | exact | -- | exact | exact | -- | OFF 4.965 km | -- | fail | fail | exact | exact |
+| [pair-mars-iau](../../suites/crs/catalog/pair-mars-iau.md) | exact | exact | -- | exact | -- | -- | -- | -- | -- | -- | -- | -- |
 
 ## Input forms, units, unknown and invalid input
 
-| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [form-2056-proj-bare](../../suites/crs/catalog/form-2056-proj-bare.md) | exact | exact | exact | exact | n/a | exact | exact | -- | -- | -- | OFF 381.1 m |
-| [form-2056-proj-bound](../../suites/crs/catalog/form-2056-proj-bound.md) | exact | exact | exact | exact | n/a | OFF 163.9 m | exact | -- | -- | -- | OFF 225.2 m |
-| [form-2056-wkt1-esri](../../suites/crs/catalog/form-2056-wkt1-esri.md) | exact | exact | -- | exact | n/a | -- | exact | -- | -- | -- | OFF 164.2 m |
-| [form-27700-epsg](../../suites/crs/catalog/form-27700-epsg.md) | exact | exact | -- | OFF 109.2 m | close 3 mm | -- | OFF 109.2 m | OFF 109.2 m | exact | exact | OFF 29.18 m |
-| [form-27700-proj-bare](../../suites/crs/catalog/form-27700-proj-bare.md) | exact | exact | exact | exact | n/a | exact | exact | -- | fail | fail | exact |
-| [form-27700-proj-bound](../../suites/crs/catalog/form-27700-proj-bound.md) | exact | exact | exact | exact | n/a | exact | exact | -- | fail | fail | exact |
-| [form-27700-wkt1-gdal](../../suites/crs/catalog/form-27700-wkt1-gdal.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | exact | exact | OFF 29.18 m |
-| [form-27700-wkt1-gdal-bound](../../suites/crs/catalog/form-27700-wkt1-gdal-bound.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | exact | exact | OFF 29.18 m |
-| [form-27700-wkt1-esri](../../suites/crs/catalog/form-27700-wkt1-esri.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | fail | fail | OFF 109.2 m |
-| [form-27700-wkt2-2015](../../suites/crs/catalog/form-27700-wkt2-2015.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | -- | -- | OFF 29.18 m |
-| [form-27700-wkt2-2019](../../suites/crs/catalog/form-27700-wkt2-2019.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | exact | exact | OFF 29.18 m |
-| [form-27700-projjson](../../suites/crs/catalog/form-27700-projjson.md) | exact | exact | -- | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | -- | -- | -- |
-| [form-2264-ftus](../../suites/crs/catalog/form-2264-ftus.md) | exact | exact | -- | exact | exact | -- | exact | OFF 444.8 km | exact | exact | close 815 mm |
-| [form-2264-proj-bound](../../suites/crs/catalog/form-2264-proj-bound.md) | exact | exact | close 815 mm | close 815 mm | n/a | OFF 444.8 km | close 815 mm | -- | fail | fail | OFF 444.8 km |
-| [form-3857-proj-export](../../suites/crs/catalog/form-3857-proj-export.md) | exact | exact | exact | exact | n/a | OFF 28.6 km | exact | -- | -- | -- | exact |
-| [form-4326-wkt2-2019](../../suites/crs/catalog/form-4326-wkt2-2019.md) | exact | exact | -- | exact | n/a | -- | exact | -- | -- | -- | exact |
-| [form-3785-deprecated](../../suites/crs/catalog/form-3785-deprecated.md) | exact | exact | -- | exact | exact | -- | exact | -- | -- | -- | -- |
-| [form-crs84-from-4326](../../suites/crs/catalog/form-crs84-from-4326.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact |
-| [form-unknown-param](../../suites/crs/catalog/form-unknown-param.md) | exact | exact | exact | exact | n/a | exact | exact | -- | -- | -- | exact |
-| [form-unknown-method](../../suites/crs/catalog/form-unknown-method.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse |
-| [form-invalid-param](../../suites/crs/catalog/form-invalid-param.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | ANSWER |
-| [form-grads](../../suites/crs/catalog/form-grads.md) | exact | exact | -- | exact | exact | -- | -- | OFF 171.2 km | fail | fail | -- |
+| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection | terrio |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [form-2056-proj-bare](../../suites/crs/catalog/form-2056-proj-bare.md) | exact | exact | exact | exact | n/a | exact | exact | -- | -- | -- | OFF 381.1 m | exact |
+| [form-2056-proj-bound](../../suites/crs/catalog/form-2056-proj-bound.md) | exact | exact | exact | exact | n/a | OFF 163.9 m | exact | -- | -- | -- | OFF 225.2 m | exact |
+| [form-2056-wkt1-esri](../../suites/crs/catalog/form-2056-wkt1-esri.md) | exact | exact | -- | exact | n/a | -- | exact | -- | -- | -- | OFF 164.2 m | exact |
+| [form-27700-epsg](../../suites/crs/catalog/form-27700-epsg.md) | exact | exact | -- | OFF 109.2 m | close 3 mm | -- | OFF 109.2 m | OFF 109.2 m | exact | exact | OFF 29.18 m | exact |
+| [form-27700-proj-bare](../../suites/crs/catalog/form-27700-proj-bare.md) | exact | exact | exact | exact | n/a | exact | exact | -- | fail | fail | exact | exact |
+| [form-27700-proj-bound](../../suites/crs/catalog/form-27700-proj-bound.md) | exact | exact | exact | exact | n/a | exact | exact | -- | fail | fail | exact | exact |
+| [form-27700-wkt1-gdal](../../suites/crs/catalog/form-27700-wkt1-gdal.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | exact | exact | OFF 29.18 m | exact |
+| [form-27700-wkt1-gdal-bound](../../suites/crs/catalog/form-27700-wkt1-gdal-bound.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | exact | exact | OFF 29.18 m | exact |
+| [form-27700-wkt1-esri](../../suites/crs/catalog/form-27700-wkt1-esri.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | fail | fail | OFF 109.2 m | exact |
+| [form-27700-wkt2-2015](../../suites/crs/catalog/form-27700-wkt2-2015.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | -- | -- | OFF 29.18 m | exact |
+| [form-27700-wkt2-2019](../../suites/crs/catalog/form-27700-wkt2-2019.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | exact | exact | OFF 29.18 m | exact |
+| [form-27700-projjson](../../suites/crs/catalog/form-27700-projjson.md) | exact | exact | -- | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | -- | -- | -- | -- |
+| [form-2264-ftus](../../suites/crs/catalog/form-2264-ftus.md) | exact | exact | -- | exact | exact | -- | exact | OFF 444.8 km | exact | exact | close 815 mm | exact |
+| [form-2264-proj-bound](../../suites/crs/catalog/form-2264-proj-bound.md) | exact | exact | close 815 mm | close 815 mm | n/a | OFF 444.8 km | close 815 mm | -- | fail | fail | OFF 444.8 km | close 815 mm |
+| [form-3857-proj-export](../../suites/crs/catalog/form-3857-proj-export.md) | exact | exact | exact | exact | n/a | OFF 28.6 km | exact | -- | -- | -- | exact | exact |
+| [form-4326-wkt2-2019](../../suites/crs/catalog/form-4326-wkt2-2019.md) | exact | exact | -- | exact | n/a | -- | exact | -- | -- | -- | exact | exact |
+| [form-3785-deprecated](../../suites/crs/catalog/form-3785-deprecated.md) | exact | exact | -- | exact | exact | -- | exact | -- | -- | -- | -- | exact |
+| [form-crs84-from-4326](../../suites/crs/catalog/form-crs84-from-4326.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact | exact |
+| [form-unknown-param](../../suites/crs/catalog/form-unknown-param.md) | exact | exact | exact | exact | n/a | exact | exact | -- | -- | -- | exact | exact |
+| [form-unknown-method](../../suites/crs/catalog/form-unknown-method.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse | refuse |
+| [form-invalid-param](../../suites/crs/catalog/form-invalid-param.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | ANSWER | refuse |
+| [form-grads](../../suites/crs/catalog/form-grads.md) | exact | exact | -- | exact | exact | -- | -- | OFF 171.2 km | fail | fail | -- | exact |
 
 ## Projection methods
 
-| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [method-tmerc-far](../../suites/crs/catalog/method-tmerc-far.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | OFF 10.46 m |
-| [method-geos](../../suites/crs/catalog/method-geos.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | OFF 3,341 km |
-| [method-omerc-2pt](../../suites/crs/catalog/method-omerc-2pt.md) | exact | exact | -- | -- | n/a | fail | fail | -- | -- | -- | OFF 1.965e+04 km |
-| [method-omerc-alpha](../../suites/crs/catalog/method-omerc-alpha.md) | exact | exact | -- | -- | n/a | OFF 4,750 km | OFF 4,750 km | -- | exact | exact | OFF 138.8 km |
-| [method-krovak](../../suites/crs/catalog/method-krovak.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | exact |
-| [method-nzmg](../../suites/crs/catalog/method-nzmg.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [method-eck4](../../suites/crs/catalog/method-eck4.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact |
-| [method-natearth](../../suites/crs/catalog/method-natearth.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact |
-| [method-hammer](../../suites/crs/catalog/method-hammer.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact |
-| [method-qsc](../../suites/crs/catalog/method-qsc.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [method-healpix](../../suites/crs/catalog/method-healpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [method-rhealpix](../../suites/crs/catalog/method-rhealpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [method-isea](../../suites/crs/catalog/method-isea.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [method-eqearth](../../suites/crs/catalog/method-eqearth.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact |
-| [method-moll](../../suites/crs/catalog/method-moll.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | exact |
-| [method-robin](../../suites/crs/catalog/method-robin.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 679.7 km |
-| [method-sinu](../../suites/crs/catalog/method-sinu.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 29.99 km |
-| [method-laea](../../suites/crs/catalog/method-laea.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | OFF 620.7 m |
-| [method-aeqd](../../suites/crs/catalog/method-aeqd.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | OFF 643.6 m |
-| [method-ortho](../../suites/crs/catalog/method-ortho.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 643.6 m |
-| [method-stere](../../suites/crs/catalog/method-stere.md) | exact | exact | exact | exact | n/a | -- | -- | -- | exact | exact | exact |
-| [method-sterea](../../suites/crs/catalog/method-sterea.md) | exact | exact | exact | exact | n/a | -- | -- | -- | fail | fail | OFF 65.87 m |
-| [method-lcc](../../suites/crs/catalog/method-lcc.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | exact |
-| [method-aea](../../suites/crs/catalog/method-aea.md) | exact | exact | exact | exact | n/a | -- | -- | -- | exact | exact | exact |
-| [method-somerc](../../suites/crs/catalog/method-somerc.md) | exact | exact | exact | exact | n/a | exact | exact | -- | -- | -- | OFF 381.1 m |
-| [method-cass](../../suites/crs/catalog/method-cass.md) | exact | exact | -- | -- | n/a | -- | -- | -- | exact | exact | exact |
-| [method-poly](../../suites/crs/catalog/method-poly.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 23.53 km |
-| [method-cea](../../suites/crs/catalog/method-cea.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | exact |
-| [method-eqc](../../suites/crs/catalog/method-eqc.md) | exact | exact | OFF 29.99 km | OFF 29.99 km | n/a | -- | -- | -- | OFF 29.99 km | OFF 29.99 km | OFF 29.99 km |
-| [method-eqdc](../../suites/crs/catalog/method-eqdc.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- |
-| [method-merc](../../suites/crs/catalog/method-merc.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | OFF 4,386 km |
-| [method-ups-32761](../../suites/crs/catalog/method-ups-32761.md) | exact | exact | -- | exact | exact | -- | -- | OFF 2.871e+05 km | OFF 5.616 km | OFF 5.616 km | exact |
+| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection | terrio |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [method-tmerc-far](../../suites/crs/catalog/method-tmerc-far.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | OFF 10.46 m | exact |
+| [method-geos](../../suites/crs/catalog/method-geos.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | OFF 3,341 km | exact |
+| [method-omerc-2pt](../../suites/crs/catalog/method-omerc-2pt.md) | exact | exact | -- | -- | n/a | fail | fail | -- | -- | -- | OFF 1.965e+04 km | -- |
+| [method-omerc-alpha](../../suites/crs/catalog/method-omerc-alpha.md) | exact | exact | -- | -- | n/a | OFF 4,750 km | OFF 4,750 km | -- | exact | exact | OFF 138.8 km | exact |
+| [method-krovak](../../suites/crs/catalog/method-krovak.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | exact | exact |
+| [method-nzmg](../../suites/crs/catalog/method-nzmg.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact |
+| [method-eck4](../../suites/crs/catalog/method-eck4.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | exact |
+| [method-natearth](../../suites/crs/catalog/method-natearth.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | exact |
+| [method-hammer](../../suites/crs/catalog/method-hammer.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | exact |
+| [method-qsc](../../suites/crs/catalog/method-qsc.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- |
+| [method-healpix](../../suites/crs/catalog/method-healpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- |
+| [method-rhealpix](../../suites/crs/catalog/method-rhealpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- |
+| [method-isea](../../suites/crs/catalog/method-isea.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- |
+| [method-eqearth](../../suites/crs/catalog/method-eqearth.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | exact |
+| [method-moll](../../suites/crs/catalog/method-moll.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | exact | exact |
+| [method-robin](../../suites/crs/catalog/method-robin.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 679.7 km | exact |
+| [method-sinu](../../suites/crs/catalog/method-sinu.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 29.99 km | exact |
+| [method-laea](../../suites/crs/catalog/method-laea.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | OFF 620.7 m | exact |
+| [method-aeqd](../../suites/crs/catalog/method-aeqd.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | OFF 643.6 m | exact |
+| [method-ortho](../../suites/crs/catalog/method-ortho.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 643.6 m | exact |
+| [method-stere](../../suites/crs/catalog/method-stere.md) | exact | exact | exact | exact | n/a | -- | -- | -- | exact | exact | exact | exact |
+| [method-sterea](../../suites/crs/catalog/method-sterea.md) | exact | exact | exact | exact | n/a | -- | -- | -- | fail | fail | OFF 65.87 m | exact |
+| [method-lcc](../../suites/crs/catalog/method-lcc.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | exact | exact |
+| [method-aea](../../suites/crs/catalog/method-aea.md) | exact | exact | exact | exact | n/a | -- | -- | -- | exact | exact | exact | exact |
+| [method-somerc](../../suites/crs/catalog/method-somerc.md) | exact | exact | exact | exact | n/a | exact | exact | -- | -- | -- | OFF 381.1 m | exact |
+| [method-cass](../../suites/crs/catalog/method-cass.md) | exact | exact | -- | -- | n/a | -- | -- | -- | exact | exact | exact | exact |
+| [method-poly](../../suites/crs/catalog/method-poly.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 23.53 km | exact |
+| [method-cea](../../suites/crs/catalog/method-cea.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | exact | exact |
+| [method-eqc](../../suites/crs/catalog/method-eqc.md) | exact | exact | OFF 29.99 km | OFF 29.99 km | n/a | -- | -- | -- | OFF 29.99 km | OFF 29.99 km | OFF 29.99 km | exact |
+| [method-eqdc](../../suites/crs/catalog/method-eqdc.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact |
+| [method-merc](../../suites/crs/catalog/method-merc.md) | exact | exact | exact | exact | n/a | exact | exact | -- | exact | exact | OFF 4,386 km | exact |
+| [method-ups-32761](../../suites/crs/catalog/method-ups-32761.md) | exact | exact | -- | exact | exact | -- | -- | OFF 2.871e+05 km | OFF 5.616 km | OFF 5.616 km | exact | exact |
 
 ## Edge cases: pole, seam, antipode, far from the meridian
 
-| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| [edge-3031-pole](../../suites/crs/catalog/edge-3031-pole.md) | exact | exact | -- | exact | exact | -- | -- | -- | exact | exact | exact |
-| [edge-3857-85](../../suites/crs/catalog/edge-3857-85.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact |
-| [edge-8857-seam-e](../../suites/crs/catalog/edge-8857-seam-e.md) | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact |
-| [edge-8857-seam-w](../../suites/crs/catalog/edge-8857-seam-w.md) | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact |
-| [edge-32755-far](../../suites/crs/catalog/edge-32755-far.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | OFF 235 m |
-| [edge-ortho-back](../../suites/crs/catalog/edge-ortho-back.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse |
-| [edge-tpers-back](../../suites/crs/catalog/edge-tpers-back.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse |
-| [edge-laea-antipode](../../suites/crs/catalog/edge-laea-antipode.md) | exact | exact | exact | exact | n/a | OFF 1.274e+04 km | OFF 1.274e+04 km | -- | exact | exact | OFF 14.14 km |
-| [edge-merc-pole](../../suites/crs/catalog/edge-merc-pole.md) | exact | exact | -- | fail | fail | -- | exact | OFF 4,421 km | fail | fail | fail |
+| fixture | proj | proj-sys | proj4rs | proj4rs+bound | crs-definitions | geodesy | geodesy+bound | miniproj | proj-core | proj-core+aoi | wbprojection | terrio |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [edge-3031-pole](../../suites/crs/catalog/edge-3031-pole.md) | exact | exact | -- | exact | exact | -- | -- | -- | exact | exact | exact | exact |
+| [edge-3857-85](../../suites/crs/catalog/edge-3857-85.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | exact | exact |
+| [edge-8857-seam-e](../../suites/crs/catalog/edge-8857-seam-e.md) | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact | exact |
+| [edge-8857-seam-w](../../suites/crs/catalog/edge-8857-seam-w.md) | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact | exact |
+| [edge-32755-far](../../suites/crs/catalog/edge-32755-far.md) | exact | exact | -- | exact | exact | -- | exact | exact | exact | exact | OFF 235 m | exact |
+| [edge-ortho-back](../../suites/crs/catalog/edge-ortho-back.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse | refuse |
+| [edge-tpers-back](../../suites/crs/catalog/edge-tpers-back.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse | refuse |
+| [edge-laea-antipode](../../suites/crs/catalog/edge-laea-antipode.md) | exact | exact | exact | exact | n/a | OFF 1.274e+04 km | OFF 1.274e+04 km | -- | exact | exact | OFF 14.14 km | exact |
+| [edge-merc-pole](../../suites/crs/catalog/edge-merc-pole.md) | exact | exact | -- | fail | fail | -- | exact | OFF 4,421 km | fail | fail | fail | fail |
 

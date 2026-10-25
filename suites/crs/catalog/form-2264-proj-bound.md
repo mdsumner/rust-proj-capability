@@ -80,3 +80,4 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | fail |  |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | proj-core+aoi | fail |  |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | OFF | 444.8 km | 1,486 km | 444.8 km | 609600.973959, 194129.102749 |  |  |
+| terrio | close | 815 mm | 817 mm | <0.001 mm | 2000000.000, 636902.680782 |  |  |

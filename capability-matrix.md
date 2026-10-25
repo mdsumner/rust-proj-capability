@@ -23,6 +23,7 @@ Each cell is Y (yes), P (partial, say what) or N (no). Evidence is one of:
 | `miniproj` | 0.10.4 (2026-01-07) | https://github.com/GEOMAR-Kiel/Miniproj | added: EPSG projections generated at build time. 41k recent downloads. |
 | `proj-core` (+ `proj-wkt`) | 0.11.0 (2026-08-11) | https://github.com/roteiro-gis/proj-rust | added: pure Rust with an embedded EPSG registry and operation selection |
 | `wbprojection` | 0.3.3 (2026-08-04) | https://github.com/jblindsay/whitebox_next_gen | added: Whitebox projection library. 5 reverse dependencies in the Whitebox stack. |
+| `terrio` | 0.5.0 (2026-10) | https://github.com/opengeos/terrio | added 2026-10-25: the CRS engine inside a pure-Rust GDAL-style I/O library, built without default features. Verdict counts only; it has no column in the summary grid or the evidence by layer yet. |
 
 Checked and not added: `oxiproj` (1.3k recent downloads, 2 reverse
 dependencies), `geonative-proj` (TM only), `gis-tools`, `epsg` (unmaintained
@@ -70,6 +71,7 @@ refused; n/a = the input does not apply to this candidate.
 | proj-core | 33 | 0 | 4 | 12 | 39 | 5 | 0 |
 | proj-core+aoi | 34 | 0 | 3 | 12 | 39 | 5 | 0 |
 | wbprojection | 32 | 2 | 33 | 1 | 20 | 4 | 0 |
+| terrio | 74 | 1 | 0 | 1 | 12 | 5 | 0 |
 
 wbprojection has one more fixture ([form-invalid-param](suites/crs/catalog/form-invalid-param.md)) where it answered and
 the oracle refused, which is why its row does not sum to 93. The "+bound" and

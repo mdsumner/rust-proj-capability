@@ -2,8 +2,8 @@
 
 | directory | suite | engines |
 |---|---|---|
-| [rust-crs](rust-crs/README.md) | [CRS](../suites/crs/README.md) | proj, proj-sys, proj4rs, crs-definitions, geodesy, miniproj, proj-core, wbprojection, as of the original study |
-| `rust-projections` | [projections](../suites/projections/README.md) | proj4rs (crates.io release), proj4rs-main (git main, pinned in Cargo.lock), proj-core, wbprojection, geodesy |
+| [rust-crs](rust-crs/README.md) | [CRS](../suites/crs/README.md) | proj, proj-sys, proj4rs, crs-definitions, geodesy, miniproj, proj-core, wbprojection, as of the original study; terrio added 2026-10-25 |
+| `rust-projections` | [projections](../suites/projections/README.md) | proj4rs (crates.io release), proj4rs-main (git main, pinned in Cargo.lock), proj-core, wbprojection, terrio, geodesy |
 | `js` | [projections](../suites/projections/README.md) | proj4js (npm `proj4`), math.gl (`@math.gl/projection`, the deck.gl v10 path), proj4rs-wasm (proj4rs main built for Node by `build-proj4rs-wasm.sh`) |
 
 An engine adapter only computes. It is handed the same inputs as every other

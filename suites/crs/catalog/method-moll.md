@@ -59,6 +59,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: moll |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: moll |  |
 | wbprojection | exact | <0.001 mm | <0.001 mm | 12249358.910, -5011701.367 |  |  |
+| terrio | exact | <0.001 mm | <0.001 mm | 12249358.910, -5011701.367 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

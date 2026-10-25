@@ -71,11 +71,12 @@ def window(watch):
 
 
 def crs_card():
-    # The CRS study is a fixed snapshot (2026-10-15, PROJ 9.9.0), so its numbers are too.
+    # The CRS study is a fixed snapshot (2026-10-15, PROJ 9.9.0), so its numbers are too;
+    # terrio was added to it on 2026-10-25 against the same oracle.
     return card("crs-study.md", "CRS study",
                 "Which Rust crate can take a CRS and run the transformation: "
-                "93 fixtures, 11 columns, PROJ 9.9.0.",
-                "best pure Rust: **proj-core, 33 of 93**")
+                "93 fixtures, 12 columns, PROJ 9.9.0.",
+                "best pure Rust: **terrio, 74 of 93** (proj-core 33 as a standalone crate)")
 
 
 def approach_card():
