@@ -61,7 +61,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: unsupported CRS semantics: PROJ Mercator definition uses unsupported PROJ parameter `+foo`: parameter is not supported by this PROJ parser |  |
 | proj-core+aoi | -- |  |  |  | dst: unsupported CRS semantics: PROJ Mercator definition uses unsupported PROJ parameter `+foo`: parameter is not supported by this PROJ parser |  |
 | wbprojection | exact | <0.001 mm | <0.001 mm | 16363965.147, -5132380.528 |  |  |
-| terrio | exact | 0 mm | <0.001 mm | 16363965.147, -5132380.528 |  |  |
+| terrio-crs | exact | 0 mm | <0.001 mm | 16363965.147, -5132380.528 |  |  |
+| terrio-crs+fallback | exact | 0 mm | <0.001 mm | 16363965.147, -5132380.528 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

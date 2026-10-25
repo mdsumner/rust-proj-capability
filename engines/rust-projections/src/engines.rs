@@ -10,7 +10,7 @@ pub static REGISTRY: &[Engine] = &[
     Engine { name: "proj-core", version: "0.12.0", prepare: projcore::prepare },
     Engine { name: "wbprojection", version: "0.3.3", prepare: wb::prepare },
     Engine { name: "geodesy", version: "0.15.0", prepare: geodesy_ad::prepare },
-    Engine { name: "terrio", version: "0.5.0", prepare: terrio_ad::prepare },
+    Engine { name: "terrio-crs", version: "0.1.0 + fallback", prepare: terrio_ad::prepare },
 ];
 
 /// proj4rs works in radians on the geographic side.
@@ -139,11 +139,11 @@ mod geodesy_ad {
     }
 }
 
-/// terrio's CRS engine: its own ports of PROJ's methods, wbprojection as the
-/// fallback. Two transformers, since a Transformer runs one way.
+/// terrio-crs with its `wbprojection-fallback` feature (as terrio itself builds
+/// it). Two transformers, since a Transformer runs one way.
 mod terrio_ad {
     use super::*;
-    use terrio::crs::{SpatialRef, Transformer};
+    use terrio_crs::{SpatialRef, Transformer};
 
     struct T {
         fwd: Transformer,

@@ -68,7 +68,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | fail |  |  |  | grid point outside coverage: grid coverage miss | NAD27 to NAD83 (4) (accuracy Some(OperationAccuracy { meters: 1.5 })) |
 | proj-core+aoi | fail |  |  |  | grid point outside coverage: grid coverage miss | NAD27 to NAD83 (4) (accuracy Some(OperationAccuracy { meters: 1.5 })) |
 | wbprojection | OFF | 2.353 m | 2.353 m | -100.000427, 40.000016 |  |  |
-| terrio | exact | 0 mm | <0.001 mm | -100.000416, 39.999997 |  |  |
+| terrio-crs | exact | <0.001 mm | <0.001 mm | -100.000416, 39.999997 |  |  |
+| terrio-crs+fallback | exact | <0.001 mm | <0.001 mm | -100.000416, 39.999997 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

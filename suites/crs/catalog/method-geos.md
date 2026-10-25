@@ -59,7 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: geos |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: geos |  |
 | wbprojection | OFF | 3,341 km |  | 88001.734609, -723679.08251 | coordinate out of bounds: projected point is outside geostationary domain |  |
-| terrio | exact | 0 mm | <0.001 mm | 497786.893495, -4039773.456 |  |  |
+| terrio-crs | exact | 0 mm | <0.001 mm | 497786.893495, -4039773.456 |  |  |
+| terrio-crs+fallback | exact | 0 mm | <0.001 mm | 497786.893495, -4039773.456 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

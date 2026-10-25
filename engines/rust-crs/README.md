@@ -32,7 +32,7 @@ columns separately; the reason is under "Symbol clash" below.
 | proj-core | c-projcore | the definition as given through `proj_wkt::parse_crs` and `Transform::from_crs_defs` |
 | proj-core+aoi | c-projcore | the same, with the source point passed as the area of interest |
 | wbprojection | c-wbprojection | the definition as given: `Crs::from_epsg`, `from_proj_string`, `from_wkt`, then `transform_to` / `transform_to_3d` |
-| terrio | c-terrio | the definition as given through `SpatialRef::parse` (PROJJSON refused before parsing; it has no reader), then `Transformer::new` and `transform` / `transform_3d` / `transform_4d`. Geographic coordinates go in and come out in the CRS's own unit, as in GDAL. Built with `default-features = false`, so no network grids. |
+| terrio-crs, terrio-crs+fallback | c-terrio-crs, c-terrio-crs-fallback (separate builds) | the definition as given through `SpatialRef::parse` (PROJJSON refused before parsing; it has no reader), then `Transformer::new` and `transform` / `transform_3d` / `transform_4d`. Geographic coordinates go in and come out in the CRS's own unit, as in GDAL. Built without `grid-transport`, so no network grids. The +fallback column adds the `wbprojection-fallback` feature. |
 
 When a fixture's source is `OGC:CRS84`, candidates without an authority
 lookup get `+proj=longlat +datum=WGS84 +no_defs` instead. The shared starting

@@ -1,9 +1,9 @@
-//! terrio 0.5.0 (opengeos): pure Rust, its own CRS engine aimed at matching
-//! GDAL's choice of datum transformation; wbprojection is its fallback for
-//! projections it does not implement. Built without default features, so no
-//! network grid fetching.
+//! terrio-crs 0.1.0 (opengeos): terrio's CRS engine as its own crate, aimed at
+//! matching GDAL's choice of datum transformation. Two columns: native, and
+//! with the `wbprojection-fallback` feature for projections it does not
+//! implement. No `grid-transport`, so no network grid fetching.
 
-use terrio::crs::{SpatialRef, Transformer};
+use terrio_crs::{SpatialRef, Transformer};
 
 use crate::fixture::{is_projjson, Fixture};
 use crate::judge::Outcome;

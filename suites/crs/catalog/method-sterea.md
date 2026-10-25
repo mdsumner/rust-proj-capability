@@ -68,7 +68,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | fail |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | proj-core+aoi | fail |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | OFF | 65.87 m | 65.66 m | 128328.362127, 445662.723552 |  |  |
-| terrio | exact | 0 mm | <0.001 mm | 128383.474527, 445698.804306 |  |  |
+| terrio-crs | exact | 0 mm | <0.001 mm | 128383.474527, 445698.804306 |  |  |
+| terrio-crs+fallback | exact | 0 mm | <0.001 mm | 128383.474527, 445698.804306 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 
