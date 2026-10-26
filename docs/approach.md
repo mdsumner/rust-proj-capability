@@ -63,6 +63,16 @@ Planned for the benchmark; not yet tracked automatically.
 - **Spike friction:** how hard a spike was to fit into proj4rs's structure. A spike that keeps fighting the architecture is the earliest sign.
 - **Alternatives catching up:** another column passing proj4rs on coverage or accuracy for the projections downstream users depend on.
 
+2026-10-26: the last signal tripped. In the nightly against PROJ 9.10.0,
+terrio-crs 0.1.0 (with its wbprojection fallback) was exact on 40 of 54
+setups and supported 48; proj4rs main was exact on 37 and supported 40.
+terrio-crs has bonne, eck6, gall, hammer, natearth2 and times, which proj4rs
+lacks, and is exact on eqc and moll, where proj4rs main is off. proj4rs main
+has tpers, nsper and leac, which terrio-crs lacks, and is exact on
+stere-polar and ups, where terrio-crs has gaps. The decision stands:
+proj4rs follows PROJ file by file and takes contributions, and terrio-crs is
+followed as a second reference in both suites.
+
 ## What is where
 
 | | page |
