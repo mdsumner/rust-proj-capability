@@ -25,6 +25,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [127, -70] | 1.4e-14 deg | [177, -60] |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | OFF 911.1 m | 911.1 m | [177, 0] | 0.052 deg | [177, -60] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [137, -10] | 1.7e-14 deg | [177, -80] |  |  |  |
 | geodesy | 0.15.0 | OFF 19.26 km | 19.26 km | [117, 0] | 0.17 deg | [147, 0] |  |  |  |
 | proj4js | 2.22.0 | -- | Incorrect elliptical usage. Try using the +approx option in the proj string, or PROJECTION["Fast_Transverse_Mercator"] in the WKT. | | | | | | |
 | math.gl | 5.0.0-alpha.18 | -- | Spherical transverse Mercator requires +approx | | | | | | |

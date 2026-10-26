@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | exact | 0 |  | 0 |  |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: sinu | | | | | | |
 | wbprojection | 0.3.3 | OFF 35.6 km | 35.6 km | [-180, -60] | 0.44 deg | [-180, -60] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0.0033 mm | [-180, -60] | 8.6e-11 deg | [-180, -60] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'sinu' not found: sinu ellps=WGS84 | | | | | | |
 | proj4js | 2.22.0 | gaps | 0.0033 mm | [-150, -60] | 0 |  |  | 91 |  |
 | math.gl | 5.0.0-alpha.18 | exact | 0.0033 mm | [-150, -60] | 8.6e-11 deg | [-180, -60] |  |  |  |

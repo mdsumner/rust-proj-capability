@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | -- | Projection not found | | | | | | |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: bonne | | | | | | |
 | wbprojection | 0.3.3 | OFF 73.73 km | 73.73 km | [-180, -30] | 1 deg | [-180, -60] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0.00602 mm | [-180, 60] | 1.1e-10 deg | [-180, -60] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'bonne' not found: bonne ellps=WGS84 lat_1=45 | | | | | | |
 | proj4js | 2.22.0 | exact | 0.00602 mm | [-180, 60] | 1.1e-10 deg | [-180, -60] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | exact | 0.00602 mm | [-180, 60] | 1.1e-10 deg | [-180, -60] |  |  |  |

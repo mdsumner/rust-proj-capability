@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [-10, 50] | 2.8e-14 deg | [-10, 65] |  |  |  |
 | proj-core | 0.12.0 | -- | operation selection failed: no compatible registry operation found for source EPSG:0 target EPSG:0 | | | | | | |
 | wbprojection | 0.3.3 | OFF 4.192 km | 4.192 km | [-10, 65] | 0.037 deg | [-10, 65] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 2.8e-14 deg | [0, 65] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'sterea' not found: sterea ellps=bessel lat_0=52.15616055555555 lon_0=5.38763888888889 k_0=0.9999079 x_0=155000 y_0=463000 | | | | | | |
 | proj4js | 2.22.0 | exact | <1 nm | [-10, 45] | 2.8e-14 deg | [-10, 65] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | exact | <1 nm | [-10, 45] | 2.8e-14 deg | [-10, 65] |  |  |  |

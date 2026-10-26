@@ -13,7 +13,7 @@ the work is organised and what has been decided.
 
 **[Projections](results/projections/README.md)**
 
-8 engines on 54 projection setups, judged against PROJ 9.10.0, with a page and a map for each.
+9 engines on 54 projection setups, judged against PROJ 9.10.0, with a page and a map for each.
 
 proj4rs main: **37 of 40** exact
 

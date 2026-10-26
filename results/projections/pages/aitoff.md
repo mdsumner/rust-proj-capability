@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | -- | Projection not found | | | | | | |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | gaps | <1 nm | [-60, -60] | 4.3e-12 deg | [90, -60] |  | 9 |  |
+| terrio-crs | 0.1.0 + fallback | gaps | <1 nm | [-60, -60] | 4.3e-12 deg | [90, -60] |  | 9 |  |
 | geodesy | 0.15.0 | -- | Operator 'aitoff' not found: aitoff R=6371000 | | | | | | |
 | proj4js | 2.22.0 | -- | Could not get projection name from: +proj=aitoff +R=6371000 | | | | | | |
 | math.gl | 5.0.0-alpha.18 | -- | Projection plugin is not registered: aitoff | | | | | | |

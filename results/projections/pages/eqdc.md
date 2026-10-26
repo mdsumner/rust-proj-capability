@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | exact | 0 |  | 9.7e-15 deg | [-120, 70] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: eqdc | | | | | | |
 | wbprojection | 0.3.3 | -- | unsupported projection: PROJ +proj=eqdc is not supported by wbprojection | | | | | | |
+| terrio-crs | 0.1.0 + fallback | exact | 0.00449 mm | [-100, 70] | 4e-11 deg | [-100, 70] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'eqdc' not found: eqdc ellps=GRS80 lat_0=40 lon_0=-96 lat_1=20 lat_2=60 | | | | | | |
 | proj4js | 2.22.0 | gaps | 0 |  | 0 |  | 108 | 108 |  |
 | math.gl | 5.0.0-alpha.18 | exact | 0.00449 mm | [-100, 70] | 4e-11 deg | [-100, 70] |  |  |  |

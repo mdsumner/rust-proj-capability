@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | OFF 112.5 m (known) | 112.5 m | [-180, -90] | 7.1e-15 deg | [-150, -30] |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | OFF 112.5 m | 112.5 m | [-180, -90] | 5.7e-14 deg | [-150, 0] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 3.6e-15 deg | [-150, -30] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'moll' not found: moll R=6371000 | | | | | | |
 | proj4js | 2.22.0 | OFF 112.5 m | 112.5 m | [-180, -90] | 1.8e-10 deg | [-180, 0] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | OFF 112.5 m | 112.5 m | [-180, -90] | 1.8e-10 deg | [-180, 0] |  |  |  |

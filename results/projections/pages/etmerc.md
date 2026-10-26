@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | exact | <1 nm | [127, -20] | 2.7e-14 deg | [177, -20] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: etmerc | | | | | | |
 | wbprojection | 0.3.3 | -- | unsupported projection: PROJ +proj=etmerc is not supported by wbprojection | | | | | | |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [117, -10] | 2.2e-14 deg | [177, -40] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'etmerc' not found: etmerc ellps=WGS84 lon_0=147 | | | | | | |
 | proj4js | 2.22.0 | exact | <1 nm | [127, -40] | 2.7e-14 deg | [177, -20] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | exact | <1 nm | [157, -30] | 2.7e-14 deg | [177, -20] |  |  |  |

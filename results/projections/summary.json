@@ -1,7 +1,7 @@
 {
  "environment": {
   "schema_version": 1,
-  "generated": "2026-10-25T03:36:49+00:00",
+  "generated": "2026-10-26T03:40:31+00:00",
   "proj_version": "9.10.0",
   "proj_git_sha": "5fa31c29f0a806568ed7bc76c1a557604db4a804",
   "pyproj_version": "3.8.0",
@@ -23,6 +23,7 @@
   "proj4rs-wasm",
   "proj-core",
   "wbprojection",
+  "terrio-crs",
   "geodesy",
   "proj4js",
   "math.gl"
@@ -569,6 +570,27 @@
   },
   {
    "projection": "merc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "merc",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": true,
@@ -709,6 +731,27 @@
    "inv_worst_at": [
     -180,
     40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "webmerc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 5.587935447692871e-09,
+   "fwd_worst_at": [
+    -180,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -180,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -857,6 +900,27 @@
   },
   {
    "projection": "tmerc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    117,
+    -10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_worst_at": [
+    177,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": true,
@@ -996,6 +1060,27 @@
    "supported": false,
    "verdict": "unsupported",
    "error": "unsupported projection: PROJ +proj=etmerc is not supported by wbprojection"
+  },
+  {
+   "projection": "etmerc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 119,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    117,
+    -10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_worst_at": [
+    177,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "etmerc",
@@ -1154,6 +1239,27 @@
   },
   {
    "projection": "utm",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    132,
+    -10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.2961132475068304e-14,
+   "inv_worst_at": [
+    147,
+    -5
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": true,
@@ -1303,6 +1409,27 @@
    "inv_worst_at": [
     -60,
     40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "lcc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 3.166839133187999e-09,
+   "fwd_worst_at": [
+    -70,
+    20
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.5182658965310614e-14,
+   "inv_worst_at": [
+    -60,
+    10
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1464,6 +1591,27 @@
   },
   {
    "projection": "aea",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 70,
+   "fwd_max_m": 2.9451005721170265e-09,
+   "fwd_worst_at": [
+    -140,
+    60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.944109290391274e-14,
+   "inv_worst_at": [
+    -140,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aea",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -1584,6 +1732,14 @@
    "supported": false,
    "verdict": "unsupported",
    "error": "unsupported projection: PROJ +proj=leac is not supported by wbprojection"
+  },
+  {
+   "projection": "leac",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "coordinate reference system: unsupported projection: PROJ +proj=leac is not supported by wbprojection"
   },
   {
    "projection": "leac",
@@ -1713,6 +1869,27 @@
    ],
    "inv_missing": 0,
    "verdict": "exact"
+  },
+  {
+   "projection": "stere-polar",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 222,
+   "fwd_max_m": 1.3170890159654386e-09,
+   "fwd_worst_at": [
+    -130,
+    -40
+   ],
+   "fwd_missing": 37,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -180,
+    -50
+   ],
+   "inv_missing": 0,
+   "verdict": "gaps"
   },
   {
    "projection": "stere-polar",
@@ -1858,6 +2035,24 @@
   },
   {
    "projection": "stere-oblique",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 72,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    147,
+    -75
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "stere-oblique",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -2000,6 +2195,27 @@
   },
   {
    "projection": "ups",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 185,
+   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_worst_at": [
+    120,
+    70
+   ],
+   "fwd_missing": 37,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -120,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "ups",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -2107,6 +2323,24 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "sterea",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 42,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    0,
+    65
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "sterea",
@@ -2243,6 +2477,24 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "somerc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 48,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -10,
+    40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "somerc",
@@ -2392,6 +2644,27 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "laea",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 135,
+   "fwd_max_m": 5.122274160385132e-09,
+   "fwd_worst_at": [
+    -60,
+    80
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.173661282324072e-14,
+   "inv_worst_at": [
+    -50,
+    80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "laea",
@@ -2551,6 +2824,27 @@
   },
   {
    "projection": "laea-polar",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 2.4750236917134956e-09,
+   "fwd_worst_at": [
+    -130,
+    -70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.1316282072803006e-14,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "laea-polar",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": true,
@@ -2703,6 +2997,24 @@
   },
   {
    "projection": "moll",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.552713678800501e-15,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "moll",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -2839,6 +3151,24 @@
   },
   {
    "projection": "wag4",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.235164753674779e-22,
+   "inv_worst_at": [
+    -150,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "wag4",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -2943,6 +3273,24 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "wag5",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.6822400070865448e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "wag5",
@@ -3059,6 +3407,27 @@
    ],
    "inv_missing": 106,
    "verdict": "off"
+  },
+  {
+   "projection": "geos",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 156,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    95,
+    9
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.560550997761473e-10,
+   "inv_worst_at": [
+    155,
+    -81
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "geos",
@@ -3220,6 +3589,27 @@
   },
   {
    "projection": "eqc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.300607204437256e-06,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.963674091561537e-11,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqc",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -3353,6 +3743,27 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "aeqd",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0002154958211508601,
+   "fwd_worst_at": [
+    -60,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.931166587937563e-10,
+   "inv_worst_at": [
+    30,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "aeqd",
@@ -3492,6 +3903,27 @@
   },
   {
    "projection": "aeqd-polar",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 175,
+   "fwd_max_m": 3.915994958373564e-06,
+   "fwd_worst_at": [
+    -165,
+    75
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.5072389437118545e-11,
+   "inv_worst_at": [
+    -180,
+    75
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-polar",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -3625,6 +4057,24 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "krovak",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    9,
+    48
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "krovak",
@@ -3764,6 +4214,24 @@
   },
   {
    "projection": "mill",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -120,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "mill",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -3894,6 +4362,24 @@
   },
   {
    "projection": "cea",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "cea",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -4011,6 +4497,27 @@
    ],
    "inv_missing": 8,
    "verdict": "off"
+  },
+  {
+   "projection": "poly",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 4.838220775127411e-06,
+   "fwd_worst_at": [
+    -120,
+    70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.329414723375485e-11,
+   "inv_worst_at": [
+    -100,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "poly",
@@ -4132,6 +4639,24 @@
    ],
    "inv_missing": 1,
    "verdict": "off"
+  },
+  {
+   "projection": "ortho",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 5.935584142769306e-13,
+   "inv_worst_at": [
+    30,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "ortho",
@@ -4258,6 +4783,27 @@
   },
   {
    "projection": "gnom",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 259,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -160,
+    -40
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -150,
+    -70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "gnom",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -4366,6 +4912,27 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "sinu",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.300607204437256e-06,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 8.578641755050361e-11,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "sinu",
@@ -4495,6 +5062,27 @@
   },
   {
    "projection": "omerc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 4.679838019013819e-09,
+   "fwd_worst_at": [
+    99,
+    -2
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 3.019806626980426e-14,
+   "inv_worst_at": [
+    97,
+    10
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "omerc",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": true,
@@ -4612,6 +5200,14 @@
   },
   {
    "projection": "tpers",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "coordinate reference system: unsupported projection: PROJ +proj=tpers is not supported by wbprojection"
+  },
+  {
+   "projection": "tpers",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -4719,6 +5315,14 @@
    "supported": false,
    "verdict": "unsupported",
    "error": "unsupported projection: PROJ +proj=nsper is not supported by wbprojection"
+  },
+  {
+   "projection": "nsper",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "coordinate reference system: unsupported projection: PROJ +proj=nsper is not supported by wbprojection"
   },
   {
    "projection": "nsper",
@@ -4835,6 +5439,27 @@
   },
   {
    "projection": "cass",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 2.8279609978199005e-06,
+   "fwd_worst_at": [
+    162,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.538058652135078e-11,
+   "inv_worst_at": [
+    147,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "cass",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -4936,6 +5561,27 @@
    "supported": false,
    "verdict": "unsupported",
    "error": "unsupported projection: PROJ +proj=eqdc is not supported by wbprojection"
+  },
+  {
+   "projection": "eqdc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 108,
+   "fwd_max_m": 4.493738119212971e-06,
+   "fwd_worst_at": [
+    -100,
+    70
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.026621500190759e-11,
+   "inv_worst_at": [
+    -100,
+    70
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "eqdc",
@@ -5049,6 +5695,24 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "robin",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.461392238570962e-14,
+   "inv_worst_at": [
+    -180,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "robin",
@@ -5170,6 +5834,24 @@
    "inv_worst_at": [
     -180,
     90
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
+  },
+  {
+   "projection": "eqearth",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 6.583761162914925e-06,
+   "inv_worst_at": [
+    -180,
+    -90
    ],
    "inv_missing": 0,
    "verdict": "close"
@@ -5315,6 +5997,27 @@
   },
   {
    "projection": "tmerc-sphere",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 63,
+   "fwd_max_m": 1.9199706733309015e-09,
+   "fwd_worst_at": [
+    137,
+    -10
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.730260725074836e-14,
+   "inv_worst_at": [
+    177,
+    -80
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "tmerc-sphere",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": true,
@@ -5444,6 +6147,27 @@
   },
   {
    "projection": "aeqd-far",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 325,
+   "fwd_max_m": 0.00029770098286312924,
+   "fwd_worst_at": [
+    312,
+    30
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.939409027337474e-10,
+   "inv_worst_at": [
+    27,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "aeqd-far",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -5547,6 +6271,27 @@
   },
   {
    "projection": "wintri",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3636543.3980102856,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 32.70422048691768,
+   "inv_worst_at": [
+    -180,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "off"
+  },
+  {
+   "projection": "wintri",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -5624,6 +6369,27 @@
   },
   {
    "projection": "aitoff",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.9199706733309015e-09,
+   "fwd_worst_at": [
+    -60,
+    -60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.2877766002921165e-12,
+   "inv_worst_at": [
+    90,
+    -60
+   ],
+   "inv_missing": 9,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "aitoff",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -5682,6 +6448,27 @@
    "projection": "hammer",
    "engine": "wbprojection",
    "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 5.587935447692871e-09,
+   "fwd_worst_at": [
+    -120,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.973799150320702e-14,
+   "inv_worst_at": [
+    -120,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "hammer",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
    "fwd_max_m": 5.587935447692871e-09,
@@ -5778,6 +6565,27 @@
   },
   {
    "projection": "natearth",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -150,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.1368683772161603e-13,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 13,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "natearth",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -5843,6 +6651,24 @@
     -150,
     -30
    ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -150,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "natearth2",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 2.842170943040401e-14,
@@ -5932,6 +6758,27 @@
   },
   {
    "projection": "eck4",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 1.666000468656264e-08,
+   "fwd_worst_at": [
+    -180,
+    -30
+   ],
+   "fwd_missing": 26,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.9737991503207076e-14,
+   "inv_worst_at": [
+    -120,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "gaps"
+  },
+  {
+   "projection": "eck4",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -5990,6 +6837,27 @@
    "projection": "eck6",
    "engine": "wbprojection",
    "engine_version": "0.3.3",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    0
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 4.935587579328813e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eck6",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
    "fwd_max_m": 3.725290298461914e-09,
@@ -6106,6 +6974,24 @@
   },
   {
    "projection": "gall",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_worst_at": [
+    -180,
+    -90
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "gall",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -6180,6 +7066,24 @@
    ],
    "inv_missing": 6,
    "verdict": "gaps"
+  },
+  {
+   "projection": "vandg",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 6.882551630838023e-07,
+   "inv_worst_at": [
+    -180,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "close"
   },
   {
    "projection": "vandg",
@@ -6280,6 +7184,27 @@
   },
   {
    "projection": "bonne",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 6.0195161241368155e-06,
+   "fwd_worst_at": [
+    -180,
+    60
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.0502306311567939e-10,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "bonne",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -6367,6 +7292,14 @@
    "supported": false,
    "verdict": "unsupported",
    "error": "unsupported projection: PROJ +proj=qsc is not supported by wbprojection"
+  },
+  {
+   "projection": "qsc",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "coordinate reference system: unsupported projection: PROJ +proj=qsc is not supported by wbprojection"
   },
   {
    "projection": "qsc",
@@ -6460,6 +7393,14 @@
   },
   {
    "projection": "healpix",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "coordinate reference system: unsupported projection: PROJ +proj=healpix is not supported by wbprojection"
+  },
+  {
+   "projection": "healpix",
    "engine": "geodesy",
    "engine_version": "0.15.0",
    "supported": false,
@@ -6521,6 +7462,14 @@
    "supported": false,
    "verdict": "unsupported",
    "error": "unsupported projection: PROJ +proj=igh is not supported by wbprojection"
+  },
+  {
+   "projection": "igh",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": false,
+   "verdict": "unsupported",
+   "error": "coordinate reference system: unsupported projection: PROJ +proj=igh is not supported by wbprojection"
   },
   {
    "projection": "igh",
@@ -6589,6 +7538,24 @@
     -150,
     -90
    ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.461392238570962e-14,
+   "inv_worst_at": [
+    -150,
+    -30
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "times",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 2.461392238570962e-14,
@@ -6694,6 +7661,21 @@
     -150,
     0
    ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "eqc-sphere",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -6826,6 +7808,24 @@
    ],
    "inv_missing": 0,
    "verdict": "off"
+  },
+  {
+   "projection": "merc-sphere",
+   "engine": "terrio-crs",
+   "engine_version": "0.1.0 + fallback",
+   "supported": true,
+   "points": 171,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 2.842170943040401e-14,
+   "inv_worst_at": [
+    -120,
+    0
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "merc-sphere",

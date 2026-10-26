@@ -23,6 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git d9a6284 2026-10-22 | -- | Projection not found | | | | | | |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | gaps | <1 nm | [-30, -30] | 3.3e-12 deg | [150, 30] |  | 6 |  |
+| terrio-crs | 0.1.0 + fallback | close | 0 |  | 6.9e-07 deg | [-180, -30] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'vandg' not found: vandg R=6371000 | | | | | | |
 | proj4js | 2.22.0 | gaps | 0 |  | 0 |  | 91 | 91 |  |
 | math.gl | 5.0.0-alpha.18 | close | <1 nm | [-30, -30] | 8.9e-07 deg | [-180, -90] |  |  |  |
