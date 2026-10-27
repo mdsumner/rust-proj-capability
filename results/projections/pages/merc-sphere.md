@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | 0 |  | 2.8e-14 deg | [-120, 0] |  |  |  |
 | proj4rs-main | git main | exact | 0 |  | 2.8e-14 deg | [-120, 0] |  |  |  |
-| proj4rs-wasm | git d9a6284 2026-10-22 | exact | 0 |  | 0 |  |  |  |  |
+| proj4rs-wasm | git 60fee16 2026-10-26 | exact | 0 |  | 0 |  |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | OFF 28.37 km | 28.37 km | [-180, 80] | 0.2 deg | [-180, 0] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | 0 |  | 2.8e-14 deg | [-120, 0] |  |  |  |

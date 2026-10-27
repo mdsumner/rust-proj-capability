@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- | Projection not found | | | | | | |
 | proj4rs-main | git main | -- | Projection not found | | | | | | |
-| proj4rs-wasm | git d9a6284 2026-10-22 | -- | Projection not found | | | | | | |
+| proj4rs-wasm | git 60fee16 2026-10-26 | -- | Projection not found | | | | | | |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: qsc | | | | | | |
 | wbprojection | 0.3.3 | -- | unsupported projection: PROJ +proj=qsc is not supported by wbprojection | | | | | | |
 | terrio-crs | 0.1.0 + fallback | -- | coordinate reference system: unsupported projection: PROJ +proj=qsc is not supported by wbprojection | | | | | | |
