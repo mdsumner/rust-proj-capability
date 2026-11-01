@@ -5,8 +5,8 @@ It asks a different question from the [projections suite](results/projections/RE
 not "is this projection computed correctly" but "can this crate take the CRS
 I have and run the transformation I need". It is kept as a snapshot and is
 not rerun nightly. Two columns were added later, run against the same frozen
-PROJ 9.9.0 oracle: `terrio-crs` 0.1.0 (2026-10-25), natively and with its
-`wbprojection-fallback` feature.
+PROJ 9.9.0 oracle: `terrio-crs` (added 2026-10-25 at 0.1.0, rerun
+2026-11-01 at 0.2.0), natively and with its `wbprojection-fallback` feature.
 
 | page | what it is |
 |---|---|
@@ -34,8 +34,8 @@ no grids installed. The brief is in [docs/brief.md](docs/brief.md).
 
 **Short answer.** Only `proj` (the libproj binding) does everything PROJ
 does, and it brings a C++ build and no wasm. In pure Rust, `terrio-crs` comes
-closest to PROJ (71 of 93 natively, 74 with its wbprojection fallback), and
-covers the most CRS input forms. Use `proj-core` for EPSG-coded data where
+closest to PROJ (82 of 93 natively, 85 with its wbprojection fallback,
+against 86 for `proj`), and covers the most CRS input forms. Use `proj-core` for EPSG-coded data where
 datum shifts matter and you want an operation report. Use `proj4rs` when you
 already have good PROJ strings. The others cover less, or need checking
 against PROJ.
@@ -49,20 +49,19 @@ against PROJ.
 | [`geodesy`](https://crates.io/crates/geodesy) | operator-pipeline toolkit | its own pipeline syntax. `parse_proj` drops datum, units and ellipsoid | about 10: tmerc/utm, merc, webmerc, laea, lcc, omerc, somerc | operators you compose yourself: Helmert (with epoch), gridshift, deformation | 9 (27 wrapped) |
 | [`miniproj`](https://crates.io/crates/miniproj) | EPSG projections generated at build time | EPSG codes only | 8 EPSG methods: TM, LCC, AEA, LAEA, oblique and polar stereographic, pseudo-Mercator | none: projection within one datum only | 8 |
 | [`wbprojection`](https://crates.io/crates/wbprojection) | Whitebox's projection library | EPSG (hand-built list), PROJ strings, WKT1; ignores `+units` and `TOWGS84` in places | 94 kinds, including world maps (robin, wintri, eqearth, natearth, sinu, ortho). Many are spherical approximations | Helmert with the wrong sign convention for position-vector `towgs84`; NTv2 and NADCON loaders | 32 (33 off) |
-| [`terrio-crs`](https://crates.io/crates/terrio-crs) | terrio's CRS engine (opengeos) as its own crate, aimed at GDAL's choice of operation (added 2026-10-25) | EPSG and ESRI codes (deprecated ones too), URNs, PROJ strings, WKT1 and WKT2 with or without an EPSG ID; no PROJJSON or IAU | its own ellipsoidal ports of PROJ's methods; the optional `wbprojection-fallback` feature adds eck4, natearth and hammer here; no tpers, ob_tran (other than longlat), igh, qsc, healpix, rhealpix, isea or two-point omerc | GDAL's choice of datum operation, Helmert, grids, epochs; no geocentric CRSs | 71 (74 with the fallback) |
+| [`terrio-crs`](https://crates.io/crates/terrio-crs) | terrio's CRS engine (opengeos) as its own crate, aimed at GDAL's choice of operation (added 2026-10-25) | EPSG, ESRI and IAU_2015 codes (deprecated ones too), URNs, PROJ strings, WKT1 and WKT2 with or without an EPSG ID, PROJJSON (the v0.7 2D subset) | its own ellipsoidal ports of PROJ's methods, including tpers, ob_tran, igh, qsc, healpix and rhealpix; the optional `wbprojection-fallback` feature adds eck4, natearth and hammer here; isea is 15.2 km off; no two-point omerc | GDAL's choice of datum operation, Helmert, grids, epochs, geocentric CRSs | 82 (85 with the fallback) |
 
 "Exact" means within 1 mm of PROJ 9.9.0 on the fixture corpus. Most misses
 are refusals, not wrong answers; [results/crs/per-fixture.md](results/crs/per-fixture.md) shows which.
 
-**What no pure-Rust crate does (yet):**
-- resolve IAU codes, or PROJJSON without an EPSG ID;
-- geocentric CRSs (EPSG:4978) from a CRS pair;
-- tpers, ob_tran, igh, qsc, healpix, rhealpix or isea.
+**What no pure-Rust crate does on this corpus (yet):** two-point omerc, and
+isea within 1 mm.
 
-When the study was frozen, no pure-Rust crate resolved ESRI or deprecated
-codes or WKT without an EPSG ID, picked a datum operation for a custom CRS, or
-ran an epoch transform from a CRS pair. `terrio-crs` (added 2026-10-25) does
-all of these on this corpus.
+When the study was frozen, no pure-Rust crate resolved ESRI, IAU or
+deprecated codes, WKT or PROJJSON without an EPSG ID, picked a datum
+operation for a custom CRS, ran an epoch transform or a geocentric CRS from a
+CRS pair, or had tpers, ob_tran, igh, qsc, healpix or rhealpix. `terrio-crs`
+0.2.0 does all of these on this corpus.
 
 Even with `proj`, the safe API is 2D: z and t are dropped. Use `proj-sys`
 for 3D and epochs.
@@ -146,7 +145,7 @@ CRS suite: PROJ 9.9.0 (oracle) and the following crates:
 | `miniproj` | 0.10.4 | added from crates.io |
 | `proj-core` (+ `proj-wkt`) | 0.11.0 | added from crates.io |
 | `wbprojection` | 0.3.3 | added from crates.io |
-| `terrio-crs` | 0.1.0, no default features; a second build with `wbprojection-fallback` | added 2026-10-25 from crates.io |
+| `terrio-crs` | 0.2.0, no default features; a second build with `wbprojection-fallback` | added 2026-10-25 from crates.io (0.1.0); 0.2.0 from 2026-11-01 |
 
 There are also wrapper columns: `proj4rs+bound`, `geodesy+bound` and
 `proj-core+aoi`, and the feature column `terrio-crs+fallback`.

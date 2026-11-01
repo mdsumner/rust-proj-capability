@@ -29,12 +29,12 @@ Each cell compares the candidate with PROJ on that fixture. Fixture ids link to 
 | [seed-9354](../../suites/crs/catalog/seed-9354.md) | exact | exact | -- | exact | -- | -- | -- | -- | exact | exact | exact | exact | exact |
 | [seed-8857](../../suites/crs/catalog/seed-8857.md) | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact | exact | exact |
 | [seed-esri-54042](../../suites/crs/catalog/seed-esri-54042.md) | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- | exact | exact |
-| [seed-esri-54052](../../suites/crs/catalog/seed-esri-54052.md) | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| [seed-esri-54052](../../suites/crs/catalog/seed-esri-54052.md) | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- | exact | exact |
 | [seed-esri-102020](../../suites/crs/catalog/seed-esri-102020.md) | exact | exact | -- | exact | -- | -- | OFF 1.113e+04 km | -- | -- | -- | -- | exact | exact |
-| [seed-tpers](../../suites/crs/catalog/seed-tpers.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- | -- |
-| [seed-ob_tran-moll](../../suites/crs/catalog/seed-ob_tran-moll.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- | -- |
+| [seed-tpers](../../suites/crs/catalog/seed-tpers.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact | exact |
+| [seed-ob_tran-moll](../../suites/crs/catalog/seed-ob_tran-moll.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact | exact |
 | [seed-wintri](../../suites/crs/catalog/seed-wintri.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 2,973 km | exact | exact |
-| [seed-igh](../../suites/crs/catalog/seed-igh.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- | -- |
+| [seed-igh](../../suites/crs/catalog/seed-igh.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact | exact |
 | [seed-7415](../../suites/crs/catalog/seed-7415.md) | exact | exact | -- | exact | close 4.84 mm | -- | -- | -- | fail | fail | -- | exact | exact |
 | [seed-2056](../../suites/crs/catalog/seed-2056.md) | exact | exact | -- | exact | exact | -- | exact | -- | exact | exact | close 283 mm | exact | exact |
 | [seed-2154](../../suites/crs/catalog/seed-2154.md) | exact | exact | -- | exact | exact | -- | exact | OFF 1.234 km | exact | exact | exact | exact | exact |
@@ -52,9 +52,9 @@ Each cell compares the candidate with PROJ on that fixture. Fixture ids link to 
 | [pair-ed50-wgs84](../../suites/crs/catalog/pair-ed50-wgs84.md) | exact | exact | -- | OFF 171.8 m | OFF 7.453 m | -- | OFF 171.8 m | OFF 171.8 m | OFF 7.824 m | exact | OFF 7.453 m | exact | exact |
 | [pair-itrf2014-gda2020-epoch](../../suites/crs/catalog/pair-itrf2014-gda2020-epoch.md) | close 290 mm | exact | -- | close 290 mm | close 290 mm | -- | close 290 mm | -- | fail | fail | -- | exact | exact |
 | [pair-4979-egm2008](../../suites/crs/catalog/pair-4979-egm2008.md) | exact | exact | -- | exact | -- | -- | exact | -- | fail | fail | -- | exact | exact |
-| [pair-4979-4978](../../suites/crs/catalog/pair-4979-4978.md) | OFF 74.31 m | exact | -- | exact | exact | -- | -- | -- | -- | -- | -- | -- | -- |
+| [pair-4979-4978](../../suites/crs/catalog/pair-4979-4978.md) | OFF 74.31 m | exact | -- | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact |
 | [pair-2056-21781](../../suites/crs/catalog/pair-2056-21781.md) | exact | exact | -- | exact | exact | -- | OFF 4.965 km | -- | fail | fail | exact | exact | exact |
-| [pair-mars-iau](../../suites/crs/catalog/pair-mars-iau.md) | exact | exact | -- | exact | -- | -- | -- | -- | -- | -- | -- | -- | -- |
+| [pair-mars-iau](../../suites/crs/catalog/pair-mars-iau.md) | exact | exact | -- | exact | -- | -- | -- | -- | -- | -- | -- | exact | exact |
 
 ## Input forms, units, unknown and invalid input
 
@@ -71,7 +71,7 @@ Each cell compares the candidate with PROJ on that fixture. Fixture ids link to 
 | [form-27700-wkt1-esri](../../suites/crs/catalog/form-27700-wkt1-esri.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | fail | fail | OFF 109.2 m | exact | exact |
 | [form-27700-wkt2-2015](../../suites/crs/catalog/form-27700-wkt2-2015.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | -- | -- | OFF 29.18 m | exact | exact |
 | [form-27700-wkt2-2019](../../suites/crs/catalog/form-27700-wkt2-2019.md) | exact | exact | OFF 106.6 m | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | exact | exact | OFF 29.18 m | exact | exact |
-| [form-27700-projjson](../../suites/crs/catalog/form-27700-projjson.md) | exact | exact | -- | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | -- | -- | -- | -- | -- |
+| [form-27700-projjson](../../suites/crs/catalog/form-27700-projjson.md) | exact | exact | -- | OFF 109.2 m | n/a | -- | OFF 109.2 m | -- | -- | -- | -- | exact | exact |
 | [form-2264-ftus](../../suites/crs/catalog/form-2264-ftus.md) | exact | exact | -- | exact | exact | -- | exact | OFF 444.8 km | exact | exact | close 815 mm | exact | exact |
 | [form-2264-proj-bound](../../suites/crs/catalog/form-2264-proj-bound.md) | exact | exact | close 815 mm | close 815 mm | n/a | OFF 444.8 km | close 815 mm | -- | fail | fail | OFF 444.8 km | close 815 mm | close 815 mm |
 | [form-3857-proj-export](../../suites/crs/catalog/form-3857-proj-export.md) | exact | exact | exact | exact | n/a | OFF 28.6 km | exact | -- | -- | -- | exact | exact | exact |
@@ -96,10 +96,10 @@ Each cell compares the candidate with PROJ on that fixture. Fixture ids link to 
 | [method-eck4](../../suites/crs/catalog/method-eck4.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | -- | exact |
 | [method-natearth](../../suites/crs/catalog/method-natearth.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | -- | exact |
 | [method-hammer](../../suites/crs/catalog/method-hammer.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | -- | exact |
-| [method-qsc](../../suites/crs/catalog/method-qsc.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- | -- |
-| [method-healpix](../../suites/crs/catalog/method-healpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- | -- |
-| [method-rhealpix](../../suites/crs/catalog/method-rhealpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- | -- |
-| [method-isea](../../suites/crs/catalog/method-isea.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | -- | -- |
+| [method-qsc](../../suites/crs/catalog/method-qsc.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact | exact |
+| [method-healpix](../../suites/crs/catalog/method-healpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact | exact |
+| [method-rhealpix](../../suites/crs/catalog/method-rhealpix.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | exact | exact |
+| [method-isea](../../suites/crs/catalog/method-isea.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | -- | OFF 15.15 km | OFF 15.15 km |
 | [method-eqearth](../../suites/crs/catalog/method-eqearth.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | exact | exact | exact |
 | [method-moll](../../suites/crs/catalog/method-moll.md) | exact | exact | exact | exact | n/a | -- | -- | -- | -- | -- | exact | exact | exact |
 | [method-robin](../../suites/crs/catalog/method-robin.md) | exact | exact | -- | -- | n/a | -- | -- | -- | -- | -- | OFF 679.7 km | exact | exact |
@@ -132,5 +132,5 @@ Each cell compares the candidate with PROJ on that fixture. Fixture ids link to 
 | [edge-ortho-back](../../suites/crs/catalog/edge-ortho-back.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse |
 | [edge-tpers-back](../../suites/crs/catalog/edge-tpers-back.md) | refuse | refuse | refuse | refuse | n/a | refuse | refuse | refuse | refuse | refuse | refuse | refuse | refuse |
 | [edge-laea-antipode](../../suites/crs/catalog/edge-laea-antipode.md) | exact | exact | exact | exact | n/a | OFF 1.274e+04 km | OFF 1.274e+04 km | -- | exact | exact | OFF 14.14 km | exact | exact |
-| [edge-merc-pole](../../suites/crs/catalog/edge-merc-pole.md) | exact | exact | -- | fail | fail | -- | exact | OFF 4,421 km | fail | fail | fail | fail | fail |
+| [edge-merc-pole](../../suites/crs/catalog/edge-merc-pole.md) | exact | exact | -- | fail | fail | -- | exact | OFF 4,421 km | fail | fail | fail | exact | exact |
 

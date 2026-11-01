@@ -61,8 +61,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: ESRI:54052 |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: ESRI:54052 |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: EPSG:54052 is not in the built-in registry. See epsg::known_epsg_codes() for supported codes, or construct a ProjectionParams manually. |  |
-| terrio-crs | -- |  |  |  | dst: coordinate reference system: ESRI:54052 (World_Goode_Homolosine_Land) is not supported: coordinate reference system: unsupported projection: +proj=igh; enable the wbprojection-fallback feature |  |
-| terrio-crs+fallback | -- |  |  |  | dst: coordinate reference system: ESRI:54052 (World_Goode_Homolosine_Land) is not supported: coordinate reference system: unsupported projection: PROJ +proj=igh is not supported by wbprojection |  |
+| terrio-crs | exact | 0 mm | 0 mm | 16168031.516, -4674913.235 |  |  |
+| terrio-crs+fallback | exact | 0 mm | 0 mm | 16168031.516, -4674913.235 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 
