@@ -59,8 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: isea |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: isea |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: PROJ +proj=isea is not supported by wbprojection |  |
-| terrio-crs | -- |  |  |  | dst: coordinate reference system: unsupported projection: +proj=isea; enable the wbprojection-fallback feature |  |
-| terrio-crs+fallback | -- |  |  |  | dst: coordinate reference system: unsupported projection: PROJ +proj=isea is not supported by wbprojection |  |
+| terrio-crs | OFF | 15.15 km | 14.79 km | 11140072.073, -6179576.358 |  |  |
+| terrio-crs+fallback | OFF | 15.15 km | 14.79 km | 11140072.073, -6179576.358 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

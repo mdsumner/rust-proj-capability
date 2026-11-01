@@ -1,19 +1,16 @@
-//! terrio-crs 0.1.0 (opengeos): terrio's CRS engine as its own crate, aimed at
+//! terrio-crs 0.2.0 (opengeos): terrio's CRS engine as its own crate, aimed at
 //! matching GDAL's choice of datum transformation. Two columns: native, and
 //! with the `wbprojection-fallback` feature for projections it does not
 //! implement. No `grid-transport`, so no network grid fetching.
 
 use terrio_crs::{SpatialRef, Transformer};
 
-use crate::fixture::{is_projjson, Fixture};
+use crate::fixture::Fixture;
 use crate::judge::Outcome;
 use crate::util;
 
 fn build(def: &str) -> Result<SpatialRef, String> {
-    if is_projjson(def) {
-        return Err("no PROJJSON input".into());
-    }
-    // the definition as given: EPSG/ESRI codes, URNs, OGC:CRS84, WKT, PROJ strings
+    // the definition as given: EPSG/ESRI/IAU codes, URNs, OGC:CRS84, WKT, PROJ strings, PROJJSON
     SpatialRef::parse(def).map_err(|e| e.to_string())
 }
 

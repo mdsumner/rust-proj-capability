@@ -27,8 +27,8 @@
 | proj-core | 33 | 0 | 4 | 0 | 12 | 39 | 0 | 5 | 0 |
 | proj-core+aoi | 34 | 0 | 3 | 0 | 12 | 39 | 0 | 5 | 0 |
 | wbprojection | 32 | 2 | 33 | 0 | 1 | 20 | 0 | 4 | 1 |
-| terrio-crs | 71 | 1 | 0 | 0 | 1 | 15 | 0 | 5 | 0 |
-| terrio-crs+fallback | 74 | 1 | 0 | 0 | 1 | 12 | 0 | 5 | 0 |
+| terrio-crs | 82 | 1 | 1 | 0 | 0 | 4 | 0 | 5 | 0 |
+| terrio-crs+fallback | 85 | 1 | 1 | 0 | 0 | 1 | 0 | 5 | 0 |
 
 | verdict | meaning |
 |---|---|

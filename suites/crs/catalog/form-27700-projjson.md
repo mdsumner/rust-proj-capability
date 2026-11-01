@@ -76,8 +76,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  |  | dst: unsupported CRS semantics: PROJJSON projected base geographic CRS uses unsupported axis order/directions `north, east`; expected longitude/east, latitude/north |  |
 | proj-core+aoi | -- |  |  |  |  | dst: unsupported CRS semantics: PROJJSON projected base geographic CRS uses unsupported axis order/directions `north, east`; expected longitude/east, latitude/north |  |
 | wbprojection | -- |  |  |  |  | dst: no PROJJSON input |  |
-| terrio-crs | -- |  |  |  |  | dst: no PROJJSON input |  |
-| terrio-crs+fallback | -- |  |  |  |  | dst: no PROJJSON input |  |
+| terrio-crs | exact | 0.737 mm | 0.738 mm | 0.737 mm | 434039.457291, 289239.280356 |  |  |
+| terrio-crs+fallback | exact | 0.737 mm | 0.738 mm | 0.737 mm | 434039.457291, 289239.280356 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

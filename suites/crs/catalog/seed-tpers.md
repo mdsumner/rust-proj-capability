@@ -59,8 +59,8 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: tpers |  |
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: tpers |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: PROJ +proj=tpers is not supported by wbprojection |  |
-| terrio-crs | -- |  |  |  | dst: coordinate reference system: unsupported projection: +proj=tpers; enable the wbprojection-fallback feature |  |
-| terrio-crs+fallback | -- |  |  |  | dst: coordinate reference system: unsupported projection: PROJ +proj=tpers is not supported by wbprojection |  |
+| terrio-crs | exact | 0 mm | 0 mm | 107928.491127, 323680.076588 |  |  |
+| terrio-crs+fallback | exact | 0 mm | 0 mm | 107928.491127, 323680.076588 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
 

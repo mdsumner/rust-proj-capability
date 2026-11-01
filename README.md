@@ -35,7 +35,7 @@ Recent PROJ commits by projection, and whether proj4rs has each one. 35 of 167 P
 
 Which Rust crate can take a CRS and run the transformation: 93 fixtures, 13 columns, PROJ 9.9.0.
 
-best pure Rust: **terrio-crs, 71 of 93** (74 with its wbprojection fallback)
+best pure Rust: **terrio-crs, 82 of 93** (85 with its wbprojection fallback)
 
 </div>
 
