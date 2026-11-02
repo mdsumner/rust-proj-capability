@@ -19,11 +19,11 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | close | <1 nm | [-180, -30] | 1.7e-06 deg | [-180, -90] |  |  |  |
-| proj4rs-main | git main | exact | 0 |  | 5.7e-14 deg | [-150, 0] |  |  |  |
+| proj4rs-main | git main | exact | 0 |  | 3.6e-15 deg | [-180, -30] |  |  |  |
 | proj4rs-wasm | git 60fee16 2026-10-26 | exact | 0 |  | 3.6e-15 deg | [-180, -30] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: cea | | | | | | |
 | wbprojection | 0.3.3 | OFF 3.6e+02 deg | <1 nm | [-150, -60] | 3.6e+02 deg | [-180, -90] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 2.8e-14 deg | [-180, 0] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 7.1e-15 deg | [-180, -60] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'cea' not found: cea ellps=WGS84 lat_ts=30 | | | | | | |
 | proj4js | 2.22.0 | gaps | 0 |  | 0 |  | 91 | 91 |  |
 | math.gl | 5.0.0-alpha.18 | exact | <1 nm | [-150, -60] | 3.3e-14 deg | [-180, 30] |  |  |  |

@@ -1,7 +1,7 @@
 {
  "environment": {
   "schema_version": 1,
-  "generated": "2026-11-01T03:27:16+00:00",
+  "generated": "2026-11-02T03:26:03+00:00",
   "proj_version": "9.10.0",
   "proj_git_sha": "5fa31c29f0a806568ed7bc76c1a557604db4a804",
   "pyproj_version": "3.8.0",
@@ -574,17 +574,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 171,
-   "fwd_max_m": 1.862645149230957e-09,
-   "fwd_worst_at": [
-    -180,
-    -80
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
     -180,
-    0
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -741,18 +738,12 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 171,
-   "fwd_max_m": 5.587935447692871e-09,
-   "fwd_worst_at": [
-    -180,
-    80
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
-   "inv_worst_at": [
-    -180,
-    0
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -904,17 +895,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 9.313225746154785e-10,
-   "fwd_worst_at": [
-    117,
-    -10
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_max_deg": 3.552713678800501e-15,
    "inv_worst_at": [
-    177,
-    -40
+    117,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1067,17 +1055,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 9.313225746154785e-10,
-   "fwd_worst_at": [
-    117,
-    -10
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.1772292573103247e-14,
+   "inv_max_deg": 3.552713678800501e-15,
    "inv_worst_at": [
-    177,
-    -40
+    117,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1208,10 +1193,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.2961132475068304e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    147,
-    -5
+    142,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1243,17 +1228,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 3.725290298461914e-09,
-   "fwd_worst_at": [
-    132,
-    -10
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.2961132475068304e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
     147,
-    -5
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1271,10 +1253,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.342456924692705e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    147,
-    -5
+    132,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1419,17 +1401,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 3.166839133187999e-09,
-   "fwd_worst_at": [
-    -70,
-    20
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.5182658965310614e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -60,
-    10
+    -130,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1602,9 +1581,9 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.944109290391274e-14,
+   "inv_max_deg": 4.973799150320701e-14,
    "inv_worst_at": [
-    -140,
+    -130,
     60
    ],
    "inv_missing": 0,
@@ -1876,18 +1855,12 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 222,
-   "fwd_max_m": 1.3170890159654386e-09,
-   "fwd_worst_at": [
-    -130,
-    -40
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 37,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
-   "inv_worst_at": [
-    -180,
-    -50
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "gaps"
   },
@@ -1954,10 +1927,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    167,
-    -25
+    117,
+    -55
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1975,10 +1948,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    167,
-    -25
+    117,
+    -55
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2039,13 +2012,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.877140660839749e-09,
+   "fwd_worst_at": [
+    127,
+    -75
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 4.326254077267991e-14,
    "inv_worst_at": [
-    147,
+    177,
     -75
    ],
    "inv_missing": 0,
@@ -2114,10 +2090,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 9.720797132947316e-15,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    150,
-    70
+    110,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2135,10 +2111,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 9.720797132947316e-15,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    150,
-    70
+    110,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2199,17 +2175,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 185,
-   "fwd_max_m": 1.041250292910165e-09,
-   "fwd_worst_at": [
-    120,
-    70
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 37,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -120,
-    70
+    110,
+    60
    ],
    "inv_missing": 0,
    "verdict": "gaps"
@@ -2248,10 +2221,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    0,
-    65
+    -10,
+    45
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2266,10 +2239,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    0,
-    65
+    -10,
+    45
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2330,14 +2303,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 42,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.839941346661803e-09,
+   "fwd_worst_at": [
+    -10,
+    40
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    0,
-    65
+    -10,
+    50
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2590,10 +2566,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 3.552713678800501e-15,
    "inv_worst_at": [
-    -40,
-    40
+    -60,
+    20
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2658,7 +2634,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.173661282324072e-14,
+   "inv_max_deg": 7.521740959060717e-14,
    "inv_worst_at": [
     -50,
     80
@@ -2754,10 +2730,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 3.552713678800501e-15,
    "inv_worst_at": [
-    -110,
-    -50
+    -180,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2835,7 +2811,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.1316282072803006e-14,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
     -180,
     -60
@@ -3201,11 +3177,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.6822400070865448e-14,
-   "inv_worst_at": [
-    -150,
-    -30
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -3219,11 +3192,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.6822400070865448e-14,
-   "inv_worst_at": [
-    -150,
-    -30
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -3284,11 +3254,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.6822400070865448e-14,
-   "inv_worst_at": [
-    -150,
-    -30
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -3593,18 +3560,12 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 3.300607204437256e-06,
-   "fwd_worst_at": [
-    -180,
-    -60
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.963674091561537e-11,
-   "inv_worst_at": [
-    -180,
-    -60
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -3668,10 +3629,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.552713678800501e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -30,
-    30
+    -60,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3686,10 +3647,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.552713678800501e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -30,
-    30
+    -60,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3757,7 +3718,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.931166587937563e-10,
+   "inv_max_deg": 4.931166586449899e-10,
    "inv_worst_at": [
     30,
     0
@@ -3846,11 +3807,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.2434497875801753e-14,
-   "inv_worst_at": [
-    -150,
-    15
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -3907,18 +3865,12 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 175,
-   "fwd_max_m": 3.915994958373564e-06,
-   "fwd_worst_at": [
-    -165,
-    75
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.5072389437118545e-11,
-   "inv_worst_at": [
-    -180,
-    75
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -4068,10 +4020,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    9,
-    48
+    5,
+    44
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4136,10 +4088,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -120,
-    0
+    -180,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4154,10 +4106,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -120,
-    0
+    -180,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4222,10 +4174,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -120,
-    0
+    -180,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4305,10 +4257,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 5.684341886080802e-14,
+   "inv_max_deg": 3.552713678800501e-15,
    "inv_worst_at": [
-    -150,
-    0
+    -180,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4370,10 +4322,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
     -180,
-    0
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4440,10 +4392,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.0537634251126906e-13,
+   "inv_max_deg": 1.7217499488499926e-14,
    "inv_worst_at": [
-    -40,
-    80
+    -140,
+    70
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4504,16 +4456,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 108,
-   "fwd_max_m": 4.838220775127411e-06,
+   "fwd_max_m": 1.862645149230957e-09,
    "fwd_worst_at": [
-    -120,
-    70
+    -40,
+    40
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.329414723375485e-11,
+   "inv_max_deg": 1.0135801291803247e-13,
    "inv_worst_at": [
-    -100,
+    -80,
     70
    ],
    "inv_missing": 0,
@@ -4650,10 +4602,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 5.935584142769306e-13,
+   "inv_max_deg": 4.927013178811805e-13,
    "inv_worst_at": [
-    30,
-    -30
+    90,
+    30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4726,10 +4678,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -150,
-    -70
+    -180,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4773,10 +4725,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.5618982671915017e-14,
+   "inv_max_deg": 3.046992952561771e-14,
    "inv_worst_at": [
     -150,
-    -30
+    -40
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4794,10 +4746,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -150,
-    -70
+    -180,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4919,18 +4871,12 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 3.300607204437256e-06,
-   "fwd_worst_at": [
-    -180,
-    -60
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 8.578641755050361e-11,
-   "inv_worst_at": [
-    -180,
-    -60
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -5066,16 +5012,13 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 4.679838019013819e-09,
-   "fwd_worst_at": [
-    99,
-    -2
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.019806626980426e-14,
+   "inv_max_deg": 1.7763568394002505e-15,
    "inv_worst_at": [
-    97,
+    95,
     10
    ],
    "inv_missing": 0,
@@ -5202,9 +5145,19 @@
    "projection": "tpers",
    "engine": "terrio-crs",
    "engine_version": "0.1.0 + fallback",
-   "supported": false,
-   "verdict": "unsupported",
-   "error": "coordinate reference system: unsupported projection: PROJ +proj=tpers is not supported by wbprojection"
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.4210854715202007e-14,
+   "inv_worst_at": [
+    -150,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "tpers",
@@ -5274,9 +5227,9 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.5618982671915024e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -150,
+    -120,
     60
    ],
    "inv_missing": 0,
@@ -5320,9 +5273,19 @@
    "projection": "nsper",
    "engine": "terrio-crs",
    "engine_version": "0.1.0 + fallback",
-   "supported": false,
-   "verdict": "unsupported",
-   "error": "coordinate reference system: unsupported projection: PROJ +proj=nsper is not supported by wbprojection"
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -120,
+    60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "nsper",
@@ -5443,17 +5406,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 2.8279609978199005e-06,
+   "fwd_max_m": 1.0040821507573128e-09,
    "fwd_worst_at": [
-    162,
-    -60
+    132,
+    -40
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.538058652135078e-11,
+   "inv_max_deg": 2.2902397730870118e-14,
    "inv_worst_at": [
-    147,
-    -60
+    157,
+    -40
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5520,10 +5483,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -40,
-    70
+    -100,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5568,17 +5531,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 108,
-   "fwd_max_m": 4.493738119212971e-06,
-   "fwd_worst_at": [
-    -100,
-    70
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.026621500190759e-11,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -100,
-    70
+    -150,
+    40
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5648,9 +5608,8 @@
    "fwd_extra": 0,
    "inv_max_deg": 0.0,
    "inv_worst_at": null,
-   "inv_missing": 4,
-   "verdict": "gaps",
-   "known": "proj4rs inverse returns NaN at the map edge, lon +-180 lat +-60."
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "robin",
@@ -5706,11 +5665,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.461392238570962e-14,
-   "inv_worst_at": [
-    -180,
-    -30
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -5783,10 +5739,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.486899575160351e-14,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    -150,
-    -30
+    -180,
+    -90
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6066,10 +6022,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 5.974538666725427e-14,
+   "inv_max_deg": 5.123796534383004e-14,
    "inv_worst_at": [
-    267,
-    0
+    -3,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6087,10 +6043,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 5.974538666725427e-14,
+   "inv_max_deg": 5.123796534383004e-14,
    "inv_worst_at": [
-    267,
-    0
+    -3,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6137,7 +6093,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.4390817951471888,
+   "inv_max_deg": 0.43908179514721013,
    "inv_worst_at": [
     147,
     60
@@ -6261,7 +6217,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.7351373317421986e-12,
+   "inv_max_deg": 2.850651496914817e-12,
    "inv_worst_at": [
     -120,
     -30
@@ -6457,10 +6413,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.973799150320702e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -120,
-    -30
+    -150,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6478,10 +6434,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.973799150320702e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -120,
-    -30
+    -150,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6846,10 +6802,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.935587579328813e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
     -150,
-    -30
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6867,10 +6823,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.935587579328813e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
     -150,
-    -30
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6982,11 +6938,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
-   "inv_worst_at": [
-    -180,
-    -90
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -7077,13 +7030,13 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 6.882551630838023e-07,
+   "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
     -180,
-    -30
+    -60
    ],
    "inv_missing": 0,
-   "verdict": "close"
+   "verdict": "exact"
   },
   {
    "projection": "vandg",
@@ -7188,17 +7141,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 6.0195161241368155e-06,
-   "fwd_worst_at": [
-    -180,
-    60
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.0502306311567939e-10,
+   "inv_max_deg": 1.1021821192326178e-14,
    "inv_worst_at": [
     -180,
-    -60
+    -90
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -7297,9 +7247,19 @@
    "projection": "qsc",
    "engine": "terrio-crs",
    "engine_version": "0.1.0 + fallback",
-   "supported": false,
-   "verdict": "unsupported",
-   "error": "coordinate reference system: unsupported projection: PROJ +proj=qsc is not supported by wbprojection"
+   "supported": true,
+   "points": 49,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 6.039613253960852e-14,
+   "inv_worst_at": [
+    15,
+    -15
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "qsc",
@@ -7395,9 +7355,19 @@
    "projection": "healpix",
    "engine": "terrio-crs",
    "engine_version": "0.1.0 + fallback",
-   "supported": false,
-   "verdict": "unsupported",
-   "error": "coordinate reference system: unsupported projection: PROJ +proj=healpix is not supported by wbprojection"
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -180,
+    -60
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "healpix",
@@ -7467,9 +7437,19 @@
    "projection": "igh",
    "engine": "terrio-crs",
    "engine_version": "0.1.0 + fallback",
-   "supported": false,
-   "verdict": "unsupported",
-   "error": "coordinate reference system: unsupported projection: PROJ +proj=igh is not supported by wbprojection"
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
+   "fwd_missing": 0,
+   "fwd_extra": 0,
+   "inv_max_deg": 1.7403277740120206e-30,
+   "inv_worst_at": [
+    -150,
+    90
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
   },
   {
    "projection": "igh",
@@ -7739,11 +7719,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
-   "inv_worst_at": [
-    -120,
-    0
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -7757,11 +7734,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
-   "inv_worst_at": [
-    -120,
-    0
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -7819,11 +7793,8 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
-   "inv_worst_at": [
-    -120,
-    0
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
    "verdict": "exact"
   },

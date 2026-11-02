@@ -19,7 +19,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- (known) | Projection not found | | | | | | |
-| proj4rs-main | git main | exact | 0 |  | 2.5e-14 deg | [-150, -30] |  |  |  |
+| proj4rs-main | git main | exact | 0 |  | 1.4e-14 deg | [-180, -90] |  |  |  |
 | proj4rs-wasm | git 60fee16 2026-10-26 | exact | 0 |  | 1.4e-14 deg | [-180, -90] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: eqearth | | | | | | |
 | wbprojection | 0.3.3 | close | <1 nm | [-150, -60] | 4.8e-08 deg | [-180, 90] |  |  |  |

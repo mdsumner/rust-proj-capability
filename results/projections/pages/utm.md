@@ -21,9 +21,9 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs | 0.2.1 | exact | <1 nm | [142, -25] | 2.8e-14 deg | [132, -10] |  |  |  |
 | proj4rs-main | git main | exact | <1 nm | [142, -25] | 2.8e-14 deg | [132, -10] |  |  |  |
 | proj4rs-wasm | git 60fee16 2026-10-26 | exact | <1 nm | [162, -35] | 2.8e-14 deg | [132, -10] |  |  |  |
-| proj-core | 0.12.0 | exact | <1 nm | [132, -5] | 3.3e-14 deg | [147, -5] |  |  |  |
+| proj-core | 0.12.0 | exact | <1 nm | [132, -5] | 2.8e-14 deg | [142, -30] |  |  |  |
 | wbprojection | 0.3.3 | OFF 6.937 m | 6.937 m | [162, 0] | 0.00029 deg | [162, -55] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [132, -10] | 3.3e-14 deg | [147, -5] |  |  |  |
-| geodesy | 0.15.0 | exact | <1 nm | [132, -5] | 3.3e-14 deg | [147, -5] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 7.1e-15 deg | [147, -60] |  |  |  |
+| geodesy | 0.15.0 | exact | <1 nm | [132, -5] | 2.8e-14 deg | [132, 0] |  |  |  |
 | proj4js | 2.22.0 | exact | <1 nm | [132, -10] | 2.8e-14 deg | [132, 0] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | exact | <1 nm | [132, -10] | 2.8e-14 deg | [132, 0] |  |  |  |

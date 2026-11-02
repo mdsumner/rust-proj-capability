@@ -41,8 +41,20 @@
 <text x="14" y="233" font-size="11" fill="#333">wbprojection: --</text>
 <text x="128.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
 <rect x="256" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
-<text x="262" y="233" font-size="11" fill="#333">terrio-crs: --</text>
-<text x="376.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>
+<text x="262" y="233" font-size="11" fill="#333">terrio-crs: exact</text>
+<path d="M418.7 285.1L424.3 281.0M418.7 285.1L392.7 250.1M382.3 386.0L390.5 348.9M406.8 306.6L418.7 285.1M418.7 285.1L392.7 250.1M368.4 261.3L392.7 250.1M368.4 261.3L356.8 250.0" fill="none" stroke="#6a8caf" stroke-width="0.8"/>
+<circle cx="418.7" cy="285.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="424.3" cy="281.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="382.3" cy="386.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="390.5" cy="348.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="406.8" cy="306.6" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="418.7" cy="285.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="392.7" cy="250.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="327.7" cy="345.9" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="337.2" cy="300.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="368.4" cy="261.3" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="392.7" cy="250.1" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
+<circle cx="356.8" cy="250.0" r="1.6" fill="none" stroke="#999" stroke-width="0.6"/>
 <rect x="504" y="220" width="240" height="180" fill="none" stroke="#ccc"/>
 <text x="510" y="233" font-size="11" fill="#333">geodesy: --</text>
 <text x="624.0" y="310.0" font-size="11" text-anchor="middle" fill="#999">not supported</text>

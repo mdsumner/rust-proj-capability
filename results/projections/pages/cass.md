@@ -23,7 +23,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | proj4rs-wasm | git 60fee16 2026-10-26 | exact | <1 nm | [132, -55] | 2.3e-14 deg | [157, -40] |  |  |  |
 | proj-core | 0.12.0 | OFF 0.00054 deg | 0.579 mm | [132, -60] | 0.00054 deg | [162, -60] |  |  |  |
 | wbprojection | 0.3.3 | OFF 0.00054 deg | 0.579 mm | [132, -60] | 0.00054 deg | [162, -60] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | 0.00283 mm | [162, -60] | 2.5e-11 deg | [147, -60] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [132, -40] | 2.3e-14 deg | [157, -40] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'cass' not found: cass ellps=WGS84 lat_0=-42 lon_0=147 | | | | | | |
 | proj4js | 2.22.0 | gaps | 0 |  | 0 |  | 63 | 63 |  |
 | math.gl | 5.0.0-alpha.18 | exact | 0.00283 mm | [132, -60] | 2.8e-11 deg | [162, -35] |  |  |  |

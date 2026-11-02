@@ -18,12 +18,12 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
-| proj4rs | 0.2.1 | exact | 0 |  | 2.7e-14 deg | [-150, -30] |  |  |  |
-| proj4rs-main | git main | exact | 0 |  | 2.7e-14 deg | [-150, -30] |  |  |  |
+| proj4rs | 0.2.1 | exact | 0 |  | 0 |  |  |  |  |
+| proj4rs-main | git main | exact | 0 |  | 0 |  |  |  |  |
 | proj4rs-wasm | git 60fee16 2026-10-26 | exact | <1 nm | [-180, -60] | 0 |  |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | OFF 8,329 km | 8,329 km | [-180, -90] | 2.8e-14 deg | [-150, 0] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 2.7e-14 deg | [-150, -30] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 0 |  |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'wag5' not found: wag5 R=6371000 | | | | | | |
 | proj4js | 2.22.0 | -- | Could not get projection name from: +proj=wag5 +R=6371000 | | | | | | |
 | math.gl | 5.0.0-alpha.18 | -- | Projection plugin is not registered: wag5 | | | | | | |
