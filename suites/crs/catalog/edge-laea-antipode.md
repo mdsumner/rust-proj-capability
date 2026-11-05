@@ -62,6 +62,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | exact | 0 mm | 2.41 mm | 0, 12742014.362 |  | Identity (accuracy Some(OperationAccuracy { meters: 0.0 })) |
 | wbprojection | OFF | 14.14 km | 603.2 km | 0, 12756157.299 |  |  |
 | terrio-crs | exact | 0 mm | 0 mm | 0, 12742014.362 |  |  |
+| xeibe-reproject | exact | 0 mm | 1.61 mm | 0, 12742014.362 | read as a CRS, as with +type=crs (a bare PROJ string is an operation, as in PROJ) |  |
 | terrio-crs+fallback | exact | 0 mm | 0 mm | 0, 12742014.362 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
