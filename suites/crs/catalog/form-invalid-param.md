@@ -37,6 +37,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | refuse |  |  |  | transform: operation selection failed: unable to compile an operation for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | ANSWER |  |  | 16363965.147, -5132380.528 |  |  |
 | terrio-crs | refuse |  |  |  | dst: coordinate reference system: merc: lat_ts must be less than 90&#176; |  |
+| xeibe-reproject | refuse |  |  |  | dst: invalid PROJ string: Mercator (variant B): the standard parallel must be within &#177;90&#176;; read as a CRS, as with +type=crs (a bare PROJ string is an operation, as in PROJ) |  |
 | terrio-crs+fallback | refuse |  |  |  | dst: coordinate reference system: merc: lat_ts must be less than 90&#176; |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

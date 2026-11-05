@@ -4,9 +4,10 @@ The first study in this repository, from 2026-10-15, frozen at PROJ 9.9.0.
 It asks a different question from the [projections suite](results/projections/README.md):
 not "is this projection computed correctly" but "can this crate take the CRS
 I have and run the transformation I need". It is kept as a snapshot and is
-not rerun nightly. Two columns were added later, run against the same frozen
+not rerun nightly. Three columns were added later, run against the same frozen
 PROJ 9.9.0 oracle: `terrio-crs` (added 2026-10-25 at 0.1.0, rerun
-2026-11-01 at 0.2.0), natively and with its `wbprojection-fallback` feature.
+2026-11-01 at 0.2.0), natively and with its `wbprojection-fallback` feature,
+and `xeibe-reproject` (added 2026-11-05 at 0.2.0).
 
 | page | what it is |
 |---|---|
@@ -50,6 +51,7 @@ against PROJ.
 | [`miniproj`](https://crates.io/crates/miniproj) | EPSG projections generated at build time | EPSG codes only | 8 EPSG methods: TM, LCC, AEA, LAEA, oblique and polar stereographic, pseudo-Mercator | none: projection within one datum only | 8 |
 | [`wbprojection`](https://crates.io/crates/wbprojection) | Whitebox's projection library | EPSG (hand-built list), PROJ strings, WKT1; ignores `+units` and `TOWGS84` in places | 94 kinds, including world maps (robin, wintri, eqearth, natearth, sinu, ortho). Many are spherical approximations | Helmert with the wrong sign convention for position-vector `towgs84`; NTv2 and NADCON loaders | 32 (33 off) |
 | [`terrio-crs`](https://crates.io/crates/terrio-crs) | terrio's CRS engine (opengeos) as its own crate, aimed at GDAL's choice of operation (added 2026-10-25) | EPSG, ESRI and IAU_2015 codes (deprecated ones too), URNs, PROJ strings, WKT1 and WKT2 with or without an EPSG ID, PROJJSON (the v0.7 2D subset) | its own ellipsoidal ports of PROJ's methods, including tpers, ob_tran, igh, qsc, healpix and rhealpix; the optional `wbprojection-fallback` feature adds eck4, natearth and hammer here; isea is 15.2 km off; no two-point omerc | GDAL's choice of datum operation, Helmert, grids, epochs, geocentric CRSs | 82 (85 with the fallback) |
+| [`xeibe-reproject`](https://crates.io/crates/xeibe-reproject) | xeibe's coordinate conversion, driven by an embedded EPSG dataset (PROJJSON), choosing EPSG's operations per coordinate as PROJ does (added 2026-11-05) | EPSG codes (deprecated ones too), OGC:CRS84/83/27, URNs and URLs, EPSG names and aliases, Esri's old codes of EPSG CRSs, PROJ strings, WKT1 (GDAL and ESRI) and WKT2 with or without an EPSG ID, PROJJSON; not ESRI's own codes or IAU_2015 | ports of PROJ's methods, including tpers, ob_tran, igh, qsc, healpix, rhealpix and two-point omerc; isea is 4.27 km off | EPSG's operations chosen per coordinate as PROJ chooses them, Helmert, Bound CRSs (`TOWGS84`), grids, vertical and compound CRSs; never a ballpark, no epochs | 72 |
 
 "Exact" means within 1 mm of PROJ 9.9.0 on the fixture corpus. Most misses
 are refusals, not wrong answers; [results/crs/per-fixture.md](results/crs/per-fixture.md) shows which.
@@ -78,6 +80,7 @@ for 3D and epochs.
 | `miniproj` | `get_projection(3857)?.deg_to_projected(lon, lat)` | no runtime dependencies; wasm32 | 1 (`bevy_geo_tiles`) |
 | `wbprojection` | `Crs::from_epsg(n)?.transform_to(x, y, &dst)` | `rayon`, `serde`; wasm32 | 5, all in the Whitebox stack |
 | `terrio-crs` | `Transformer::new(&SpatialRef::parse("EPSG:4326")?, &SpatialRef::parse("EPSG:32613")?)?.transform(x, y)`, plus `transform_3d` and `transform_4d`; geographic coordinates in the CRS's own unit, as GDAL | embedded EPSG/ESRI tables; optional `grid-transport` (network grids) and `wbprojection-fallback`; wasm32. About 50 crates in this harness's tree (58 with the fallback) | `terrio` |
+| `xeibe-reproject` | `Transform::new(&Crs::from_user_input("EPSG:4326")?, &Crs::from_user_input("EPSG:32613")?, AxisOrder::EastFirst)?.convert(x, y, None)`, with an optional height; reports the chosen operation (`operation_for`) | embedded EPSG tables (and, with the `esri` feature, Esri's names, Apache-2.0); grids from PROJ-data, loaded by the caller; `Send + Sync`, wasm32. Adds 14 crates to this harness's tree (terrio-crs adds 35, counted the same way) | `xeibe-arrow` |
 
 **Which one:**
 - **Any CRS, correct datums, grids, 3D or epochs, and you can link C++:** `proj` (drop to `proj-sys` for 3D and epochs).
@@ -146,6 +149,7 @@ CRS suite: PROJ 9.9.0 (oracle) and the following crates:
 | `proj-core` (+ `proj-wkt`) | 0.11.0 | added from crates.io |
 | `wbprojection` | 0.3.3 | added from crates.io |
 | `terrio-crs` | 0.2.0, no default features; a second build with `wbprojection-fallback` | added 2026-10-25 from crates.io (0.1.0); 0.2.0 from 2026-11-01 |
+| `xeibe-reproject` | 0.2.0, no default features but `esri` | added 2026-11-05 from crates.io |
 
 There are also wrapper columns: `proj4rs+bound`, `geodesy+bound` and
 `proj-core+aoi`, and the feature column `terrio-crs+fallback`.

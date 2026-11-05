@@ -24,6 +24,7 @@ Each cell is Y (yes), P (partial, say what) or N (no). Evidence is one of:
 | `proj-core` (+ `proj-wkt`) | 0.11.0 (2026-08-11) | https://github.com/roteiro-gis/proj-rust | added: pure Rust with an embedded EPSG registry and operation selection |
 | `wbprojection` | 0.3.3 (2026-08-04) | https://github.com/jblindsay/whitebox_next_gen | added: Whitebox projection library. 5 reverse dependencies in the Whitebox stack. |
 | `terrio-crs` | 0.2.0 (2026-10-31) | https://github.com/opengeos/terrio | added 2026-10-25 at 0.1.0, 0.2.0 from 2026-11-01: terrio's CRS engine as its own crate, built without default features, and again with `wbprojection-fallback`. Verdict counts only; it has no column in the summary grid or the evidence by layer yet. |
+| `xeibe-reproject` | 0.2.0 (2026-11-05) | https://github.com/ttomasz/xeibe | added 2026-11-05 at 0.2.0: xeibe's coordinate conversion, driven by EPSG's own data, built without default features but with `esri`. Verdict counts only; it has no column in the summary grid or the evidence by layer yet. |
 
 Checked and not added: `oxiproj` (1.3k recent downloads, 2 reverse
 dependencies), `geonative-proj` (TM only), `gis-tools`, `epsg` (unmaintained
@@ -73,6 +74,7 @@ refused; n/a = the input does not apply to this candidate.
 | wbprojection | 32 | 2 | 33 | 1 | 20 | 4 | 0 |
 | terrio-crs | 82 | 1 | 1 | 0 | 4 | 5 | 0 |
 | terrio-crs+fallback | 85 | 1 | 1 | 0 | 1 | 5 | 0 |
+| xeibe-reproject | 72 | 1 | 1 | 1 | 13 | 5 | 0 |
 
 wbprojection has one more fixture ([form-invalid-param](suites/crs/catalog/form-invalid-param.md)) where it answered and
 the oracle refused, which is why its row does not sum to 93. The "+bound" and

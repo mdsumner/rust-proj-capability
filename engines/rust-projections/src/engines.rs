@@ -11,6 +11,7 @@ pub static REGISTRY: &[Engine] = &[
     Engine { name: "wbprojection", version: "0.3.3", prepare: wb::prepare },
     Engine { name: "geodesy", version: "0.15.0", prepare: geodesy_ad::prepare },
     Engine { name: "terrio-crs", version: "0.1.0 + fallback", prepare: terrio_ad::prepare },
+    Engine { name: "xeibe-reproject", version: "0.2.0", prepare: xeibe_ad::prepare },
 ];
 
 /// proj4rs works in radians on the geographic side.
@@ -164,6 +165,36 @@ mod terrio_ad {
         }
         fn inv(&self, x: f64, y: f64) -> Option<[f64; 2]> {
             self.inv.transform(x, y).ok().map(|(x, y)| [x, y])
+        }
+    }
+}
+
+/// xeibe-reproject: both definitions read as CRSs (a bare PROJ string is an
+/// operation in PROJ; from_user_input reads it as with +type=crs, as pyproj
+/// does); on one earth model the transform is a conversion, with no datum step.
+mod xeibe_ad {
+    use super::*;
+    use xeibe_reproject::{AxisOrder, Crs, Transform};
+
+    struct T {
+        fwd: Transform,
+        inv: Transform,
+    }
+
+    pub fn prepare(p: &Projection) -> Result<Box<dyn Prepared>, String> {
+        let geo = Crs::from_user_input(&p.geographic).map_err(|e| format!("geographic: {e}"))?;
+        let prj = Crs::from_user_input(&p.proj).map_err(|e| e.to_string())?;
+        let fwd = Transform::new(&geo, &prj, AxisOrder::EastFirst).map_err(|e| e.to_string())?;
+        let inv = fwd.inverse().map_err(|e| e.to_string())?;
+        Ok(Box::new(T { fwd, inv }))
+    }
+
+    impl Prepared for T {
+        fn fwd(&self, lon: f64, lat: f64) -> Option<[f64; 2]> {
+            self.fwd.convert(lon, lat, None).ok().map(|(x, y, _)| [x, y])
+        }
+        fn inv(&self, x: f64, y: f64) -> Option<[f64; 2]> {
+            self.inv.convert(x, y, None).ok().map(|(x, y, _)| [x, y])
         }
     }
 }

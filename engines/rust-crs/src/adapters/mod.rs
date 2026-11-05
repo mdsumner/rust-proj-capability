@@ -22,6 +22,8 @@ mod projcore;
 mod wbprojection_ad;
 #[cfg(feature = "c-terrio-crs")]
 mod terrio_ad;
+#[cfg(feature = "c-xeibe-reproject")]
+mod xeibe_ad;
 
 pub struct Candidate {
     pub name: &'static str,
@@ -56,6 +58,7 @@ const TERRIO_CRS: Option<RunFn> = Some(terrio_ad::run as RunFn);
 #[cfg(not(all(feature = "c-terrio-crs", not(feature = "c-terrio-crs-fallback"))))]
 const TERRIO_CRS: Option<RunFn> = None;
 cand!(TERRIO_CRS_FALLBACK, "c-terrio-crs-fallback", terrio_ad::run);
+cand!(XEIBE_REPROJECT, "c-xeibe-reproject", xeibe_ad::run);
 
 pub static REGISTRY: &[Candidate] = &[
     Candidate { name: "proj", run: PROJ },
@@ -71,4 +74,5 @@ pub static REGISTRY: &[Candidate] = &[
     Candidate { name: "wbprojection", run: WBPROJECTION },
     Candidate { name: "terrio-crs", run: TERRIO_CRS },
     Candidate { name: "terrio-crs+fallback", run: TERRIO_CRS_FALLBACK },
+    Candidate { name: "xeibe-reproject", run: XEIBE_REPROJECT },
 ];

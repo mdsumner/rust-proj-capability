@@ -71,6 +71,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: krovak |  |
 | wbprojection | exact | 0 mm | 0 mm | -703105.689937, -1058219.601 |  |  |
 | terrio-crs | exact | 0 mm | 0 mm | -703105.689937, -1058219.601 |  |  |
+| xeibe-reproject | -- |  |  |  | transform: unknown: its datum "Unknown based on Bessel 1841 ellipsoid" is unknown, so it can't be converted to another datum (a shift of zero is not assumed): give the CRS as an EPSG code, or say its datum (+datum= or +towgs84= in a PROJ st |  |
 | terrio-crs+fallback | exact | 0 mm | 0 mm | -703105.689937, -1058219.601 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

@@ -17,3 +17,4 @@ proj-wkt = "0.12"
 wbprojection = "=0.3.3"
 geodesy = { version = "=0.15.0", default-features = false }
 terrio-crs = { version = "=0.2.0", default-features = false, features = ["wbprojection-fallback"] }
+xeibe-reproject = { version = "=0.2.0", default-features = false }
