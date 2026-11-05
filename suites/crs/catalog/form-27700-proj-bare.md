@@ -72,4 +72,5 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | fail |  |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | exact | 0.128 mm | 0.235 mm | 109.2 m | 433938.158584, 289280.164322 |  |  |
 | terrio-crs | exact | 0.00994 mm | 0.00995 mm | 109.2 m | 433938.158584, 289280.164204 |  |  |
+| xeibe-reproject | -- |  |  |  |  | transform: unknown: its datum "Unknown based on Airy 1830 ellipsoid" is unknown, so it can't be converted to another datum (a shift of zero is not assumed): give the CRS as an EPSG code, or say its datum (+datum= or +towgs84= in a PROJ stri |  |
 | terrio-crs+fallback | exact | 0.00994 mm | 0.00995 mm | 109.2 m | 433938.158584, 289280.164204 |  |  |

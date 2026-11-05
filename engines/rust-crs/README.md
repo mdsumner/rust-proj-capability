@@ -33,6 +33,7 @@ columns separately; the reason is under "Symbol clash" below.
 | proj-core+aoi | c-projcore | the same, with the source point passed as the area of interest |
 | wbprojection | c-wbprojection | the definition as given: `Crs::from_epsg`, `from_proj_string`, `from_wkt`, then `transform_to` / `transform_to_3d` |
 | terrio-crs, terrio-crs+fallback | c-terrio-crs, c-terrio-crs-fallback (separate builds) | the definition as given through `SpatialRef::parse` (PROJJSON included, from 0.2.0), then `Transformer::new` and `transform` / `transform_3d` / `transform_4d`. Geographic coordinates go in and come out in the CRS's own unit, as in GDAL. Built without `grid-transport`, so no network grids. The +fallback column adds the `wbprojection-fallback` feature. |
+| xeibe-reproject | c-xeibe-reproject | the definition as given through `Crs::from_user_input` (a bare PROJ string is read as a CRS, as with `+type=crs`, as pyproj does), then `Transform::with_grids(&src, &dst, AxisOrder::EastFirst, Grids::None)` and `convert`: grid-based operations are left out, as in an oracle with no grids installed. Geographic coordinates in the CRS's own unit, as in PROJ. Epochs are refused. Built with `default-features = false` and the `esri` feature. |
 
 When a fixture's source is `OGC:CRS84`, candidates without an authority
 lookup get `+proj=longlat +datum=WGS84 +no_defs` instead. The shared starting

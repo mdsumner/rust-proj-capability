@@ -149,6 +149,10 @@ mod send_sync {
     fn terrio_crs() {
         ok::<terrio_crs::Transformer>();
     }
+    #[cfg(feature = "c-xeibe-reproject")]
+    fn xeibe_reproject() {
+        ok::<xeibe_reproject::Transform>();
+    }
     #[cfg(feature = "c-proj-send-sync-probe")]
     fn proj() {
         ok::<proj::Proj>();

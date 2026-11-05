@@ -60,6 +60,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  | dst: unsupported CRS semantics: PROJ Hotine Oblique Mercator definition uses unsupported PROJ parameter `+lon_2`: parameter is not supported by this PROJ parser |  |
 | wbprojection | OFF | 1.965e+04 km | 1.123e+04 km | -14801815.890, -2738206.968 |  |  |
 | terrio-crs | -- |  |  |  | dst: coordinate reference system: omerc: two-point form is not supported |  |
+| xeibe-reproject | exact | 0 mm | <0.001 mm | 4687059.434, -5279802.363 | read as a CRS, as with +type=crs (a bare PROJ string is an operation, as in PROJ) |  |
 | terrio-crs+fallback | -- |  |  |  | dst: coordinate reference system: omerc: two-point form is not supported |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
