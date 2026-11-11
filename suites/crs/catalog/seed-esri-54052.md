@@ -62,6 +62,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: ESRI:54052 |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: EPSG:54052 is not in the built-in registry. See epsg::known_epsg_codes() for supported codes, or construct a ProjectionParams manually. |  |
 | terrio-crs | exact | 0 mm | 0 mm | 16168031.516, -4674913.235 |  |  |
+| xeibe-reproject | -- |  |  |  | dst: ESRI:54052: an ESRI code of a CRS EPSG doesn't define is not supported |  |
 | terrio-crs+fallback | exact | 0 mm | 0 mm | 16168031.516, -4674913.235 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

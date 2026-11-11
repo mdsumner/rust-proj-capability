@@ -63,6 +63,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  |  | dst: failed to parse CRS string: unrecognized CRS format: EPSG:3785 |  |
 | wbprojection | -- |  |  |  |  | dst: unsupported projection: EPSG:3785 is not in the built-in registry. See epsg::known_epsg_codes() for supported codes, or construct a ProjectionParams manually. |  |
 | terrio-crs | exact | 0 mm | <0.001 mm | 0 mm | 16363965.147, -5160979.444 |  |  |
+| xeibe-reproject | -- |  |  |  |  | transform: no usable transformation from WGS 84 (CRS84) to EPSG:3785: EPSG has none that xeibe can apply, and ballpark approximations are not used |  |
 | terrio-crs+fallback | exact | 0 mm | <0.001 mm | 0 mm | 16363965.147, -5160979.444 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

@@ -18,9 +18,10 @@ proj-core = { version = "=0.11.0", optional = true }
 proj-wkt = { version = "=0.11.0", optional = true }
 wbprojection = { version = "=0.3.3", optional = true }
 terrio-crs = { version = "=0.2.0", optional = true, default-features = false }
+xeibe-reproject = { version = "=0.2.0", optional = true, default-features = false, features = ["esri"] }
 
 [features]
-default = ["c-proj", "c-proj4rs", "c-crsdefs", "c-geodesy", "c-miniproj", "c-projcore", "c-wbprojection", "c-terrio-crs"]
+default = ["c-proj", "c-proj4rs", "c-crsdefs", "c-geodesy", "c-miniproj", "c-projcore", "c-wbprojection", "c-terrio-crs", "c-xeibe-reproject"]
 c-proj = ["dep:proj", "dep:proj-sys"]
 c-proj4rs = ["dep:proj4rs", "dep:proj4wkt"]
 c-crsdefs = ["dep:crs-definitions", "c-proj4rs"]
@@ -29,6 +30,7 @@ c-miniproj = ["dep:miniproj"]
 c-projcore = ["dep:proj-core", "dep:proj-wkt"]
 c-wbprojection = ["dep:wbprojection"]
 c-terrio-crs = ["dep:terrio-crs"]
+c-xeibe-reproject = ["dep:xeibe-reproject"]
 # a separate build: features unify, so the native and fallback columns cannot share a binary
 c-terrio-crs-fallback = ["c-terrio-crs", "terrio-crs/wbprojection-fallback"]
 # compile-only probe: does proj::Proj implement Send + Sync? (expected: no)

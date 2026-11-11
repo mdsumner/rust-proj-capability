@@ -60,6 +60,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: eqdc |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: PROJ +proj=eqdc is not supported by wbprojection |  |
 | terrio-crs | exact | 0 mm | 0 mm | 1270629.302, -4726934.444 |  |  |
+| xeibe-reproject | exact | 0 mm | <0.001 mm | 1270629.302, -4726934.444 | read as a CRS, as with +type=crs (a bare PROJ string is an operation, as in PROJ) |  |
 | terrio-crs+fallback | exact | 0 mm | 0 mm | 1270629.302, -4726934.444 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

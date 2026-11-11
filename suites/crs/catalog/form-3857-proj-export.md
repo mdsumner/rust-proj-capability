@@ -72,4 +72,5 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  |  | dst: unsupported CRS semantics: PROJ Mercator definition uses unsupported PROJ parameter `+wktext`: parameter is not supported by this PROJ parser |  |
 | wbprojection | exact | <0.001 mm | 0 mm | <0.001 mm | 16363965.147, -5160979.444 |  |  |
 | terrio-crs | exact | 0 mm | 0 mm | 0 mm | 16363965.147, -5160979.444 |  |  |
+| xeibe-reproject | exact | 0 mm | 0 mm | 0 mm | 16363965.147, -5160979.444 |  | Popular Visualisation Pseudo-Mercator |
 | terrio-crs+fallback | exact | 0 mm | 0 mm | 0 mm | 16363965.147, -5160979.444 |  |  |
