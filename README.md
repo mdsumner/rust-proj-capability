@@ -23,7 +23,7 @@ proj4rs main: **38 of 40** exact
 
 **[PROJ watch](results/tracker/README.md)**
 
-Recent PROJ commits by projection, and whether proj4rs has each one. 35 of 167 PROJ projections are in proj4rs.
+Recent PROJ commits by projection, and whether proj4rs has each one. 38 of 167 PROJ projections are in proj4rs.
 
 **1** ported projections changed upstream in the last 180 days
 

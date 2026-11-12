@@ -1,9 +1,9 @@
 {
  "environment": {
-  "generated": "2026-11-11T03:26:24+00:00",
-  "proj_head": "be0df1e07a3ce21f3aafc29607b0a3295f588137",
-  "proj_date": "2026-11-05",
-  "proj4rs_head": "60fee16b6ef0239b9c7255d09d3862f325711867",
+  "generated": "2026-11-12T03:25:04+00:00",
+  "proj_head": "890f8a0599ee4600344c8b630df5e4bc4762c83f",
+  "proj_date": "2026-11-11",
+  "proj4rs_head": "7cdd975229c333fb7486cb43c5431365460cba07",
   "proj4rs_date": "2026-10-26",
   "since": "180 days ago"
  },
@@ -224,7 +224,7 @@
    "name": "col_urban",
    "desc": "Colombia Urban",
    "file": "col_urban.cpp",
-   "proj4rs": false,
+   "proj4rs": true,
    "suite": [],
    "proj_commits": []
   },
@@ -676,7 +676,7 @@
    "name": "labrd",
    "desc": "Laborde",
    "file": "labrd.cpp",
-   "proj4rs": false,
+   "proj4rs": true,
    "suite": [],
    "proj_commits": []
   },
@@ -988,7 +988,7 @@
    "name": "nzmg",
    "desc": "New Zealand Map Grid",
    "file": "nzmg.cpp",
-   "proj4rs": false,
+   "proj4rs": true,
    "suite": [],
    "proj_commits": []
   },
