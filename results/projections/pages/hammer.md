@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +R=6371000 +no_defs`. Window lon [-180, 180], lat [-90, 90], every 30 deg: 91 points, 91 projected by PROJ 9.10.0.
 
-PROJ round trip (its inverse of its forward): worst 4.9e-14 deg at [-120, -30], 36 inverse failures.
+PROJ round trip (its inverse of its forward): worst 4.3e-14 deg at [-120, -60], 36 inverse failures.
 
 ![hammer by engine](../maps/hammer.svg)
 
@@ -20,10 +20,10 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- | Projection not found | | | | | | |
 | proj4rs-main | git main | -- | Projection not found | | | | | | |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | -- | Projection not found | | | | | | |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | -- | Projection not found | | | | | | |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
-| wbprojection | 0.3.3 | exact | <1 nm | [-120, 0] | 2.8e-14 deg | [-150, 0] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [-120, 0] | 2.8e-14 deg | [-150, 0] |  |  |  |
+| wbprojection | 0.3.3 | exact | <1 nm | [-120, 0] | 2.8e-14 deg | [-150, -60] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [-120, 0] | 2.8e-14 deg | [-150, -60] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'hammer' not found: hammer R=6371000 | | | | | | |
 | proj4js | 2.22.0 | -- | Could not get projection name from: +proj=hammer +R=6371000 | | | | | | |
 | math.gl | 5.0.0-alpha.18 | -- | Projection plugin is not registered: hammer | | | | | | |

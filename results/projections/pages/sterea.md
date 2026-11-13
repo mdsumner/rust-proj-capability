@@ -18,12 +18,12 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
-| proj4rs | 0.2.1 | exact | 0 |  | 7.1e-15 deg | [-10, 45] |  |  |  |
-| proj4rs-main | git main | exact | 0 |  | 7.1e-15 deg | [-10, 45] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [-10, 50] | 2.8e-14 deg | [-10, 65] |  |  |  |
+| proj4rs | 0.2.1 | exact | <1 nm | [0, 65] | 2.8e-14 deg | [0, 60] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [0, 65] | 2.8e-14 deg | [0, 60] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [0, 65] | 2.8e-14 deg | [0, 60] |  |  |  |
 | proj-core | 0.12.0 | -- | operation selection failed: no compatible registry operation found for source EPSG:0 target EPSG:0 | | | | | | |
 | wbprojection | 0.3.3 | OFF 4.192 km | 4.192 km | [-10, 65] | 0.037 deg | [-10, 65] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | <1 nm | [-10, 40] | 2.8e-14 deg | [-10, 50] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'sterea' not found: sterea ellps=bessel lat_0=52.15616055555555 lon_0=5.38763888888889 k_0=0.9999079 x_0=155000 y_0=463000 | | | | | | |
-| proj4js | 2.22.0 | exact | <1 nm | [-10, 45] | 2.8e-14 deg | [-10, 65] |  |  |  |
-| math.gl | 5.0.0-alpha.18 | exact | <1 nm | [-10, 45] | 2.8e-14 deg | [-10, 65] |  |  |  |
+| proj4js | 2.22.0 | exact | <1 nm | [-10, 45] | 2.8e-14 deg | [0, 60] |  |  |  |
+| math.gl | 5.0.0-alpha.18 | exact | <1 nm | [-10, 45] | 2.8e-14 deg | [0, 60] |  |  |  |

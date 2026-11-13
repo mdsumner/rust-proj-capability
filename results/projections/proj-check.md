@@ -8,35 +8,36 @@ PROJ 9.10.0's inverse of its own forward result, against the input point, for ev
 |---|---|---|---|
 | [eqearth](pages/eqearth.md) | 6.6e-06 deg | [-180, -90] |  |
 | [wag4](pages/wag4.md) | 8.5e-07 deg | [-180, -90] | 10 |
-| [geos](pages/geos.md) | 3.7e-11 deg | [155, -81] |  |
+| [vandg](pages/vandg.md) | 4.9e-07 deg | [-180, -30] |  |
+| [geos](pages/geos.md) | 6.1e-11 deg | [155, -81] |  |
 | [cass](pages/cass.md) | 2.9e-11 deg | [132, -35] |  |
-| [ups](pages/ups.md) | 1.1e-11 deg | [-140, 50] |  |
-| [stere-polar](pages/stere-polar.md) | 1.1e-11 deg | [-170, -50] |  |
+| [stere-polar](pages/stere-polar.md) | 1.1e-11 deg | [-130, -50] |  |
+| [ups](pages/ups.md) | 1.1e-11 deg | [-180, 50] |  |
 | [stere-oblique](pages/stere-oblique.md) | 4.3e-12 deg | [187, -55] |  |
-| [natearth2](pages/natearth2.md) | 2.3e-12 deg | [-180, -90] |  |
-| [tpers](pages/tpers.md) | 1.2e-12 deg | [90, -30] |  |
-| [ortho](pages/ortho.md) | 5.3e-13 deg | [30, -30] | 11 |
-| [vandg](pages/vandg.md) | 4.2e-13 deg | [-30, -30] |  |
-| [poly](pages/poly.md) | 3.1e-13 deg | [-40, 80] |  |
-| [krovak](pages/krovak.md) | 2.4e-13 deg | [7, 56] |  |
+| [natearth2](pages/natearth2.md) | 3.2e-12 deg | [-180, -90] |  |
+| [ortho](pages/ortho.md) | 5e-13 deg | [30, -30] | 11 |
+| [tpers](pages/tpers.md) | 2.6e-13 deg | [90, -30] |  |
+| [poly](pages/poly.md) | 1.4e-13 deg | [-130, 80] |  |
 | [eck4](pages/eck4.md) | 1.3e-13 deg | [-180, -30] |  |
 | [aeqd-far](pages/aeqd-far.md) | 1.2e-13 deg | [312, 45] |  |
-| [leac](pages/leac.md) | 9.2e-14 deg | [-20, -50] |  |
-| [aeqd](pages/aeqd.md) | 7.9e-14 deg | [-60, 60] |  |
-| [nsper](pages/nsper.md) | 7.1e-14 deg | [-30, 60] |  |
+| [krovak](pages/krovak.md) | 1.1e-13 deg | [11, 56] |  |
+| [leac](pages/leac.md) | 9.2e-14 deg | [-40, -50] |  |
+| [nsper](pages/nsper.md) | 8.6e-14 deg | [-30, 60] |  |
+| [natearth](pages/natearth.md) | 8.5e-14 deg | [-180, -90] |  |
 | [aea](pages/aea.md) | 7.1e-14 deg | [-80, 70] |  |
 | [qsc](pages/qsc.md) | 7e-14 deg | [45, -45] |  |
-| [bonne](pages/bonne.md) | 6.4e-14 deg | [-30, -60] |  |
-| [laea](pages/laea.md) | 5.7e-14 deg | [-30, 80] |  |
+| [bonne](pages/bonne.md) | 5.8e-14 deg | [-120, 0] |  |
+| [aeqd](pages/aeqd.md) | 5.7e-14 deg | [-90, 60] |  |
+| [somerc](pages/somerc.md) | 5.7e-14 deg | [5, 50] |  |
 | [moll](pages/moll.md) | 5.7e-14 deg | [-120, 0] | 8 |
 | [eqc](pages/eqc.md) | 5.7e-14 deg | [-120, 0] |  |
 | [cea](pages/cea.md) | 5.7e-14 deg | [-120, 0] |  |
 | [robin](pages/robin.md) | 4.9e-14 deg | [-120, -30] | 4 |
-| [hammer](pages/hammer.md) | 4.9e-14 deg | [-120, -30] | 36 |
 | [igh](pages/igh.md) | 4.9e-14 deg | [-120, -30] | 15 |
-| [somerc](pages/somerc.md) | 4.3e-14 deg | [-10, 45] |  |
+| [hammer](pages/hammer.md) | 4.3e-14 deg | [-120, -60] | 36 |
+| [laea](pages/laea.md) | 3.9e-14 deg | [-60, 50] |  |
+| [lcc](pages/lcc.md) | 3e-14 deg | [-60, 10] |  |
 | [wag5](pages/wag5.md) | 2.9e-14 deg | [-120, -60] | 14 |
-| [utm](pages/utm.md) | 2.8e-14 deg | [132, -10] |  |
 | [merc](pages/merc.md) | 2.8e-14 deg | [-140, 0] |  |
 | [webmerc](pages/webmerc.md) | 2.8e-14 deg | [-140, 0] |  |
 | [sterea](pages/sterea.md) | 2.8e-14 deg | [-10, 65] |  |
@@ -45,18 +46,17 @@ PROJ 9.10.0's inverse of its own forward result, against the input point, for ev
 | [gall](pages/gall.md) | 2.8e-14 deg | [-180, 0] |  |
 | [times](pages/times.md) | 2.8e-14 deg | [-150, 0] |  |
 | [eqc-sphere](pages/eqc-sphere.md) | 2.8e-14 deg | [-180, 0] |  |
-| [wintri](pages/wintri.md) | 2.7e-14 deg | [-60, -30] |  |
 | [tmerc](pages/tmerc.md) | 2.7e-14 deg | [177, -20] |  |
 | [etmerc](pages/etmerc.md) | 2.7e-14 deg | [177, -20] |  |
-| [omerc](pages/omerc.md) | 2.6e-14 deg | [95, 4] |  |
+| [omerc](pages/omerc.md) | 2.6e-14 deg | [111, 4] |  |
 | [sinu](pages/sinu.md) | 2.5e-14 deg | [-180, -30] |  |
-| [eqdc](pages/eqdc.md) | 2.2e-14 deg | [-150, 40] |  |
-| [lcc](pages/lcc.md) | 2.1e-14 deg | [-80, 50] |  |
+| [wintri](pages/wintri.md) | 2.5e-14 deg | [-180, -30] |  |
+| [utm](pages/utm.md) | 2.1e-14 deg | [147, -60] |  |
 | [mill](pages/mill.md) | 2.1e-14 deg | [-180, 60] |  |
 | [gnom](pages/gnom.md) | 2.1e-14 deg | [-180, -60] |  |
 | [tmerc-sphere](pages/tmerc-sphere.md) | 2.1e-14 deg | [177, -60] |  |
 | [healpix](pages/healpix.md) | 2.1e-14 deg | [-180, -60] |  |
+| [eqdc](pages/eqdc.md) | 2e-14 deg | [-150, 50] |  |
 | [aeqd-polar](pages/aeqd-polar.md) | 1.8e-14 deg | [-180, 15] |  |
 | [laea-polar](pages/laea-polar.md) | 1.4e-14 deg | [-180, -80] |  |
-| [natearth](pages/natearth.md) | 1.4e-14 deg | [-180, -90] |  |
 | [merc-sphere](pages/merc-sphere.md) | 7.1e-15 deg | [-180, -60] |  |

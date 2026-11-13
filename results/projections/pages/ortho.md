@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +ellps=WGS84 +no_defs`. Window lon [-180, 180], lat [-90, 90], every 30 deg: 91 points, 47 projected by PROJ 9.10.0.
 
-PROJ round trip (its inverse of its forward): worst 5.3e-13 deg at [30, -30], 11 inverse failures.
+PROJ round trip (its inverse of its forward): worst 5e-13 deg at [30, -30], 11 inverse failures.
 
 ![ortho by engine](../maps/ortho.svg)
 
@@ -19,11 +19,11 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- (known) | Projection not found | | | | | | |
-| proj4rs-main | git main | exact | 0 |  | 7.1e-15 deg | [-30, -60] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [-150, 0] | 2.4e-13 deg | [90, 30] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [-60, -60] | 5.7e-13 deg | [90, 30] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [-60, -60] | 8.1e-13 deg | [90, 30] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: ortho | | | | | | |
 | wbprojection | 0.3.3 | OFF 33.69 km | 33.69 km | [90, 30] | 3.7 deg | [90, 30] |  | 1 |  |
-| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 4.9e-13 deg | [90, 30] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [-60, -60] | 3.3e-13 deg | [30, -30] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'ortho' not found: ortho ellps=WGS84 lat_0=-42 lon_0=147 | | | | | | |
 | proj4js | 2.22.0 | OFF 33.69 km | 33.69 km | [90, 30] | 3.7 deg | [90, 30] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | OFF 33.69 km | 33.69 km | [90, 30] | 3.7 deg | [90, 30] |  | 1 |  |

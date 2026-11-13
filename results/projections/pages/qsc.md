@@ -20,10 +20,10 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- | Projection not found | | | | | | |
 | proj4rs-main | git main | -- | Projection not found | | | | | | |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | -- | Projection not found | | | | | | |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | -- | Projection not found | | | | | | |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: qsc | | | | | | |
 | wbprojection | 0.3.3 | -- | unsupported projection: PROJ +proj=qsc is not supported by wbprojection | | | | | | |
-| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 6e-14 deg | [15, -15] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 3.5e-14 deg | [45, -30] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'qsc' not found: qsc ellps=WGS84 lat_0=0 lon_0=0 | | | | | | |
 | proj4js | 2.22.0 | exact | 0.00318 mm | [-45, -45] | 1.3e-11 deg | [-45, -30] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | exact | 0.00318 mm | [-45, -45] | 1.3e-11 deg | [-45, -30] |  |  |  |

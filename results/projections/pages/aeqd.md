@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +ellps=WGS84 +no_defs`. Window lon [-180, 180], lat [-90, 90], every 30 deg: 91 points, 91 projected by PROJ 9.10.0.
 
-PROJ round trip (its inverse of its forward): worst 7.9e-14 deg at [-60, 60].
+PROJ round trip (its inverse of its forward): worst 5.7e-14 deg at [-90, 60].
 
 ![aeqd by engine](../maps/aeqd.svg)
 
@@ -18,9 +18,9 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
-| proj4rs | 0.2.1 | exact | 0 |  | 7.1e-15 deg | [-60, -60] |  |  |  |
-| proj4rs-main | git main | exact | 0 |  | 7.1e-15 deg | [-60, -60] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [60, -30] | 9.9e-14 deg | [-60, 30] |  |  |  |
+| proj4rs | 0.2.1 | exact | <1 nm | [-60, -30] | 2.8e-14 deg | [-60, 60] |  |  |  |
+| proj4rs-main | git main | exact | 0 |  | 9.1e-15 deg | [30, 0] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [60, -30] | 9.9e-14 deg | [-60, 30] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: aeqd | | | | | | |
 | wbprojection | 0.3.3 | OFF 125.7 km | 125.7 km | [-60, 30] | 0.44 deg | [150, 60] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | 0.215 mm | [-60, 30] | 4.9e-10 deg | [30, 0] |  |  |  |

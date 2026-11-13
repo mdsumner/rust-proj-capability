@@ -18,12 +18,12 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
-| proj4rs | 0.2.1 | exact | <1 nm | [-50, 10] | 5.8e-14 deg | [-50, 70] |  |  |  |
-| proj4rs-main | git main | exact | <1 nm | [-140, 60] | 7.1e-15 deg | [-80, 50] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [-140, 60] | 1.4e-14 deg | [-140, 70] |  |  |  |
+| proj4rs | 0.2.1 | exact | <1 nm | [-50, 10] | 6.4e-14 deg | [-100, 50] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [-140, 60] | 1.4e-14 deg | [-60, 50] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [-140, 60] | 2.8e-14 deg | [-110, 60] |  |  |  |
 | proj-core | 0.12.0 | -- | operation selection failed: no compatible registry operation found for source EPSG:0 target EPSG:0 | | | | | | |
-| wbprojection | 0.3.3 | exact | <1 nm | [-100, 30] | 8.9e-14 deg | [-140, 60] |  |  |  |
+| wbprojection | 0.3.3 | exact | <1 nm | [-80, 30] | 8.9e-14 deg | [-140, 60] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | <1 nm | [-140, 60] | 5e-14 deg | [-130, 60] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'aea' not found: aea ellps=GRS80 lat_0=23 lon_0=-96 lat_1=29.5 lat_2=45.5 | | | | | | |
 | proj4js | 2.22.0 | gaps | 0 |  | 0 |  | 70 | 70 |  |
-| math.gl | 5.0.0-alpha.18 | exact | <1 nm | [-90, 10] | 5.7e-14 deg | [-140, 70] |  |  |  |
+| math.gl | 5.0.0-alpha.18 | exact | <1 nm | [-130, 40] | 5.7e-14 deg | [-140, 70] |  |  |  |

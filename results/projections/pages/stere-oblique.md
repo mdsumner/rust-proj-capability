@@ -18,12 +18,12 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
-| proj4rs | 0.2.1 | exact | <1 nm | [187, -15] | 7.1e-15 deg | [117, -55] |  |  |  |
-| proj4rs-main | git main | exact | <1 nm | [187, -15] | 7.1e-15 deg | [117, -55] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [187, -15] | 3.7e-14 deg | [187, -65] |  |  |  |
+| proj4rs | 0.2.1 | exact | <1 nm | [187, -5] | 7.1e-15 deg | [117, -55] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [187, -5] | 7.1e-15 deg | [117, -55] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [187, -5] | 3.7e-14 deg | [187, -65] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: only polar stereographic PROJ strings are supported | | | | | | |
 | wbprojection | 0.3.3 | OFF 9.124 km | 9.124 km | [187, -5] | 0.067 deg | [107, -5] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [127, -75] | 4.3e-14 deg | [177, -75] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [187, -15] | 5.7e-14 deg | [117, -75] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'stere' not found: stere ellps=WGS84 lat_0=-42 lon_0=147 | | | | | | |
-| proj4js | 2.22.0 | exact | <1 nm | [187, -15] | 3.1e-14 deg | [187, -5] |  |  |  |
-| math.gl | 5.0.0-alpha.18 | exact | <1 nm | [187, -15] | 3.1e-14 deg | [187, -5] |  |  |  |
+| proj4js | 2.22.0 | exact | <1 nm | [187, -5] | 3.1e-14 deg | [187, -5] |  |  |  |
+| math.gl | 5.0.0-alpha.18 | exact | <1 nm | [187, -5] | 3.1e-14 deg | [187, -5] |  |  |  |

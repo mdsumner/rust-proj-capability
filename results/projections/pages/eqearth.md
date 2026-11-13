@@ -19,10 +19,10 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- (known) | Projection not found | | | | | | |
-| proj4rs-main | git main | exact | 0 |  | 1.4e-14 deg | [-180, -90] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | 0 |  | 1.4e-14 deg | [-180, -90] |  |  |  |
+| proj4rs-main | git main | close (known) | 0 |  | 5.5e-08 deg | [-180, -90] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | close (known) | 0 |  | 5.5e-08 deg | [-180, -90] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: eqearth | | | | | | |
-| wbprojection | 0.3.3 | close | <1 nm | [-150, -60] | 4.8e-08 deg | [-180, 90] |  |  |  |
+| wbprojection | 0.3.3 | close | <1 nm | [-150, -60] | 1e-07 deg | [-180, 90] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | close | 0 |  | 6.6e-06 deg | [-180, -90] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'eqearth' not found: eqearth ellps=WGS84 | | | | | | |
 | proj4js | 2.22.0 | close | <1 nm | [-180, -90] | 6.6e-06 deg | [-180, -90] |  |  |  |
@@ -31,3 +31,5 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 Known differences, recorded in [projections.json](../../../suites/projections/projections.json):
 
 - proj4rs: inverse 6.6e-6 deg at the poles only; elsewhere within 1.5e-14 deg.
+- proj4rs-main: inverse 6.6e-6 deg at the poles only; elsewhere within 1.5e-14 deg.
+- proj4rs-wasm: inverse 6.6e-6 deg at the poles only; elsewhere within 1.5e-14 deg.

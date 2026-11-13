@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +ellps=evrst69 +no_defs`. Window lon [95, 112], lat [-2, 10], every 2 deg: 63 points, 63 projected by PROJ 9.10.0.
 
-PROJ round trip (its inverse of its forward): worst 2.6e-14 deg at [95, 4].
+PROJ round trip (its inverse of its forward): worst 2.6e-14 deg at [111, 4].
 
 ![omerc by engine](../maps/omerc.svg)
 
@@ -20,10 +20,10 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- | Projection not found | | | | | | |
 | proj4rs-main | git main | exact | <1 nm | [99, -2] | 2.6e-11 deg | [95, -2] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [99, -2] | 2.6e-11 deg | [95, -2] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [99, -2] | 2.6e-11 deg | [95, -2] |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: failed to parse CRS string: unsupported PROJ ellipsoid: EVRST69 | | | | | | |
 | wbprojection | 0.3.3 | OFF 2,111 km | 2,111 km | [111, -2] | 19 deg | [111, -2] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 1.8e-15 deg | [95, 10] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [103, 8] | 2.2e-14 deg | [103, 4] |  |  |  |
 | geodesy | 0.15.0 | OFF 448.3 km | 448.3 km | [111, 10] | 4 deg | [103, 2] |  |  |  |
 | proj4js | 2.22.0 | gaps | 0 |  | 0 |  | 63 | 63 |  |
 | math.gl | 5.0.0-alpha.18 | exact | <1 nm | [99, -2] | 2.6e-11 deg | [95, -2] |  |  |  |

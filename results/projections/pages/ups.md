@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +ellps=WGS84 +no_defs`. Window lon [-180, 180], lat [50, 90], every 10 deg: 185 points, 185 projected by PROJ 9.10.0.
 
-PROJ round trip (its inverse of its forward): worst 1.1e-11 deg at [-140, 50].
+PROJ round trip (its inverse of its forward): worst 1.1e-11 deg at [-180, 50].
 
 ![ups by engine](../maps/ups.svg)
 
@@ -20,7 +20,7 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | <1 nm | [120, 70] | 7.1e-15 deg | [110, 60] |  |  |  |
 | proj4rs-main | git main | exact | <1 nm | [120, 70] | 7.1e-15 deg | [110, 60] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [120, 70] | 1.4e-14 deg | [120, 60] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [120, 70] | 1.4e-14 deg | [120, 60] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: ups | | | | | | |
 | wbprojection | 0.3.3 | OFF 2,856 km | 2,856 km | [-50, 50] | 56 deg | [-50, 70] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | gaps | 0 |  | 7.1e-15 deg | [110, 60] | 37 |  |  |

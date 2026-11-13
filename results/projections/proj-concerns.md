@@ -34,6 +34,7 @@ Raised by this run and not yet accounted for by an entry above.
 
 | projection | signal | what |
 |---|---|---|
+| [vandg](pages/vandg.md) | roundtrip | worst 4.9e-07 deg at [-180, -30] |
 | [cass](pages/cass.md) | consensus | proj-core, wbprojection agree with each other and differ from PROJ by up to 0.0005787 m forward, 0.00054 deg inverse |
 
 ## Details

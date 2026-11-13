@@ -1,7 +1,7 @@
 {
  "environment": {
   "schema_version": 1,
-  "generated": "2026-11-12T03:24:31+00:00",
+  "generated": "2026-11-13T03:26:02+00:00",
   "proj_version": "9.10.0",
   "proj_git_sha": "890f8a0599ee4600344c8b630df5e4bc4762c83f",
   "pyproj_version": "3.8.0",
@@ -62,18 +62,18 @@
    "inverse_failed": 0
   },
   "utm": {
-   "max_deg": 2.8492711402216615e-14,
+   "max_deg": 2.1316282072803006e-14,
    "at": [
-    132,
-    -10
+    147,
+    -60
    ],
    "inverse_failed": 0
   },
   "lcc": {
-   "max_deg": 2.1316282072803006e-14,
+   "max_deg": 2.9950485485445376e-14,
    "at": [
-    -80,
-    50
+    -60,
+    10
    ],
    "inverse_failed": 0
   },
@@ -88,7 +88,7 @@
   "leac": {
    "max_deg": 9.237055564881302e-14,
    "at": [
-    -20,
+    -40,
     -50
    ],
    "inverse_failed": 0
@@ -96,7 +96,7 @@
   "stere-polar": {
    "max_deg": 1.1290524071227992e-11,
    "at": [
-    -170,
+    -130,
     -50
    ],
    "inverse_failed": 0
@@ -110,9 +110,9 @@
    "inverse_failed": 0
   },
   "ups": {
-   "max_deg": 1.1297629498585593e-11,
+   "max_deg": 1.1290524071227992e-11,
    "at": [
-    -140,
+    -180,
     50
    ],
    "inverse_failed": 0
@@ -126,18 +126,18 @@
    "inverse_failed": 0
   },
   "somerc": {
-   "max_deg": 4.263256414560601e-14,
+   "max_deg": 5.684341886080802e-14,
    "at": [
-    -10,
-    45
+    5,
+    50
    ],
    "inverse_failed": 0
   },
   "laea": {
-   "max_deg": 5.705727144080351e-14,
+   "max_deg": 3.920448652854182e-14,
    "at": [
-    -30,
-    80
+    -60,
+    50
    ],
    "inverse_failed": 0
   },
@@ -174,7 +174,7 @@
    "inverse_failed": 14
   },
   "geos": {
-   "max_deg": 3.6940459865687664e-11,
+   "max_deg": 6.054090325901468e-11,
    "at": [
     155,
     -81
@@ -190,9 +190,9 @@
    "inverse_failed": 0
   },
   "aeqd": {
-   "max_deg": 7.944109290391275e-14,
+   "max_deg": 5.728578676879118e-14,
    "at": [
-    -60,
+    -90,
     60
    ],
    "inverse_failed": 0
@@ -206,9 +206,9 @@
    "inverse_failed": 0
   },
   "krovak": {
-   "max_deg": 2.408602248559942e-13,
+   "max_deg": 1.077598785286398e-13,
    "at": [
-    7,
+    11,
     56
    ],
    "inverse_failed": 0
@@ -230,15 +230,15 @@
    "inverse_failed": 0
   },
   "poly": {
-   "max_deg": 3.081306261044608e-13,
+   "max_deg": 1.3566590315956796e-13,
    "at": [
-    -40,
+    -130,
     80
    ],
    "inverse_failed": 0
   },
   "ortho": {
-   "max_deg": 5.317689681893302e-13,
+   "max_deg": 4.968848263656795e-13,
    "at": [
     30,
     -30
@@ -264,13 +264,13 @@
   "omerc": {
    "max_deg": 2.6201263381153694e-14,
    "at": [
-    95,
+    111,
     4
    ],
    "inverse_failed": 0
   },
   "tpers": {
-   "max_deg": 1.2081734045541614e-12,
+   "max_deg": 2.5759011716280917e-13,
    "at": [
     90,
     -30
@@ -278,7 +278,7 @@
    "inverse_failed": 0
   },
   "nsper": {
-   "max_deg": 7.140866117879974e-14,
+   "max_deg": 8.556067554929072e-14,
    "at": [
     -30,
     60
@@ -294,10 +294,10 @@
    "inverse_failed": 0
   },
   "eqdc": {
-   "max_deg": 2.1772292573103244e-14,
+   "max_deg": 1.960224326427091e-14,
    "at": [
     -150,
-    40
+    50
    ],
    "inverse_failed": 0
   },
@@ -310,7 +310,7 @@
    "inverse_failed": 4
   },
   "eqearth": {
-   "max_deg": 6.583761162914925e-06,
+   "max_deg": 6.638399113967353e-06,
    "at": [
     -180,
     -90
@@ -326,7 +326,7 @@
    "inverse_failed": 0
   },
   "aeqd-far": {
-   "max_deg": 1.2079226507921706e-13,
+   "max_deg": 1.2058310082691394e-13,
    "at": [
     312,
     45
@@ -334,9 +334,9 @@
    "inverse_failed": 0
   },
   "wintri": {
-   "max_deg": 2.6822400070865448e-14,
+   "max_deg": 2.486899575160351e-14,
    "at": [
-    -60,
+    -180,
     -30
    ],
    "inverse_failed": 0
@@ -350,15 +350,15 @@
    "inverse_failed": 0
   },
   "hammer": {
-   "max_deg": 4.935587579328813e-14,
+   "max_deg": 4.3220627292571273e-14,
    "at": [
     -120,
-    -30
+    -60
    ],
    "inverse_failed": 36
   },
   "natearth": {
-   "max_deg": 1.4210854715202004e-14,
+   "max_deg": 8.526512829121202e-14,
    "at": [
     -180,
     -90
@@ -366,7 +366,7 @@
    "inverse_failed": 0
   },
   "natearth2": {
-   "max_deg": 2.3021584638627246e-12,
+   "max_deg": 3.154809746774845e-12,
    "at": [
     -180,
     -90
@@ -398,18 +398,18 @@
    "inverse_failed": 0
   },
   "vandg": {
-   "max_deg": 4.227729277772596e-13,
+   "max_deg": 4.866698759542513e-07,
    "at": [
-    -30,
+    -180,
     -30
    ],
    "inverse_failed": 0
   },
   "bonne": {
-   "max_deg": 6.355287432313019e-14,
+   "max_deg": 5.826850014486723e-14,
    "at": [
-    -30,
-    -60
+    -120,
+    0
    ],
    "inverse_failed": 0
   },
@@ -508,7 +508,7 @@
   {
    "projection": "merc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 171,
    "fwd_max_m": 4.656612873077393e-10,
@@ -655,10 +655,10 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 171,
-   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_max_m": 4.656612873077393e-10,
    "fwd_worst_at": [
     -180,
-    -40
+    -20
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -673,10 +673,10 @@
    "engine_version": "git main",
    "supported": true,
    "points": 171,
-   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_max_m": 4.656612873077393e-10,
    "fwd_worst_at": [
     -180,
-    -40
+    -20
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -688,18 +688,21 @@
   {
    "projection": "webmerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 171,
-   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_max_m": 4.656612873077393e-10,
    "fwd_worst_at": [
     -180,
-    -40
+    -20
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.0,
-   "inv_worst_at": null,
+   "inv_max_deg": 7.105427357601002e-15,
+   "inv_worst_at": [
+    -180,
+    -40
+   ],
    "inv_missing": 0,
    "verdict": "exact"
   },
@@ -724,10 +727,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.046992952561771e-14,
+   "inv_max_deg": 2.8847036649031796e-14,
    "inv_worst_at": [
     -180,
-    40
+    80
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -738,8 +741,11 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 171,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -180,
+    -40
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 0.0,
@@ -790,10 +796,10 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_max_m": 9.604264050722122e-10,
    "fwd_worst_at": [
-    127,
-    -20
+    137,
+    -80
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -811,10 +817,10 @@
    "engine_version": "git main",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_max_m": 9.604264050722122e-10,
    "fwd_worst_at": [
-    127,
-    -20
+    137,
+    -80
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -829,7 +835,7 @@
   {
    "projection": "tmerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 119,
    "fwd_max_m": 1.4725502860585132e-09,
@@ -856,7 +862,7 @@
    "fwd_max_m": 4.656612873077393e-10,
    "fwd_worst_at": [
     117,
-    -30
+    -50
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -895,8 +901,11 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    117,
+    -50
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 3.552713678800501e-15,
@@ -976,10 +985,10 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_max_m": 9.604264050722122e-10,
    "fwd_worst_at": [
-    127,
-    -20
+    137,
+    -80
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -997,10 +1006,10 @@
    "engine_version": "git main",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 1.041250292910165e-09,
+   "fwd_max_m": 9.604264050722122e-10,
    "fwd_worst_at": [
-    127,
-    -20
+    137,
+    -80
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -1015,7 +1024,7 @@
   {
    "projection": "etmerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 119,
    "fwd_max_m": 1.4725502860585132e-09,
@@ -1055,8 +1064,11 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 119,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    117,
+    -50
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 3.552713678800501e-15,
@@ -1123,17 +1135,17 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 1.0477378964424133e-09,
+   "fwd_max_m": 1.3969838619232178e-09,
    "fwd_worst_at": [
-    142,
-    -25
+    152,
+    0
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.8046230657308168e-14,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    132,
-    -10
+    142,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1144,17 +1156,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 1.0477378964424133e-09,
+   "fwd_max_m": 1.3969838619232178e-09,
    "fwd_worst_at": [
-    142,
-    -25
+    152,
+    0
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.8046230657308168e-14,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    132,
-    -10
+    142,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1162,7 +1174,7 @@
   {
    "projection": "utm",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 1.9893058914033534e-09,
@@ -1172,10 +1184,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.8046230657308168e-14,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    132,
-    -10
+    142,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1188,15 +1200,15 @@
    "points": 91,
    "fwd_max_m": 3.725290298461914e-09,
    "fwd_worst_at": [
-    132,
-    -5
+    162,
+    -10
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 5.6008016260791436e-14,
    "inv_worst_at": [
-    142,
-    -30
+    162,
+    -10
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1228,8 +1240,11 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_worst_at": [
+    132,
+    -10
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 7.105427357601002e-15,
@@ -1253,6 +1268,27 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
+   "inv_max_deg": 3.04699295256177e-14,
+   "inv_worst_at": [
+    142,
+    -40
+   ],
+   "inv_missing": 0,
+   "verdict": "exact"
+  },
+  {
+   "projection": "utm",
+   "engine": "proj4js",
+   "engine_version": "2.22.0",
+   "supported": true,
+   "points": 91,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    132,
+    -5
+   ],
+   "fwd_missing": 0,
+   "fwd_extra": 0,
    "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
     132,
@@ -1263,8 +1299,8 @@
   },
   {
    "projection": "utm",
-   "engine": "proj4js",
-   "engine_version": "2.22.0",
+   "engine": "math.gl",
+   "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 91,
    "fwd_max_m": 3.958120942115784e-09,
@@ -1283,42 +1319,21 @@
    "verdict": "exact"
   },
   {
-   "projection": "utm",
-   "engine": "math.gl",
-   "engine_version": "5.0.0-alpha.18",
-   "supported": true,
-   "points": 91,
-   "fwd_max_m": 4.423782229423523e-09,
-   "fwd_worst_at": [
-    132,
-    -10
-   ],
-   "fwd_missing": 0,
-   "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
-   "inv_worst_at": [
-    132,
-    0
-   ],
-   "inv_missing": 0,
-   "verdict": "exact"
-  },
-  {
    "projection": "lcc",
    "engine": "proj4rs",
    "engine_version": "0.2.1",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 3.166839133187999e-09,
+   "fwd_max_m": 3.3336274938835654e-09,
    "fwd_worst_at": [
-    -70,
+    -130,
     20
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 1.1304734925943194e-11,
    "inv_worst_at": [
-    -140,
+    -130,
     50
    ],
    "inv_missing": 0,
@@ -1330,16 +1345,16 @@
    "engine_version": "git main",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 3.166839133187999e-09,
+   "fwd_max_m": 3.3336274938835654e-09,
    "fwd_worst_at": [
-    -70,
+    -130,
     20
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 1.1304734925943194e-11,
    "inv_worst_at": [
-    -140,
+    -130,
     50
    ],
    "inv_missing": 0,
@@ -1348,12 +1363,12 @@
   {
    "projection": "lcc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 3.166839133187999e-09,
+   "fwd_max_m": 3.3336274938835654e-09,
    "fwd_worst_at": [
-    -70,
+    -130,
     20
    ],
    "fwd_missing": 0,
@@ -1380,9 +1395,9 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 4.179618105063271e-09,
+   "fwd_max_m": 3.7614941646818794e-09,
    "fwd_worst_at": [
-    -140,
+    -130,
     20
    ],
    "fwd_missing": 0,
@@ -1401,13 +1416,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -90,
+    10
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    -130,
+    -140,
     60
    ],
    "inv_missing": 0,
@@ -1419,14 +1437,14 @@
    "engine_version": "0.15.0",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 9.056483553152868e-09,
+   "fwd_max_m": 8.394828241933112e-09,
    "fwd_worst_at": [
     -140,
     10
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.545262049114822e-14,
+   "inv_max_deg": 8.062810617847573e-14,
    "inv_worst_at": [
     -140,
     20
@@ -1440,9 +1458,9 @@
    "engine_version": "2.22.0",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 3.3579312967732447e-09,
+   "fwd_max_m": 3.123750878730495e-09,
    "fwd_worst_at": [
-    -140,
+    -60,
     10
    ],
    "fwd_missing": 0,
@@ -1461,9 +1479,9 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 3.3579312967732447e-09,
+   "fwd_max_m": 3.123750878730495e-09,
    "fwd_worst_at": [
-    -140,
+    -60,
     10
    ],
    "fwd_missing": 0,
@@ -1482,17 +1500,17 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 2.9865479558889717e-09,
+   "fwd_max_m": 3.37607569472171e-09,
    "fwd_worst_at": [
     -50,
     10
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 5.766860640491654e-14,
+   "inv_max_deg": 6.394884621840902e-14,
    "inv_worst_at": [
-    -50,
-    70
+    -100,
+    50
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1510,9 +1528,9 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    -80,
+    -60,
     50
    ],
    "inv_missing": 0,
@@ -1521,7 +1539,7 @@
   {
    "projection": "aea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 70,
    "fwd_max_m": 2.9451005721170265e-09,
@@ -1531,10 +1549,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -140,
-    70
+    -110,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1553,9 +1571,9 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 9.365647008395432e-09,
+   "fwd_max_m": 9.79896192975294e-09,
    "fwd_worst_at": [
-    -100,
+    -80,
     30
    ],
    "fwd_missing": 0,
@@ -1618,10 +1636,10 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 70,
-   "fwd_max_m": 3.964962988609076e-09,
+   "fwd_max_m": 3.754281321679498e-09,
    "fwd_worst_at": [
-    -90,
-    10
+    -130,
+    40
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -1639,16 +1657,16 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 143,
-   "fwd_max_m": 6.24750175746099e-09,
+   "fwd_max_m": 6.556570455585012e-09,
    "fwd_worst_at": [
-    -40,
+    0,
     40
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 1.1368683772161603e-13,
    "inv_worst_at": [
-    -40,
+    -30,
     -60
    ],
    "inv_missing": 0,
@@ -1660,16 +1678,16 @@
    "engine_version": "git main",
    "supported": true,
    "points": 143,
-   "fwd_max_m": 3.026798367500305e-09,
+   "fwd_max_m": 4.6566128730773926e-09,
    "fwd_worst_at": [
-    -40,
-    -20
+    -10,
+    -60
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.0658141036401503e-13,
+   "inv_max_deg": 1.7763568394002505e-13,
    "inv_worst_at": [
-    10,
+    -20,
     -60
    ],
    "inv_missing": 0,
@@ -1678,17 +1696,17 @@
   {
    "projection": "leac",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 143,
-   "fwd_max_m": 3.026798367500305e-09,
+   "fwd_max_m": 4.6566128730773926e-09,
    "fwd_worst_at": [
-    -40,
-    -20
+    -10,
+    -60
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.0658141036401503e-13,
+   "inv_max_deg": 9.237055564881302e-14,
    "inv_worst_at": [
     10,
     -60
@@ -1789,7 +1807,7 @@
   {
    "projection": "stere-polar",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 222,
    "fwd_max_m": 1.3170890159654386e-09,
@@ -1843,7 +1861,7 @@
    "fwd_extra": 0,
    "inv_max_deg": 1.1254996934439987e-11,
    "inv_worst_at": [
-    -170,
+    -40,
     -50
    ],
    "inv_missing": 0,
@@ -1920,10 +1938,10 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 6.667254987767131e-09,
+   "fwd_max_m": 6.780130685568338e-09,
    "fwd_worst_at": [
     187,
-    -15
+    -5
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -1941,10 +1959,10 @@
    "engine_version": "git main",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 6.667254987767131e-09,
+   "fwd_max_m": 6.780130685568338e-09,
    "fwd_worst_at": [
     187,
-    -15
+    -5
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -1959,13 +1977,13 @@
   {
    "projection": "stere-oblique",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 6.667254987767131e-09,
+   "fwd_max_m": 6.780130685568338e-09,
    "fwd_worst_at": [
     187,
-    -15
+    -5
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -1991,7 +2009,7 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 9123.865461695925,
+   "fwd_max_m": 9123.86546169566,
    "fwd_worst_at": [
     187,
     -5
@@ -2012,16 +2030,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 1.877140660839749e-09,
+   "fwd_max_m": 2.83250703024595e-09,
    "fwd_worst_at": [
-    127,
-    -75
+    187,
+    -15
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.326254077267991e-14,
+   "inv_max_deg": 5.684341886080802e-14,
    "inv_worst_at": [
-    177,
+    117,
     -75
    ],
    "inv_missing": 0,
@@ -2041,10 +2059,10 @@
    "engine_version": "2.22.0",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 6.780130685568338e-09,
+   "fwd_max_m": 6.24750175746099e-09,
    "fwd_worst_at": [
     187,
-    -15
+    -5
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -2062,10 +2080,10 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 72,
-   "fwd_max_m": 6.780130685568338e-09,
+   "fwd_max_m": 6.24750175746099e-09,
    "fwd_worst_at": [
     187,
-    -15
+    -5
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -2122,7 +2140,7 @@
   {
    "projection": "ups",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 185,
    "fwd_max_m": 1.041250292910165e-09,
@@ -2217,14 +2235,17 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 42,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 6.99097997827008e-10,
+   "fwd_worst_at": [
+    0,
+    65
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -10,
-    45
+    0,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2235,14 +2256,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 42,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 6.99097997827008e-10,
+   "fwd_worst_at": [
+    0,
+    65
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -10,
-    45
+    0,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2250,20 +2274,20 @@
   {
    "projection": "sterea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 42,
-   "fwd_max_m": 3.4924596548080444e-10,
+   "fwd_max_m": 6.99097997827008e-10,
    "fwd_worst_at": [
-    -10,
-    50
+    0,
+    65
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -10,
-    65
+    0,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2282,14 +2306,14 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 42,
-   "fwd_max_m": 4191.894246546212,
+   "fwd_max_m": 4191.894246546413,
    "fwd_worst_at": [
     -10,
     65
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.03682712238757348,
+   "inv_max_deg": 0.03682712238755283,
    "inv_worst_at": [
     -10,
     65
@@ -2332,7 +2356,7 @@
    "engine_version": "2.22.0",
    "supported": true,
    "points": 42,
-   "fwd_max_m": 3.839941346661803e-09,
+   "fwd_max_m": 3.727108843992958e-09,
    "fwd_worst_at": [
     -10,
     45
@@ -2341,8 +2365,8 @@
    "fwd_extra": 0,
    "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -10,
-    65
+    0,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2353,7 +2377,7 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 42,
-   "fwd_max_m": 3.839941346661803e-09,
+   "fwd_max_m": 3.727108843992958e-09,
    "fwd_worst_at": [
     -10,
     45
@@ -2362,8 +2386,8 @@
    "fwd_extra": 0,
    "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -10,
-    65
+    0,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2374,14 +2398,17 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 48,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.3969838619232178e-09,
+   "fwd_worst_at": [
+    10,
+    45
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 3.552713678800501e-14,
    "inv_worst_at": [
-    -10,
-    40
+    5,
+    50
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2392,14 +2419,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 48,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.3969838619232178e-09,
+   "fwd_worst_at": [
+    10,
+    45
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 3.552713678800501e-14,
    "inv_worst_at": [
-    -10,
-    40
+    5,
+    50
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2407,7 +2437,7 @@
   {
    "projection": "somerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 48,
    "fwd_max_m": 4.448223201218713e-09,
@@ -2417,10 +2447,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.1316282072803006e-14,
+   "inv_max_deg": 4.263256414560601e-14,
    "inv_worst_at": [
-    -10,
-    35
+    5,
+    50
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2460,14 +2490,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 48,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.3969838619232178e-09,
+   "fwd_worst_at": [
+    10,
+    45
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 3.552713678800501e-14,
    "inv_worst_at": [
-    -10,
-    40
+    5,
+    50
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2487,7 +2520,7 @@
    "fwd_extra": 0,
    "inv_max_deg": 0.05166748786850661,
    "inv_worst_at": [
-    0,
+    -5,
     55
    ],
    "inv_missing": 0,
@@ -2562,14 +2595,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 135,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.599853366654507e-10,
+   "fwd_worst_at": [
+    -50,
+    50
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.552713678800501e-15,
+   "inv_max_deg": 4.263256414560601e-14,
    "inv_worst_at": [
-    -60,
-    20
+    -50,
+    80
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2577,11 +2613,14 @@
   {
    "projection": "laea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 135,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.599853366654507e-10,
+   "fwd_worst_at": [
+    -50,
+    50
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 4.291728651852862e-14,
@@ -2613,7 +2652,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.14844593359235958,
+   "inv_max_deg": 0.1484459335923578,
    "inv_worst_at": [
     10,
     10
@@ -2634,9 +2673,9 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.521740959060717e-14,
+   "inv_max_deg": 7.122547121570164e-14,
    "inv_worst_at": [
-    -50,
+    0,
     80
    ],
    "inv_missing": 0,
@@ -2655,10 +2694,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 8.526512829121202e-14,
+   "inv_max_deg": 7.460698725481052e-14,
    "inv_worst_at": [
-    -30,
-    80
+    10,
+    10
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2712,9 +2751,9 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.183381925784488e-08,
+   "inv_max_deg": 1.1833826363272237e-08,
    "inv_worst_at": [
-    -170,
+    -150,
     -30
    ],
    "inv_missing": 0,
@@ -2730,10 +2769,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.552713678800501e-15,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    -180,
-    -30
+    -120,
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2741,7 +2780,7 @@
   {
    "projection": "laea-polar",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 259,
    "fwd_max_m": 0.0,
@@ -2792,7 +2831,7 @@
    "fwd_extra": 0,
    "inv_max_deg": 0.07960988265523383,
    "inv_worst_at": [
-    -110,
+    -100,
     -50
    ],
    "inv_missing": 0,
@@ -2870,7 +2909,7 @@
    "fwd_extra": 0,
    "inv_max_deg": 1.1906152508345258e-08,
    "inv_worst_at": [
-    -130,
+    -150,
     -30
    ],
    "inv_missing": 0,
@@ -2923,7 +2962,7 @@
   {
    "projection": "moll",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 112.53365218290911,
@@ -3078,7 +3117,7 @@
   {
    "projection": "wag4",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 1.862645149230957e-09,
@@ -3200,7 +3239,7 @@
   {
    "projection": "wag5",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 1.862645149230957e-09,
@@ -3296,10 +3335,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.8071791024192912e-14,
+   "inv_max_deg": 2.3600443522910333e-11,
    "inv_worst_at": [
-    170,
-    9
+    155,
+    -81
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3317,10 +3356,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.8071791024192912e-14,
+   "inv_max_deg": 2.3600443522910333e-11,
    "inv_worst_at": [
-    170,
-    9
+    155,
+    -81
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3328,20 +3367,20 @@
   {
    "projection": "geos",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 156,
    "fwd_max_m": 2.3283064365386963e-09,
    "fwd_worst_at": [
-    185,
+    200,
     -36
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.8071791024192912e-14,
+   "inv_max_deg": 2.3600443522910333e-11,
    "inv_worst_at": [
-    170,
-    9
+    155,
+    -81
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3367,7 +3406,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 49,
-   "inv_max_deg": 31.58083979463349,
+   "inv_max_deg": 31.580839794633494,
    "inv_worst_at": [
     140,
     -6
@@ -3388,7 +3427,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.560550997761473e-10,
+   "inv_max_deg": 1.79655543182257e-10,
    "inv_worst_at": [
     155,
     -81
@@ -3417,10 +3456,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.2831404307939826e-13,
+   "inv_max_deg": 2.3600443522910333e-11,
    "inv_worst_at": [
     155,
-    54
+    -81
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3438,10 +3477,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.215551793438731e-13,
+   "inv_max_deg": 2.3600443522910333e-11,
    "inv_worst_at": [
     155,
-    54
+    -81
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3493,7 +3532,7 @@
   {
    "projection": "eqc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 29003.94523879182,
@@ -3625,14 +3664,17 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 5.015325552909173e-09,
+   "fwd_worst_at": [
+    -60,
+    -30
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
     -60,
-    -60
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3647,10 +3689,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 9.06878629311443e-15,
    "inv_worst_at": [
-    -60,
-    -60
+    30,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -3658,7 +3700,7 @@
   {
    "projection": "aeqd",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 4.190951585769653e-09,
@@ -3697,7 +3739,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.4389554317514056,
+   "inv_max_deg": 0.4389554317513985,
    "inv_worst_at": [
     150,
     60
@@ -3718,7 +3760,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.931166586449899e-10,
+   "inv_max_deg": 4.931166587009004e-10,
    "inv_worst_at": [
     30,
     0
@@ -3815,7 +3857,7 @@
   {
    "projection": "aeqd-polar",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 175,
    "fwd_max_m": 0.0,
@@ -3851,9 +3893,9 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.15081314118725603,
+   "inv_max_deg": 0.15081314118724576,
    "inv_worst_at": [
-    -105,
+    -180,
     0
    ],
    "inv_missing": 0,
@@ -3930,13 +3972,16 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.7596147974466938e-08,
+   "fwd_worst_at": [
+    7,
+    56
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    5,
+    11,
     44
    ],
    "inv_missing": 0,
@@ -3948,13 +3993,16 @@
    "engine_version": "git main",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.7596147974466938e-08,
+   "fwd_worst_at": [
+    7,
+    56
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    5,
+    11,
     44
    ],
    "inv_missing": 0,
@@ -3963,17 +4011,17 @@
   {
    "projection": "krovak",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 1.673872594986149e-08,
+   "fwd_max_m": 1.792427395722226e-08,
    "fwd_worst_at": [
-    13,
-    54
+    7,
+    56
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 5.684341886080802e-14,
    "inv_worst_at": [
     11,
     44
@@ -4016,13 +4064,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.7596147974466938e-08,
+   "fwd_worst_at": [
+    7,
+    56
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    5,
+    11,
     44
    ],
    "inv_missing": 0,
@@ -4051,7 +4102,7 @@
    "fwd_extra": 0,
    "inv_max_deg": 4.263256414560601e-12,
    "inv_worst_at": [
-    21,
+    23,
     44
    ],
    "inv_missing": 0,
@@ -4063,16 +4114,16 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 1.9393548763318732e-08,
+   "fwd_max_m": 1.8401723927978466e-08,
    "fwd_worst_at": [
-    7,
-    56
+    9,
+    54
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 4.263256414560601e-12,
    "inv_worst_at": [
-    21,
+    23,
     44
    ],
    "inv_missing": 0,
@@ -4084,8 +4135,11 @@
    "engine_version": "0.2.1",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 7.105427357601002e-15,
@@ -4102,8 +4156,11 @@
    "engine_version": "git main",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 7.105427357601002e-15,
@@ -4117,13 +4174,13 @@
   {
    "projection": "mill",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_max_m": 3.725290298461914e-09,
    "fwd_worst_at": [
     -180,
-    30
+    -90
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -4170,8 +4227,11 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 7.105427357601002e-15,
@@ -4268,7 +4328,7 @@
   {
    "projection": "cea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -4388,14 +4448,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 108,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -50,
+    30
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.7217499488499926e-14,
+   "inv_max_deg": 4.0537634251127537e-13,
    "inv_worst_at": [
-    -140,
-    70
+    -40,
+    80
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4403,19 +4466,19 @@
   {
    "projection": "poly",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 108,
    "fwd_max_m": 9.313225746154785e-10,
    "fwd_worst_at": [
-    -60,
-    40
+    -50,
+    30
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.9950214632611824e-13,
+   "inv_max_deg": 4.012999563200109e-13,
    "inv_worst_at": [
-    -100,
+    -40,
     80
    ],
    "inv_missing": 0,
@@ -4442,7 +4505,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.22541777573188448,
+   "inv_max_deg": 0.22541777573186317,
    "inv_worst_at": [
     -100,
     50
@@ -4456,17 +4519,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 108,
-   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_max_m": 9.313225746154785e-10,
    "fwd_worst_at": [
-    -40,
-    40
+    -50,
+    30
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.0135801291803247e-13,
+   "inv_max_deg": 4.0537634251127537e-13,
    "inv_worst_at": [
-    -80,
-    70
+    -40,
+    80
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4507,7 +4570,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 8.565094937138611e-09,
+   "inv_max_deg": 8.565080756816944e-09,
    "inv_worst_at": [
     -100,
     70
@@ -4530,14 +4593,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -60,
+    -60
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 5.677343172524128e-13,
    "inv_worst_at": [
-    -30,
-    -60
+    90,
+    30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4545,17 +4611,17 @@
   {
    "projection": "ortho",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 4.656612873077393e-10,
+   "fwd_max_m": 9.313225746154785e-10,
    "fwd_worst_at": [
-    -150,
-    0
+    -60,
+    -60
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.4493120283101467e-13,
+   "inv_max_deg": 8.126633547026388e-13,
    "inv_worst_at": [
     90,
     30
@@ -4584,7 +4650,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.720219513259893,
+   "inv_max_deg": 3.7202195132604547,
    "inv_worst_at": [
     90,
     30
@@ -4598,14 +4664,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -60,
+    -60
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.927013178811805e-13,
+   "inv_max_deg": 3.3304677473489466e-13,
    "inv_worst_at": [
-    90,
-    30
+    30,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -4631,7 +4700,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.720219513259893,
+   "inv_max_deg": 3.7202195132604547,
    "inv_worst_at": [
     90,
     30
@@ -4652,7 +4721,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.720219513259893,
+   "inv_max_deg": 3.7202195132604547,
    "inv_worst_at": [
     90,
     30
@@ -4689,7 +4758,7 @@
   {
    "projection": "gnom",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 259,
    "fwd_max_m": 0.0,
@@ -4725,7 +4794,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.046992952561771e-14,
+   "inv_max_deg": 2.599963683641342e-14,
    "inv_worst_at": [
     -150,
     -40
@@ -4824,7 +4893,7 @@
   {
    "projection": "sinu",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -4941,14 +5010,14 @@
    "engine_version": "git main",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 4.679838019013819e-09,
+   "fwd_max_m": 4.540570661950948e-09,
    "fwd_worst_at": [
     99,
     -2
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.564726209186574e-11,
+   "inv_max_deg": 2.564681800265589e-11,
    "inv_worst_at": [
     95,
     -2
@@ -4959,17 +5028,17 @@
   {
    "projection": "omerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 4.679838019013819e-09,
+   "fwd_max_m": 4.540570661950948e-09,
    "fwd_worst_at": [
     99,
     -2
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.564726209186574e-11,
+   "inv_max_deg": 2.564681800265589e-11,
    "inv_worst_at": [
     95,
     -2
@@ -4991,14 +5060,14 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 2111050.4965811297,
+   "fwd_max_m": 2111050.4965811293,
    "fwd_worst_at": [
     111,
     -2
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 18.94153099559778,
+   "inv_max_deg": 18.941530995597773,
    "inv_worst_at": [
     111,
     -2
@@ -5012,14 +5081,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.3100765280601078e-09,
+   "fwd_worst_at": [
+    103,
+    8
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.7763568394002505e-15,
+   "inv_max_deg": 2.1760371282653068e-14,
    "inv_worst_at": [
-    95,
-    10
+    103,
+    4
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5030,14 +5102,14 @@
    "engine_version": "0.15.0",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 448332.39323217625,
+   "fwd_max_m": 448332.3932321758,
    "fwd_worst_at": [
     111,
     10
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.001076337654263,
+   "inv_max_deg": 4.0010763376542755,
    "inv_worst_at": [
     103,
     2
@@ -5066,14 +5138,14 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 4.679838019013819e-09,
+   "fwd_max_m": 4.540570661950948e-09,
    "fwd_worst_at": [
     99,
     -2
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.564726209186574e-11,
+   "inv_max_deg": 2.564681800265589e-11,
    "inv_worst_at": [
     95,
     -2
@@ -5095,14 +5167,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 2.8157109912596232e-09,
+   "fwd_worst_at": [
+    90,
+    -60
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202007e-14,
+   "inv_max_deg": 1.1596285254173066e-13,
    "inv_worst_at": [
-    -150,
-    -60
+    150,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5110,17 +5185,20 @@
   {
    "projection": "tpers",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 2.8157109912596232e-09,
+   "fwd_worst_at": [
+    90,
+    -60
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202007e-14,
+   "inv_max_deg": 7.443507469626043e-13,
    "inv_worst_at": [
-    -150,
-    -60
+    90,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5147,14 +5225,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 2.8157109912596232e-09,
+   "fwd_worst_at": [
+    90,
+    -60
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202007e-14,
+   "inv_max_deg": 1.1596285254173066e-13,
    "inv_worst_at": [
-    -150,
-    -60
+    150,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5173,17 +5254,17 @@
    "engine_version": "2.22.0",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 5.082765476712078e-10,
+   "fwd_max_m": 2.8157109912596232e-09,
    "fwd_worst_at": [
-    -150,
+    90,
     -60
    ],
    "fwd_missing": 0,
    "fwd_extra": 79,
-   "inv_max_deg": 2.3675578236103274e-13,
+   "inv_max_deg": 6.82545323197779e-14,
    "inv_worst_at": [
-    90,
-    -30
+    150,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5194,17 +5275,17 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 5.082765476712078e-10,
+   "fwd_max_m": 2.8157109912596232e-09,
    "fwd_worst_at": [
-    -150,
+    90,
     -60
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.3675578236103274e-13,
+   "inv_max_deg": 6.82545323197779e-14,
    "inv_worst_at": [
-    90,
-    -30
+    150,
+    0
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5223,13 +5304,16 @@
    "engine_version": "git main",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.2927225399135965e-10,
+   "fwd_worst_at": [
+    -90,
+    30
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.1316282072803006e-14,
    "inv_worst_at": [
-    -120,
+    -150,
     60
    ],
    "inv_missing": 0,
@@ -5238,14 +5322,17 @@
   {
    "projection": "nsper",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.2927225399135965e-10,
+   "fwd_worst_at": [
+    -90,
+    30
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202016e-14,
+   "inv_max_deg": 2.5618982671915017e-14,
    "inv_worst_at": [
     -150,
     60
@@ -5275,13 +5362,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.2927225399135965e-10,
+   "fwd_worst_at": [
+    -90,
+    30
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.1316282072803006e-14,
    "inv_worst_at": [
-    -120,
+    -150,
     60
    ],
    "inv_missing": 0,
@@ -5325,8 +5415,11 @@
    "engine_version": "git main",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.1641532182693481e-10,
+   "fwd_worst_at": [
+    137,
+    -35
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 2.2902397730870118e-14,
@@ -5340,7 +5433,7 @@
   {
    "projection": "cass",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 63,
    "fwd_max_m": 2.3283064365386963e-10,
@@ -5479,14 +5572,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 108,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -80,
+    0
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 1.7763568394002505e-15,
    "inv_worst_at": [
     -100,
-    60
+    10
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5494,17 +5590,20 @@
   {
    "projection": "eqdc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 108,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -80,
+    0
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 9.720797132947292e-15,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    -120,
-    70
+    -50,
+    10
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5531,13 +5630,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 108,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.313225746154785e-10,
+   "fwd_worst_at": [
+    -80,
+    0
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 7.105427357601002e-15,
    "inv_worst_at": [
-    -150,
+    -140,
     40
    ],
    "inv_missing": 0,
@@ -5614,7 +5716,7 @@
   {
    "projection": "robin",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -5739,31 +5841,33 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 5.463796526328224e-08,
    "inv_worst_at": [
     -180,
     -90
    ],
    "inv_missing": 0,
-   "verdict": "exact"
+   "verdict": "close",
+   "known": "inverse 6.6e-6 deg at the poles only; elsewhere within 1.5e-14 deg."
   },
   {
    "projection": "eqearth",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 5.463796526328224e-08,
    "inv_worst_at": [
     -180,
     -90
    ],
    "inv_missing": 0,
-   "verdict": "exact"
+   "verdict": "close",
+   "known": "inverse 6.6e-6 deg at the poles only; elsewhere within 1.5e-14 deg."
   },
   {
    "projection": "eqearth",
@@ -5786,7 +5890,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.779643347774254e-08,
+   "inv_max_deg": 1.0243438453017006e-07,
    "inv_worst_at": [
     -180,
     90
@@ -5804,7 +5908,7 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 6.583761162914925e-06,
+   "inv_max_deg": 6.638399113967353e-06,
    "inv_worst_at": [
     -180,
     -90
@@ -5833,7 +5937,7 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 6.583761162914925e-06,
+   "inv_max_deg": 6.638399113967353e-06,
    "inv_worst_at": [
     -180,
     -90
@@ -5889,14 +5993,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.3969838619232178e-09,
+   "fwd_worst_at": [
+    177,
+    -40
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 1.4210854715202004e-14,
    "inv_worst_at": [
-    177,
-    -60
+    117,
+    -50
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -5904,7 +6011,7 @@
   {
    "projection": "tmerc-sphere",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 63,
    "fwd_max_m": 1.3969838619232178e-09,
@@ -6022,10 +6129,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 5.123796534383004e-14,
+   "inv_max_deg": 5.49065263322216e-14,
    "inv_worst_at": [
     -3,
-    -60
+    15
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6054,7 +6161,7 @@
   {
    "projection": "aeqd-far",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 325,
    "fwd_max_m": 6.71586259354649e-08,
@@ -6064,10 +6171,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 5.684341886080802e-14,
+   "inv_max_deg": 8.070214144311583e-14,
    "inv_worst_at": [
-    267,
-    0
+    282,
+    45
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6191,7 +6298,7 @@
   {
    "projection": "wintri",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6210,14 +6317,14 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 3.754281321679498e-09,
+   "fwd_max_m": 3.725290298461914e-09,
    "fwd_worst_at": [
     -150,
-    -30
+    0
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.850651496914817e-12,
+   "inv_max_deg": 2.845493009280644e-12,
    "inv_worst_at": [
     -120,
     -30
@@ -6234,7 +6341,7 @@
    "fwd_max_m": 3636543.3980102856,
    "fwd_worst_at": [
     -180,
-    -90
+    -60
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
@@ -6289,7 +6396,7 @@
   {
    "projection": "aitoff",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6387,7 +6494,7 @@
   {
    "projection": "hammer",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6413,10 +6520,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 2.8421709430404014e-14,
    "inv_worst_at": [
     -150,
-    0
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6434,10 +6541,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 2.8421709430404014e-14,
    "inv_worst_at": [
     -150,
-    0
+    -60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6485,7 +6592,7 @@
   {
    "projection": "natearth",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6504,14 +6611,14 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 4.16500117164066e-09,
+   "fwd_max_m": 5.268356063861754e-09,
    "fwd_worst_at": [
     -150,
     -90
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.1368683772161603e-13,
+   "inv_max_deg": 8.526512829121202e-14,
    "inv_worst_at": [
     -180,
     -90
@@ -6525,14 +6632,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_max_m": 4.6566128730773926e-09,
    "fwd_worst_at": [
     -150,
-    0
+    -90
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.1368683772161603e-13,
+   "inv_max_deg": 8.526512829121202e-14,
    "inv_worst_at": [
     -180,
     -90
@@ -6583,7 +6690,7 @@
   {
    "projection": "natearth2",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6602,17 +6709,17 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 3.725290298461914e-09,
+   "fwd_max_m": 3.079003701883655e-08,
    "fwd_worst_at": [
-    -150,
-    -30
+    -180,
+    -90
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 8.526512829121202e-13,
    "inv_worst_at": [
-    -150,
-    0
+    -180,
+    -90
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6623,14 +6730,17 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.079003701883655e-08,
+   "fwd_worst_at": [
+    -180,
+    -90
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.842170943040401e-14,
+   "inv_max_deg": 8.526512829121202e-13,
    "inv_worst_at": [
-    -150,
-    0
+    -180,
+    -90
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6678,7 +6788,7 @@
   {
    "projection": "eck4",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6697,14 +6807,14 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 1.7077774573948466e-08,
+   "fwd_max_m": 1.7497962553106188e-08,
    "fwd_worst_at": [
     -180,
     -30
    ],
    "fwd_missing": 26,
    "fwd_extra": 0,
-   "inv_max_deg": 4.9737991503207076e-14,
+   "inv_max_deg": 4.935587579328819e-14,
    "inv_worst_at": [
     -120,
     -30
@@ -6718,14 +6828,14 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 1.666000468656264e-08,
+   "fwd_max_m": 1.7077774573948466e-08,
    "fwd_worst_at": [
     -180,
     -30
    ],
    "fwd_missing": 26,
    "fwd_extra": 0,
-   "inv_max_deg": 4.9737991503207076e-14,
+   "inv_max_deg": 4.935587579328819e-14,
    "inv_worst_at": [
     -120,
     -30
@@ -6776,7 +6886,7 @@
   {
    "projection": "eck6",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6894,7 +7004,7 @@
   {
    "projection": "gall",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6986,7 +7096,7 @@
   {
    "projection": "vandg",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7005,17 +7115,17 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 4.889443516731262e-08,
+   "fwd_max_m": 4.842877388000488e-08,
    "fwd_worst_at": [
     -30,
     -30
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.2563329382777443e-12,
+   "inv_max_deg": 4.866699221395321e-07,
    "inv_worst_at": [
-    150,
-    30
+    -180,
+    -30
    ],
    "inv_missing": 6,
    "verdict": "gaps"
@@ -7026,13 +7136,16 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 3.3579312967732447e-09,
+   "fwd_worst_at": [
+    -90,
+    -60
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 9.237055564881302e-14,
    "inv_worst_at": [
-    -180,
+    0,
     -60
    ],
    "inv_missing": 0,
@@ -7067,7 +7180,7 @@
    "engine_version": "5.0.0-alpha.18",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 4.986056138381578e-08,
+   "fwd_max_m": 4.939522820031687e-08,
    "fwd_worst_at": [
     -30,
     -30
@@ -7101,7 +7214,7 @@
   {
    "projection": "bonne",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7120,7 +7233,7 @@
    "engine_version": "0.3.3",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 73734.97094673189,
+   "fwd_max_m": 73734.970946732,
    "fwd_worst_at": [
     -180,
     -30
@@ -7141,8 +7254,11 @@
    "engine_version": "0.1.0 + fallback",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_worst_at": [
+    -180,
+    -60
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
    "inv_max_deg": 1.1021821192326178e-14,
@@ -7222,7 +7338,7 @@
   {
    "projection": "qsc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7253,10 +7369,10 @@
    "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 6.039613253960852e-14,
+   "inv_max_deg": 3.499017183300205e-14,
    "inv_worst_at": [
-    15,
-    -15
+    45,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -7330,7 +7446,7 @@
   {
    "projection": "healpix",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7412,7 +7528,7 @@
   {
    "projection": "igh",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7494,7 +7610,7 @@
   {
    "projection": "times",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7603,7 +7719,7 @@
   {
    "projection": "eqc-sphere",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -7742,7 +7858,7 @@
   {
    "projection": "merc-sphere",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 7cdd975 2026-10-26",
+   "engine_version": "git 838dc6f 2026-11-12",
    "supported": true,
    "points": 171,
    "fwd_max_m": 0.0,

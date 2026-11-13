@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +ellps=WGS84 +no_defs`. Window lon [-180, 180], lat [-90, 90], every 30 deg: 91 points, 11 projected by PROJ 9.10.0.
 
-PROJ round trip (its inverse of its forward): worst 7.1e-14 deg at [-30, 60].
+PROJ round trip (its inverse of its forward): worst 8.6e-14 deg at [-30, 60].
 
 ![nsper by engine](../maps/nsper.svg)
 
@@ -19,11 +19,11 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | -- | Projection not found | | | | | | |
-| proj4rs-main | git main | exact | 0 |  | 7.1e-15 deg | [-120, 60] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | 0 |  | 1.4e-14 deg | [-150, 60] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [-90, 30] | 2.1e-14 deg | [-150, 60] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [-90, 30] | 2.6e-14 deg | [-150, 60] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: unsupported PROJ projection: nsper | | | | | | |
 | wbprojection | 0.3.3 | -- | unsupported projection: PROJ +proj=nsper is not supported by wbprojection | | | | | | |
-| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 7.1e-15 deg | [-120, 60] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [-90, 30] | 2.1e-14 deg | [-150, 60] |  |  |  |
 | geodesy | 0.15.0 | -- | Operator 'nsper' not found: nsper ellps=WGS84 lat_0=40 lon_0=-100 h=3000000 | | | | | | |
 | proj4js | 2.22.0 | -- | Could not get projection name from: +proj=nsper +ellps=WGS84 +lat_0=40 +lon_0=-100 +h=3000000 | | | | | | |
 | math.gl | 5.0.0-alpha.18 | -- | Projection plugin is not registered: nsper | | | | | | |

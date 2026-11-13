@@ -10,7 +10,7 @@
 
 Source lon/lat for every engine: `+proj=longlat +ellps=WGS84 +no_defs`. Window lon [132, 162], lat [-60, 0], every 5 deg: 91 points, 91 projected by PROJ 9.10.0.
 
-PROJ round trip (its inverse of its forward): worst 2.8e-14 deg at [132, -10].
+PROJ round trip (its inverse of its forward): worst 2.1e-14 deg at [147, -60].
 
 ![utm by engine](../maps/utm.svg)
 
@@ -18,12 +18,12 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
-| proj4rs | 0.2.1 | exact | <1 nm | [142, -25] | 2.8e-14 deg | [132, -10] |  |  |  |
-| proj4rs-main | git main | exact | <1 nm | [142, -25] | 2.8e-14 deg | [132, -10] |  |  |  |
-| proj4rs-wasm | git 7cdd975 2026-10-26 | exact | <1 nm | [162, -35] | 2.8e-14 deg | [132, -10] |  |  |  |
-| proj-core | 0.12.0 | exact | <1 nm | [132, -5] | 2.8e-14 deg | [142, -30] |  |  |  |
+| proj4rs | 0.2.1 | exact | <1 nm | [152, 0] | 1.4e-14 deg | [142, -60] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [152, 0] | 1.4e-14 deg | [142, -60] |  |  |  |
+| proj4rs-wasm | git 838dc6f 2026-11-12 | exact | <1 nm | [162, -35] | 1.4e-14 deg | [142, -60] |  |  |  |
+| proj-core | 0.12.0 | exact | <1 nm | [162, -10] | 5.6e-14 deg | [162, -10] |  |  |  |
 | wbprojection | 0.3.3 | OFF 6.937 m | 6.937 m | [162, 0] | 0.00029 deg | [162, -55] |  |  |  |
-| terrio-crs | 0.1.0 + fallback | exact | 0 |  | 7.1e-15 deg | [147, -60] |  |  |  |
-| geodesy | 0.15.0 | exact | <1 nm | [132, -5] | 2.8e-14 deg | [132, 0] |  |  |  |
-| proj4js | 2.22.0 | exact | <1 nm | [132, -10] | 2.8e-14 deg | [132, 0] |  |  |  |
+| terrio-crs | 0.1.0 + fallback | exact | <1 nm | [132, -10] | 7.1e-15 deg | [147, -60] |  |  |  |
+| geodesy | 0.15.0 | exact | <1 nm | [132, -5] | 3e-14 deg | [142, -40] |  |  |  |
+| proj4js | 2.22.0 | exact | <1 nm | [132, -5] | 2.8e-14 deg | [132, 0] |  |  |  |
 | math.gl | 5.0.0-alpha.18 | exact | <1 nm | [132, -10] | 2.8e-14 deg | [132, 0] |  |  |  |
