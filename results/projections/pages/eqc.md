@@ -19,8 +19,8 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | OFF 29 km (known) | 29 km | [-180, -60] | 0.24 deg | [-180, -60] |  |  |  |
-| proj4rs-main | git main | OFF 29 km (known) | 29 km | [-180, -60] | 0.24 deg | [-180, -60] |  |  |  |
-| proj4rs-wasm | git 45ff983 2026-11-14 | OFF 29 km (known) | 29 km | [-180, -60] | 0.24 deg | [-180, -60] |  |  |  |
+| proj4rs-main | git main | exact | 0 |  | 0 |  |  |  |  |
+| proj4rs-wasm | git d036e37 2026-11-16 | exact | 0 |  | 0 |  |  |  |  |
 | proj-core | 0.12.0 | OFF 29 km | 29 km | [-180, -60] | 0.24 deg | [-180, -60] |  |  |  |
 | wbprojection | 0.3.3 | OFF 29 km | 29 km | [-180, -60] | 0.24 deg | [-180, -60] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | 0 |  | 0 |  |  |  |  |
@@ -31,5 +31,3 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 Known differences, recorded in [projections.json](../../../suites/projections/projections.json):
 
 - proj4rs: PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a.
-- proj4rs-main: PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a.
-- proj4rs-wasm: PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a.

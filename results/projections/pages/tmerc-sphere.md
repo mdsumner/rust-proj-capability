@@ -21,8 +21,8 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | OFF 80 deg | 94.9 mm | [117, 0] | 80 deg | [157, -40] |  |  |  |
-| proj4rs-main | git main | exact | <1 nm | [127, -20] | 1.4e-14 deg | [117, -80] |  |  |  |
-| proj4rs-wasm | git 45ff983 2026-11-14 | exact | <1 nm | [127, -20] | 1.7e-14 deg | [167, -70] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [137, -10] | 1.7e-14 deg | [177, -80] |  |  |  |
+| proj4rs-wasm | git d036e37 2026-11-16 | exact | <1 nm | [127, -20] | 1.7e-14 deg | [177, -80] |  |  |  |
 | proj-core | 0.12.0 | -- | geographic: unsupported CRS semantics: PROJ geographic CRS definition uses unsupported PROJ parameter `+r`: custom ellipsoid parameters are not supported; use a supported +ellps value | | | | | | |
 | wbprojection | 0.3.3 | OFF 911.1 m | 911.1 m | [177, 0] | 0.052 deg | [177, -60] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | <1 nm | [137, -10] | 1.7e-14 deg | [177, -80] |  |  |  |

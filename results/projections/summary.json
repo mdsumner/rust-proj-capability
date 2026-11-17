@@ -1,7 +1,7 @@
 {
  "environment": {
   "schema_version": 1,
-  "generated": "2026-11-16T03:28:20+00:00",
+  "generated": "2026-11-17T03:26:11+00:00",
   "proj_version": "9.10.0",
   "proj_git_sha": "5e7a7e024969d9de9e03991a2a9585df833a1f43",
   "pyproj_version": "3.8.0",
@@ -508,7 +508,7 @@
   {
    "projection": "merc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 171,
    "fwd_max_m": 4.656612873077393e-10,
@@ -688,7 +688,7 @@
   {
    "projection": "webmerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 171,
    "fwd_max_m": 4.656612873077393e-10,
@@ -835,7 +835,7 @@
   {
    "projection": "tmerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 119,
    "fwd_max_m": 1.4725502860585132e-09,
@@ -1024,7 +1024,7 @@
   {
    "projection": "etmerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 119,
    "fwd_max_m": 1.4725502860585132e-09,
@@ -1174,7 +1174,7 @@
   {
    "projection": "utm",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 1.9893058914033534e-09,
@@ -1363,7 +1363,7 @@
   {
    "projection": "lcc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 70,
    "fwd_max_m": 3.3336274938835654e-09,
@@ -1539,7 +1539,7 @@
   {
    "projection": "aea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 70,
    "fwd_max_m": 2.9451005721170265e-09,
@@ -1696,7 +1696,7 @@
   {
    "projection": "leac",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 143,
    "fwd_max_m": 4.6566128730773926e-09,
@@ -1807,7 +1807,7 @@
   {
    "projection": "stere-polar",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 222,
    "fwd_max_m": 1.3170890159654386e-09,
@@ -1966,10 +1966,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 7.105427357601002e-15,
+   "inv_max_deg": 2.5757174171303632e-14,
    "inv_worst_at": [
-    117,
-    -55
+    127,
+    -5
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -1977,7 +1977,7 @@
   {
    "projection": "stere-oblique",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 72,
    "fwd_max_m": 6.780130685568338e-09,
@@ -1987,9 +1987,9 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 3.721426216927845e-14,
+   "inv_max_deg": 3.085563971805939e-14,
    "inv_worst_at": [
-    187,
+    177,
     -65
    ],
    "inv_missing": 0,
@@ -2140,7 +2140,7 @@
   {
    "projection": "ups",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 185,
    "fwd_max_m": 1.041250292910165e-09,
@@ -2274,7 +2274,7 @@
   {
    "projection": "sterea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 42,
    "fwd_max_m": 6.99097997827008e-10,
@@ -2437,7 +2437,7 @@
   {
    "projection": "somerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 48,
    "fwd_max_m": 4.448223201218713e-09,
@@ -2602,10 +2602,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.263256414560601e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
-    -50,
-    80
+    60,
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2613,7 +2613,7 @@
   {
    "projection": "laea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 135,
    "fwd_max_m": 9.599853366654507e-10,
@@ -2623,10 +2623,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 4.291728651852862e-14,
+   "inv_max_deg": 2.842170943040401e-14,
    "inv_worst_at": [
     60,
-    80
+    60
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2765,14 +2765,17 @@
    "engine_version": "git main",
    "supported": true,
    "points": 259,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.946529457016767e-10,
+   "fwd_worst_at": [
+    -160,
+    -80
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 1.7763568394002505e-14,
    "inv_worst_at": [
-    -120,
-    -60
+    -160,
+    -30
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -2780,14 +2783,17 @@
   {
    "projection": "laea-polar",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 259,
-   "fwd_max_m": 0.0,
-   "fwd_worst_at": null,
+   "fwd_max_m": 9.946529457016767e-10,
+   "fwd_worst_at": [
+    -160,
+    -80
+   ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 2.4613922385709617e-14,
+   "inv_max_deg": 2.6822400070865445e-14,
    "inv_worst_at": [
     -120,
     -30
@@ -2962,7 +2968,7 @@
   {
    "projection": "moll",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 112.53365218401251,
@@ -3117,7 +3123,7 @@
   {
    "projection": "wag4",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 1.862645149230957e-09,
@@ -3239,7 +3245,7 @@
   {
    "projection": "wag5",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 1.862645149230957e-09,
@@ -3367,7 +3373,7 @@
   {
    "projection": "geos",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 156,
    "fwd_max_m": 2.3283064365386963e-09,
@@ -3513,43 +3519,29 @@
    "engine_version": "git main",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 29003.94523879182,
-   "fwd_worst_at": [
-    -180,
-    -60
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.23772339239822726,
-   "inv_worst_at": [
-    -180,
-    -60
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
-   "verdict": "off",
-   "known": "PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a."
+   "verdict": "exact"
   },
   {
    "projection": "eqc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
-   "fwd_max_m": 29003.94523879182,
-   "fwd_worst_at": [
-    -180,
-    -60
-   ],
+   "fwd_max_m": 0.0,
+   "fwd_worst_at": null,
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 0.23772339239822726,
-   "inv_worst_at": [
-    -180,
-    -60
-   ],
+   "inv_max_deg": 0.0,
+   "inv_worst_at": null,
    "inv_missing": 0,
-   "verdict": "off",
-   "known": "PROJ (since 9.8) uses the ellipsoidal form (EPSG method 1028), proj4rs the spherical form with radius a."
+   "verdict": "exact"
   },
   {
    "projection": "eqc",
@@ -3700,7 +3692,7 @@
   {
    "projection": "aeqd",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 4.190951585769653e-09,
@@ -3857,7 +3849,7 @@
   {
    "projection": "aeqd-polar",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 175,
    "fwd_max_m": 0.0,
@@ -4011,7 +4003,7 @@
   {
    "projection": "krovak",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 1.792427395722226e-08,
@@ -4174,7 +4166,7 @@
   {
    "projection": "mill",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 3.725290298461914e-09,
@@ -4328,7 +4320,7 @@
   {
    "projection": "cea",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -4466,7 +4458,7 @@
   {
    "projection": "poly",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 108,
    "fwd_max_m": 9.313225746154785e-10,
@@ -4611,7 +4603,7 @@
   {
    "projection": "ortho",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 9.313225746154785e-10,
@@ -4758,7 +4750,7 @@
   {
    "projection": "gnom",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 259,
    "fwd_max_m": 0.0,
@@ -4893,7 +4885,7 @@
   {
    "projection": "sinu",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -5028,7 +5020,7 @@
   {
    "projection": "omerc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 63,
    "fwd_max_m": 4.540570661950948e-09,
@@ -5185,7 +5177,7 @@
   {
    "projection": "tpers",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 2.8157109912596232e-09,
@@ -5322,7 +5314,7 @@
   {
    "projection": "nsper",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 3.2927225399135965e-10,
@@ -5433,7 +5425,7 @@
   {
    "projection": "cass",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 63,
    "fwd_max_m": 2.3283064365386963e-10,
@@ -5590,7 +5582,7 @@
   {
    "projection": "eqdc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 108,
    "fwd_max_m": 9.313225746154785e-10,
@@ -5716,7 +5708,7 @@
   {
    "projection": "robin",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -5853,7 +5845,7 @@
   {
    "projection": "eqearth",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -5993,16 +5985,16 @@
    "engine_version": "git main",
    "supported": true,
    "points": 63,
-   "fwd_max_m": 1.862645149230957e-09,
+   "fwd_max_m": 1.9893058914033534e-09,
    "fwd_worst_at": [
-    127,
-    -20
+    137,
+    -10
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.4210854715202004e-14,
+   "inv_max_deg": 1.730260725074836e-14,
    "inv_worst_at": [
-    117,
+    177,
     -80
    ],
    "inv_missing": 0,
@@ -6011,7 +6003,7 @@
   {
    "projection": "tmerc-sphere",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 63,
    "fwd_max_m": 2.3283064365386963e-09,
@@ -6021,10 +6013,10 @@
    ],
    "fwd_missing": 0,
    "fwd_extra": 0,
-   "inv_max_deg": 1.7217499488499926e-14,
+   "inv_max_deg": 1.730260725074836e-14,
    "inv_worst_at": [
-    167,
-    -70
+    177,
+    -80
    ],
    "inv_missing": 0,
    "verdict": "exact"
@@ -6161,7 +6153,7 @@
   {
    "projection": "aeqd-far",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 325,
    "fwd_max_m": 6.71586259354649e-08,
@@ -6298,7 +6290,7 @@
   {
    "projection": "wintri",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6396,7 +6388,7 @@
   {
    "projection": "aitoff",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6494,7 +6486,7 @@
   {
    "projection": "hammer",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6592,7 +6584,7 @@
   {
    "projection": "natearth",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6690,7 +6682,7 @@
   {
    "projection": "natearth2",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6788,7 +6780,7 @@
   {
    "projection": "eck4",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -6886,7 +6878,7 @@
   {
    "projection": "eck6",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7004,7 +6996,7 @@
   {
    "projection": "gall",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7096,7 +7088,7 @@
   {
    "projection": "vandg",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7214,7 +7206,7 @@
   {
    "projection": "bonne",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7338,7 +7330,7 @@
   {
    "projection": "qsc",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7446,7 +7438,7 @@
   {
    "projection": "healpix",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7528,7 +7520,7 @@
   {
    "projection": "igh",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7610,7 +7602,7 @@
   {
    "projection": "times",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": false,
    "verdict": "unsupported",
    "error": "Projection not found"
@@ -7719,7 +7711,7 @@
   {
    "projection": "eqc-sphere",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 91,
    "fwd_max_m": 0.0,
@@ -7858,7 +7850,7 @@
   {
    "projection": "merc-sphere",
    "engine": "proj4rs-wasm",
-   "engine_version": "git 45ff983 2026-11-14",
+   "engine_version": "git d036e37 2026-11-16",
    "supported": true,
    "points": 171,
    "fwd_max_m": 0.0,

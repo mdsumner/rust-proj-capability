@@ -19,8 +19,8 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | exact | <1 nm | [187, -5] | 7.1e-15 deg | [117, -55] |  |  |  |
-| proj4rs-main | git main | exact | <1 nm | [187, -5] | 7.1e-15 deg | [117, -55] |  |  |  |
-| proj4rs-wasm | git 45ff983 2026-11-14 | exact | <1 nm | [187, -5] | 3.7e-14 deg | [187, -65] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [187, -5] | 2.6e-14 deg | [127, -5] |  |  |  |
+| proj4rs-wasm | git d036e37 2026-11-16 | exact | <1 nm | [187, -5] | 3.1e-14 deg | [177, -65] |  |  |  |
 | proj-core | 0.12.0 | -- | failed to parse CRS string: only polar stereographic PROJ strings are supported | | | | | | |
 | wbprojection | 0.3.3 | OFF 9.124 km | 9.124 km | [187, -5] | 0.067 deg | [107, -5] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | <1 nm | [187, -15] | 5.7e-14 deg | [117, -75] |  |  |  |

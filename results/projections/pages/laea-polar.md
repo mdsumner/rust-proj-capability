@@ -19,8 +19,8 @@ Blue: the graticule as each engine draws it. Grey rings: PROJ's points. Red ring
 | engine | version | verdict | forward, worst | at lon, lat | inverse, worst | at lon, lat | no forward | no inverse | answers where PROJ refuses |
 |---|---|---|---|---|---|---|---|---|---|
 | proj4rs | 0.2.1 | close | 190 mm | [-180, -90] | 1.2e-08 deg | [-150, -30] |  |  |  |
-| proj4rs-main | git main | exact | 0 |  | 1.4e-14 deg | [-120, -60] |  |  |  |
-| proj4rs-wasm | git 45ff983 2026-11-14 | exact | 0 |  | 2.5e-14 deg | [-120, -30] |  |  |  |
+| proj4rs-main | git main | exact | <1 nm | [-160, -80] | 1.8e-14 deg | [-160, -30] |  |  |  |
+| proj4rs-wasm | git d036e37 2026-11-16 | exact | <1 nm | [-160, -80] | 2.7e-14 deg | [-120, -30] |  |  |  |
 | proj-core | 0.12.0 | close | 190 mm | [-60, -90] | 1.2e-08 deg | [160, -30] |  |  |  |
 | wbprojection | 0.3.3 | OFF 8.327 km | 8.327 km | [-50, -50] | 0.08 deg | [-100, -50] |  |  |  |
 | terrio-crs | 0.1.0 + fallback | exact | <1 nm | [-130, -70] | 1.4e-14 deg | [-180, -60] |  |  |  |
