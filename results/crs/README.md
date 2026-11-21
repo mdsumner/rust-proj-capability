@@ -28,7 +28,7 @@
 | proj-core+aoi | 34 | 0 | 3 | 0 | 12 | 39 | 0 | 5 | 0 |
 | wbprojection | 32 | 2 | 33 | 0 | 1 | 20 | 0 | 4 | 1 |
 | terrio-crs | 82 | 1 | 1 | 0 | 0 | 4 | 0 | 5 | 0 |
-| xeibe-reproject | 72 | 1 | 1 | 0 | 1 | 13 | 0 | 5 | 0 |
+| xeibe-reproject | 73 | 1 | 1 | 0 | 0 | 13 | 0 | 5 | 0 |
 | terrio-crs+fallback | 85 | 1 | 1 | 0 | 0 | 1 | 0 | 5 | 0 |
 
 | verdict | meaning |

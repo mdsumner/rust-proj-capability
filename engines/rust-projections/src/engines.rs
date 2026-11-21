@@ -11,7 +11,7 @@ pub static REGISTRY: &[Engine] = &[
     Engine { name: "wbprojection", version: "0.3.3", prepare: wb::prepare },
     Engine { name: "geodesy", version: "0.15.0", prepare: geodesy_ad::prepare },
     Engine { name: "terrio-crs", version: "0.1.0 + fallback", prepare: terrio_ad::prepare },
-    Engine { name: "xeibe-reproject", version: "0.2.0", prepare: xeibe_ad::prepare },
+    Engine { name: "xeibe-reproject", version: "0.3.0", prepare: xeibe_ad::prepare },
 ];
 
 /// proj4rs works in radians on the geographic side.

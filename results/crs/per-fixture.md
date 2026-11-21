@@ -50,7 +50,7 @@ Each cell compares the candidate with PROJ on that fixture. Fixture ids link to 
 | [pair-4326-3031](../../suites/crs/catalog/pair-4326-3031.md) | exact | exact | -- | exact | exact | -- | -- | -- | exact | exact | exact | exact | exact | exact |
 | [pair-nad27-nad83](../../suites/crs/catalog/pair-nad27-nad83.md) | exact | exact | -- | -- | -- | -- | -- | OFF 35.44 m | fail | fail | OFF 2.353 m | exact | exact | exact |
 | [pair-ed50-wgs84](../../suites/crs/catalog/pair-ed50-wgs84.md) | exact | exact | -- | OFF 171.8 m | OFF 7.453 m | -- | OFF 171.8 m | OFF 171.8 m | OFF 7.824 m | exact | OFF 7.453 m | exact | exact | exact |
-| [pair-itrf2014-gda2020-epoch](../../suites/crs/catalog/pair-itrf2014-gda2020-epoch.md) | close 290 mm | exact | -- | close 290 mm | close 290 mm | -- | close 290 mm | -- | fail | fail | -- | exact | fail | exact |
+| [pair-itrf2014-gda2020-epoch](../../suites/crs/catalog/pair-itrf2014-gda2020-epoch.md) | close 290 mm | exact | -- | close 290 mm | close 290 mm | -- | close 290 mm | -- | fail | fail | -- | exact | exact | exact |
 | [pair-4979-egm2008](../../suites/crs/catalog/pair-4979-egm2008.md) | exact | exact | -- | exact | -- | -- | exact | -- | fail | fail | -- | exact | -- | exact |
 | [pair-4979-4978](../../suites/crs/catalog/pair-4979-4978.md) | OFF 74.31 m | exact | -- | exact | exact | -- | -- | -- | -- | -- | -- | exact | exact | exact |
 | [pair-2056-21781](../../suites/crs/catalog/pair-2056-21781.md) | exact | exact | -- | exact | exact | -- | OFF 4.965 km | -- | fail | fail | exact | exact | exact | exact |

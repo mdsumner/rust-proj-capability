@@ -24,7 +24,7 @@ pair-28355-7855               exact            exact            --              
 pair-4326-3031                exact            exact            --               exact            exact            --               --               --               exact            exact            exact            exact            exact            exact            
 pair-nad27-nad83              exact            exact            --               --               --               --               --               OFF 35.4m        fail             fail             OFF 2.35m        exact            exact            exact            
 pair-ed50-wgs84               exact            exact            --               OFF 172m         OFF 7.45m        --               OFF 172m         OFF 172m         OFF 7.82m        exact            OFF 7.45m        exact            exact            exact            
-pair-itrf2014-gda2020-epoch   close 0.29m      exact            --               close 0.29m      close 0.29m      --               close 0.29m      --               fail             fail             --               exact            fail             exact            
+pair-itrf2014-gda2020-epoch   close 0.29m      exact            --               close 0.29m      close 0.29m      --               close 0.29m      --               fail             fail             --               exact            exact            exact            
 pair-4979-egm2008             exact            exact            --               exact            --               --               exact            --               fail             fail             --               exact            --               exact            
 pair-4979-4978                OFF 74.3m        exact            --               exact            exact            --               --               --               --               --               --               exact            exact            exact            
 pair-2056-21781               exact            exact            --               exact            exact            --               OFF 4.97km       --               fail             fail             exact            exact            exact            exact            
@@ -105,5 +105,5 @@ proj-core {'exact': 33, 'off': 4, 'unresolved': 39, 'failed': 12, 'refused-like-
 proj-core+aoi {'exact': 34, 'off': 3, 'unresolved': 39, 'failed': 12, 'refused-like-oracle': 5}
 wbprojection {'exact': 32, 'off': 33, 'unresolved': 20, 'close': 2, 'refused-like-oracle': 4, 'answered-where-oracle-refused': 1, 'failed': 1}
 terrio-crs {'exact': 82, 'refused-like-oracle': 5, 'close': 1, 'unresolved': 4, 'off': 1}
-xeibe-reproject {'exact': 72, 'unresolved': 13, 'refused-like-oracle': 5, 'failed': 1, 'close': 1, 'off': 1}
+xeibe-reproject {'exact': 73, 'unresolved': 13, 'refused-like-oracle': 5, 'close': 1, 'off': 1}
 terrio-crs+fallback {'exact': 85, 'refused-like-oracle': 5, 'close': 1, 'unresolved': 1, 'off': 1}

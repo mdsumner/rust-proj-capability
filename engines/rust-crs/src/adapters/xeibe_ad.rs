@@ -1,7 +1,8 @@
-//! xeibe-reproject 0.2.0: pure Rust, driven by EPSG's own data (an embedded
+//! xeibe-reproject 0.3.0: pure Rust, driven by EPSG's own data (an embedded
 //! EPSG dataset as PROJJSON), choosing EPSG's operations per coordinate as
 //! PROJ chooses them, and never a ballpark. Like the oracle (no grids
-//! installed), grid-based operations are left out (`Grids::None`).
+//! installed), grid-based operations are left out (`Grids::None`). A
+//! coordinate's epoch (PROJ's `t`) goes to `convert_at`.
 
 use xeibe_reproject::{AxisOrder, Crs, Grids, Transform};
 
@@ -48,7 +49,11 @@ pub fn run(fx: &Fixture) -> Outcome {
     match conv(&t, &pt) {
         Ok(v) => {
             o.executed = true;
-            o.operation = t.operation_for(pt[0], pt[1], pt.get(2).copied()).map(str::to_string);
+            o.operation = match pt.get(3) {
+                Some(&e) => t.operation_for_at(pt[0], pt[1], pt.get(2).copied(), e),
+                None => t.operation_for(pt[0], pt[1], pt.get(2).copied()),
+            }
+            .map(str::to_string);
             o.fwd = Some(v);
         }
         Err(e) => {
@@ -66,13 +71,13 @@ pub fn run(fx: &Fixture) -> Outcome {
 }
 
 fn conv(t: &Transform, p: &[f64]) -> Result<Vec<f64>, String> {
-    if util::has_t(p) {
-        return Err("coordinate epochs are not supported".into());
-    }
     let z = if util::has_z(p) { Some(p[2]) } else { None };
-    let (x, y, z) = t.convert(p[0], p[1], z).map_err(|e| e.to_string())?;
-    Ok(match z {
-        Some(z) => vec![x, y, z],
-        None => vec![x, y],
+    let (x, y, z) = if util::has_t(p) { t.convert_at(p[0], p[1], z, p[3]) } else { t.convert(p[0], p[1], z) }
+        .map_err(|e| e.to_string())?;
+    // the epoch comes back unchanged, as PROJ's t does
+    Ok(match (z, p.get(3)) {
+        (Some(z), Some(&e)) => vec![x, y, z, e],
+        (Some(z), None) => vec![x, y, z],
+        (None, _) => vec![x, y],
     })
 }

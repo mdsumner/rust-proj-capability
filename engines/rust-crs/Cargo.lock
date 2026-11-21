@@ -1143,9 +1143,9 @@ dependencies = [
 
 [[package]]
 name = "xeibe-crs"
-version = "0.4.2+epsg-13.106"
+version = "0.4.3+epsg-13.106"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2cd41d806d40c3a852bcce566431656ed7dbb9e15a8d0e2ac8d8def6fbc3531a"
+checksum = "659af6244f144d295172bc9c0529b6532cd51f39624d625d2d990759c84c8b91"
 dependencies = [
  "lz4_flex",
  "unicode-normalization",
@@ -1159,9 +1159,9 @@ checksum = "630e1f221e399c4625680a43881df9e85d3760f607f9bf38e347a06ad811fc83"
 
 [[package]]
 name = "xeibe-reproject"
-version = "0.2.0"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2a033f2c21baec49746667a00254ff4c96e312e8f2ed776e5b66739f7c305ce1"
+checksum = "f54b35c5b79d9d4b6afaa393605f581b2a232b356c8f9be0f87cd5b9a0d75c63"
 dependencies = [
  "flate2",
  "serde",
