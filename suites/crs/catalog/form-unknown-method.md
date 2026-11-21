@@ -37,6 +37,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | refuse |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: nosuchproj |  |
 | wbprojection | refuse |  |  |  | dst: unsupported projection: PROJ +proj=nosuchproj is not supported by wbprojection |  |
 | terrio-crs | refuse |  |  |  | dst: coordinate reference system: unsupported projection: +proj=nosuchproj; enable the wbprojection-fallback feature |  |
+| xeibe-reproject | refuse |  |  |  | dst: invalid PROJ string: unknown projection nosuchproj; read as a CRS, as with +type=crs (a bare PROJ string is an operation, as in PROJ) |  |
 | terrio-crs+fallback | refuse |  |  |  | dst: coordinate reference system: unsupported projection: PROJ +proj=nosuchproj is not supported by wbprojection |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

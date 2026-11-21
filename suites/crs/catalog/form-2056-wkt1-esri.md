@@ -70,6 +70,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  |  | dst: failed to parse CRS string: unsupported WKT projection: Hotine_Oblique_Mercator_Azimuth_Center |  |
 | wbprojection | OFF | 164.2 m | 164.2 m | 164.2 m | 2600031.659, 1199732.246 |  |  |
 | terrio-crs | exact | 0 mm | <0.001 mm | 0 mm | 2600104.109, 1199879.628 |  |  |
+| xeibe-reproject | exact | 0 mm | 0 mm | 0 mm | 2600104.109, 1199879.628 |  | Inverse of CH1903+ to WGS 84 (1) + Swiss Oblique Mercator 1995 |
 | terrio-crs+fallback | exact | 0 mm | <0.001 mm | 0 mm | 2600104.109, 1199879.628 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

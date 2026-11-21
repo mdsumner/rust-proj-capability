@@ -60,6 +60,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: isea |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: PROJ +proj=isea is not supported by wbprojection |  |
 | terrio-crs | OFF | 15.15 km | 14.79 km | 11140072.073, -6179576.358 |  |  |
+| xeibe-reproject | OFF | 4.27 km | 4.136 km | 11135869.680, -6161570.060 | read as a CRS, as with +type=crs (a bare PROJ string is an operation, as in PROJ) |  |
 | terrio-crs+fallback | OFF | 15.15 km | 14.79 km | 11140072.073, -6179576.358 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

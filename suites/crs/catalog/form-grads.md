@@ -62,6 +62,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | fail |  |  |  | transform: operation selection failed: unable to compile an operation for source EPSG:4326 target EPSG:4807 |  |
 | wbprojection | -- |  |  |  | dst: unsupported projection: EPSG:4807 is not in the built-in registry. See epsg::known_epsg_codes() for supported codes, or construct a ProjectionParams manually. |  |
 | terrio-crs | exact | 0.244 mm | 0.244 mm | 0.014993, 54.277855 |  |  |
+| xeibe-reproject | exact | 0.244 mm | 0.244 mm | 0.014993, 54.277855 |  | Inverse of NTF (Paris) to WGS 84 (1) |
 | terrio-crs+fallback | exact | 0.244 mm | 0.244 mm | 0.014993, 54.277855 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
