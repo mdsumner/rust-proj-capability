@@ -77,6 +77,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | fail |  |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | OFF | 109.2 m | 109.1 m | 109.2 m | 433938.158584, 289280.164322 |  |  |
 | terrio-crs | exact | 0.727 mm | 0.728 mm | 0.727 mm | 434039.457289, 289239.280365 |  |  |
+| xeibe-reproject | exact | 0 mm | 0 mm | 0 mm | 434039.457286, 289239.281093 |  | Inverse of OSGB36 to WGS 84 (6) + British National Grid |
 | terrio-crs+fallback | exact | 0.727 mm | 0.728 mm | 0.727 mm | 434039.457289, 289239.280365 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

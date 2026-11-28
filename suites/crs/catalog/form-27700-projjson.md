@@ -77,6 +77,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | -- |  |  |  |  | dst: unsupported CRS semantics: PROJJSON projected base geographic CRS uses unsupported axis order/directions `north, east`; expected longitude/east, latitude/north |  |
 | wbprojection | -- |  |  |  |  | dst: no PROJJSON input |  |
 | terrio-crs | exact | 0.737 mm | 0.738 mm | 0.737 mm | 434039.457291, 289239.280356 |  |  |
+| xeibe-reproject | exact | 0 mm | 0 mm | 0 mm | 434039.457286, 289239.281093 |  | Inverse of OSGB36 to WGS 84 (6) + British National Grid |
 | terrio-crs+fallback | exact | 0.737 mm | 0.738 mm | 0.737 mm | 434039.457291, 289239.280356 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

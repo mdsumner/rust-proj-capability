@@ -69,6 +69,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | fail |  |  |  | transform: operation selection failed: no compatible registry operation found for source EPSG:4326 target EPSG:0 |  |
 | wbprojection | OFF | 65.87 m | 65.66 m | 128328.362127, 445662.723552 |  |  |
 | terrio-crs | exact | <0.001 mm | <0.001 mm | 128383.474527, 445698.804306 |  |  |
+| xeibe-reproject | -- |  |  |  | transform: unknown: its datum "Unknown based on Bessel 1841 ellipsoid" is unknown, so it can't be converted to another datum (a shift of zero is not assumed): give the CRS as an EPSG code, or say its datum (+datum= or +towgs84= in a PROJ st |  |
 | terrio-crs+fallback | exact | <0.001 mm | <0.001 mm | 128383.474527, 445698.804306 |  |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:

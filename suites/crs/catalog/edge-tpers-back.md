@@ -55,6 +55,7 @@ Candidates are described in [engines/rust-crs/README.md](../../../engines/rust-c
 | proj-core+aoi | refuse |  |  |  | dst: failed to parse CRS string: unsupported PROJ projection: tpers |  |
 | wbprojection | refuse |  |  |  | dst: unsupported projection: PROJ +proj=tpers is not supported by wbprojection |  |
 | terrio-crs | refuse |  |  |  | coordinate reference system: cannot transform (-33, 42) |  |
+| xeibe-reproject | refuse |  |  |  | outside the projection's domain; read as a CRS, as with +type=crs (a bare PROJ string is an operation, as in PROJ) |  |
 | terrio-crs+fallback | refuse |  |  |  | coordinate reference system: cannot transform (-33, 42) |  |
 
 Destination definitions actually handed to candidates, where they differ from the input:
